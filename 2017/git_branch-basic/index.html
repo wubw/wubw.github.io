@@ -62,77 +62,107 @@
 <h1>Git: Branch Basic<a class="headerlink" href="#git-branch-basic" title="Permalink to this headline">¶</a></h1>
 <p>Written by <a class="reference external" href="mailto:Binwei&#37;&#52;&#48;Oslo">Binwei<span>&#64;</span>Oslo</a></p>
 <p>One of the biggest advantage of Git is branching. Git is very strong at handling branches, no matter on functionality or on efficiency. Let&#8217;s try out the Git branch commands.</p>
-<p>Create Branch</p>
-<p>git branch f1</p>
+<div class="section" id="create-branch">
+<h2>Create Branch<a class="headerlink" href="#create-branch" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git branch f1
+</pre></div>
+</div>
 <p>The command will create a new branch called f1. Compared to &#8216;classical&#8217; version control system, git will not create a separate folder for new branch. All the branches &#8216;share&#8217; the same folder on your file system.</p>
-<p>git checkout f1</p>
-<p>git checkout command will switch from current branch to f1 branch. f1 becomes your current branch, your followings changes will happen on f1. HEAD is the &#8216;pointer&#8217; which point to the current commit, which also indicates what is the current branch.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git checkout f1
+</pre></div>
+</div>
+<p><em>git checkout</em> command will switch from current branch to f1 branch. f1 becomes your current branch, your followings changes will happen on f1. HEAD is the &#8216;pointer&#8217; which point to the current commit, which also indicates what is the current branch.</p>
 <p>When you switch a branch, the data in repository does not change. It is the HEAD switch to the different commit. And also copy the files from repository to index, working area.</p>
 <p>If you are confused about the term: commit, index, and working area, please check my previous blogs:</p>
-<p>Git: Getting Started</p>
-<p>Git: Areas</p>
-<p>git checkout -b f2</p>
+<p><a class="reference internal" href="../git_getting-started/#git_getting-started"><span class="std std-ref">Git: Getting Started</span></a></p>
+<p><a class="reference internal" href="../git_areas/#git_areas"><span class="std std-ref">Git: Areas</span></a></p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git checkout -b f2
+</pre></div>
+</div>
 <p>The above command will quickly create a new branch f2 and switch to this new branch.</p>
-<p>Visualisation of History</p>
+</div>
+<div class="section" id="visualisation-of-history">
+<h2>Visualisation of History<a class="headerlink" href="#visualisation-of-history" title="Permalink to this headline">¶</a></h2>
 <p>In order to have a clear picture of the current repository, the branching situation, and what is the current branch status, you can simply use the following command:</p>
-<p>git log &#8211;oneline &#8211;all &#8211;decorate &#8211;graph</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git log --oneline --all --decorate --graph
+</pre></div>
+</div>
 <p>You will see console output like following:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="mi">660</span><span class="n">caea</span> <span class="p">(</span><span class="n">HEAD</span> <span class="o">-&gt;</span> <span class="n">feature2</span><span class="p">)</span> <span class="n">f2</span>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">* 660caea (HEAD -&gt; feature2) f2</span>
 
-<span class="o">|</span> <span class="o">*</span> <span class="mf">90e5174</span> <span class="p">(</span><span class="n">feature4</span><span class="p">,</span> <span class="n">feature3</span><span class="p">)</span> <span class="n">feature</span> <span class="mi">3</span> <span class="n">changes</span>
+<span class="go">| * 90e5174 (feature4, feature3) feature 3 changes</span>
 
-<span class="o">|/</span>
+<span class="go">|/</span>
 
-<span class="o">|</span> <span class="o">*</span> <span class="n">cf54ec8</span> <span class="p">(</span><span class="n">feature1</span><span class="p">)</span> <span class="n">modification</span> <span class="kn">from</span> <span class="nn">feature1</span>
+<span class="go">| * cf54ec8 (feature1) modification from feature1</span>
 
-<span class="o">|</span> <span class="o">|</span> <span class="o">*</span>   <span class="n">a51f214</span> <span class="p">(</span><span class="n">master</span><span class="p">)</span> <span class="n">Merge</span> <span class="n">branch</span> <span class="s1">&#39;feature2&#39;</span>
+<span class="go">| | *   a51f214 (master) Merge branch &#39;feature2&#39;</span>
 
-<span class="o">|</span> <span class="o">|</span> <span class="o">|</span>\
+<span class="go">| | |\</span>
 
-<span class="o">|</span> <span class="o">|/</span> <span class="o">/</span>
+<span class="go">| |/ /</span>
 
-<span class="o">|</span> <span class="o">|</span> <span class="o">/</span>
+<span class="go">| | /</span>
 
-<span class="o">|</span> <span class="o">|/</span>
+<span class="go">| |/</span>
 
-<span class="o">|/|</span>
+<span class="go">|/|</span>
 
-<span class="o">*</span> <span class="o">|</span> <span class="n">bb32dd5</span> <span class="n">commit</span> <span class="n">feature2</span>
+<span class="go">* | bb32dd5 commit feature2</span>
 
-<span class="o">|</span> <span class="o">*</span> <span class="mi">0</span><span class="n">ac3396</span> <span class="n">commit</span> <span class="n">feature1</span>
+<span class="go">| * 0ac3396 commit feature1</span>
 
-<span class="o">|</span> <span class="o">*</span> <span class="mi">3</span><span class="n">fb48f2</span> <span class="n">feature1</span> <span class="n">first</span> <span class="n">commit</span>
+<span class="go">| * 3fb48f2 feature1 first commit</span>
 
-<span class="o">|/</span>
+<span class="go">|/</span>
 
-<span class="o">*</span> <span class="n">d3033b2</span> <span class="n">Add</span> <span class="n">more</span> <span class="n">file</span> <span class="ow">and</span> <span class="n">change</span> <span class="n">main</span><span class="o">.</span><span class="n">txt</span>
+<span class="go">* d3033b2 Add more file and change main.txt</span>
 
-<span class="o">*</span> <span class="mi">6</span><span class="n">b07c39</span> <span class="n">First</span> <span class="n">commit</span>
+<span class="go">* 6b07c39 First commit</span>
 </pre></div>
 </div>
 <p>The numbers are the short version hash for commits. For simplicity, you can regard these numbers as commit id now. From the output, you can see how many branches are in current repository and their relationship. The commit HEAD point to means the current branch.</p>
 <p>The above command is cumbersome to type, you can use git alias in stead.</p>
-<p>git config &#8211;global alias.loadg &#8216;log &#8211;oneline &#8211;all &#8211;decorate &#8211;graph&#8217;</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git config --global alias.loadg <span class="s1">&#39;log --oneline --all --decorate --graph&#39;</span>
+</pre></div>
+</div>
 <p>It will create an alias &#8216;loadg&#8217; for the long parameters. Then you can simply type to get the history graph:</p>
-<p>git loadg</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git loadg
+</pre></div>
+</div>
 <p>The alias data will be added into ~/.gitconfig in following format. You can also add the alias manually in this file.</p>
-<p>[alias]</p>
-<p>loadg = log &#8211;oneline &#8211;all &#8211;decorate &#8211;graph</p>
-<blockquote>
-<div>With this command, you can see the graph and understand repository branching situation easily.</div></blockquote>
-<p>Other Basic Commands</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">[alias]</span>
+
+<span class="go">loadg = log --oneline --all --decorate --graph</span>
+</pre></div>
+</div>
+<p>With this command, you can see the graph and understand repository branching situation easily.</p>
+</div>
+<div class="section" id="other-basic-commands">
+<h2>Other Basic Commands<a class="headerlink" href="#other-basic-commands" title="Permalink to this headline">¶</a></h2>
 <p>Branch can also be created from the hash number.</p>
-<p>git branch f3 66ocaea</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git branch f3 66ocaea
+</pre></div>
+</div>
 <p>This command will create a new branch f3 based on the commit which has hash number 66ocaea.</p>
-<p>git branch -m f3 f4</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git branch -m f3 f4
+</pre></div>
+</div>
 <p>The command will rename branch f3 to f4.</p>
-<p>git branch -d f4</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git branch -d f4
+</pre></div>
+</div>
 <p>The command will delete the branch f4.</p>
-<p>git diff f2 f3</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git diff f2 f3
+</pre></div>
+</div>
 <p>This command shows the difference between two branches.</p>
-<p>Summary</p>
+</div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
 <p>This blog only covers the basic branch commands, e.g. create a new branch, modify the branch, view the branch status. Still not touch the real power of git branch.</p>
 <p>In next blog, I will show how to do the merge, rebase and other advance branch commands.</p>
+</div>
 </div>
 
   <div class="section">

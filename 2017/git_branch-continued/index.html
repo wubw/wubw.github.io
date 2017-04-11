@@ -61,30 +61,50 @@
   <div class="section" id="git-branch-continue">
 <h1>Git: Branch Continue<a class="headerlink" href="#git-branch-continue" title="Permalink to this headline">¶</a></h1>
 <p>Written by <a class="reference external" href="mailto:Binwei&#37;&#52;&#48;Oslo">Binwei<span>&#64;</span>Oslo</a></p>
-<p>This blog will cover the Git commands which to transfer the changes between branches. If you are not familiar with the basic Git branch commands, you can have a look of my previous blog: Git: Branch Basic.</p>
-<p>Merge Branch</p>
+<p>This blog will cover the Git commands which to transfer the changes between branches. If you are not familiar with the basic Git branch commands, you can have a look of my previous blog: <a class="reference internal" href="../git_branch-basic/#git_branch-basic"><span class="std std-ref">Git: Branch Basic</span></a></p>
+<div class="section" id="merge-branch">
+<h2>Merge Branch<a class="headerlink" href="#merge-branch" title="Permalink to this headline">¶</a></h2>
 <p>When you have two or more branches, you need to integrate some changes from one branch to another.</p>
-<p>git merge f1</p>
-<p>Git merge command will try to integrate all the changes from branch f1 into the current branch (HEAD points to). After run this command, you can check the status by git status and use git add/commit to check-in the changes.</p>
-<p>If f1 and current branch have changes on same files, conflict will happen in the git merge command. Git will present the conflicts directly in the files, see following example:</p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
-<p>current change</p>
-<hr class="docutils" />
-<p>greeting from f1</p>
-<p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; f1</p>
-<p>You can use text editor tool to resolve the conflict manually or you can use git mergetool to resolve the conflict.</p>
-<p>Rebase Branch</p>
-<p>In most cases, git branch is created based on an existing branch by using git branch command. Then the newly created branch has relationship with the existing branch. If we want to change the relationship, e.g. let the current branch base on another branch, then you need to use the rebase command.</p>
-<p>git rebase f2</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git merge f1
+</pre></div>
+</div>
+<p>Git merge command will try to integrate all the changes from branch f1 into the current branch (HEAD points to). After run this command, you can check the status by <em>git status</em> and use <em>git add/commit</em> to check-in the changes.</p>
+<p>If f1 and current branch have changes on same files, conflict will happen in the <em>git merge</em> command. Git will present the conflicts directly in the files, see following example:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span>
+
+<span class="go">current change</span>
+
+<span class="go">=======</span>
+
+<span class="go">greeting from f1</span>
+
+<span class="gp">&gt;</span>&gt;&gt;&gt;&gt;&gt;&gt; f1
+</pre></div>
+</div>
+<p>You can use text editor tool to resolve the conflict manually or you can use <em>git mergetool</em> to resolve the conflict.</p>
+</div>
+<div class="section" id="rebase-branch">
+<h2>Rebase Branch<a class="headerlink" href="#rebase-branch" title="Permalink to this headline">¶</a></h2>
+<p>In most cases, git branch is created based on an existing branch by using <em>git branch</em> command. Then the newly created branch has relationship with the existing branch. If we want to change the relationship, e.g. let the current branch base on another branch, then you need to use the rebase command.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git rebase f2
+</pre></div>
+</div>
 <p>This command will rebase your current branch on branch f2.</p>
-<p>Cherry Pick</p>
+</div>
+<div class="section" id="cherry-pick">
+<h2>Cherry Pick<a class="headerlink" href="#cherry-pick" title="Permalink to this headline">¶</a></h2>
 <p>Sometimes, if you only want to integrate one specific commit from one branch into current branch, then you can use cherry pick command.</p>
-<p>git cherry-pick 0ac3396</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git cherry-pick 0ac3396
+</pre></div>
+</div>
 <p>The above command will integrate the specific commit: 0ac3396 into the current branch.</p>
 <p>If you call merge/rebase command after cherry pick, git will understand the changes and will not re-apply the unnecessary changes.</p>
-<p>Summary</p>
+</div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
 <p>Merge/Rebase/Cherry Pick are three basic commands to transfer changes from one branch to another.</p>
-<p>In order to use git branch in a correct way, you need to understand the good practice of using git flow. There is a good blog explains the git flow.</p>
+<p>In order to use git branch in a correct way, you need to understand the good practice of using git flow. There is a good blog explains the <a class="reference external" href="http://nvie.com/posts/a-successful-git-branching-model/">git flow</a>.</p>
+</div>
 </div>
 
   <div class="section">

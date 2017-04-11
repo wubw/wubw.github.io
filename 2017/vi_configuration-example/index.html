@@ -62,53 +62,101 @@
 <h1>Vi: Configuration Example<a class="headerlink" href="#vi-configuration-example" title="Permalink to this headline">¶</a></h1>
 <p>Written by <a class="reference external" href="mailto:Binwei&#37;&#52;&#48;Oslo">Binwei<span>&#64;</span>Oslo</a></p>
 <p>Among various text editors, I like Vi a lot. It help me a lot if I work on various operating systems and different environment since Vi is installed by default on most operating systems.</p>
-<p>There is GUI Vi tool available on Windows called Gvim, which can be downloaded from here:</p>
-<p><a class="reference external" href="http://www.vim.org/download.php">http://www.vim.org/download.php</a></p>
-<p>The configuration file is named as _vimrc which is located around %ProgramFiles(x86)%Vim. Just open and edit the _vimrc file, but you need to restart Gvim to see the changes.</p>
+<p>There is GUI Vi tool available on Windows called Gvim, which can be downloaded from here: <a class="reference external" href="http://www.vim.org/download.php">http://www.vim.org/download.php</a></p>
+<p>The configuration file is named as _vimrc which is located around ProgramFiles(x86)Vim. Just open and edit the _vimrc file, but you need to restart Gvim to see the changes.</p>
 <p>The following settings will be very helpful but not set-on by default.</p>
-<p>If the GUI is not English, you can add following content in _vimrc
-set langmenu=en_US
-let $LANG = &#8216;en_US&#8217;
-source $VIMRUNTIME/delmenu.vim
-source $VIMRUNTIME/menu.vim
-Set to auto read when a file is changed from the outside
-set autoread
-Ignore case when searching
-set ignorecase
-Set the dark scheme
-colorscheme desert
-set background=dark
-Set utf8 as standard encoding
-set encoding=utf8
-Turn backup off
-set nobackup
-set nowb
-set noswapfile
-Set the tab stop
-set tabstop=4
-Set the auto indent
-set ai &#8220;Auto indent
-set si &#8220;Smart indent
-set wrap &#8220;Wrap lines
-Display line numbers on the left
-set number
-Set the font
-set guifont=courier_new:h12
-Maximize the window on startup
-::
-if has(&#8220;gui_running&#8221;)
-&#8221; GUI is running or is about to start.
-&#8221; Maximize gvim window (for an alternative on Windows, see simalt below).
-set lines=999 columns=999
-else
-&#8221; This is console Vim.
-if exists(&#8220;+lines&#8221;)
-set lines=50
-endif
-if exists(&#8220;+columns&#8221;)
-set columns=100
-endif
-endif</p>
+<ul class="simple">
+<li>If the GUI is not English, you can add following content in _vimrc</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="nv">langmenu</span><span class="o">=</span>en_US
+<span class="nb">let</span> <span class="nv">$LANG</span> <span class="o">=</span> <span class="s1">&#39;en_US&#39;</span>
+<span class="nb">source</span> <span class="nv">$VIMRUNTIME</span>/delmenu.vim
+<span class="nb">source</span> <span class="nv">$VIMRUNTIME</span>/menu.vim
+</pre></div>
+</div>
+<ul class="simple">
+<li>Set to auto read when a file is changed from the outside</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">set</span> autoread
+</pre></div>
+</div>
+<ul class="simple">
+<li>Ignore case when searching</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">set</span> ignorecase
+</pre></div>
+</div>
+<ul class="simple">
+<li>Set the dark scheme</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>colorscheme desert
+<span class="nb">set</span> <span class="nv">background</span><span class="o">=</span>dark
+</pre></div>
+</div>
+<ul class="simple">
+<li>Set utf8 as standard encoding</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="nv">encoding</span><span class="o">=</span>utf8
+</pre></div>
+</div>
+<ul class="simple">
+<li>Turn backup off</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">set</span> nobackup
+<span class="nb">set</span> nowb
+<span class="nb">set</span> noswapfile
+</pre></div>
+</div>
+<ul class="simple">
+<li>Set the tab stop</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="nv">tabstop</span><span class="o">=</span><span class="m">4</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Set the auto indent</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">set</span> ai <span class="s2">&quot;Auto indent</span>
+<span class="s2">set si &quot;</span>Smart indent
+<span class="nb">set</span> wrap <span class="s2">&quot;Wrap lines</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Display line numbers on the left</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">set</span> number
+</pre></div>
+</div>
+<ul class="simple">
+<li>Set the font</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="nv">guifont</span><span class="o">=</span>courier_new:h12
+</pre></div>
+</div>
+<ul class="simple">
+<li>Maximize the window on startup</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="k">if</span> has<span class="o">(</span><span class="s2">&quot;gui_running&quot;</span><span class="o">)</span>
+    <span class="s2">&quot; GUI is running or is about to start.</span>
+<span class="s2">    &quot;</span> Maximize gvim window <span class="o">(</span><span class="k">for</span> an alternative on Windows, see simalt below<span class="o">)</span>.
+    <span class="nb">set</span> <span class="nv">lines</span><span class="o">=</span><span class="m">999</span> <span class="nv">columns</span><span class="o">=</span><span class="m">999</span>
+<span class="k">else</span>
+    <span class="s2">&quot; This is console Vim.</span>
+<span class="s2">    if exists(&quot;</span>+lines<span class="s2">&quot;)</span>
+<span class="s2">        set lines=50</span>
+<span class="s2">    endif</span>
+<span class="s2">    if exists(&quot;</span>+columns<span class="s2">&quot;)</span>
+<span class="s2">        set columns=100</span>
+<span class="s2">    endif</span>
+<span class="s2">endif</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Set the spell check on</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">set</span> spell
+</pre></div>
+</div>
 <p>Easy approach is to get the example _vimrc file from: <a class="reference external" href="https://github.com/wubw/DevScripts/blob/master/_vimrc">https://github.com/wubw/DevScripts/blob/master/_vimrc</a></p>
 </div>
 

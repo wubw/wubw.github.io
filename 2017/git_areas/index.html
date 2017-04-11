@@ -68,33 +68,43 @@
 <li>Repository</li>
 <li>Stash</li>
 </ul>
-<p>To understand these four areas is essential to learn the git workflow. The following paragraphs will go through these four areas and explain the git workflow. If you are new to git and not familiar with the basic git commands, it is recommended to read my blog post Git: Getting Started first.</p>
-<p>Working area</p>
+<p>To understand these four areas is essential to learn the git workflow. The following paragraphs will go through these four areas and explain the git workflow. If you are new to git and not familiar with the basic git commands, it is recommended to read my blog post <a class="reference internal" href="../git_getting-started/#git_getting-started"><span class="std std-ref">Git: Getting Started</span></a> first.</p>
+<div class="section" id="working-area">
+<h2>Working area<a class="headerlink" href="#working-area" title="Permalink to this headline">¶</a></h2>
 <p>Working area is where you start adding/modifying/deleting files. Working area is equal to what you see on your file system.</p>
-<p>If git status returns nothing, it means working area, index, repository are equal.</p>
-<p>git diff command can show the difference between working area and index.</p>
-<p>git checkout &#8211; can discard the changes on working area.</p>
-<p>Index</p>
+<p>If <em>git status</em> returns nothing, it means working area, index, repository are equal.</p>
+<p><em>git diff</em> command can show the difference between working area and index.</p>
+<p><em>git checkout &#8211;</em> can discard the changes on working area.</p>
+</div>
+<div class="section" id="index">
+<h2>Index<a class="headerlink" href="#index" title="Permalink to this headline">¶</a></h2>
 <p>Index is a staging area for git, which stays in the middle of working area and repository.</p>
-<p>git add command can copy the changes from working area to index.</p>
-<p>git reset HEAD command can discard the changes in index.</p>
-<p>git diff &#8211;cached command can show the difference between index and repository.</p>
-<p>git rm &#8211;cached command can remove a file from index.</p>
-<p>git mv command can rename a file name in index and working area</p>
-<p>Repository</p>
+<p><em>git add</em> command can copy the changes from working area to index.</p>
+<p><em>git reset HEAD</em> command can discard the changes in index.</p>
+<p><em>git diff &#8211;cached</em> command can show the difference between index and repository.</p>
+<p><em>git rm &#8211;cached</em> command can remove a file from index.</p>
+<p><em>git mv</em> command can rename a file name in index and working area</p>
+</div>
+<div class="section" id="repository">
+<h2>Repository<a class="headerlink" href="#repository" title="Permalink to this headline">¶</a></h2>
 <p>Repository is the place to store all the commits, no matter it is a local one or a central one.</p>
 <p>Basically, all the commits are immutable.</p>
-<p>git commit is the command to copy changes from index to repository.</p>
-<p>Stash</p>
+<p><em>git commit</em> is the command to copy changes from index to repository.</p>
+</div>
+<div class="section" id="stash">
+<h2>Stash<a class="headerlink" href="#stash" title="Permalink to this headline">¶</a></h2>
 <p>Stash is a place to store temporary changes from working areas and index, which is like a clipboard of your project.</p>
-<p>Use git stash when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. The command saves your local modifications away and reverts the working directory to match the HEAD commit.</p>
-<p>git stash list shows all the stashed changes.</p>
-<p>git stash show can view the details of stashed change.</p>
-<p>git stash apply can retrieve the stashed change.</p>
-<p>git stash clear clean-up the stash area.</p>
-<p>Summary</p>
+<p>Use <em>git stash</em> when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. The command saves your local modifications away and reverts the working directory to match the HEAD commit.</p>
+<p><em>git stash</em> list shows all the stashed changes.</p>
+<p><em>git stash show</em> can view the details of stashed change.</p>
+<p><em>git stash apply</em> can retrieve the stashed change.</p>
+<p><em>git stash clear</em> clean-up the stash area.</p>
+</div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
 <p>In order to use git efficiently, it is necessary to understand the areas your files reside now, and the workflow of the git files.</p>
-<p>It is not easy to remember all the commands and arguments. Just remember the basic and visit git doc when necessary will help.</p>
+<p>It is not easy to remember all the commands and arguments. Just remember the basic and visit <a class="reference external" href="https://git-scm.com/doc/">git doc</a> when necessary will help.</p>
+</div>
 </div>
 
   <div class="section">

@@ -63,51 +63,76 @@
 <p>Written by <a class="reference external" href="mailto:Binwei&#37;&#52;&#48;Oslo">Binwei<span>&#64;</span>Oslo</a></p>
 <p>Git is an open source distributed version control system, which plays important role in current software ecosystem.</p>
 <p>You may find many GUI Git tools like SourceTree, Github Desktop, TortoiseGit etc, however the best way to learn Git is to deep dive into the Git commands and understand the fundamental. Let&#8217;s start the &#8216;Git journey&#8217; by using the basic commands.</p>
-<p>Install Git</p>
+<div class="section" id="install-git">
+<h2>Install Git<a class="headerlink" href="#install-git" title="Permalink to this headline">¶</a></h2>
 <p>First, go to Git download page: <a class="reference external" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
 <p>Download and install the git on your operating system.</p>
-<p>Initialize Repository</p>
+</div>
+<div class="section" id="initialize-repository">
+<h2>Initialize Repository<a class="headerlink" href="#initialize-repository" title="Permalink to this headline">¶</a></h2>
 <p>In order to use Git, you need to initialize a local repository first.</p>
-<p>mkdir FirstRepo
-cd FirstRepo
+<div class="highlight-bash"><div class="highlight"><pre><span></span>mkdir FirstRepo
+<span class="nb">cd</span> FirstRepo
 git init
-The folder and file operation commands will be slightly different depends on your operating system.</p>
-<p>A hidden .git folder should be created by the above command. You can use ls -a to verify it.</p>
-<p>Check Status</p>
-<p>git status is a handy command to check the current repository status. It is recommonded it is used from time to time.</p>
-<p>If you use git status now, the console output will be:</p>
-<p>On branch master</p>
-<p>Inital commit</p>
-<p>nothing to commit (create/copy files and use &#8220;git add&#8221; to track)</p>
-<p>Add Files</p>
+</pre></div>
+</div>
+<p>The folder and file operation commands will be slightly different depends on your operating system.</p>
+<p>A hidden .git folder should be created by the above command. You can use <em>ls -a</em> to verify it.</p>
+</div>
+<div class="section" id="check-status">
+<h2>Check Status<a class="headerlink" href="#check-status" title="Permalink to this headline">¶</a></h2>
+<p><em>git status</em> is a handy command to check the current repository status. It is recommended it is used from time to time.</p>
+<p>If you use <em>git status</em> now, the console output will be:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">On branch master</span>
+<span class="go">Inital commit</span>
+<span class="go">nothing to commit (create/copy files and use &quot;git add&quot; to track)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="add-files">
+<h2>Add Files<a class="headerlink" href="#add-files" title="Permalink to this headline">¶</a></h2>
 <p>Let&#8217;s add some example files and folders in the repository.</p>
-<p>mkdir SubFolder
-touch main.txt
-touch SubFoldersub.txt
-Use tree command to verify that two files and one folder are created in the repository. ::
-&gt;&gt;    .</p>
-<blockquote>
-<div><p>├── SubFolder</p>
-<p>│   └── sub.txt</p>
-<p>└── main.txt</p>
-</div></blockquote>
-<p>Type git status again, and the console output should tell you that there are &#8216;untracked files&#8217;.</p>
-<p>Commit to Local Repository</p>
-<p>Go to the repository root folder, and run git add .</p>
-<p>Type git status and you can see from console ouput that there are changes to be committed and no untracked files. (If you run the above command in sub folder, then only the files under subfolders will be tracked)</p>
-<p>Run git commit command to commit the change to local repository, and you will encounter a vi look-like program to ask you provide the description for the up-comming commit. Type i and go into text edit mode; write down the description for the commit, like &#8216;First commit&#8217;; then press Esc and :wq to save and quit that vi look like program.</p>
-<p>If everything goes well, you will see that files are commit and git status will tell that nothing to commit, and working directory clean.</p>
-<p>Commit to Remote Repository</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">mkdir SubFolder</span>
+<span class="go">touch main.txt</span>
+<span class="go">touch SubFolder\sub.txt</span>
+</pre></div>
+</div>
+<p>Use <em>tree</em> command to verify that two files and one folder are created in the repository.</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">.</span>
+
+<span class="go">├── SubFolder</span>
+
+<span class="go">│   └── sub.txt</span>
+
+<span class="go">└── main.txt</span>
+</pre></div>
+</div>
+<p>Type <em>git status</em> again, and the console output should tell you that there are &#8216;untracked files&#8217;.</p>
+</div>
+<div class="section" id="commit-to-local-repository">
+<h2>Commit to Local Repository<a class="headerlink" href="#commit-to-local-repository" title="Permalink to this headline">¶</a></h2>
+<p>Go to the repository root folder, and run <em>git add .</em></p>
+<p>Type <em>git status</em> and you can see from console output that there are changes to be committed and no untracked files. (If you run the above command in sub folder, then only the files under subfolders will be tracked)</p>
+<p>Run <em>git commit</em> command to commit the change to local repository, and you will encounter a vi look-like program to ask you provide the description for the up-comming commit. Type i and go into text edit mode; write down the description for the commit, like &#8216;First commit&#8217;; then press Esc and :wq to save and quit that vi look like program.</p>
+<p>If everything goes well, you will see that files are commit and <em>git status</em> will tell that nothing to commit, and working directory clean.</p>
+</div>
+<div class="section" id="commit-to-remote-repository">
+<h2>Commit to Remote Repository<a class="headerlink" href="#commit-to-remote-repository" title="Permalink to this headline">¶</a></h2>
 <p>In order to collaborate with other developers, you need to publish the repository to a remote repository or a center repository like GitHub.</p>
-<p>Now goto GitHub do the registration, create a repsitory on GitHub, and get the git URL of the repository.</p>
+<p>Now go to GitHub do the registration, create a repository on GitHub, and get the git URL of the repository.</p>
 <p>The URL looks like: <a class="reference external" href="https://github.com">https://github.com</a>/{username}/{repositoryname}.git</p>
 <p>Use the following command to &#8216;push&#8217; your local repository to the Github:</p>
-<p>git push &#8211;set-upstream <a class="reference external" href="https://github.com">https://github.com</a>/{username}/{repositoryname}.git master</p>
-<p>You will be asked to enter your Github user name and credential. After the &#8216;push&#8217; command suceeds, you can see the files appear on the Github repository.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git push --set-upstream https://github.com/<span class="o">{</span>username<span class="o">}</span>/<span class="o">{</span>repositoryname<span class="o">}</span>.git master
+</pre></div>
+</div>
+<p>You will be asked to enter your Github user name and credential. After the &#8216;push&#8217; command succeeds, you can see the files appear on the Github repository.</p>
 <p>Congratulations! You manage to use the basic git commands.</p>
-<p>Summary</p>
+</div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
 <p>Git commands are the best way to learn git, but it is not straight forward to understand and remember. Practice will help.</p>
 <p>There will be following blogs explain further how to use git well and the git fundamental.</p>
+</div>
 </div>
 
   <div class="section">

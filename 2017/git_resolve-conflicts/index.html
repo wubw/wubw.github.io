@@ -62,75 +62,106 @@
 <h1>2017/Git_Resolve Conflicts<a class="headerlink" href="#git-resolve-conflicts" title="Permalink to this headline">¶</a></h1>
 <p>Written by <a class="reference external" href="mailto:Binwei&#37;&#52;&#48;Oslo">Binwei<span>&#64;</span>Oslo</a></p>
 <p>Git provides various tools to resolve conflicts during the merge process, and in this blog we only discuss one of them gvimdiff in Windows Operating System.</p>
-<p>Software installation</p>
+<div class="section" id="software-installation">
+<h2>Software installation<a class="headerlink" href="#software-installation" title="Permalink to this headline">¶</a></h2>
 <p>gvimdiff needs Gvim installed, which is GUI Vi text editor and can be downloaded from:</p>
 <p><a class="reference external" href="http://www.vim.org/download.php">http://www.vim.org/download.php</a></p>
 <p>After the installation, please ensure the executable file path is included in PATH environment variable. You can test it in console by typing gvim to see whether you get the application invoked.</p>
-<p>Configure gvimdiff</p>
+</div>
+<div class="section" id="configure-gvimdiff">
+<h2>Configure gvimdiff<a class="headerlink" href="#configure-gvimdiff" title="Permalink to this headline">¶</a></h2>
 <p>In order to use gvimdiff, you need to configure it in git by following command</p>
-<p>git config merge.tool gvimdiff</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git config merge.tool gvimdiff
+</pre></div>
+</div>
 <p>gvimdiff is using gvim but it is a internal name in git terminology, it means there will be no executable found in your file system. Do not get surprised if your console cannot find gvimdiff.</p>
 <p>Use the following command to setup gvimdiff to have same diff view just like this post:</p>
-<p>git config merge.conflictstyle diff3</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git config merge.conflictstyle diff3
+</pre></div>
+</div>
 <p>If you are curious about other git merge options, you can check yourself:</p>
-<p>git mergetool &#8211;tool-help</p>
-<p>Make conflicts</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git mergetool --tool-help
+</pre></div>
+</div>
+</div>
+<div class="section" id="make-conflicts">
+<h2>Make conflicts<a class="headerlink" href="#make-conflicts" title="Permalink to this headline">¶</a></h2>
 <p>Initialize a new repository with a dummy.txt file, put the following content in the file and commit it to master branch:</p>
-<p>&#8220;Hello World&#8221;
-no changes
-no changes
-&#8220;Hello World again&#8221;</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">&quot;Hello World&quot;</span>
+<span class="go">no changes</span>
+<span class="go">no changes</span>
+<span class="go">&quot;Hello World again&quot;</span>
+</pre></div>
+</div>
 <p>Create develop branch by using following git command:</p>
-<p>git branch develop</p>
-<p>git checkout develop</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git branch develop
+git checkout develop
+</pre></div>
+</div>
 <p>Add the following modification in the first line and fourth line. And commit the change into develop branch.</p>
-<p>&#8220;Hello World - develop&#8221;
-no changes
-no changes
-&#8220;Hello World again - develop&#8221;</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">&quot;Hello World - develop&quot;</span>
+<span class="go">no changes</span>
+<span class="go">no changes</span>
+<span class="go">&quot;Hello World again - develop&quot;</span>
+</pre></div>
+</div>
 <p>And switch back to master branch, and add following changes.</p>
-<p>&#8220;Hello World - master&#8221;
-no changes
-no changes
-&#8220;Hello World again 2 - master&#8221;</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">&quot;Hello World - master&quot;</span>
+<span class="go">no changes</span>
+<span class="go">no changes</span>
+<span class="go">&quot;Hello World again 2 - master&quot;</span>
+</pre></div>
+</div>
 <p>As you can see, we have created conflicts between master/develop. The next step will be to resolve them during the merge process.</p>
-<p>Resolve conflicts</p>
+</div>
+<div class="section" id="resolve-conflicts">
+<h2>Resolve conflicts<a class="headerlink" href="#resolve-conflicts" title="Permalink to this headline">¶</a></h2>
 <p>Now, let&#8217;s switch back to develop and try to merge all the changes from master.</p>
-<p>git checkout develop</p>
-<p>git merge master</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git checkout develop
+git merge master
+</pre></div>
+</div>
 <p>Git will complain about conflicts, and you can see following error message in the console:</p>
-<p>git merge master
-Auto-merging dummy.txt
-CONFLICT (content): Merge conflict in dummy.txt
-Automatic merge failed; fix conflicts and then commit the result.</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">git merge master</span>
+<span class="go">Auto-merging dummy.txt</span>
+<span class="go">CONFLICT (content): Merge conflict in dummy.txt</span>
+<span class="go">Automatic merge failed; fix conflicts and then commit the result.</span>
+</pre></div>
+</div>
 <p>If you look into the current content of dummy.txt, you will find out it has been modified to contain the conflict data.</p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-&#8220;Hello World - develop&#8221;
-||||||| merged common ancestors
-&#8220;Hello World - develop&#8221;
-=======
-&#8220;Hello World - master&#8221;
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; master
-no changes
-no changes
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-&#8220;Hello World again&#8221;
-||||||| merged common ancestors
-&#8220;Hello World again&#8221;
-=======
-&#8220;Hello World again 2 - master&#8221;
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; master</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span>
+<span class="go">&quot;Hello World - develop&quot;</span>
+<span class="go">||||||| merged common ancestors</span>
+<span class="go">&quot;Hello World - develop&quot;</span>
+<span class="go">=======</span>
+<span class="go">&quot;Hello World - master&quot;</span>
+<span class="gp">&gt;</span>&gt;&gt;&gt;&gt;&gt;&gt; master
+<span class="go">no changes</span>
+<span class="go">no changes</span>
+<span class="go">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span>
+<span class="go">&quot;Hello World again&quot;</span>
+<span class="go">||||||| merged common ancestors</span>
+<span class="go">&quot;Hello World again&quot;</span>
+<span class="go">=======</span>
+<span class="go">&quot;Hello World again 2 - master&quot;</span>
+<span class="gp">&gt;</span>&gt;&gt;&gt;&gt;&gt;&gt; master
+</pre></div>
+</div>
 <p>On theory, you can resolve the conflicts by &#8216;clean up&#8217; the dummy.txt file directly to remove the git conflict syntax. I will not recommend that since it will be inefficient and error prone.</p>
 <p>We can use gvimdiff utility to resolve the conflict by using following command:</p>
-<p>git mergetool</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git mergetool
+</pre></div>
+</div>
 <p>And you will get the following gvim window</p>
-<p>gvimdiff</p>
+<img alt="../../_images/gvimdiff.png" src="../../_images/gvimdiff.png" />
 <p>For using mergetool in git, we need to understand the following terminology to understand what is being merged:</p>
-<p>LOCAL - the head for the file(s) from the current branch on the machine that you are using.
-REMOTE - the head for files(s) from a remote location that you are trying to merge into your LOCAL branch.
-BASE - the common ancestor(s) of LOCAL and BASE.
-MERGED - the tag / HEAD object after the merge - this is saved as a new commit.
-The above gvim window show as following style:</p>
+<ul class="simple">
+<li>LOCAL - the head for the file(s) from the current branch on the machine that you are using.</li>
+<li>REMOTE - the head for files(s) from a remote location that you are trying to merge into your LOCAL branch.</li>
+<li>BASE - the common ancestor(s) of LOCAL and BASE.</li>
+<li>MERGED - the tag / HEAD object after the merge - this is saved as a new commit.</li>
+</ul>
+<p>The above gvim window show as following style:</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="100%" />
@@ -142,22 +173,33 @@ The above gvim window show as following style:</p>
 </tr>
 </tbody>
 </table>
-<p>gvimdiff commands</p>
+</div>
+<div class="section" id="gvimdiff-commands">
+<h2>gvimdiff commands<a class="headerlink" href="#gvimdiff-commands" title="Permalink to this headline">¶</a></h2>
 <p>As you can see there are four sub-windows in the gvim, in order to switch between the sub-windows, you can use:</p>
-<p>Ctrl w + h   # move to the split on the left
-Ctrl w + j   # move to the split below
-Ctrl w + k   # move to the split on top
-Ctrl w + l   # move to the split on the right
-Or Ctrl + tab move to the next window</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>Ctrl w + h   <span class="c1"># move to the split on the left</span>
+Ctrl w + j   <span class="c1"># move to the split below</span>
+Ctrl w + k   <span class="c1"># move to the split on top</span>
+Ctrl w + l   <span class="c1"># move to the split on the right</span>
+Ctrl + tab   <span class="c1"># move to the next window</span>
+</pre></div>
+</div>
 <p>In order to go the previous/next difference, you can use:</p>
-<p>] + C</p>
-<p>[ + C</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="o">]</span> + C
+<span class="o">[</span> + C
+</pre></div>
+</div>
 <p>You can either incorporate the changes by manually editing the MERGED split, or use Vim shortcuts pull from one of the LOCAL, BASE ad REMOTE versions.</p>
-<p>:diffg RE # get from REMOTE
-:diffg BA # get from BASE
-:diffg LO # get from LOCAL</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>:diffg RE <span class="c1"># get from REMOTE</span>
+:diffg BA <span class="c1"># get from BASE</span>
+:diffg LO <span class="c1"># get from LOCAL</span>
+</pre></div>
+</div>
 <p>save the changes then quit with :wqa to close all the splits. Remember to commit the merge.</p>
-<p>git commit -am &#8216;merged from several branches&#8217;</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git commit -am <span class="s1">&#39;merged from several branches&#39;</span>
+</pre></div>
+</div>
+</div>
 </div>
 
   <div class="section">
