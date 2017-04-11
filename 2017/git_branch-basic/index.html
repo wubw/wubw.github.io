@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Git: Branch Basic &#8212; binwei  documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="../../about/" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+  
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  
+  <link rel="alternate" type="application/atom+xml"  href="../../blog/atom.xml" title="binwei Blog">
+  
+  
+  <link href="True" rel="stylesheet">
+  
+  <style type="text/css">
+    ul.ablog-archive {list-style: none; overflow: auto; margin-left: 0px}
+    ul.ablog-archive li {float: left; margin-right: 5px; font-size: 80%}
+    ul.postlist a {font-style: italic;}
+    ul.postlist-style-disc {list-style-type: disc;}
+    ul.postlist-style-none {list-style-type: none;}
+    ul.postlist-style-circle {list-style-type: circle;}
+  </style>
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="git-branch-basic">
+<h1>Git: Branch Basic<a class="headerlink" href="#git-branch-basic" title="Permalink to this headline">¶</a></h1>
+<p>Written by <a class="reference external" href="mailto:Binwei&#37;&#52;&#48;Oslo">Binwei<span>&#64;</span>Oslo</a></p>
+<p>One of the biggest advantage of Git is branching. Git is very strong at handling branches, no matter on functionality or on efficiency. Let&#8217;s try out the Git branch commands.</p>
+<p>Create Branch</p>
+<p>git branch f1</p>
+<p>The command will create a new branch called f1. Compared to &#8216;classical&#8217; version control system, git will not create a separate folder for new branch. All the branches &#8216;share&#8217; the same folder on your file system.</p>
+<p>git checkout f1</p>
+<p>git checkout command will switch from current branch to f1 branch. f1 becomes your current branch, your followings changes will happen on f1. HEAD is the &#8216;pointer&#8217; which point to the current commit, which also indicates what is the current branch.</p>
+<p>When you switch a branch, the data in repository does not change. It is the HEAD switch to the different commit. And also copy the files from repository to index, working area.</p>
+<p>If you are confused about the term: commit, index, and working area, please check my previous blogs:</p>
+<p>Git: Getting Started</p>
+<p>Git: Areas</p>
+<p>git checkout -b f2</p>
+<p>The above command will quickly create a new branch f2 and switch to this new branch.</p>
+<p>Visualisation of History</p>
+<p>In order to have a clear picture of the current repository, the branching situation, and what is the current branch status, you can simply use the following command:</p>
+<p>git log &#8211;oneline &#8211;all &#8211;decorate &#8211;graph</p>
+<p>You will see console output like following:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="mi">660</span><span class="n">caea</span> <span class="p">(</span><span class="n">HEAD</span> <span class="o">-&gt;</span> <span class="n">feature2</span><span class="p">)</span> <span class="n">f2</span>
+
+<span class="o">|</span> <span class="o">*</span> <span class="mf">90e5174</span> <span class="p">(</span><span class="n">feature4</span><span class="p">,</span> <span class="n">feature3</span><span class="p">)</span> <span class="n">feature</span> <span class="mi">3</span> <span class="n">changes</span>
+
+<span class="o">|/</span>
+
+<span class="o">|</span> <span class="o">*</span> <span class="n">cf54ec8</span> <span class="p">(</span><span class="n">feature1</span><span class="p">)</span> <span class="n">modification</span> <span class="kn">from</span> <span class="nn">feature1</span>
+
+<span class="o">|</span> <span class="o">|</span> <span class="o">*</span>   <span class="n">a51f214</span> <span class="p">(</span><span class="n">master</span><span class="p">)</span> <span class="n">Merge</span> <span class="n">branch</span> <span class="s1">&#39;feature2&#39;</span>
+
+<span class="o">|</span> <span class="o">|</span> <span class="o">|</span>\
+
+<span class="o">|</span> <span class="o">|/</span> <span class="o">/</span>
+
+<span class="o">|</span> <span class="o">|</span> <span class="o">/</span>
+
+<span class="o">|</span> <span class="o">|/</span>
+
+<span class="o">|/|</span>
+
+<span class="o">*</span> <span class="o">|</span> <span class="n">bb32dd5</span> <span class="n">commit</span> <span class="n">feature2</span>
+
+<span class="o">|</span> <span class="o">*</span> <span class="mi">0</span><span class="n">ac3396</span> <span class="n">commit</span> <span class="n">feature1</span>
+
+<span class="o">|</span> <span class="o">*</span> <span class="mi">3</span><span class="n">fb48f2</span> <span class="n">feature1</span> <span class="n">first</span> <span class="n">commit</span>
+
+<span class="o">|/</span>
+
+<span class="o">*</span> <span class="n">d3033b2</span> <span class="n">Add</span> <span class="n">more</span> <span class="n">file</span> <span class="ow">and</span> <span class="n">change</span> <span class="n">main</span><span class="o">.</span><span class="n">txt</span>
+
+<span class="o">*</span> <span class="mi">6</span><span class="n">b07c39</span> <span class="n">First</span> <span class="n">commit</span>
+</pre></div>
+</div>
+<p>The numbers are the short version hash for commits. For simplicity, you can regard these numbers as commit id now. From the output, you can see how many branches are in current repository and their relationship. The commit HEAD point to means the current branch.</p>
+<p>The above command is cumbersome to type, you can use git alias in stead.</p>
+<p>git config &#8211;global alias.loadg &#8216;log &#8211;oneline &#8211;all &#8211;decorate &#8211;graph&#8217;</p>
+<p>It will create an alias &#8216;loadg&#8217; for the long parameters. Then you can simply type to get the history graph:</p>
+<p>git loadg</p>
+<p>The alias data will be added into ~/.gitconfig in following format. You can also add the alias manually in this file.</p>
+<p>[alias]</p>
+<p>loadg = log &#8211;oneline &#8211;all &#8211;decorate &#8211;graph</p>
+<blockquote>
+<div>With this command, you can see the graph and understand repository branching situation easily.</div></blockquote>
+<p>Other Basic Commands</p>
+<p>Branch can also be created from the hash number.</p>
+<p>git branch f3 66ocaea</p>
+<p>This command will create a new branch f3 based on the commit which has hash number 66ocaea.</p>
+<p>git branch -m f3 f4</p>
+<p>The command will rename branch f3 to f4.</p>
+<p>git branch -d f4</p>
+<p>The command will delete the branch f4.</p>
+<p>git diff f2 f3</p>
+<p>This command shows the difference between two branches.</p>
+<p>Summary</p>
+<p>This blog only covers the basic branch commands, e.g. create a new branch, modify the branch, view the branch status. Still not touch the real power of git branch.</p>
+<p>In next blog, I will show how to do the merge, rebase and other advance branch commands.</p>
+</div>
+
+  <div class="section">
+  
+    
+
+
+<div class="section">
+  <span style="float: left;">
+  
+  
+  <a href="../git_areas/">
+    <i class="fa fa-arrow-circle-left"></i>
+    Git: Areas
+  </a>
+  
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right;">
+  
+  
+  <a href="../git_branch-continued/">
+    Git: Branch Continue
+    <i class="fa fa-arrow-circle-right"></i>
+  </a>
+  </span>
+  
+</div>
+
+  
+  
+  </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../">binwei</a></h1>
+
+
+
+
+
+
+
+
+
+  
+  
+  <h2>
+  
+  <i class="fa fa-calendar"></i>
+    Jan 18, 2017
+  
+  </h2>
+
+  <ul>
+    
+
+  
+
+  
+
+  
+
+  
+  <li><i class="fa-fw fa fa-folder-open"></i>
+    
+      
+      <a href="../../blog/category/computerscience/">ComputerScience</a>
+      
+    </li>
+  
+
+  
+  <li><i class="fa-fw fa fa-tag"></i>
+    
+      
+      <a href="../../blog/tag/git/">git</a>
+      
+    </li>
+  
+  
+  </ul>
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../about/">About binwei</a></li>
+</ul>
+
+
+  <h3><a href="../../blog/">Recent Posts</a></h3>
+  <ul>
+    
+    
+      <li><a href="../git_resolve-conflicts/">Apr 09 - 2017/Git_Resolve Conflicts</a></li>
+    
+      <li><a href="../vi_configuration-example/">Apr 08 - Vi: Configuration Example</a></li>
+    
+      <li><a href="../git_branch-continued/">Jan 30 - Git: Branch Continue</a></li>
+    
+      <li><a href="../git_areas/">Jan 14 - Git: Areas</a></li>
+    
+      <li><a href="../git_getting-started/">Jan 11 - Git: Getting Started</a></li>
+    
+  </ul>
+
+  <h3><a href="../../blog/tag/">Tags</a></h3>
+  <style type="text/css">
+    ul.ablog-cloud {list-style: none; overflow: auto;}
+    ul.ablog-cloud li {float: left; height: 20pt; line-height: 18pt; margin-right: 5px;}
+    ul.ablog-cloud a {text-decoration: none; vertical-align: middle;}
+    li.ablog-cloud-1{font-size: 80%;}
+    li.ablog-cloud-2{font-size: 95%;}
+    li.ablog-cloud-3{font-size: 110%;}
+    li.ablog-cloud-4{font-size: 125%;}
+    li.ablog-cloud-5{font-size: 140%;}
+  </style>
+  <ul class="ablog-cloud">
+    
+      
+      <li class="ablog-cloud ablog-cloud-5">
+        <a href="../../blog/tag/git/">git</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/vi/">vi</a></li>
+      
+    
+  </ul>
+
+  <h3><a href="../../blog/category/">Categories</a></h3>
+  <ul>
+  
+    
+    <li><a href="../../blog/category/computerscience/">ComputerScience (6)</a></li>
+    
+  
+  </ul>
+
+  <h3><a href="../../blog/archive/">Archives</a></h3>
+  <ul>
+  
+    
+    <li><a href="../../blog/2017/">2017 (6)</a></li>
+    
+  
+  </ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search/" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, binwei.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../../_sources/2017/git_branch-basic.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
