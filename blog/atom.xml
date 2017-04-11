@@ -7,7 +7,7 @@
   <link href="True/blog/atom.xml" rel="self" />
   <generator uri="http://ablog.readthedocs.org" version="0.8.4">ABlog</generator>
   <entry xml:base="True/blog/atom.xml">
-    <title type="text">2017/Git_Resolve Conflicts</title>
+    <title type="text">Git: Resolve Conflicts</title>
     <id>True/2017/git_resolve-conflicts/</id>
     <updated>2017-04-09T00:00:00Z</updated>
     <published>2017-04-09T00:00:00Z</published>
