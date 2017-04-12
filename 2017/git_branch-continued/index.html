@@ -59,10 +59,22 @@
           <div class="body" role="main">
             
   <div class="section" id="git-branch-continue">
-<h1>Git: Branch Continue<a class="headerlink" href="#git-branch-continue" title="Permalink to this headline">¶</a></h1>
+<h1><a class="toc-backref" href="#id1">Git: Branch Continue</a><a class="headerlink" href="#git-branch-continue" title="Permalink to this headline">¶</a></h1>
 <p>This blog will cover the Git commands which to transfer the changes between branches. If you are not familiar with the basic Git branch commands, you can have a look of my previous blog: <a class="reference internal" href="../git_branch-basic/#git_branch-basic"><span class="std std-ref">Git: Branch Basic</span></a></p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#git-branch-continue" id="id1">Git: Branch Continue</a><ul>
+<li><a class="reference internal" href="#merge-branch" id="id2">Merge Branch</a></li>
+<li><a class="reference internal" href="#rebase-branch" id="id3">Rebase Branch</a></li>
+<li><a class="reference internal" href="#cherry-pick" id="id4">Cherry Pick</a></li>
+<li><a class="reference internal" href="#summary" id="id5">Summary</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <div class="section" id="merge-branch">
-<h2>Merge Branch<a class="headerlink" href="#merge-branch" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Merge Branch</a><a class="headerlink" href="#merge-branch" title="Permalink to this headline">¶</a></h2>
 <p>When you have two or more branches, you need to integrate some changes from one branch to another.</p>
 <div class="highlight-bash"><div class="highlight"><pre><span></span>git merge f1
 </pre></div>
@@ -83,7 +95,7 @@
 <p>You can use text editor tool to resolve the conflict manually or you can use <em>git mergetool</em> to resolve the conflict.</p>
 </div>
 <div class="section" id="rebase-branch">
-<h2>Rebase Branch<a class="headerlink" href="#rebase-branch" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Rebase Branch</a><a class="headerlink" href="#rebase-branch" title="Permalink to this headline">¶</a></h2>
 <p>In most cases, git branch is created based on an existing branch by using <em>git branch</em> command. Then the newly created branch has relationship with the existing branch. If we want to change the relationship, e.g. let the current branch base on another branch, then you need to use the rebase command.</p>
 <div class="highlight-bash"><div class="highlight"><pre><span></span>git rebase f2
 </pre></div>
@@ -91,7 +103,7 @@
 <p>This command will rebase your current branch on branch f2.</p>
 </div>
 <div class="section" id="cherry-pick">
-<h2>Cherry Pick<a class="headerlink" href="#cherry-pick" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Cherry Pick</a><a class="headerlink" href="#cherry-pick" title="Permalink to this headline">¶</a></h2>
 <p>Sometimes, if you only want to integrate one specific commit from one branch into current branch, then you can use cherry pick command.</p>
 <div class="highlight-bash"><div class="highlight"><pre><span></span>git cherry-pick 0ac3396
 </pre></div>
@@ -100,7 +112,7 @@
 <p>If you call merge/rebase command after cherry pick, git will understand the changes and will not re-apply the unnecessary changes.</p>
 </div>
 <div class="section" id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">Summary</a><a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
 <p>Merge/Rebase/Cherry Pick are three basic commands to transfer changes from one branch to another.</p>
 <p>In order to use git branch in a correct way, you need to understand the good practice of using git flow. There is a good blog explains the <a class="reference external" href="http://nvie.com/posts/a-successful-git-branching-model/">git flow</a>.</p>
 <p><em>Written by Binwei&#64;Oslo</em></p>
@@ -214,6 +226,8 @@
   <ul>
     
     
+      <li><a href="../setup-blog_using-sphinx-ablog/">Apr 12 - Setup Blog: Using Sphinx and Ablog</a></li>
+    
       <li><a href="../git_resolve-conflicts/">Apr 09 - Git: Resolve Conflicts</a></li>
     
       <li><a href="../vi_configuration-example/">Apr 08 - Vi: Configuration Example</a></li>
@@ -221,8 +235,6 @@
       <li><a href="../git_branch-basic/">Jan 18 - Git: Branch Basic</a></li>
     
       <li><a href="../git_areas/">Jan 14 - Git: Areas</a></li>
-    
-      <li><a href="../git_getting-started/">Jan 11 - Git: Getting Started</a></li>
     
   </ul>
 
@@ -240,8 +252,18 @@
   <ul class="ablog-cloud">
     
       
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/blog/">blog</a></li>
+      
+    
+      
       <li class="ablog-cloud ablog-cloud-5">
         <a href="../../blog/tag/git/">git</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/opensource/">opensource</a></li>
       
     
       
@@ -255,7 +277,7 @@
   <ul>
   
     
-    <li><a href="../../blog/category/computerscience/">ComputerScience (6)</a></li>
+    <li><a href="../../blog/category/computerscience/">ComputerScience (7)</a></li>
     
   
   </ul>
@@ -264,7 +286,7 @@
   <ul>
   
     
-    <li><a href="../../blog/2017/">2017 (6)</a></li>
+    <li><a href="../../blog/2017/">2017 (7)</a></li>
     
   
   </ul>
