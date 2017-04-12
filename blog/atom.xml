@@ -15,7 +15,7 @@
     <author>
       <name></name>
     </author>
-    <content type="html">&lt;p&gt;Written by &lt;a class=&quot;reference external&quot; href=&quot;mailto:Binwei&amp;#37;&amp;#52;&amp;#48;Oslo&quot;&gt;Binwei&lt;span&gt;&amp;#64;&lt;/span&gt;Oslo&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;Git provides various tools to resolve conflicts during the merge process, and in this blog we only discuss one of them gvimdiff in Windows Operating System.&lt;/p&gt;
 </content>
   </entry>
   <entry xml:base="True/blog/atom.xml">
@@ -27,7 +27,8 @@
     <author>
       <name></name>
     </author>
-    <content type="html">&lt;p&gt;Written by &lt;a class=&quot;reference external&quot; href=&quot;mailto:Binwei&amp;#37;&amp;#52;&amp;#48;Oslo&quot;&gt;Binwei&lt;span&gt;&amp;#64;&lt;/span&gt;Oslo&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;Among various text editors, I like Vi a lot. It help me a lot if I work on various operating systems and different environment since Vi is installed by default on most operating systems.
+There is GUI Vi tool available on Windows called Gvim, which can be downloaded from here: &lt;a class=&quot;reference external&quot; href=&quot;http://www.vim.org/download.php&quot;&gt;http://www.vim.org/download.php&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   <entry xml:base="True/blog/atom.xml">
@@ -39,7 +40,7 @@
     <author>
       <name></name>
     </author>
-    <content type="html">&lt;p&gt;Written by &lt;a class=&quot;reference external&quot; href=&quot;mailto:Binwei&amp;#37;&amp;#52;&amp;#48;Oslo&quot;&gt;Binwei&lt;span&gt;&amp;#64;&lt;/span&gt;Oslo&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;This blog will cover the Git commands which to transfer the changes between branches. If you are not familiar with the basic Git branch commands, you can have a look of my previous blog: &lt;a class=&quot;reference internal&quot; href=&quot;../2017/git_branch-basic/#git_branch-basic&quot;&gt;&lt;span class=&quot;std std-ref&quot;&gt;Git: Branch Basic&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   <entry xml:base="True/blog/atom.xml">
@@ -51,7 +52,7 @@
     <author>
       <name></name>
     </author>
-    <content type="html">&lt;p&gt;Written by &lt;a class=&quot;reference external&quot; href=&quot;mailto:Binwei&amp;#37;&amp;#52;&amp;#48;Oslo&quot;&gt;Binwei&lt;span&gt;&amp;#64;&lt;/span&gt;Oslo&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;One of the biggest advantage of Git is branching. Git is very strong at handling branches, no matter on functionality or on efficiency. Let&amp;#8217;s try out the Git branch commands.&lt;/p&gt;
 </content>
   </entry>
   <entry xml:base="True/blog/atom.xml">
@@ -63,7 +64,7 @@
     <author>
       <name></name>
     </author>
-    <content type="html">&lt;p&gt;Written by &lt;a class=&quot;reference external&quot; href=&quot;mailto:Binwei&amp;#37;&amp;#52;&amp;#48;Oslo&quot;&gt;Binwei&lt;span&gt;&amp;#64;&lt;/span&gt;Oslo&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;Git has four areas:&lt;/p&gt;
 </content>
   </entry>
   <entry xml:base="True/blog/atom.xml">
@@ -75,7 +76,8 @@
     <author>
       <name></name>
     </author>
-    <content type="html">&lt;p&gt;Written by &lt;a class=&quot;reference external&quot; href=&quot;mailto:Binwei&amp;#37;&amp;#52;&amp;#48;Oslo&quot;&gt;Binwei&lt;span&gt;&amp;#64;&lt;/span&gt;Oslo&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;Git is an open source distributed version control system, which plays important role in current software ecosystem.
+You may find many GUI Git tools like SourceTree, Github Desktop, TortoiseGit etc, however the best way to learn Git is to deep dive into the Git commands and understand the fundamental. Let&amp;#8217;s start the &amp;#8216;Git journey&amp;#8217; by using the basic commands.&lt;/p&gt;
 </content>
   </entry>
 </feed>
