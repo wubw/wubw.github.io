@@ -86,7 +86,9 @@ This blog post will teach you how to setup your personal blog by using open sour
 <li><a class="reference internal" href="#notes" id="id13">Notes</a><ul>
 <li><a class="reference internal" href="#ablog-build-error" id="id14">ablog build error</a></li>
 <li><a class="reference internal" href="#ablog-deploy-error" id="id15">ablog deploy error</a></li>
-<li><a class="reference internal" href="#useful-links" id="id16">Useful links</a></li>
+<li><a class="reference internal" href="#chinese-blog-issue" id="id16">Chinese blog issue</a></li>
+<li><a class="reference internal" href="#enhance-the-blog" id="id17">Enhance the blog</a></li>
+<li><a class="reference internal" href="#useful-links" id="id18">Useful links</a></li>
 </ul>
 </li>
 </ul>
@@ -210,8 +212,23 @@ I encounter some deployment challenges in my Windows operating system, will expl
 <p>When I run <em>ablog deploy</em> on Windows 10, it fails due to some mysterious errors. But when I run the same command on Mac and Ubuntu, I manage to deploy the blog to the target repository.</p>
 <p>Currently, I cannot figure out what is the root course of the error. Then the workaround is to deploy from Mac or Ubuntu, or setup some virtual machines?</p>
 </div>
+<div class="section" id="chinese-blog-issue">
+<h3><a class="toc-backref" href="#id16">Chinese blog issue</a><a class="headerlink" href="#chinese-blog-issue" title="Permalink to this headline">¶</a></h3>
+<p>When my blog contains Chinese characters, I encounter mysterious errors in atom feed generation.
+After some investigation, the error disappears if excerpt does not contain Chinese characters.</p>
+</div>
+<div class="section" id="enhance-the-blog">
+<h3><a class="toc-backref" href="#id17">Enhance the blog</a><a class="headerlink" href="#enhance-the-blog" title="Permalink to this headline">¶</a></h3>
+<p>You can enhance/customize your blog, e.g. support discussion by using Disqus, monitoring usage by using Google Analytics.
+See:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://ablog.readthedocs.io/manual/ablog-configuration-options/?highlight=disqu">http://ablog.readthedocs.io/manual/ablog-configuration-options/?highlight=disqu</a></li>
+<li><a class="reference external" href="http://alabaster.readthedocs.io/en/latest/customization.html#theme-options">http://alabaster.readthedocs.io/en/latest/customization.html#theme-options</a></li>
+</ul>
+<img alt="../../_images/googleanalytics.png" src="../../_images/googleanalytics.png" />
+</div>
 <div class="section" id="useful-links">
-<h3><a class="toc-backref" href="#id16">Useful links</a><a class="headerlink" href="#useful-links" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id18">Useful links</a><a class="headerlink" href="#useful-links" title="Permalink to this headline">¶</a></h3>
 <p>The following links are quite useful to use Sphinx and customize it:</p>
 <p>Cheat sheet of Sphinx:</p>
 <p><a class="reference external" href="https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html">https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html</a></p>
@@ -422,6 +439,8 @@ I encounter some deployment challenges in my Windows operating system, will expl
       
       <li class="ablog-cloud ablog-cloud-1">
         <a href="../../blog/tag/opensource/">opensource</a></li>
+      
+    
       
     
       
