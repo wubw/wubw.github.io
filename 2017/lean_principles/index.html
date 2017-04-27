@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Git: Branch Continue &#8212; binwei  documentation</title>
+    <title>Lean: Principles &#8212; binwei  documentation</title>
     
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -58,63 +58,67 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="git-branch-continue">
-<h1><a class="toc-backref" href="#id1">Git: Branch Continue</a><a class="headerlink" href="#git-branch-continue" title="Permalink to this headline">¶</a></h1>
-<p>This blog will cover the Git commands which to transfer the changes between branches. If you are not familiar with the basic Git branch commands, you can have a look of my previous blog: <a class="reference internal" href="../git_branch-basic/#git_branch-basic"><span class="std std-ref">Git: Branch Basic</span></a></p>
+  <div class="section" id="lean-principles">
+<h1><a class="toc-backref" href="#id1">Lean: Principles</a><a class="headerlink" href="#lean-principles" title="Permalink to this headline">¶</a></h1>
+<p>The core idea of Lean is to maximize customer value while minimizing waste. A lean organization understands customer value and focuses its key processes to continuously increase it.</p>
+<p>To accomplish this, lean thinking changes the focus of management from optimizing separate technologies, assets, and vertical departments to optimizing the flow of products and services through entire value streams that flow horizontally across technologies, assets, and departments to customers.</p>
+<p>There are 5 principles in Lean.</p>
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#git-branch-continue" id="id1">Git: Branch Continue</a><ul>
-<li><a class="reference internal" href="#merge-branch" id="id2">Merge Branch</a></li>
-<li><a class="reference internal" href="#rebase-branch" id="id3">Rebase Branch</a></li>
-<li><a class="reference internal" href="#cherry-pick" id="id4">Cherry Pick</a></li>
-<li><a class="reference internal" href="#summary" id="id5">Summary</a></li>
+<li><a class="reference internal" href="#lean-principles" id="id1">Lean: Principles</a><ul>
+<li><a class="reference internal" href="#identify-value" id="id2">Identify value</a></li>
+<li><a class="reference internal" href="#map-the-value-stream" id="id3">Map the value stream</a></li>
+<li><a class="reference internal" href="#create-flow" id="id4">Create flow</a></li>
+<li><a class="reference internal" href="#establish-pull" id="id5">Establish pull</a></li>
+<li><a class="reference internal" href="#seak-perfection" id="id6">Seak perfection</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<div class="section" id="merge-branch">
-<h2><a class="toc-backref" href="#id2">Merge Branch</a><a class="headerlink" href="#merge-branch" title="Permalink to this headline">¶</a></h2>
-<p>When you have two or more branches, you need to integrate some changes from one branch to another.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>git merge f1
-</pre></div>
+<div class="section" id="identify-value">
+<h2><a class="toc-backref" href="#id2">Identify value</a><a class="headerlink" href="#identify-value" title="Permalink to this headline">¶</a></h2>
+<p><em>Value adding activities:</em>
+We need to maximize the investment on value-adding activities.</p>
+<p><em>Non-value adding activities:</em>
+Some activities do not create value but is still necessary, e.g. admin meetings. We need to be careful about the time spent on these activities.</p>
+<p><em>Waste:</em>
+Waste does not create value for a customer, e.g. Partially Done Work, Extra Processes, Extra Features, Task Switching, Waiting, Motion, Defects. Waste needs to be eliminated.</p>
+<p>Mainly, the root cause of waste can be categorized into followings:</p>
+<ul class="simple">
+<li>Lack of understanding customers</li>
+<li>Lack of standard procedure and system</li>
+<li>Lack of communication and control</li>
+<li>Lack of responsibility and competence</li>
+</ul>
 </div>
-<p>Git merge command will try to integrate all the changes from branch f1 into the current branch (HEAD points to). After run this command, you can check the status by <em>git status</em> and use <em>git add/commit</em> to check-in the changes.</p>
-<p>If f1 and current branch have changes on same files, conflict will happen in the <em>git merge</em> command. Git will present the conflicts directly in the files, see following example:</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span>
-
-<span class="go">current change</span>
-
-<span class="go">=======</span>
-
-<span class="go">greeting from f1</span>
-
-<span class="gp">&gt;</span>&gt;&gt;&gt;&gt;&gt;&gt; f1
-</pre></div>
+<div class="section" id="map-the-value-stream">
+<h2><a class="toc-backref" href="#id3">Map the value stream</a><a class="headerlink" href="#map-the-value-stream" title="Permalink to this headline">¶</a></h2>
+<p>Mapping your value stream is a good way to start discovering the waste in your software development process. Value stream is a series of activities that must be done in a certain order at the right time to deliver a service.</p>
+<p>Your Value stream map is a representation of the flow of materials from supplier to customer through your organization as well as the flow of information. This enables you to see at a glance where the delays are in your process, any restraints and excessive inventory.</p>
+<p>Your current state map is the first step in working towards your ideal state for your organization.</p>
+<p>Value streaming mapping will be explained in my later blog.</p>
 </div>
-<p>You can use text editor tool to resolve the conflict manually or you can use <em>git mergetool</em> to resolve the conflict.</p>
+<div class="section" id="create-flow">
+<h2><a class="toc-backref" href="#id4">Create flow</a><a class="headerlink" href="#create-flow" title="Permalink to this headline">¶</a></h2>
+<p>After the waste has been removed from the value stream, the next step is to be sure the remaining steps flow smoothly with no interruptions, delays, or bottlenecks.</p>
 </div>
-<div class="section" id="rebase-branch">
-<h2><a class="toc-backref" href="#id3">Rebase Branch</a><a class="headerlink" href="#rebase-branch" title="Permalink to this headline">¶</a></h2>
-<p>In most cases, git branch is created based on an existing branch by using <em>git branch</em> command. Then the newly created branch has relationship with the existing branch. If we want to change the relationship, e.g. let the current branch base on another branch, then you need to use the rebase command.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>git rebase f2
-</pre></div>
+<div class="section" id="establish-pull">
+<h2><a class="toc-backref" href="#id5">Establish pull</a><a class="headerlink" href="#establish-pull" title="Permalink to this headline">¶</a></h2>
+<p>With improved flow, time to market (or time to customer) can be dramatically improved.
+This makes it much easier to deliver products as needed, as in “just in time” manufacturing or delivery.
+This means the customer can “pull” the product from you as needed.</p>
+<p>Let customers&#8217; needs pull the work rather than have a schedule push the work</p>
+<p>Quite often, production workers were blamed for not doing exactly what was scheduled, but that was hardly the problem.
+The problem was that when even the smallest glitch arose, the schedule became invalid, and from then on, following the schedule just made things worse.
+Just-in-time changed all of this by bringing the concept of pull scheduling to manufacturing.
+Pull systems use a mechanism called Kanban, which was originally patterned after restocking grocery store shelves</p>
 </div>
-<p>This command will rebase your current branch on branch f2.</p>
-</div>
-<div class="section" id="cherry-pick">
-<h2><a class="toc-backref" href="#id4">Cherry Pick</a><a class="headerlink" href="#cherry-pick" title="Permalink to this headline">¶</a></h2>
-<p>Sometimes, if you only want to integrate one specific commit from one branch into current branch, then you can use cherry pick command.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>git cherry-pick 0ac3396
-</pre></div>
-</div>
-<p>The above command will integrate the specific commit: 0ac3396 into the current branch.</p>
-<p>If you call merge/rebase command after cherry pick, git will understand the changes and will not re-apply the unnecessary changes.</p>
-</div>
-<div class="section" id="summary">
-<h2><a class="toc-backref" href="#id5">Summary</a><a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
-<p>Merge/Rebase/Cherry Pick are three basic commands to transfer changes from one branch to another.</p>
-<p>In order to use git branch in a correct way, you need to understand the good practice of using git flow. There is a good blog explains the <a class="reference external" href="http://nvie.com/posts/a-successful-git-branching-model/">git flow</a>.</p>
+<div class="section" id="seak-perfection">
+<h2><a class="toc-backref" href="#id6">Seak perfection</a><a class="headerlink" href="#seak-perfection" title="Permalink to this headline">¶</a></h2>
+<p>Making lean thinking and process improvement part of your corporate culture.
+As gains continue to pile up, it is important to remember lean is not a static system and requires constant effort and vigilance to perfect.</p>
+<p>At the same time, be careful that do not let perfection to be the enemy of good!</p>
 <p><em>Written by Binwei&#64;Oslo</em></p>
 </div>
 </div>
@@ -128,21 +132,14 @@
   <span style="float: left;">
   
   
-  <a href="../git_branch-basic/">
+  <a href="../telemetry_overview/">
     <i class="fa fa-arrow-circle-left"></i>
-    Git: Branch Basic
+    Telemetry: Overview
   </a>
   
   </span>
   <span>&nbsp;</span>
   <span style="float: right;">
-  
-  
-  <a href="../vi_configuration-example/">
-    Vi: Configuration Example
-    <i class="fa fa-arrow-circle-right"></i>
-  </a>
-  </span>
   
 </div>
 
@@ -153,9 +150,9 @@
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         var disqus_shortname = 'wubw-github-io';
-        var disqus_identifier = '/2017/git_branch-continued/';
-        var disqus_title = 'Git: Branch Continue';
-        var disqus_url = 'https://wubw.github.io/2017/git_branch-continued';
+        var disqus_identifier = '/2017/lean_principles/';
+        var disqus_title = 'Lean: Principles';
+        var disqus_url = 'https://wubw.github.io/2017/lean_principles';
 
         (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -201,7 +198,7 @@
   <h2>
   
   <i class="fa fa-calendar"></i>
-    Jan 30, 2017
+    Apr 27, 2017
   
   </h2>
 
@@ -218,16 +215,21 @@
   <li><i class="fa-fw fa fa-folder-open"></i>
     
       
-      <a href="../../blog/category/computerscience/">ComputerScience</a>
+      <a href="../../blog/category/management/">Management</a>
       
     </li>
   
 
   
-  <li><i class="fa-fw fa fa-tag"></i>
+  <li><i class="fa-fw fa fa-tags"></i>
+      
     
       
-      <a href="../../blog/tag/git/">git</a>
+      <a href="../../blog/tag/lean/">lean</a>,
+      
+    
+      
+      <a href="../../blog/tag/process/">process</a>
       
     </li>
   
@@ -246,7 +248,7 @@
     }());
     </script>
     <i class="fa-fw fa fa-comments"></i>
-    <a href="#disqus_thread" data-disqus-identifier="/2017/git_branch-continued/"> </a>
+    <a href="#disqus_thread" data-disqus-identifier="/2017/lean_principles/"> </a>
   </li>
   
   </ul>
@@ -262,8 +264,6 @@
   <ul>
     
     
-      <li><a href="../lean_principles/">Apr 27 - Lean: Principles</a></li>
-    
       <li><a href="../telemetry_overview/">Apr 20 - Telemetry: Overview</a></li>
     
       <li><a href="../technology_to_learn_next/">Apr 18 - Technology to Learn Next</a></li>
@@ -271,6 +271,8 @@
       <li><a href="../how_to_read_books/">Apr 16 - How to Read Books</a></li>
     
       <li><a href="../book-cai_gen_tan/">Apr 14 - Book Notes: Cai Gen Tan</a></li>
+    
+      <li><a href="../setup-blog_using-sphinx-ablog/">Apr 12 - Setup Blog: Using Sphinx and Ablog</a></li>
     
   </ul>
 
@@ -392,7 +394,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
       
       |
-      <a href="../../_sources/2017/git_branch-continued.rst.txt"
+      <a href="../../_sources/2017/lean_principles.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 
