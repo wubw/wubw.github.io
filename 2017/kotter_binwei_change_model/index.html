@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Git: Getting Started &#8212; binwei  documentation</title>
+    <title>Kotter-Binwei Change Model &#8212; binwei  documentation</title>
     
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -58,95 +58,49 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="git-getting-started">
-<h1><a class="toc-backref" href="#id1">Git: Getting Started</a><a class="headerlink" href="#git-getting-started" title="Permalink to this headline">¶</a></h1>
-<p>Git is an open source distributed version control system, which plays important role in current software ecosystem.
-You may find many GUI Git tools like SourceTree, Github Desktop, TortoiseGit etc, however the best way to learn Git is to deep dive into the Git commands and understand the fundamental. Let&#8217;s start the &#8216;Git journey&#8217; by using the basic commands.</p>
-<div class="contents topic" id="contents">
-<p class="topic-title first">Contents</p>
+  <div class="section" id="kotter-binwei-change-model">
+<h1>Kotter-Binwei Change Model<a class="headerlink" href="#kotter-binwei-change-model" title="Permalink to this headline">¶</a></h1>
+<p>&#8220;Change is the only constant.&#8221;
+– Heraclitus, Greek philosopher.
+Kotter 8-step change model will help you to implement changes powerfully and successfully.
+In addition, Binwei adds 2 more steps to help you figure out whether you are doing the right changes.
+To implement right changes is even more important in the current changing world.</p>
+</div>
+<div class="section" id="kotter-8-step-change-model">
+<h1>Kotter 8-step change model<a class="headerlink" href="#kotter-8-step-change-model" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><a class="reference internal" href="#git-getting-started" id="id1">Git: Getting Started</a><ul>
-<li><a class="reference internal" href="#install-git" id="id2">Install Git</a></li>
-<li><a class="reference internal" href="#initialize-repository" id="id3">Initialize Repository</a></li>
-<li><a class="reference internal" href="#check-status" id="id4">Check Status</a></li>
-<li><a class="reference internal" href="#add-files" id="id5">Add Files</a></li>
-<li><a class="reference internal" href="#commit-to-local-repository" id="id6">Commit to Local Repository</a></li>
-<li><a class="reference internal" href="#commit-to-remote-repository" id="id7">Commit to Remote Repository</a></li>
-<li><a class="reference internal" href="#summary" id="id8">Summary</a></li>
+<li>Step 1: Create Urgency</li>
+<li>Step 2: Form a Powerful Coalition</li>
+<li>Step 3: Create a Vision for Change</li>
+<li>Step 4: Communicate the Vision</li>
+<li>Step 5: Remove Obstacles</li>
+<li>Step 6: Create Short-term Wins</li>
+<li>Step 7: Build on the Change</li>
+<li>Step 8: Anchor the Changes in Corporate Culture</li>
 </ul>
-</li>
-</ul>
+<p>The above 8 steps will help you to implement the changes in the corporation. You can find a lot of content from internet.</p>
 </div>
-<div class="section" id="install-git">
-<h2><a class="toc-backref" href="#id2">Install Git</a><a class="headerlink" href="#install-git" title="Permalink to this headline">¶</a></h2>
-<p>First, go to Git download page: <a class="reference external" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
-<p>Download and install the git on your operating system.</p>
+<div class="section" id="binwei-2-more-steps">
+<h1>Binwei 2 more steps<a class="headerlink" href="#binwei-2-more-steps" title="Permalink to this headline">¶</a></h1>
+<p>It will cause huge damage to the corporation if wrong changes are implemented. Kotter&#8217;s change model does not touch that.</p>
+<p>Under the name of &#8216;innovation&#8217;, it is easy that wrong changes be accepted and implemented.
+If the changes are wrong, then they are &#8216;poison&#8217; rather than &#8216;innovation&#8217;.
+Wrong changes need to be removed or stopped as soon as possible.</p>
+<div class="section" id="set-meaningful-measurement">
+<h2>Set meaningful measurement<a class="headerlink" href="#set-meaningful-measurement" title="Permalink to this headline">¶</a></h2>
+<p>Changes shall be meaningful. They need to bring value to your customer, they need to improve corporation efficiency.</p>
+<p>If you cannot find meaningful measurement for your changes, which may mean your changes are meaningless or even harmful.</p>
+<p>For instance, you want a service to be widely used in the corporation, a &#8216;meaningless&#8217; measurement can be &#8216;how many times it is used&#8217;. The problem of such kind of measurement is it does not mention it helps someone at all and how.
+A &#8216;meaningful&#8217; measurement will mention custom satisfaction improvement, the revenue gain, the efficiency gain etc at least.</p>
 </div>
-<div class="section" id="initialize-repository">
-<h2><a class="toc-backref" href="#id3">Initialize Repository</a><a class="headerlink" href="#initialize-repository" title="Permalink to this headline">¶</a></h2>
-<p>In order to use Git, you need to initialize a local repository first.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>mkdir FirstRepo
-<span class="nb">cd</span> FirstRepo
-git init
-</pre></div>
-</div>
-<p>The folder and file operation commands will be slightly different depends on your operating system.</p>
-<p>A hidden .git folder should be created by the above command. You can use <em>ls -a</em> to verify it.</p>
-</div>
-<div class="section" id="check-status">
-<h2><a class="toc-backref" href="#id4">Check Status</a><a class="headerlink" href="#check-status" title="Permalink to this headline">¶</a></h2>
-<p><em>git status</em> is a handy command to check the current repository status. It is recommended it is used from time to time.</p>
-<p>If you use <em>git status</em> now, the console output will be:</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">On branch master</span>
-<span class="go">Inital commit</span>
-<span class="go">nothing to commit (create/copy files and use &quot;git add&quot; to track)</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="add-files">
-<h2><a class="toc-backref" href="#id5">Add Files</a><a class="headerlink" href="#add-files" title="Permalink to this headline">¶</a></h2>
-<p>Let&#8217;s add some example files and folders in the repository.</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">mkdir SubFolder</span>
-<span class="go">touch main.txt</span>
-<span class="go">touch SubFolder\sub.txt</span>
-</pre></div>
-</div>
-<p>Use <em>tree</em> command to verify that two files and one folder are created in the repository.</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">.</span>
-
-<span class="go">├── SubFolder</span>
-
-<span class="go">│   └── sub.txt</span>
-
-<span class="go">└── main.txt</span>
-</pre></div>
-</div>
-<p>Type <em>git status</em> again, and the console output should tell you that there are &#8216;untracked files&#8217;.</p>
-</div>
-<div class="section" id="commit-to-local-repository">
-<h2><a class="toc-backref" href="#id6">Commit to Local Repository</a><a class="headerlink" href="#commit-to-local-repository" title="Permalink to this headline">¶</a></h2>
-<p>Go to the repository root folder, and run <em>git add .</em></p>
-<p>Type <em>git status</em> and you can see from console output that there are changes to be committed and no untracked files. (If you run the above command in sub folder, then only the files under subfolders will be tracked)</p>
-<p>Run <em>git commit</em> command to commit the change to local repository, and you will encounter a vi look-like program to ask you provide the description for the up-comming commit. Type i and go into text edit mode; write down the description for the commit, like &#8216;First commit&#8217;; then press Esc and :wq to save and quit that vi look like program.</p>
-<p>If everything goes well, you will see that files are commit and <em>git status</em> will tell that nothing to commit, and working directory clean.</p>
-</div>
-<div class="section" id="commit-to-remote-repository">
-<h2><a class="toc-backref" href="#id7">Commit to Remote Repository</a><a class="headerlink" href="#commit-to-remote-repository" title="Permalink to this headline">¶</a></h2>
-<p>In order to collaborate with other developers, you need to publish the repository to a remote repository or a center repository like GitHub.</p>
-<p>Now go to GitHub do the registration, create a repository on GitHub, and get the git URL of the repository.</p>
-<p>The URL looks like: <a class="reference external" href="https://github.com">https://github.com</a>/{username}/{repositoryname}.git</p>
-<p>Use the following command to &#8216;push&#8217; your local repository to the Github:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>git push --set-upstream https://github.com/<span class="o">{</span>username<span class="o">}</span>/<span class="o">{</span>repositoryname<span class="o">}</span>.git master
-</pre></div>
-</div>
-<p>You will be asked to enter your Github user name and credential. After the &#8216;push&#8217; command succeeds, you can see the files appear on the Github repository.</p>
-<p>Congratulations! You manage to use the basic git commands.</p>
-</div>
-<div class="section" id="summary">
-<h2><a class="toc-backref" href="#id8">Summary</a><a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
-<p>Git commands are the best way to learn git, but it is not straight forward to understand and remember. Practice will help.</p>
-<p>There will be following blogs explain further how to use git well and the git fundamental.</p>
-<p><em>Written by Binwei&#64;Oslo</em></p>
+<div class="section" id="set-threshold">
+<h2>Set threshold<a class="headerlink" href="#set-threshold" title="Permalink to this headline">¶</a></h2>
+<p>The world is so complex that most of us are not that smart can foresee everything.
+Don&#8217;t be too confident about your changes.</p>
+<p>A smart way is to set a reasonable threshold which is linked to your meaningful measurement with a reasonable timeline.</p>
+<p>If the threshold is reached, then it is time to review your changes.
+It can be a signal your previous assumption on your changes is incorrect, maybe it is good idea to stop the changes or do it in different way.</p>
+<p><em>Written by Binwei&#64;Shanghai</em></p>
 </div>
 </div>
 
@@ -158,16 +112,15 @@ git init
 <div class="section">
   <span style="float: left;">
   
+  
+  <a href="../work_in_big_company/">
+    <i class="fa fa-arrow-circle-left"></i>
+    Work in Big Company
+  </a>
+  
   </span>
   <span>&nbsp;</span>
   <span style="float: right;">
-  
-  
-  <a href="../git_areas/">
-    Git: Areas
-    <i class="fa fa-arrow-circle-right"></i>
-  </a>
-  </span>
   
 </div>
 
@@ -178,9 +131,9 @@ git init
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         var disqus_shortname = 'wubw-github-io';
-        var disqus_identifier = '/2017/git_getting-started/';
-        var disqus_title = 'Git: Getting Started';
-        var disqus_url = 'https://wubw.github.io/2017/git_getting-started';
+        var disqus_identifier = '/2017/kotter_binwei_change_model/';
+        var disqus_title = 'Kotter-Binwei Change Model';
+        var disqus_url = 'https://wubw.github.io/2017/kotter_binwei_change_model';
 
         (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -226,7 +179,7 @@ git init
   <h2>
   
   <i class="fa fa-calendar"></i>
-    Jan 11, 2017
+    May 25, 2017
   
   </h2>
 
@@ -243,7 +196,7 @@ git init
   <li><i class="fa-fw fa fa-folder-open"></i>
     
       
-      <a href="../../blog/category/computerscience/">ComputerScience</a>
+      <a href="../../blog/category/management/">Management</a>
       
     </li>
   
@@ -252,7 +205,7 @@ git init
   <li><i class="fa-fw fa fa-tag"></i>
     
       
-      <a href="../../blog/tag/git/">git</a>
+      <a href="../../blog/tag/process/">process</a>
       
     </li>
   
@@ -271,7 +224,7 @@ git init
     }());
     </script>
     <i class="fa-fw fa fa-comments"></i>
-    <a href="#disqus_thread" data-disqus-identifier="/2017/git_getting-started/"> </a>
+    <a href="#disqus_thread" data-disqus-identifier="/2017/kotter_binwei_change_model/"> </a>
   </li>
   
   </ul>
@@ -287,8 +240,6 @@ git init
   <ul>
     
     
-      <li><a href="../kotter_binwei_change_model/">May 25 - Kotter-Binwei Change Model</a></li>
-    
       <li><a href="../work_in_big_company/">May 17 - Work in Big Company</a></li>
     
       <li><a href="../lean_toolkit_for_software_development/">May 16 - Lean Toolkit for Software Development</a></li>
@@ -296,6 +247,8 @@ git init
       <li><a href="../the_mythical_deadline_of_peopleware_man_month/">May 14 - The Mythical Deadline of Peopleware Man-month</a></li>
     
       <li><a href="../threat_modeling_introduction/">May 07 - Threat Modeling: Introduction</a></li>
+    
+      <li><a href="../book-bian_zhi_lin_shi_xuan/">May 02 - Book notes: Bian Zhi Lin Anthology</a></li>
     
   </ul>
 
@@ -437,7 +390,7 @@ git init
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
       
       |
-      <a href="../../_sources/2017/git_getting-started.rst.txt"
+      <a href="../../_sources/2017/kotter_binwei_change_model.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 
