@@ -2,10 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">binwei Blog</title>
   <id>https://wubw.github.io/blog/atom.xml</id>
-  <updated>2017-05-25T00:00:00Z</updated>
+  <updated>2017-06-19T00:00:00Z</updated>
   <link href="https://wubw.github.io/" />
   <link href="https://wubw.github.io/blog/atom.xml" rel="self" />
   <generator uri="http://ablog.readthedocs.org" version="0.8.4">ABlog</generator>
+  <entry xml:base="https://wubw.github.io/blog/atom.xml">
+    <title type="text">Domain Driven Design: Introduction</title>
+    <id>https://wubw.github.io/2017/domain_driven_design_introduction/</id>
+    <updated>2017-06-19T00:00:00Z</updated>
+    <published>2017-06-19T00:00:00Z</published>
+    <link href="https://wubw.github.io/2017/domain_driven_design_introduction/" />
+    <author>
+      <name></name>
+    </author>
+    <content type="html">&lt;p&gt;Domain Driven Design (DDD) is about trying to make your software a model of a real-world system or process.
+The philosophy of DDD is about placing our attention at the heart of the application, focusing on the complexity that is intrinsic to the business domain itself.
+In using DDD, you are meant to work closely with a domain expert who can explain how the real-world system works.
+It also acts as the conceptual foundation for the design of the software itself - how it&amp;#8217;s broken down into objects or functions.
+In this blog post, I will cover the key elements of DDD.&lt;/p&gt;
+</content>
+  </entry>
   <entry xml:base="https://wubw.github.io/blog/atom.xml">
     <title type="text">Kotter-Binwei Change Model</title>
     <id>https://wubw.github.io/2017/kotter_binwei_change_model/</id>
