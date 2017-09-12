@@ -146,10 +146,7 @@ On the other hand, a weakly typed language may produce unpredictable results or 
 </div>
 <div class="section" id="duck-typing">
 <h2><a class="toc-backref" href="#id4">Duck typing</a><a class="headerlink" href="#duck-typing" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Type is less important, but shape is important</li>
-<li>Classic Duck Type</li>
-</ul>
+<p>Type is less important, but shape is important</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">Feed</span><span class="p">(</span><span class="nx">ani</span><span class="p">)</span> <span class="p">{</span> <span class="nx">ani</span><span class="p">.</span><span class="nx">Feed</span><span class="p">()</span> <span class="p">}</span> <span class="c1">// accepts any object implements Feed function</span>
 </pre></div>
 </div>
@@ -158,7 +155,6 @@ On the other hand, a weakly typed language may produce unpredictable results or 
 <h2><a class="toc-backref" href="#id5">Dynamic Typing</a><a class="headerlink" href="#dynamic-typing" title="Permalink to this headline">¶</a></h2>
 <p>A language is statically typed if the type of a variable is known at compile time.
 A language is dynamically typed if the type is associated with run-time values, and not named variables/fields/etc.</p>
-<p>Dynamic Typing Can be Powerful with much power comes much responsibility</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="p">{</span>
     <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Shawn&quot;</span><span class="p">,</span>
     <span class="nx">city</span><span class="o">:</span> <span class="s2">&quot;Atlanta&quot;</span>
@@ -175,7 +171,7 @@ A language is dynamically typed if the type is associated with run-time values, 
 <h1><a class="toc-backref" href="#id6">Type</a><a class="headerlink" href="#type" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="type-coalescing">
 <h2><a class="toc-backref" href="#id7">Type Coalescing</a><a class="headerlink" href="#type-coalescing" title="Permalink to this headline">¶</a></h2>
-<p>Javascript wants to coalesce values</p>
+<p>Javascript wants to coalesce values.</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;test &quot;</span> <span class="o">+</span> <span class="s2">&quot;me&quot;</span>
 <span class="s2">&quot;test &quot;</span> <span class="o">+</span> <span class="mi">1</span>
 <span class="s2">&quot;test &quot;</span> <span class="o">+</span> <span class="kc">true</span>
@@ -183,11 +179,11 @@ A language is dynamically typed if the type is associated with run-time values, 
 <span class="mi">100</span> <span class="o">+</span> <span class="s2">&quot;25&quot;</span> <span class="c1">// 10025</span>
 </pre></div>
 </div>
-<p>Most operators in Javascript are identical to .net, except…
-Equality/NotEqual (==, !=)
-The means determines equality with coalescing (if necessary)</p>
-<p>Javascript&#8217;s identically Equality operators (===, !==) which is similar to .Equal()
-Determines quality without coalescing</p>
+<p>Most operators in Javascript are identical to .net, except…</p>
+<ul class="simple">
+<li>Equality/NotEqual (==, !=): The means determines equality with coalescing (if necessary)</li>
+<li>Javascript&#8217;s identically Equality operators (===, !==) which is similar to .Equal(). Determines quality without coalescing</li>
+</ul>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;hello&quot;</span> <span class="o">==</span> <span class="s2">&quot;hello&quot;</span><span class="p">;</span> <span class="c1">// true</span>
 <span class="mi">1</span> <span class="o">==</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// true</span>
 <span class="mi">1</span> <span class="o">==</span> <span class="s2">&quot;1&quot;</span><span class="p">;</span> <span class="c1">// true</span>
@@ -322,8 +318,8 @@ foo(1); // second
 <span class="nx">f</span><span class="p">();</span> <span class="c1">// this == global object</span>
 </pre></div>
 </div>
-<p>bind() lets you change the owner
-For details, see:
+<p>bind() lets you change the owner.</p>
+<p>For details, see:
 <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this</a></p>
 </div>
 <div class="section" id="closures">
@@ -376,8 +372,8 @@ For details, see:
 <span class="nx">oldLog</span><span class="p">()</span> <span class="c1">//5</span>
 </pre></div>
 </div>
-<p>Note that in the above example, if you call&nbsp;setupSomeGlobals()&nbsp;again, then a new closure (stack-frame!) is created.
-The old&nbsp;gLogNumber,&nbsp;gIncreaseNumber,&nbsp;gSetNumber&nbsp;variables are overwritten with&nbsp;new&nbsp;functions that have the new closure.</p>
+<p>Note that in the above example, if you call&nbsp;setupSomeGlobals()&nbsp;again, then a new closure (stack-frame!) is created.</p>
+<p>The old&nbsp;gLogNumber,&nbsp;gIncreaseNumber,&nbsp;gSetNumber&nbsp;variables are overwritten with&nbsp;new&nbsp;functions that have the new closure.</p>
 <p>Closure can also introduce tricky bugs if not used correctly.</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">buildList</span><span class="p">(</span><span class="nx">list</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">[];</span>
@@ -429,10 +425,8 @@ If the definition isn&#8217;t there, it jumps up the scope chain to the executio
 <span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="nx">b</span><span class="p">;</span> <span class="c1">//this doesn&#39;t work</span>
 </pre></div>
 </div>
-<p>Polluting the global scope
-Anonymous self-executing functions: protects the global namespace by function scope
-Javascript lacks real namespaces.
-We can mimic by creating with objects.</p>
+<p>Javascript lacks real namespaces.
+We can mimic by creating with objects to avoid polluting the global scope.</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// Construct or Import Namespace</span>
 <span class="kd">var</span> <span class="nx">WilderMinds</span> <span class="o">=</span> <span class="nx">WilderMinds</span> <span class="o">||</span> <span class="p">{};</span>
 <span class="nx">WilderMinds</span><span class="p">.</span><span class="nx">currentTime</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
@@ -440,8 +434,8 @@ We can mimic by creating with objects.</p>
 <span class="p">};</span>
 </pre></div>
 </div>
-<p>All Together: Namespaces and Anonymous Self-Executing Functions
-Handles the global pollution and scoping of functionality</p>
+<p>Anonymous self-executing functions: protects the global namespace by function scope
+All Together: Namespaces and Anonymous Self-Executing Functions</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">ns</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">currentDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
     <span class="nx">ns</span><span class="p">.</span><span class="nx">currentTime</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
@@ -454,6 +448,7 @@ Handles the global pollution and scoping of functionality</p>
 </div>
 <div class="section" id="oop-in-javascript">
 <h1><a class="toc-backref" href="#id20">OOP in Javascript</a><a class="headerlink" href="#oop-in-javascript" title="Permalink to this headline">¶</a></h1>
+<p>Javascript also support OOP paradiam.</p>
 <div class="section" id="inheritance">
 <h2><a class="toc-backref" href="#id21">Inheritance</a><a class="headerlink" href="#inheritance" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">proto</span> <span class="o">=</span> <span class="p">{</span>
@@ -473,6 +468,8 @@ Handles the global pollution and scoping of functionality</p>
 </div>
 <p>Object.Create can also do the same thing</p>
 <p>Javascript also has prototype chain. __proto__</p>
+<p>__proto__ is the actual object that is used in the lookup chain to resolve methods, etc.
+prototype is the object that is used to build __proto__ when you create an object with new().</p>
 </div>
 <div class="section" id="class-in-javascript">
 <h2><a class="toc-backref" href="#id22">&#8216;Class&#8217; in Javascript</a><a class="headerlink" href="#class-in-javascript" title="Permalink to this headline">¶</a></h2>
@@ -565,7 +562,6 @@ Add to existing type&#8217;s prototype</p>
 <span class="kd">var</span> <span class="nx">count</span> <span class="o">=</span> <span class="nx">a</span><span class="p">.</span><span class="nx">calculateCount</span><span class="p">();</span>
 </pre></div>
 </div>
-<p>window.onerror fires for runtime errors, but not for compilation errors</p>
 <p><em>Written by Binwei&#64;Trondheim</em></p>
 </div>
 </div>
