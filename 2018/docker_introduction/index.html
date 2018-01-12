@@ -59,13 +59,34 @@
           <div class="body" role="main">
             
   <div class="section" id="docker-introduction">
-<h1>Docker Introduction<a class="headerlink" href="#docker-introduction" title="Permalink to this headline">¶</a></h1>
+<h1><a class="toc-backref" href="#id1">Docker Introduction</a><a class="headerlink" href="#docker-introduction" title="Permalink to this headline">¶</a></h1>
 <p>Docker is the world&#8217;s leading software containerization platform.
 Docker/container technology becomes more and more popular these days.
 This blog introduces the basic concept of the above technology.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#docker-introduction" id="id1">Docker Introduction</a></li>
+<li><a class="reference internal" href="#what-is-docker" id="id2">What is docker</a></li>
+<li><a class="reference internal" href="#basic-concepts" id="id3">Basic concepts</a><ul>
+<li><a class="reference internal" href="#layers" id="id4">Layers</a></li>
+<li><a class="reference internal" href="#tagging" id="id5">Tagging</a></li>
+<li><a class="reference internal" href="#deployment-options" id="id6">Deployment options</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#basic-commands" id="id7">Basic commands</a><ul>
+<li><a class="reference internal" href="#get-general-information" id="id8">Get general information</a></li>
+<li><a class="reference internal" href="#image" id="id9">Image</a></li>
+<li><a class="reference internal" href="#container" id="id10">Container</a></li>
+<li><a class="reference internal" href="#registry" id="id11">Registry</a></li>
+<li><a class="reference internal" href="#others" id="id12">Others</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 <div class="section" id="what-is-docker">
-<h1>What is docker<a class="headerlink" href="#what-is-docker" title="Permalink to this headline">¶</a></h1>
+<h1><a class="toc-backref" href="#id2">What is docker</a><a class="headerlink" href="#what-is-docker" title="Permalink to this headline">¶</a></h1>
 <p>In the old days, physical machine is the basic deployment unit which means one server hosts one application.
 The application has good isolation, however it is too expensive not only the hardware but also the maintaince effort.</p>
 <p>Then virtual machine model is introduced, see following figure:</p>
@@ -82,7 +103,7 @@ The application has good isolation, however it is too expensive not only the har
 </ul>
 </div>
 <div class="section" id="basic-concepts">
-<h1>Basic concepts<a class="headerlink" href="#basic-concepts" title="Permalink to this headline">¶</a></h1>
+<h1><a class="toc-backref" href="#id3">Basic concepts</a><a class="headerlink" href="#basic-concepts" title="Permalink to this headline">¶</a></h1>
 <img alt="../../_images/docker_metaphor.png" src="../../_images/docker_metaphor.png" />
 <p>Docker Engine: is also be called as docker daemon or docker runtime</p>
 <p>Images: An image is a collection of filesystem layers and some metadata. Taken together, they can be spun up as Docker containers</p>
@@ -91,7 +112,7 @@ The application has good isolation, however it is too expensive not only the har
 Docker client is what you run when you type commands, whose job is to communicate with the Docker daemon via HTTP requests.</p>
 <p>Docker registry: For example, Docker hub. We can also have private registry in the company</p>
 <div class="section" id="layers">
-<h2>Layers<a class="headerlink" href="#layers" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Layers</a><a class="headerlink" href="#layers" title="Permalink to this headline">¶</a></h2>
 <p>Layers: A layer is a collection of changes to files.</p>
 <p>Docker layering helps you manage a big problem that arises when you use containers at scale.
 Imagine what would happen if you started up hundreds - or even thousands of same images, and each of those required a copy of the files to be stored somewhere.
@@ -108,7 +129,7 @@ This partly explains how Docker containers can start up so quickly - they have n
 <p>When you push the image to the registry, only the new layer will be pushed.</p>
 </div>
 <div class="section" id="tagging">
-<h2>Tagging<a class="headerlink" href="#tagging" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">Tagging</a><a class="headerlink" href="#tagging" title="Permalink to this headline">¶</a></h2>
 <p>Understanding docker tags:</p>
 <ul class="simple">
 <li>Tags denote a version of your container</li>
@@ -117,7 +138,7 @@ This partly explains how Docker containers can start up so quickly - they have n
 </ul>
 </div>
 <div class="section" id="deployment-options">
-<h2>Deployment options<a class="headerlink" href="#deployment-options" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Deployment options</a><a class="headerlink" href="#deployment-options" title="Permalink to this headline">¶</a></h2>
 <p>Docker is written in GoLang, currently there are many options for docker deployment.</p>
 <img alt="../../_images/docker_deploy.png" src="../../_images/docker_deploy.png" />
 <p>For instance, for Azure support only the following options are available:</p>
@@ -129,18 +150,18 @@ This partly explains how Docker containers can start up so quickly - they have n
 </div>
 </div>
 <div class="section" id="basic-commands">
-<h1>Basic commands<a class="headerlink" href="#basic-commands" title="Permalink to this headline">¶</a></h1>
+<h1><a class="toc-backref" href="#id7">Basic commands</a><a class="headerlink" href="#basic-commands" title="Permalink to this headline">¶</a></h1>
 <p>Docker requires admin right, if you work on Linux OS like Ubuntu it is cumbersone to type sudo every time.
 You can use sudo su: to switch to root user.</p>
 <div class="section" id="get-general-information">
-<h2>Get general information<a class="headerlink" href="#get-general-information" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">Get general information</a><a class="headerlink" href="#get-general-information" title="Permalink to this headline">¶</a></h2>
 <p>docker -v</p>
 <p>docker version: will give more information</p>
 <p>docker info</p>
 <p>uname -r/-a: show the kernal version</p>
 </div>
 <div class="section" id="image">
-<h2>Image<a class="headerlink" href="#image" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id9">Image</a><a class="headerlink" href="#image" title="Permalink to this headline">¶</a></h2>
 <p>docker build: Build a docker image.</p>
 <p>docker tag:     Tag a docker image</p>
 <p>docker images: Show all docker images</p>
@@ -148,7 +169,7 @@ You can use sudo su: to switch to root user.</p>
 <p>docker rmi -f $(docker images -q): Remove all docker images</p>
 </div>
 <div class="section" id="container">
-<h2>Container<a class="headerlink" href="#container" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Container</a><a class="headerlink" href="#container" title="Permalink to this headline">¶</a></h2>
 <p>docker ps: List containers.</p>
 <p>docker ps &#8211;all: List all containers, including the completed ones</p>
 <p>docker run: Run a docker image as a container.</p>
@@ -170,12 +191,12 @@ docker exec -it XXXX /bin/bash</p>
 <p>docker rm -f $(docker ps -a -q): delete all Docker containers</p>
 </div>
 <div class="section" id="registry">
-<h2>Registry<a class="headerlink" href="#registry" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">Registry</a><a class="headerlink" href="#registry" title="Permalink to this headline">¶</a></h2>
 <p>docker pull: Pull and image from docker registry.</p>
 <p>docker search: can find images to pull</p>
 </div>
 <div class="section" id="others">
-<h2>Others<a class="headerlink" href="#others" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id12">Others</a><a class="headerlink" href="#others" title="Permalink to this headline">¶</a></h2>
 <p>Use alias can help the efficiency:
 alias dps = docker ps</p>
 <p>docker has following logging level:</p>
@@ -207,6 +228,13 @@ alias dps = docker ps</p>
   </span>
   <span>&nbsp;</span>
   <span style="float: right;">
+  
+  
+  <a href="../cryptography_introduction/">
+    Cryptography Introduction (with .NET code example)
+    <i class="fa fa-arrow-circle-right"></i>
+  </a>
+  </span>
   
 </div>
 
@@ -279,7 +307,21 @@ alias dps = docker ps</p>
   
 
   
+  <li><i class="fa-fw fa fa-folder-open"></i>
+    
+      
+      <a href="../../blog/category/computerscience/">ComputerScience</a>
+      
+    </li>
+  
 
+  
+  <li><i class="fa-fw fa fa-tag"></i>
+    
+      
+      <a href="../../blog/tag/docker/">docker</a>
+      
+    </li>
   
   
   <li>
@@ -312,6 +354,8 @@ alias dps = docker ps</p>
   <ul>
     
     
+      <li><a href="../cryptography_introduction/">Jan 07 - Cryptography Introduction (with .NET code example)</a></li>
+    
       <li><a href="../../2017/the_effective_executive/">Dec 29 - The Effective Executive</a></li>
     
       <li><a href="../../2017/introduction_to_javascript/">Sep 09 - Introduction to Javascript</a></li>
@@ -319,8 +363,6 @@ alias dps = docker ps</p>
       <li><a href="../../2017/blockchain_introduction/">Sep 06 - Blockchain Introduction</a></li>
     
       <li><a href="../../2017/cloud_for_dummy/">Sep 04 - Cloud for Dummy</a></li>
-    
-      <li><a href="../../2017/the_mckinsey_engagement/">Sep 03 - The Mckinsey Engagement</a></li>
     
   </ul>
 
@@ -394,6 +436,11 @@ alias dps = docker ps</p>
     
       
       <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/docker/">docker</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
         <a href="../../blog/tag/frontend/">frontend</a></li>
       
     
@@ -428,7 +475,7 @@ alias dps = docker ps</p>
       
     
       
-      <li class="ablog-cloud ablog-cloud-2">
+      <li class="ablog-cloud ablog-cloud-3">
         <a href="../../blog/tag/security/">security</a></li>
       
     
@@ -458,7 +505,7 @@ alias dps = docker ps</p>
   <ul>
   
     
-    <li><a href="../../blog/category/computerscience/">ComputerScience (20)</a></li>
+    <li><a href="../../blog/category/computerscience/">ComputerScience (22)</a></li>
     
   
     
@@ -479,7 +526,7 @@ alias dps = docker ps</p>
   <ul>
   
     
-    <li><a href="../../blog/2018/">2018 (1)</a></li>
+    <li><a href="../../blog/2018/">2018 (2)</a></li>
     
   
     
