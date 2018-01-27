@@ -2,7 +2,7 @@
 The Personal MBA
 =====================
 
-.. post:: Jan 13, 2018
+.. post:: Jan 22, 2018
    :tags: booknotes
    :category: Management
 
@@ -274,7 +274,7 @@ Business is never easy - it's an art as much as a science.
 Constant experimentation is the only way you can identify what will actually produce the result you desire.
 
 The limits of my language are the limits of my world
- - Ludwig Wittgenstein
+- Ludwig Wittgenstein
 
 Business school don't create successful people. 
 They simply accept them, then take credit for their success.
@@ -430,3 +430,4 @@ Common Ground is a state of overlapping interests between two or more parties.
 Negotiation is the process of exploring different options to find Common Ground. 
 The more potential paths you explorer, the greater the chance you'll be able to find one in which your interests overlap.
 
+*Written by Binwei@Oslo*
