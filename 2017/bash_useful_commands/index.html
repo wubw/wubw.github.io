@@ -1,26 +1,15 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
     <title>Bash: Useful Commands &#8212; binwei  documentation</title>
-    
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../../',
-        VERSION:     '',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
@@ -49,13 +38,14 @@
     ul.postlist-style-circle {list-style-type: circle;}
   </style>
 
-  </head>
-  <body role="document">
+  </head><body>
   
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
   <div class="section" id="bash-useful-commands">
@@ -108,7 +98,7 @@ To invest time to learn some useful commands in bash is a good idea.</p>
 <div class="section" id="handle-space">
 <h2><a class="toc-backref" href="#id5">Handle space</a><a class="headerlink" href="#handle-space" title="Permalink to this headline">¶</a></h2>
 <p>There are two ways to handle space in the path:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="s1">&#39;My Documents&#39;</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="s1">&#39;My Documents&#39;</span>
 
 <span class="n">cd</span> <span class="n">My</span>\ <span class="n">Documents</span>
 </pre></div>
@@ -128,15 +118,15 @@ To invest time to learn some useful commands in bash is a good idea.</p>
 <div class="section" id="wildcard">
 <h1><a class="toc-backref" href="#id8">Wildcard</a><a class="headerlink" href="#wildcard" title="Permalink to this headline">¶</a></h1>
 <p>Bash supports wild card to match files.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="o">*</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span>
 </pre></div>
 </div>
 <p>Matches anything, including nothing at all</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>?
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>?
 </pre></div>
 </div>
 <p>Matches exactly 1 character</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">acd7_</span><span class="p">]</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">acd7_</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>Matches one of the characters in the list, above example would match a, c, d, 7 or _</p>
@@ -145,7 +135,7 @@ To invest time to learn some useful commands in bash is a good idea.</p>
 <div class="section" id="brace-expansion">
 <h2><a class="toc-backref" href="#id9">Brace Expansion</a><a class="headerlink" href="#brace-expansion" title="Permalink to this headline">¶</a></h2>
 <p>Brace expansion is another handy way for you to write compact commands.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">touch</span> <span class="p">{</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">}</span><span class="o">.</span><span class="n">txt</span> <span class="o">=&gt;</span> <span class="n">touch</span> <span class="n">a</span><span class="o">.</span><span class="n">txt</span> <span class="n">b</span><span class="o">.</span><span class="n">txt</span> <span class="n">c</span><span class="o">.</span><span class="n">txt</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">touch</span> <span class="p">{</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">}</span><span class="o">.</span><span class="n">txt</span> <span class="o">=&gt;</span> <span class="n">touch</span> <span class="n">a</span><span class="o">.</span><span class="n">txt</span> <span class="n">b</span><span class="o">.</span><span class="n">txt</span> <span class="n">c</span><span class="o">.</span><span class="n">txt</span>
 
 <span class="n">mv</span> <span class="n">file</span><span class="o">.</span><span class="p">{</span><span class="n">txt</span><span class="p">,</span><span class="n">jpg</span><span class="p">}</span> <span class="nb">dir</span><span class="o">/</span> <span class="o">=&gt;</span> <span class="n">mv</span> <span class="n">file</span><span class="o">.</span><span class="n">txt</span> <span class="n">file</span><span class="o">.</span><span class="n">jpg</span> <span class="nb">dir</span>
 
@@ -161,7 +151,7 @@ To invest time to learn some useful commands in bash is a good idea.</p>
 <div class="section" id="input-output-redirection">
 <h2><a class="toc-backref" href="#id11">Input/Output redirection</a><a class="headerlink" href="#input-output-redirection" title="Permalink to this headline">¶</a></h2>
 <p>Output redirection is very important tool, which has two modes:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">will</span> <span class="n">overwrite</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">will</span> <span class="n">overwrite</span>
 <span class="o">&gt;&gt;</span> <span class="n">will</span> <span class="n">append</span>
 </pre></div>
 </div>
@@ -176,19 +166,19 @@ To invest time to learn some useful commands in bash is a good idea.</p>
 <h2><a class="toc-backref" href="#id13">Modify file</a><a class="headerlink" href="#modify-file" title="Permalink to this headline">¶</a></h2>
 <p>Touch will create a empty file or update access time on an existing file</p>
 <p>sort command can sort the content in the file.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">sort</span> <span class="o">-</span><span class="n">nk2</span> <span class="p">[</span><span class="n">filename</span><span class="p">]</span><span class="o">*</span><span class="p">:</span> <span class="n">can</span> <span class="n">sort</span> <span class="n">the</span> <span class="n">content</span> <span class="n">of</span> <span class="n">file</span> <span class="n">according</span> <span class="n">to</span> <span class="n">the</span> <span class="n">second</span> <span class="n">column</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sort</span> <span class="o">-</span><span class="n">nk2</span> <span class="p">[</span><span class="n">filename</span><span class="p">]</span><span class="o">*</span><span class="p">:</span> <span class="n">can</span> <span class="n">sort</span> <span class="n">the</span> <span class="n">content</span> <span class="n">of</span> <span class="n">file</span> <span class="n">according</span> <span class="n">to</span> <span class="n">the</span> <span class="n">second</span> <span class="n">column</span>
 </pre></div>
 </div>
 <p>tr can replace character</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">tr</span> <span class="s1">&#39;Hello&#39;</span> <span class="s1">&#39;hello&#39;</span> <span class="o">&lt;</span> <span class="n">test</span> <span class="o">&gt;</span> <span class="n">test2</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tr</span> <span class="s1">&#39;Hello&#39;</span> <span class="s1">&#39;hello&#39;</span> <span class="o">&lt;</span> <span class="n">test</span> <span class="o">&gt;</span> <span class="n">test2</span>
 </pre></div>
 </div>
 <p>cut: cut out selected positions of each line of a file</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">cut</span> <span class="o">-</span><span class="n">c2</span> <span class="n">test</span> <span class="o">=&gt;</span> <span class="n">cut</span> <span class="n">the</span> <span class="n">second</span> <span class="n">character</span> <span class="n">of</span> <span class="n">each</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">test</span> <span class="n">file</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cut</span> <span class="o">-</span><span class="n">c2</span> <span class="n">test</span> <span class="o">=&gt;</span> <span class="n">cut</span> <span class="n">the</span> <span class="n">second</span> <span class="n">character</span> <span class="n">of</span> <span class="n">each</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">test</span> <span class="n">file</span>
 </pre></div>
 </div>
 <p>paste: get content from various files and put into one file</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">paste</span> <span class="n">test</span> <span class="n">test2</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">paste</span> <span class="n">test</span> <span class="n">test2</span>
 </pre></div>
 </div>
 <p>join: do the similar thing like paste but get rid of the header for each row</p>
@@ -196,11 +186,11 @@ To invest time to learn some useful commands in bash is a good idea.</p>
 <div class="section" id="search-file">
 <h2><a class="toc-backref" href="#id14">Search file</a><a class="headerlink" href="#search-file" title="Permalink to this headline">¶</a></h2>
 <p>grep command will do the search and list all the relevant lines</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">grep</span> <span class="o">-</span><span class="n">nr</span> <span class="n">security</span> <span class="o">.</span> <span class="o">=&gt;</span> <span class="n">search</span> <span class="n">keyword</span> <span class="n">security</span> <span class="ow">in</span> <span class="n">current</span> <span class="n">folder</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">grep</span> <span class="o">-</span><span class="n">nr</span> <span class="n">security</span> <span class="o">.</span> <span class="o">=&gt;</span> <span class="n">search</span> <span class="n">keyword</span> <span class="n">security</span> <span class="ow">in</span> <span class="n">current</span> <span class="n">folder</span>
 </pre></div>
 </div>
 <p>find can use pattern to find files</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">find</span> <span class="o">.</span> <span class="o">-</span><span class="n">name</span> <span class="s2">&quot;*.rst&quot;</span> <span class="o">=&gt;</span> <span class="n">find</span> <span class="nb">all</span> <span class="n">rst</span> <span class="n">files</span> <span class="n">under</span> <span class="n">current</span> <span class="n">folder</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">find</span> <span class="o">.</span> <span class="o">-</span><span class="n">name</span> <span class="s2">&quot;*.rst&quot;</span> <span class="o">=&gt;</span> <span class="n">find</span> <span class="nb">all</span> <span class="n">rst</span> <span class="n">files</span> <span class="n">under</span> <span class="n">current</span> <span class="n">folder</span>
 </pre></div>
 </div>
 <p>wc: count lines, words and characters in a file</p>
@@ -211,7 +201,7 @@ To invest time to learn some useful commands in bash is a good idea.</p>
 <div class="section" id="view-help-and-file-content">
 <h1><a class="toc-backref" href="#id15">View help and file content</a><a class="headerlink" href="#view-help-and-file-content" title="Permalink to this headline">¶</a></h1>
 <p>Use man to see the help manual</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">Space</span><span class="p">:</span> <span class="n">down</span> <span class="n">the</span> <span class="n">page</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Space</span><span class="p">:</span> <span class="n">down</span> <span class="n">the</span> <span class="n">page</span>
 <span class="n">B</span><span class="p">:</span> <span class="n">up</span> <span class="n">the</span> <span class="n">page</span>
 <span class="o">/</span><span class="p">:</span> <span class="n">search</span><span class="o">.</span> <span class="n">N</span><span class="p">,</span> <span class="n">n</span> <span class="n">to</span> <span class="n">go</span> <span class="n">to</span> <span class="nb">next</span><span class="o">/</span><span class="n">previous</span> <span class="n">match</span>
 <span class="n">Q</span><span class="p">:</span> <span class="n">exit</span>
@@ -238,7 +228,7 @@ To invest time to learn some useful commands in bash is a good idea.</p>
 <div class="section" id="commands-parameters">
 <h2><a class="toc-backref" href="#id18">Commands parameters</a><a class="headerlink" href="#commands-parameters" title="Permalink to this headline">¶</a></h2>
 <p>The command option can be combined in one dash</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">For</span> <span class="n">example</span><span class="p">:</span> <span class="n">ls</span> <span class="o">-</span><span class="n">l</span> <span class="o">-</span><span class="n">a</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">For</span> <span class="n">example</span><span class="p">:</span> <span class="n">ls</span> <span class="o">-</span><span class="n">l</span> <span class="o">-</span><span class="n">a</span>
 <span class="n">Can</span> <span class="n">be</span><span class="p">:</span> <span class="n">ls</span> <span class="o">-</span><span class="n">la</span>
 </pre></div>
 </div>
@@ -272,7 +262,7 @@ To invest time to learn some useful commands in bash is a good idea.</p>
 <h2><a class="toc-backref" href="#id22">Others</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>Select the text and click mid mouse button will do the copy/paste the selected text in terminal</p>
 <p>ssh allows you to login the another system</p>
-<p>var1=&#8217;hello&#8217;</p>
+<p>var1=’hello’</p>
 <p>echo $var1</p>
 <p><em>Written by Binwei&#64;Oslo</em></p>
 </div>
@@ -329,6 +319,7 @@ To invest time to learn some useful commands in bash is a good idea.</p>
   </div>
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -360,7 +351,7 @@ To invest time to learn some useful commands in bash is a good idea.</p>
   <h2>
   
   <i class="fa fa-calendar"></i>
-    Aug 19, 2017
+    19 August 2017
   
   </h2>
 
@@ -374,7 +365,7 @@ To invest time to learn some useful commands in bash is a good idea.</p>
   
 
   
-  <li><i class="fa-fw fa fa-folder-open"></i>
+  <li id="category"><span><i class="fa-fw fa fa-folder-open"></i>
     
       
       <a href="../../blog/category/computerscience/">ComputerScience</a>
@@ -383,7 +374,7 @@ To invest time to learn some useful commands in bash is a good idea.</p>
   
 
   
-  <li><i class="fa-fw fa fa-tag"></i>
+  <li id="tags"><span><i class="fa-fw fa fa-tag"></i>
     
       
       <a href="../../blog/tag/shell/">shell</a>
@@ -391,7 +382,7 @@ To invest time to learn some useful commands in bash is a good idea.</p>
     </li>
   
   
-  <li>
+  <li id="comments">
     <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'wubw-github-io'; // required: replace example with your forum shortname
@@ -421,15 +412,15 @@ To invest time to learn some useful commands in bash is a good idea.</p>
   <ul>
     
     
-      <li><a href="../../2018/authentication_authorization_explainations/">Mar 14 - Authentication & Authorization Explainations</a></li>
+      <li><a href="../../2018/authentication_authorization_explainations/">14 March - Authentication & Authorization Basic</a></li>
     
-      <li><a href="../../2018/microservices_introduction/">Mar 07 - Microservices Introduction</a></li>
+      <li><a href="../../2018/microservices_introduction/">07 March - Microservices Introduction</a></li>
     
-      <li><a href="../../2018/blockchain_scenario/">Feb 26 - Blockchain Scenario</a></li>
+      <li><a href="../../2018/blockchain_scenario/">26 February - Blockchain Scenario</a></li>
     
-      <li><a href="../../2018/https/">Jan 24 - Https Explainations</a></li>
+      <li><a href="../../2018/https/">24 January - Https Explainations</a></li>
     
-      <li><a href="../../2018/the_personal_mba/">Jan 22 - The Personal MBA</a></li>
+      <li><a href="../../2018/the_personal_mba/">22 January - The Personal MBA</a></li>
     
   </ul>
 
@@ -599,12 +590,14 @@ To invest time to learn some useful commands in bash is a good idea.</p>
 
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../../search/" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -615,8 +608,8 @@ To invest time to learn some useful commands in bash is a good idea.</p>
       &copy;2017, binwei.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.5</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
       
       |
       <a href="../../_sources/2017/bash_useful_commands.rst.txt"

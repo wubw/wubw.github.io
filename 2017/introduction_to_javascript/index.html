@@ -1,26 +1,15 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
     <title>Introduction to Javascript &#8212; binwei  documentation</title>
-    
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../../',
-        VERSION:     '',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
@@ -49,13 +38,14 @@
     ul.postlist-style-circle {list-style-type: circle;}
   </style>
 
-  </head>
-  <body role="document">
+  </head><body>
   
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
   <div class="section" id="introduction-to-javascript">
@@ -92,7 +82,7 @@ This blog introduces the basic concept of Javascript language.</p>
 </li>
 <li><a class="reference internal" href="#oop-in-javascript" id="id20">OOP in Javascript</a><ul>
 <li><a class="reference internal" href="#inheritance" id="id21">Inheritance</a></li>
-<li><a class="reference internal" href="#class-in-javascript" id="id22">&#8216;Class&#8217; in Javascript</a></li>
+<li><a class="reference internal" href="#class-in-javascript" id="id22">‘Class’ in Javascript</a></li>
 <li><a class="reference internal" href="#static-members" id="id23">Static Members</a></li>
 <li><a class="reference internal" href="#sharing-a-function" id="id24">Sharing a function</a></li>
 <li><a class="reference internal" href="#object-reflection" id="id25">Object Reflection</a></li>
@@ -104,7 +94,7 @@ This blog introduces the basic concept of Javascript language.</p>
 </div>
 <div class="section" id="javascript-basic">
 <h1><a class="toc-backref" href="#id2">Javascript Basic</a><a class="headerlink" href="#javascript-basic" title="Permalink to this headline">¶</a></h1>
-<p>First, let&#8217;s compare Javascript with a OOP programming language C#.</p>
+<p>First, let’s compare Javascript with a OOP programming language C#.</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="50%" />
@@ -138,7 +128,7 @@ This blog introduces the basic concept of Javascript language.</p>
 <h2><a class="toc-backref" href="#id3">Strongly typed or weakly typed (loosely typed)</a><a class="headerlink" href="#strongly-typed-or-weakly-typed-loosely-typed" title="Permalink to this headline">¶</a></h2>
 <p>In general, a strongly typed language is more likely to generate an error or refuse to compile if the argument passed to a function does not closely match the expected type.
 On the other hand, a weakly typed language may produce unpredictable results or may perform implicit type conversion.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">isNumber</span> <span class="o">=</span> <span class="k">typeof</span> <span class="nx">x</span> <span class="o">==</span> <span class="s2">&quot;number&quot;</span><span class="p">;</span>
 <span class="nx">x</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span>
 </pre></div>
@@ -147,7 +137,7 @@ On the other hand, a weakly typed language may produce unpredictable results or 
 <div class="section" id="duck-typing">
 <h2><a class="toc-backref" href="#id4">Duck typing</a><a class="headerlink" href="#duck-typing" title="Permalink to this headline">¶</a></h2>
 <p>Type is less important, but shape is important</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">Feed</span><span class="p">(</span><span class="nx">ani</span><span class="p">)</span> <span class="p">{</span> <span class="nx">ani</span><span class="p">.</span><span class="nx">Feed</span><span class="p">()</span> <span class="p">}</span> <span class="c1">// accepts any object implements Feed function</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">Feed</span><span class="p">(</span><span class="nx">ani</span><span class="p">)</span> <span class="p">{</span> <span class="nx">ani</span><span class="p">.</span><span class="nx">Feed</span><span class="p">()</span> <span class="p">}</span> <span class="c1">// accepts any object implements Feed function</span>
 </pre></div>
 </div>
 </div>
@@ -155,7 +145,7 @@ On the other hand, a weakly typed language may produce unpredictable results or 
 <h2><a class="toc-backref" href="#id5">Dynamic Typing</a><a class="headerlink" href="#dynamic-typing" title="Permalink to this headline">¶</a></h2>
 <p>A language is statically typed if the type of a variable is known at compile time.
 A language is dynamically typed if the type is associated with run-time values, and not named variables/fields/etc.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="p">{</span>
     <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Shawn&quot;</span><span class="p">,</span>
     <span class="nx">city</span><span class="o">:</span> <span class="s2">&quot;Atlanta&quot;</span>
 <span class="p">};</span>
@@ -172,7 +162,7 @@ A language is dynamically typed if the type is associated with run-time values, 
 <div class="section" id="type-coalescing">
 <h2><a class="toc-backref" href="#id7">Type Coalescing</a><a class="headerlink" href="#type-coalescing" title="Permalink to this headline">¶</a></h2>
 <p>Javascript wants to coalesce values.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;test &quot;</span> <span class="o">+</span> <span class="s2">&quot;me&quot;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;test &quot;</span> <span class="o">+</span> <span class="s2">&quot;me&quot;</span>
 <span class="s2">&quot;test &quot;</span> <span class="o">+</span> <span class="mi">1</span>
 <span class="s2">&quot;test &quot;</span> <span class="o">+</span> <span class="kc">true</span>
 <span class="s2">&quot;test &quot;</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
@@ -182,9 +172,9 @@ A language is dynamically typed if the type is associated with run-time values, 
 <p>Most operators in Javascript are identical to .net, except…</p>
 <ul class="simple">
 <li>Equality/NotEqual (==, !=): The means determines equality with coalescing (if necessary)</li>
-<li>Javascript&#8217;s identically Equality operators (===, !==) which is similar to .Equal(). Determines quality without coalescing</li>
+<li>Javascript’s identically Equality operators (===, !==) which is similar to .Equal(). Determines quality without coalescing</li>
 </ul>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;hello&quot;</span> <span class="o">==</span> <span class="s2">&quot;hello&quot;</span><span class="p">;</span> <span class="c1">// true</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;hello&quot;</span> <span class="o">==</span> <span class="s2">&quot;hello&quot;</span><span class="p">;</span> <span class="c1">// true</span>
 <span class="mi">1</span> <span class="o">==</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// true</span>
 <span class="mi">1</span> <span class="o">==</span> <span class="s2">&quot;1&quot;</span><span class="p">;</span> <span class="c1">// true</span>
 <span class="mi">1</span> <span class="o">===</span> <span class="s2">&quot;1&quot;</span><span class="p">;</span> <span class="c1">// false</span>
@@ -201,7 +191,7 @@ A language is dynamically typed if the type is associated with run-time values, 
 <li>Delegate type: function</li>
 <li>Special: undefined, null</li>
 </ul>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="k">typeof</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">//number</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="k">typeof</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">//number</span>
 <span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="k">typeof</span> <span class="mf">1.0</span><span class="p">;</span> <span class="c1">// number</span>
 <span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="k">typeof</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">// boolean</span>
 <span class="kd">var</span> <span class="nx">d</span> <span class="o">=</span> <span class="k">typeof</span> <span class="kc">false</span><span class="p">;</span> <span class="c1">// boolean</span>
@@ -222,7 +212,7 @@ A language is dynamically typed if the type is associated with run-time values, 
 </div>
 <div class="section" id="operator">
 <h2><a class="toc-backref" href="#id10">Operator</a><a class="headerlink" href="#operator" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">fail</span> <span class="o">=</span> <span class="mi">10</span><span class="o">/</span><span class="s2">&quot;zero&quot;</span><span class="p">;</span> <span class="c1">// NaN</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">fail</span> <span class="o">=</span> <span class="mi">10</span><span class="o">/</span><span class="s2">&quot;zero&quot;</span><span class="p">;</span> <span class="c1">// NaN</span>
 <span class="kd">var</span> <span class="nx">test1</span> <span class="o">=</span> <span class="kc">NaN</span> <span class="o">==</span> <span class="kc">NaN</span><span class="p">;</span> <span class="c1">// false</span>
 <span class="kd">var</span> <span class="nx">test2</span> <span class="o">=</span> <span class="nb">isNaN</span><span class="p">(</span><span class="kc">NaN</span><span class="p">);</span> <span class="c1">// true</span>
 <span class="kd">var</span> <span class="nx">test3</span> <span class="o">=</span> <span class="nb">isNaN</span><span class="p">(</span><span class="nx">fail</span><span class="p">);</span> <span class="c1">//true</span>
@@ -232,7 +222,7 @@ A language is dynamically typed if the type is associated with run-time values, 
 </pre></div>
 </div>
 <p>All the following values are false</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
 <span class="k">if</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="k">if</span><span class="p">(</span><span class="mi">10</span><span class="o">/</span><span class="mi">0</span><span class="p">)</span>
 <span class="k">if</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
@@ -246,7 +236,7 @@ A language is dynamically typed if the type is associated with run-time values, 
 <div class="section" id="overloading-function">
 <h2><a class="toc-backref" href="#id12">Overloading function</a><a class="headerlink" href="#overloading-function" title="Permalink to this headline">¶</a></h2>
 <p>Javascript does not support function overload.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>function foo(one) {
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span>function foo(one) {
     alert(&#39;first);
 }
 function foo(one, two) {
@@ -260,7 +250,7 @@ foo(1); // second
 <div class="section" id="arguments-object">
 <h2><a class="toc-backref" href="#id13">Arguments object</a><a class="headerlink" href="#arguments-object" title="Permalink to this headline">¶</a></h2>
 <p>Arguments object is available inside function body only.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">foo</span><span class="p">(</span><span class="nx">one</span><span class="p">,</span> <span class="nx">two</span><span class="p">,</span> <span class="nx">three</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">foo</span><span class="p">(</span><span class="nx">one</span><span class="p">,</span> <span class="nx">two</span><span class="p">,</span> <span class="nx">three</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">alert</span><span class="p">(</span><span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="nx">foo</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>     <span class="c1">//1</span>
@@ -269,7 +259,7 @@ foo(1); // second
 </pre></div>
 </div>
 <p>Accessing the values through arguments object.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">foo</span><span class="p">()</span> <span class="p">{</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">foo</span><span class="p">()</span> <span class="p">{</span>
     <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">x</span> <span class="o">&lt;</span> <span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">x</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
             <span class="nx">alert</span><span class="p">(</span><span class="nx">arguments</span><span class="p">[</span><span class="nx">x</span><span class="p">]);</span>
     <span class="p">}</span>
@@ -280,8 +270,8 @@ foo(1); // second
 </div>
 <div class="section" id="all-functions-return-a-value">
 <h2><a class="toc-backref" href="#id14">All functions return a value</a><a class="headerlink" href="#all-functions-return-a-value" title="Permalink to this headline">¶</a></h2>
-<p>If not defined then it&#8217;s &#8216;undefined&#8217;</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">foo</span><span class="p">()</span> <span class="p">{</span>
+<p>If not defined then it’s ‘undefined’</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">foo</span><span class="p">()</span> <span class="p">{</span>
     <span class="k">return</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">foo</span><span class="p">();</span>
@@ -291,7 +281,7 @@ foo(1); // second
 <div class="section" id="function-is-just-an-object">
 <h2><a class="toc-backref" href="#id15">Function is just an object</a><a class="headerlink" href="#function-is-just-an-object" title="Permalink to this headline">¶</a></h2>
 <p>Has properties and member functions</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">log</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="p">{</span> <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;yup&#39;</span><span class="p">);</span> <span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">log</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="p">{</span> <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;yup&#39;</span><span class="p">);</span> <span class="p">}</span>
 <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">log</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="c1">// 1 parameter</span>
 <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="nx">log</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span> <span class="c1">// &#39;log&#39;</span>
 <span class="kd">var</span> <span class="nx">z</span> <span class="o">=</span> <span class="nx">log</span><span class="p">.</span><span class="nx">toString</span><span class="p">()</span> <span class="c1">// &#39;function log(s) { alert(&#39;yup&#39;); }</span>
@@ -300,8 +290,8 @@ foo(1); // second
 </div>
 <div class="section" id="function-body-variable">
 <h2><a class="toc-backref" href="#id16">Function Body Variable</a><a class="headerlink" href="#function-body-variable" title="Permalink to this headline">¶</a></h2>
-<p>&#8220;this&#8221; applies to the owner of the function</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">f</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<p>“this” applies to the owner of the function</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">f</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
 <span class="p">};</span>
 <span class="nx">f</span><span class="p">();</span> <span class="c1">// [Object Window]</span>
@@ -324,8 +314,8 @@ foo(1); // second
 </div>
 <div class="section" id="closures">
 <h2><a class="toc-backref" href="#id17">Closures</a><a class="headerlink" href="#closures" title="Permalink to this headline">¶</a></h2>
-<p>JavaScript closure makes it possible for a function to have &#8220;private&#8221; variables.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">add</span> <span class="o">=</span> <span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<p>JavaScript closure makes it possible for a function to have “private” variables.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">add</span> <span class="o">=</span> <span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="k">return</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span><span class="k">return</span> <span class="nx">counter</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;}</span>
 <span class="p">})();</span>
@@ -339,10 +329,10 @@ foo(1); // second
 </div>
 <p>The variable add is assigned the return value of a self-invoking function.</p>
 <p>The self-invoking function only runs once. It sets the counter to zero (0), and returns a function expression.</p>
-<p>This way add becomes a function. The &#8220;wonderful&#8221; part is that it can access the counter in the parent scope.</p>
+<p>This way add becomes a function. The “wonderful” part is that it can access the counter in the parent scope.</p>
 <p>The counter is protected by the scope of the anonymous function, and can only be changed using the add function.</p>
 <p>The magic is that in JavaScript a function reference also has a secret reference to the closure it was created in — similar to how delegates are a method pointer plus a secret reference to an object.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">say667</span><span class="p">()</span> <span class="p">{</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">say667</span><span class="p">()</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
     <span class="kd">var</span> <span class="nx">say</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">);</span> <span class="p">}</span>
     <span class="nx">num</span><span class="o">++</span><span class="p">;</span>
@@ -352,7 +342,7 @@ foo(1); // second
 <span class="nx">sayNumber</span><span class="p">();</span> <span class="c1">//logs 43</span>
 </pre></div>
 </div>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">gLogNumber</span><span class="p">,</span> <span class="nx">gIncreaseNumber</span><span class="p">,</span> <span class="nx">gSetNumber</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">gLogNumber</span><span class="p">,</span> <span class="nx">gIncreaseNumber</span><span class="p">,</span> <span class="nx">gSetNumber</span><span class="p">;</span>
 <span class="kd">function</span> <span class="nx">setupSomeGlobals</span><span class="p">()</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
     <span class="nx">gLogNumber</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">);</span> <span class="p">}</span>
@@ -375,7 +365,7 @@ foo(1); // second
 <p>Note that in the above example, if you call&nbsp;setupSomeGlobals()&nbsp;again, then a new closure (stack-frame!) is created.</p>
 <p>The old&nbsp;gLogNumber,&nbsp;gIncreaseNumber,&nbsp;gSetNumber&nbsp;variables are overwritten with&nbsp;new&nbsp;functions that have the new closure.</p>
 <p>Closure can also introduce tricky bugs if not used correctly.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">buildList</span><span class="p">(</span><span class="nx">list</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">buildList</span><span class="p">(</span><span class="nx">list</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">[];</span>
     <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">list</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
             <span class="kd">var</span> <span class="nx">item</span> <span class="o">=</span> <span class="s1">&#39;item&#39;</span> <span class="o">+</span> <span class="nx">i</span><span class="p">;</span>
@@ -393,13 +383,13 @@ foo(1); // second
 </pre></div>
 </div>
 <p>This is because just like previous examples, there is only one closure for the local variables for&nbsp;buildList.
-When the anonymous functions are called on the line&nbsp;fnlist[j](); they all use the same single closure, and they use the current value for&nbsp;i&nbsp;and&nbsp;item&nbsp;within that one closure (where&nbsp;i&nbsp;has a value of&nbsp;3&nbsp;because the loop had completed, and&nbsp;item&nbsp;has a value of&nbsp;&#8217;item2&#8217;).
+When the anonymous functions are called on the line&nbsp;fnlist[j](); they all use the same single closure, and they use the current value for&nbsp;i&nbsp;and&nbsp;item&nbsp;within that one closure (where&nbsp;i&nbsp;has a value of&nbsp;3&nbsp;because the loop had completed, and&nbsp;item&nbsp;has a value of&nbsp;‘item2’).
 Note we are indexing from 0 hence&nbsp;item&nbsp;has a value of&nbsp;item2.
 And the i++ will increment&nbsp;i&nbsp;to the value&nbsp;3.</p>
 </div>
 <div class="section" id="self-executing-function">
 <h2><a class="toc-backref" href="#id18">Self-executing function</a><a class="headerlink" href="#self-executing-function" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">private_variable</span> <span class="o">=</span> <span class="s1">&#39;private&#39;</span><span class="p">;</span>
 <span class="p">})();</span>
 </pre></div>
@@ -409,16 +399,16 @@ And the i++ will increment&nbsp;i&nbsp;to the value&nbsp;3.</p>
 <h2><a class="toc-backref" href="#id19">Scope</a><a class="headerlink" href="#scope" title="Permalink to this headline">¶</a></h2>
 <p>Javascript has scope chain.
 When looking for the definition of a variable, the javascript engine first looks at the local execution context object.
-If the definition isn&#8217;t there, it jumps up the scope chain to the execution context it was created in and looks for the variable definition in that execution context object, and so on until it finds the definition or reaches the global scope.</p>
-<p>Global scope. Objects at root are &#8216;global&#8217;.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
+If the definition isn’t there, it jumps up the scope chain to the execution context it was created in and looks for the variable definition in that execution context object, and so on until it finds the definition or reaches the global scope.</p>
+<p>Global scope. Objects at root are ‘global’.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
 <span class="k">if</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">a</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="nx">b</span><span class="p">;</span> <span class="c1">//this works</span>
 </pre></div>
 </div>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="s1">&#39;hello&#39;</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="s1">&#39;hello&#39;</span><span class="p">;</span>
 <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">a</span><span class="p">;</span>
 <span class="p">}</span>
@@ -427,7 +417,7 @@ If the definition isn&#8217;t there, it jumps up the scope chain to the executio
 </div>
 <p>Javascript lacks real namespaces.
 We can mimic by creating with objects to avoid polluting the global scope.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// Construct or Import Namespace</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// Construct or Import Namespace</span>
 <span class="kd">var</span> <span class="nx">WilderMinds</span> <span class="o">=</span> <span class="nx">WilderMinds</span> <span class="o">||</span> <span class="p">{};</span>
 <span class="nx">WilderMinds</span><span class="p">.</span><span class="nx">currentTime</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="k">return</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
@@ -436,7 +426,7 @@ We can mimic by creating with objects to avoid polluting the global scope.</p>
 </div>
 <p>Anonymous self-executing functions: protects the global namespace by function scope
 All Together: Namespaces and Anonymous Self-Executing Functions</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">ns</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">ns</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">currentDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
     <span class="nx">ns</span><span class="p">.</span><span class="nx">currentTime</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
             <span class="k">return</span> <span class="nx">currentDate</span><span class="p">;</span>
@@ -451,7 +441,7 @@ All Together: Namespaces and Anonymous Self-Executing Functions</p>
 <p>Javascript also support OOP paradiam.</p>
 <div class="section" id="inheritance">
 <h2><a class="toc-backref" href="#id21">Inheritance</a><a class="headerlink" href="#inheritance" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">proto</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">proto</span> <span class="o">=</span> <span class="p">{</span>
     <span class="nx">sentence</span><span class="o">:</span> <span class="mi">4</span><span class="p">,</span>
     <span class="nx">probation</span><span class="o">:</span> <span class="mi">2</span>
 <span class="p">};</span>
@@ -472,9 +462,9 @@ All Together: Namespaces and Anonymous Self-Executing Functions</p>
 prototype is the object that is used to build __proto__ when you create an object with new().</p>
 </div>
 <div class="section" id="class-in-javascript">
-<h2><a class="toc-backref" href="#id22">&#8216;Class&#8217; in Javascript</a><a class="headerlink" href="#class-in-javascript" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id22">‘Class’ in Javascript</a><a class="headerlink" href="#class-in-javascript" title="Permalink to this headline">¶</a></h2>
 <p>Closures can make properties private</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">funciton</span> <span class="nx">Customer</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">company</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">funciton</span> <span class="nx">Customer</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">company</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">//public</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">company</span> <span class="o">=</span> <span class="nx">company</span><span class="p">;</span>
@@ -491,7 +481,7 @@ prototype is the object that is used to build __proto__ when you create an objec
 </div>
 <div class="section" id="static-members">
 <h2><a class="toc-backref" href="#id23">Static Members</a><a class="headerlink" href="#static-members" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">Customer</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">company</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">Customer</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">company</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">company</span> <span class="o">=</span> <span class="nx">company</span><span class="p">;</span>
 <span class="p">}</span>
@@ -501,12 +491,12 @@ prototype is the object that is used to build __proto__ when you create an objec
 </div>
 <div class="section" id="sharing-a-function">
 <h2><a class="toc-backref" href="#id24">Sharing a function</a><a class="headerlink" href="#sharing-a-function" title="Permalink to this headline">¶</a></h2>
-<p>That way each instance doesn&#8217;t have it&#8217;s own copy</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>Customer.prototype.send = funciton(email) { … }
+<p>That way each instance doesn’t have it’s own copy</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span>Customer.prototype.send = funciton(email) { … }
 </pre></div>
 </div>
 <p>Basic inheritance with the Prototype object</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">Cow</span><span class="p">(</span><span class="nx">color</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">Cow</span><span class="p">(</span><span class="nx">color</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">color</span> <span class="o">=</span> <span class="nx">color</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nx">Cow</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span><span class="p">(</span><span class="s1">&#39;Hay&#39;</span><span class="p">);</span>
@@ -518,7 +508,7 @@ prototype is the object that is used to build __proto__ when you create an objec
 </pre></div>
 </div>
 <p>Can Fake Abstract Classes with some caveats</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">Animal</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">Animal</span> <span class="o">=</span> <span class="p">{</span>
     <span class="nx">foodType</span><span class="o">:</span> <span class="s1">&#39;None&#39;</span><span class="p">,</span>
     <span class="nx">feed</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
             <span class="nx">log</span><span class="p">(</span><span class="s1">&#39;fed the animal: &#39;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">foodType</span><span class="p">);</span>
@@ -533,10 +523,10 @@ prototype is the object that is used to build __proto__ when you create an objec
 <p>Property Syntaxes</p>
 <ul class="simple">
 <li>Dot syntax: cust.name</li>
-<li>Bracket Syntax: cust[&#8220;name&#8221;]</li>
+<li>Bracket Syntax: cust[“name”]</li>
 </ul>
 <p>Enumerating members: simplest version of reflection</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>var cust = {
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span>var cust = {
     name: &#39;Shawn&#39;,
     &#39;company name&#39;: &#39;Wilder Minds&#39;,
     sendMail: function() { … }
@@ -554,8 +544,8 @@ var isEnum = cust.propertyIsEnumerable(&#39;name&#39;);
 <div class="section" id="extension-methods">
 <h2><a class="toc-backref" href="#id26">Extension methods</a><a class="headerlink" href="#extension-methods" title="Permalink to this headline">¶</a></h2>
 <p>prototype can be used to add extension methods
-Add to existing type&#8217;s prototype</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">calculateCount</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+Add to existing type’s prototype</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">calculateCount</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
 <span class="p">};</span>
 <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">];</span>
@@ -617,6 +607,7 @@ Add to existing type&#8217;s prototype</p>
   </div>
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -648,7 +639,7 @@ Add to existing type&#8217;s prototype</p>
   <h2>
   
   <i class="fa fa-calendar"></i>
-    Sep 09, 2017
+    09 September 2017
   
   </h2>
 
@@ -662,7 +653,7 @@ Add to existing type&#8217;s prototype</p>
   
 
   
-  <li><i class="fa-fw fa fa-folder-open"></i>
+  <li id="category"><span><i class="fa-fw fa fa-folder-open"></i>
     
       
       <a href="../../blog/category/computerscience/">ComputerScience</a>
@@ -671,11 +662,11 @@ Add to existing type&#8217;s prototype</p>
   
 
   
-  <li><i class="fa-fw fa fa-tags"></i>
+  <li id="tags"><span><i class="fa-fw fa fa-tags"></i>
       
     
       
-      <a href="../../blog/tag/web/">web</a>,
+      <a href="../../blog/tag/web/">web</a>
       
     
       
@@ -684,7 +675,7 @@ Add to existing type&#8217;s prototype</p>
     </li>
   
   
-  <li>
+  <li id="comments">
     <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'wubw-github-io'; // required: replace example with your forum shortname
@@ -714,15 +705,15 @@ Add to existing type&#8217;s prototype</p>
   <ul>
     
     
-      <li><a href="../../2018/authentication_authorization_explainations/">Mar 14 - Authentication & Authorization Explainations</a></li>
+      <li><a href="../../2018/authentication_authorization_explainations/">14 March - Authentication & Authorization Basic</a></li>
     
-      <li><a href="../../2018/microservices_introduction/">Mar 07 - Microservices Introduction</a></li>
+      <li><a href="../../2018/microservices_introduction/">07 March - Microservices Introduction</a></li>
     
-      <li><a href="../../2018/blockchain_scenario/">Feb 26 - Blockchain Scenario</a></li>
+      <li><a href="../../2018/blockchain_scenario/">26 February - Blockchain Scenario</a></li>
     
-      <li><a href="../../2018/https/">Jan 24 - Https Explainations</a></li>
+      <li><a href="../../2018/https/">24 January - Https Explainations</a></li>
     
-      <li><a href="../../2018/the_personal_mba/">Jan 22 - The Personal MBA</a></li>
+      <li><a href="../../2018/the_personal_mba/">22 January - The Personal MBA</a></li>
     
   </ul>
 
@@ -892,12 +883,14 @@ Add to existing type&#8217;s prototype</p>
 
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../../search/" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -908,8 +901,8 @@ Add to existing type&#8217;s prototype</p>
       &copy;2017, binwei.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.5</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
       
       |
       <a href="../../_sources/2017/introduction_to_javascript.rst.txt"
