@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>Vi: Configuration Example &#8212; binwei  documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -13,6 +11,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="author" title="About these documents" href="../../about/" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
@@ -55,7 +54,7 @@ There is GUI Vi tool available on Windows called Gvim, which can be downloaded f
 <p>The configuration file is named as _vimrc which is located around ProgramFiles(x86)Vim. Just open and edit the _vimrc file, but you need to restart Gvim to see the changes.</p>
 <p>The following settings will be very helpful but not set-on by default.</p>
 <ul class="simple">
-<li>If the GUI is not English, you can add following content in _vimrc</li>
+<li><p>If the GUI is not English, you can add following content in _vimrc</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="nv">langmenu</span><span class="o">=</span>en_US
 <span class="nb">let</span> <span class="nv">$LANG</span> <span class="o">=</span> <span class="s1">&#39;en_US&#39;</span>
@@ -64,32 +63,32 @@ There is GUI Vi tool available on Windows called Gvim, which can be downloaded f
 </pre></div>
 </div>
 <ul class="simple">
-<li>Set to auto read when a file is changed from the outside</li>
+<li><p>Set to auto read when a file is changed from the outside</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> autoread
 </pre></div>
 </div>
 <ul class="simple">
-<li>Ignore case when searching</li>
+<li><p>Ignore case when searching</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> ignorecase
 </pre></div>
 </div>
 <ul class="simple">
-<li>Set the dark scheme</li>
+<li><p>Set the dark scheme</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>colorscheme desert
 <span class="nb">set</span> <span class="nv">background</span><span class="o">=</span>dark
 </pre></div>
 </div>
 <ul class="simple">
-<li>Set utf8 as standard encoding</li>
+<li><p>Set utf8 as standard encoding</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="nv">encoding</span><span class="o">=</span>utf8
 </pre></div>
 </div>
 <ul class="simple">
-<li>Turn backup off</li>
+<li><p>Turn backup off</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> nobackup
 <span class="nb">set</span> nowb
@@ -97,13 +96,13 @@ There is GUI Vi tool available on Windows called Gvim, which can be downloaded f
 </pre></div>
 </div>
 <ul class="simple">
-<li>Set the tab stop</li>
+<li><p>Set the tab stop</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="nv">tabstop</span><span class="o">=</span><span class="m">4</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li>Set the auto indent</li>
+<li><p>Set the auto indent</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> ai <span class="s2">&quot;Auto indent</span>
 <span class="s2">set si &quot;</span>Smart indent
@@ -111,19 +110,19 @@ There is GUI Vi tool available on Windows called Gvim, which can be downloaded f
 </pre></div>
 </div>
 <ul class="simple">
-<li>Display line numbers on the left</li>
+<li><p>Display line numbers on the left</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> number
 </pre></div>
 </div>
 <ul class="simple">
-<li>Set the font</li>
+<li><p>Set the font</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="nv">guifont</span><span class="o">=</span>courier_new:h12
 </pre></div>
 </div>
 <ul class="simple">
-<li>Maximize the window on startup</li>
+<li><p>Maximize the window on startup</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> has<span class="o">(</span><span class="s2">&quot;gui_running&quot;</span><span class="o">)</span>
     <span class="s2">&quot; GUI is running or is about to start.</span>
@@ -141,7 +140,7 @@ There is GUI Vi tool available on Windows called Gvim, which can be downloaded f
 </pre></div>
 </div>
 <ul class="simple">
-<li>Set the spell check on</li>
+<li><p>Set the spell check on</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> spell
 </pre></div>
@@ -294,15 +293,15 @@ There is GUI Vi tool available on Windows called Gvim, which can be downloaded f
   <ul>
     
     
+      <li><a href="../../2019/cyber_security_for_blockchain/">09 June - 2019/Cyber_Security_For_Blockchain</a></li>
+    
+      <li><a href="../../2019/azure_datalake_warehouse/">30 April - Azure Data Lake and Warehouse</a></li>
+    
       <li><a href="../../2019/user_story_applied/">21 April - User Story Applied</a></li>
     
       <li><a href="../../2019/application_insight_introduction/">20 April - Application Insight Introduction</a></li>
     
       <li><a href="../../2019/azure_security/">19 April - Azure Security</a></li>
-    
-      <li><a href="../../2019/iot_for_smartcities/">10 February - Iot for Smart Cities</a></li>
-    
-      <li><a href="../../2019/agile_selling/">27 January - Agile Selling</a></li>
     
   </ul>
 
@@ -360,7 +359,7 @@ There is GUI Vi tool available on Windows called Gvim, which can be downloaded f
       
     
       
-      <li class="ablog-cloud ablog-cloud-1">
+      <li class="ablog-cloud ablog-cloud-2">
         <a href="../../blog/tag/cloud/">cloud</a></li>
       
     
@@ -469,7 +468,7 @@ There is GUI Vi tool available on Windows called Gvim, which can be downloaded f
     
   
     
-    <li><a href="../../blog/category/computerscience/">ComputerScience (33)</a></li>
+    <li><a href="../../blog/category/computerscience/">ComputerScience (35)</a></li>
     
   
     
@@ -490,7 +489,7 @@ There is GUI Vi tool available on Windows called Gvim, which can be downloaded f
   <ul>
   
     
-    <li><a href="../../blog/2019/">2019 (6)</a></li>
+    <li><a href="../../blog/2019/">2019 (8)</a></li>
     
   
     
@@ -504,13 +503,11 @@ There is GUI Vi tool available on Windows called Gvim, which can be downloaded f
   </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../search/" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -523,8 +520,8 @@ There is GUI Vi tool available on Windows called Gvim, which can be downloaded f
       &copy;2017, binwei.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="../../_sources/2017/vi_configuration-example.rst.txt"

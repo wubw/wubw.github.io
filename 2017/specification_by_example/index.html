@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>Specification by Example &#8212; binwei  documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -13,6 +11,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="author" title="About these documents" href="../../about/" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
@@ -55,25 +54,27 @@ With Specification by Example, teams write just enough documentation to facilita
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#specification-by-example" id="id1">Specification by Example</a></li>
-<li><a class="reference internal" href="#introduction" id="id2">Introduction</a></li>
-<li><a class="reference internal" href="#what-is-a-specification" id="id3">What is a specification</a><ul>
-<li><a class="reference internal" href="#difference-from-user-stories" id="id4">Difference from user stories</a></li>
-<li><a class="reference internal" href="#difference-from-scripts" id="id5">Difference from scripts</a></li>
-<li><a class="reference internal" href="#difference-from-software-design" id="id6">Difference from software design</a></li>
+<li><p><a class="reference internal" href="#specification-by-example" id="id1">Specification by Example</a></p></li>
+<li><p><a class="reference internal" href="#introduction" id="id2">Introduction</a></p></li>
+<li><p><a class="reference internal" href="#what-is-a-specification" id="id3">What is a specification</a></p>
+<ul>
+<li><p><a class="reference internal" href="#difference-from-user-stories" id="id4">Difference from user stories</a></p></li>
+<li><p><a class="reference internal" href="#difference-from-scripts" id="id5">Difference from scripts</a></p></li>
+<li><p><a class="reference internal" href="#difference-from-software-design" id="id6">Difference from software design</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#key-process-patterns" id="id7">Key process patterns</a><ul>
-<li><a class="reference internal" href="#deriving-scope-from-goals" id="id8">Deriving scope from goals</a></li>
-<li><a class="reference internal" href="#specifying-collaboratively" id="id9">Specifying collaboratively</a></li>
-<li><a class="reference internal" href="#illustrating-specifications-using-examples" id="id10">Illustrating specifications using examples</a></li>
-<li><a class="reference internal" href="#refining-the-specifications" id="id11">Refining the specifications</a></li>
-<li><a class="reference internal" href="#automating-validation-without-changing-the-specifications" id="id12">Automating validation without changing the specifications</a></li>
-<li><a class="reference internal" href="#validating-the-system-frequently" id="id13">Validating the system frequently</a></li>
-<li><a class="reference internal" href="#evolving-living-documentation" id="id14">Evolving living documentation</a></li>
+<li><p><a class="reference internal" href="#key-process-patterns" id="id7">Key process patterns</a></p>
+<ul>
+<li><p><a class="reference internal" href="#deriving-scope-from-goals" id="id8">Deriving scope from goals</a></p></li>
+<li><p><a class="reference internal" href="#specifying-collaboratively" id="id9">Specifying collaboratively</a></p></li>
+<li><p><a class="reference internal" href="#illustrating-specifications-using-examples" id="id10">Illustrating specifications using examples</a></p></li>
+<li><p><a class="reference internal" href="#refining-the-specifications" id="id11">Refining the specifications</a></p></li>
+<li><p><a class="reference internal" href="#automating-validation-without-changing-the-specifications" id="id12">Automating validation without changing the specifications</a></p></li>
+<li><p><a class="reference internal" href="#validating-the-system-frequently" id="id13">Validating the system frequently</a></p></li>
+<li><p><a class="reference internal" href="#evolving-living-documentation" id="id14">Evolving living documentation</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#good-practices" id="id15">Good practices</a></li>
+<li><p><a class="reference internal" href="#good-practices" id="id15">Good practices</a></p></li>
 </ul>
 </div>
 </div>
@@ -81,40 +82,42 @@ With Specification by Example, teams write just enough documentation to facilita
 <h1><a class="toc-backref" href="#id2">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
 <p>“The hardest single part of building a software system is deciding precisely what to build.”</p>
 <blockquote>
-<div>– The Mythical Man-Month</div></blockquote>
+<div><p>– The Mythical Man-Month</p>
+</div></blockquote>
 <p>“The formulation of a problem is often more essential than its solution.”</p>
 <blockquote>
-<div>– Albert Einstein</div></blockquote>
+<div><p>– Albert Einstein</p>
+</div></blockquote>
 <p>Specification by Example is to address the above questions.</p>
 <img alt="../../_images/usageofspecificationbyexample.png" src="../../_images/usageofspecificationbyexample.png" />
 <p>Besides that, Specification by Example also ensure documentation agile teams need to build is:</p>
 <ul class="simple">
-<li>Precise and objectively testable</li>
-<li>Easy to maintain</li>
-<li>Written just-in-time</li>
+<li><p>Precise and objectively testable</p></li>
+<li><p>Easy to maintain</p></li>
+<li><p>Written just-in-time</p></li>
 </ul>
 </div>
 <div class="section" id="what-is-a-specification">
 <h1><a class="toc-backref" href="#id3">What is a specification</a><a class="headerlink" href="#what-is-a-specification" title="Permalink to this headline">¶</a></h1>
 <p>A specification should be</p>
 <ul class="simple">
-<li>Precise and testable</li>
-<li>A true specification, not a script</li>
-<li>About business functionality, not about software design</li>
+<li><p>Precise and testable</p></li>
+<li><p>A true specification, not a script</p></li>
+<li><p>About business functionality, not about software design</p></li>
 </ul>
 <p>Once the functionality is implemented, the specification that describes it will serve a different purpose.
 It will document what the system does and alert us about functional regression.</p>
 <p>To be effective in these goals, a specification should be</p>
 <ul class="simple">
-<li>Self explanatory</li>
-<li>Focused</li>
-<li>In domain language</li>
+<li><p>Self explanatory</p></li>
+<li><p>Focused</p></li>
+<li><p>In domain language</p></li>
 </ul>
 <p>An example of a very good specification with examples is shown here. Free delivery</p>
 <ul class="simple">
-<li>Free delivery is offered to VIP customers once they purchase a certain number of books.</li>
-<li>Free delivery is not offered to regular customers or VIP customers buying anything else than books.</li>
-<li>Given that the minimum number of books to get free delivery is five, then we expect the following:</li>
+<li><p>Free delivery is offered to VIP customers once they purchase a certain number of books.</p></li>
+<li><p>Free delivery is not offered to regular customers or VIP customers buying anything else than books.</p></li>
+<li><p>Given that the minimum number of books to get free delivery is five, then we expect the following:</p></li>
 </ul>
 <img alt="../../_images/exampleoffreedelivery.png" src="../../_images/exampleoffreedelivery.png" />
 <div class="section" id="difference-from-user-stories">
@@ -152,8 +155,8 @@ Such scripts will cause a lot of long-term maintenance problems.</p>
 It should explain the business functionality without prescribing how it’s going to be implemented in software.</p>
 <p>This serves two purposes:</p>
 <ul class="simple">
-<li>It allows developers to find the best possible solution now.</li>
-<li>It allows developers to improve the design in the future.</li>
+<li><p>It allows developers to find the best possible solution now.</p></li>
+<li><p>It allows developers to improve the design in the future.</p></li>
 </ul>
 <p>Specifications that focus on business functionality, without describing the implementation, enable the implementation to change more easily.
 A specification that does not say anything about software design won’t need to change when the design improves.</p>
@@ -163,13 +166,13 @@ A specification that does not say anything about software design won’t need to
 <h1><a class="toc-backref" href="#id7">Key process patterns</a><a class="headerlink" href="#key-process-patterns" title="Permalink to this headline">¶</a></h1>
 <p>The key process patterns of Specification by Example are:</p>
 <ul class="simple">
-<li>Deriving scope from goals</li>
-<li>Specifying collaboratively</li>
-<li>Illustrating specifications using examples</li>
-<li>Refining the specifications</li>
-<li>Automating validation without changing the specifications</li>
-<li>Validating the system frequently</li>
-<li>Evolving living documentation.</li>
+<li><p>Deriving scope from goals</p></li>
+<li><p>Specifying collaboratively</p></li>
+<li><p>Illustrating specifications using examples</p></li>
+<li><p>Refining the specifications</p></li>
+<li><p>Automating validation without changing the specifications</p></li>
+<li><p>Validating the system frequently</p></li>
+<li><p>Evolving living documentation.</p></li>
 </ul>
 <img alt="../../_images/keyprocesspatternsofspecificationbyexample.png" src="../../_images/keyprocesspatternsofspecificationbyexample.png" />
 <div class="section" id="deriving-scope-from-goals">
@@ -191,10 +194,10 @@ Collaboration also helps teams produce specifications that are easy to understan
 <p>When: Analysts/domain experts are a bottleneck</p>
 <p>A “cell” consisting of two developers and a tester reviews each story early on to prepare for the meeting with the product owner, identifying any open questions.</p>
 <ul class="simple">
-<li>Specification by Example relies heavily on collaboration between business users and delivery team members.</li>
-<li>Everyone on the delivery team shares the responsibility for the right specifications. Programmers and testers have to offer input about the technical implementation and the validation aspects.</li>
-<li>Most teams collaborate on specifications in two phases: Someone works up front to prepare initial examples for a feature, and then those who have a stake in the feature discuss it, adding examples to clarify or complete the specification.</li>
-<li>The balance between the work done in preparation and the work done during collaboration depends on several factors: the maturity of the product, the level of domain knowledge in the delivery team, typical change request complexity, process bottlenecks, and availability of business users.</li>
+<li><p>Specification by Example relies heavily on collaboration between business users and delivery team members.</p></li>
+<li><p>Everyone on the delivery team shares the responsibility for the right specifications. Programmers and testers have to offer input about the technical implementation and the validation aspects.</p></li>
+<li><p>Most teams collaborate on specifications in two phases: Someone works up front to prepare initial examples for a feature, and then those who have a stake in the feature discuss it, adding examples to clarify or complete the specification.</p></li>
+<li><p>The balance between the work done in preparation and the work done during collaboration depends on several factors: the maturity of the product, the level of domain knowledge in the delivery team, typical change request complexity, process bottlenecks, and availability of business users.</p></li>
 </ul>
 <p><strong>There are many different ways to collaborate</strong></p>
 <p>Many teams found that, at the start, big workshops were useful as a means to transfer the domain knowledge and align the expectations of developers, testers, and business analysts and stakeholders.
@@ -214,9 +217,9 @@ To check if a specification is self-explanatory, get someone else to look at the
 This is why we use them to clarify meaning in everyday communication, and use them consistently in analysis, development, and testing.</p>
 <p>A specification that defines three key examples properly is much more useful than one that specifies a hundred examples poorly.</p>
 <ul class="simple">
-<li>A representative example illustrating each important aspect of business functionality. Business users, analysts, or customers will typically define these.</li>
-<li>An example illustrating each important technical edge case, such as technical boundary conditions. Developers will typically suggest such examples when they’re concerned about functional gaps or inconsistencies. Business users, analysts, or customers will define the correct expected behavior.</li>
-<li>An example illustrating each particularly troublesome area of the expected implementation, such as cases that caused bugs in the past and boundary conditions that might not be explicitly illustrated by previous examples. Testers will typically suggest these, and business users, analysts, or customers will define the correct behavior.</li>
+<li><p>A representative example illustrating each important aspect of business functionality. Business users, analysts, or customers will typically define these.</p></li>
+<li><p>An example illustrating each important technical edge case, such as technical boundary conditions. Developers will typically suggest such examples when they’re concerned about functional gaps or inconsistencies. Business users, analysts, or customers will define the correct expected behavior.</p></li>
+<li><p>An example illustrating each particularly troublesome area of the expected implementation, such as cases that caused bugs in the past and boundary conditions that might not be explicitly illustrated by previous examples. Testers will typically suggest these, and business users, analysts, or customers will define the correct behavior.</p></li>
 </ul>
 <p><strong>Avoid using abstract classes of equivalence</strong></p>
 <p>When: You can specify a concrete example</p>
@@ -228,10 +231,10 @@ We should have enough examples to describe the entire scope of a feature</p>
 <p>Collaboration on refining the specification/requirements builds trust between stakeholders and delivery team members.</p>
 <p>And collaboration requires preparation</p>
 <ul class="simple">
-<li>For teams who worked on projects where the requirements were vague and required a lot of upfront analysis, the preparation phase started two weeks before the collaborative workshop.</li>
-<li>This allowed analysts to talk to business users, collect examples from them, and start refining the examples.</li>
-<li>Teams that had more stable requirements started working on examples a few days before, collecting the obvious open questions and addressing them.</li>
-<li>All these approaches help to run a bigger workshop more efficiently.</li>
+<li><p>For teams who worked on projects where the requirements were vague and required a lot of upfront analysis, the preparation phase started two weeks before the collaborative workshop.</p></li>
+<li><p>This allowed analysts to talk to business users, collect examples from them, and start refining the examples.</p></li>
+<li><p>Teams that had more stable requirements started working on examples a few days before, collecting the obvious open questions and addressing them.</p></li>
+<li><p>All these approaches help to run a bigger workshop more efficiently.</p></li>
 </ul>
 </div>
 <div class="section" id="automating-validation-without-changing-the-specifications">
@@ -239,7 +242,7 @@ We should have enough examples to describe the entire scope of a feature</p>
 <p><strong>Use “Given-When-Then” language in specifications</strong></p>
 <p>In order to: Make the test easier to understand</p>
 <p>As a rule of thumb, a specification should declare the context, specify a single action, and then define the expected post-conditions.
-(Or&nbsp;Arrange-Act-Assert)</p>
+(Or Arrange-Act-Assert)</p>
 <p>When deciding whether to automate the validation of specifications using a technical tool or one for executable specifications, think about which benefits you want to get out of it.
 If we automate examples with a technical tool, we get easier automation and cheaper maintenance but lose the ability to use them for communication with business users later.
 We get very good regression tests, but the specifications will be accessible only to developers.
@@ -309,16 +312,16 @@ They reduce the cost of creating a script but significantly increase the cost of
 The automation layer should handle the workflow level by combining blocks composed at the technical activity level.
 Such tests will be easy to understand, efficient to write, and relatively inexpensive to maintain.</p>
 <ul class="simple">
-<li>Refined specifications should be automated with as little change as possible.</li>
-<li>The automation layer should define how something is tested; specifications should define what is to be tested.</li>
-<li>Use the automation layer to translate between the business language and user interface concepts, APIs, and databases. Create higher-level reusable components for specifications.</li>
-<li>Automate below the user interface if possible.</li>
-<li>Don’t rely too much on existing data if you don’t have to.</li>
-<li>Validate executable specifications frequently to keep them reliable.</li>
-<li>Compared to continuous integration with unit tests, the two main challenges for continuous validation are fast feedback and stability.</li>
-<li>Set up an isolated environment for continuous validation and fully automate deployments to make it more reliable.</li>
-<li>Look for ways to get faster feedback. Split quick and slow tests, create a pack for current iteration specifications, and divide long-running packs of executable specifications into smaller packs.</li>
-<li>Don’t just disable failing tests—either fix the problems or move the tests to a pack for low-priority regression issues that’s closely monitored.</li>
+<li><p>Refined specifications should be automated with as little change as possible.</p></li>
+<li><p>The automation layer should define how something is tested; specifications should define what is to be tested.</p></li>
+<li><p>Use the automation layer to translate between the business language and user interface concepts, APIs, and databases. Create higher-level reusable components for specifications.</p></li>
+<li><p>Automate below the user interface if possible.</p></li>
+<li><p>Don’t rely too much on existing data if you don’t have to.</p></li>
+<li><p>Validate executable specifications frequently to keep them reliable.</p></li>
+<li><p>Compared to continuous integration with unit tests, the two main challenges for continuous validation are fast feedback and stability.</p></li>
+<li><p>Set up an isolated environment for continuous validation and fully automate deployments to make it more reliable.</p></li>
+<li><p>Look for ways to get faster feedback. Split quick and slow tests, create a pack for current iteration specifications, and divide long-running packs of executable specifications into smaller packs.</p></li>
+<li><p>Don’t just disable failing tests—either fix the problems or move the tests to a pack for low-priority regression issues that’s closely monitored.</p></li>
 </ul>
 <p><strong>Organize current work by stories, Reorganize stories by functional areas</strong></p>
 <p>User stories are excellent as a planning tool, but they aren’t useful as a way to organize existing system functionality.</p>
@@ -474,15 +477,15 @@ Such tests will be easy to understand, efficient to write, and relatively inexpe
   <ul>
     
     
+      <li><a href="../../2019/cyber_security_for_blockchain/">09 June - 2019/Cyber_Security_For_Blockchain</a></li>
+    
+      <li><a href="../../2019/azure_datalake_warehouse/">30 April - Azure Data Lake and Warehouse</a></li>
+    
       <li><a href="../../2019/user_story_applied/">21 April - User Story Applied</a></li>
     
       <li><a href="../../2019/application_insight_introduction/">20 April - Application Insight Introduction</a></li>
     
       <li><a href="../../2019/azure_security/">19 April - Azure Security</a></li>
-    
-      <li><a href="../../2019/iot_for_smartcities/">10 February - Iot for Smart Cities</a></li>
-    
-      <li><a href="../../2019/agile_selling/">27 January - Agile Selling</a></li>
     
   </ul>
 
@@ -540,7 +543,7 @@ Such tests will be easy to understand, efficient to write, and relatively inexpe
       
     
       
-      <li class="ablog-cloud ablog-cloud-1">
+      <li class="ablog-cloud ablog-cloud-2">
         <a href="../../blog/tag/cloud/">cloud</a></li>
       
     
@@ -649,7 +652,7 @@ Such tests will be easy to understand, efficient to write, and relatively inexpe
     
   
     
-    <li><a href="../../blog/category/computerscience/">ComputerScience (33)</a></li>
+    <li><a href="../../blog/category/computerscience/">ComputerScience (35)</a></li>
     
   
     
@@ -670,7 +673,7 @@ Such tests will be easy to understand, efficient to write, and relatively inexpe
   <ul>
   
     
-    <li><a href="../../blog/2019/">2019 (6)</a></li>
+    <li><a href="../../blog/2019/">2019 (8)</a></li>
     
   
     
@@ -684,13 +687,11 @@ Such tests will be easy to understand, efficient to write, and relatively inexpe
   </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../search/" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -703,8 +704,8 @@ Such tests will be easy to understand, efficient to write, and relatively inexpe
       &copy;2017, binwei.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="../../_sources/2017/specification_by_example.rst.txt"

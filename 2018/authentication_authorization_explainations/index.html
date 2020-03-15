@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>Authentication &amp; Authorization Basic &#8212; binwei  documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -13,6 +11,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="author" title="About these documents" href="../../about/" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
@@ -56,24 +55,28 @@ This blog explains the basic of these two concepts.</p>
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#authentication-authorization-basic" id="id1">Authentication &amp; Authorization Basic</a></li>
-<li><a class="reference internal" href="#single-sign-on" id="id2">Single sign on</a><ul>
-<li><a class="reference internal" href="#token-service" id="id3">Token service</a></li>
+<li><p><a class="reference internal" href="#authentication-authorization-basic" id="id1">Authentication &amp; Authorization Basic</a></p></li>
+<li><p><a class="reference internal" href="#single-sign-on" id="id2">Single sign on</a></p>
+<ul>
+<li><p><a class="reference internal" href="#token-service" id="id3">Token service</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#token" id="id4">Token</a><ul>
-<li><a class="reference internal" href="#protocols" id="id5">Protocols</a></li>
-<li><a class="reference internal" href="#token-types" id="id6">Token types</a></li>
+<li><p><a class="reference internal" href="#token" id="id4">Token</a></p>
+<ul>
+<li><p><a class="reference internal" href="#protocols" id="id5">Protocols</a></p></li>
+<li><p><a class="reference internal" href="#token-types" id="id6">Token types</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#oauth-2-0" id="id7">OAuth 2.0</a><ul>
-<li><a class="reference internal" href="#the-main-actors" id="id8">The main actors</a></li>
-<li><a class="reference internal" href="#flows" id="id9">Flows</a></li>
+<li><p><a class="reference internal" href="#oauth-2-0" id="id7">OAuth 2.0</a></p>
+<ul>
+<li><p><a class="reference internal" href="#the-main-actors" id="id8">The main actors</a></p></li>
+<li><p><a class="reference internal" href="#flows" id="id9">Flows</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#principles" id="id10">Principles</a><ul>
-<li><a class="reference internal" href="#transitive-trust" id="id11">Transitive Trust</a></li>
-<li><a class="reference internal" href="#authorization-principles" id="id12">Authorization principles</a></li>
+<li><p><a class="reference internal" href="#principles" id="id10">Principles</a></p>
+<ul>
+<li><p><a class="reference internal" href="#transitive-trust" id="id11">Transitive Trust</a></p></li>
+<li><p><a class="reference internal" href="#authorization-principles" id="id12">Authorization principles</a></p></li>
 </ul>
 </li>
 </ul>
@@ -85,10 +88,10 @@ This blog explains the basic of these two concepts.</p>
 All parties belong to Active Directory which makes things easy.</p>
 <p>However, in a micro services scenario the authentication becomes a challenge.</p>
 <ul class="simple">
-<li>Method of allowing users access to all resources they need within an environment with a single username and password</li>
-<li>Negates having to remember multiple usernames and passwords</li>
-<li>Mitigates risk by keeping users from writing down credentials</li>
-<li>Easier to manage and allows for centralized control over password changes</li>
+<li><p>Method of allowing users access to all resources they need within an environment with a single username and password</p></li>
+<li><p>Negates having to remember multiple usernames and passwords</p></li>
+<li><p>Mitigates risk by keeping users from writing down credentials</p></li>
+<li><p>Easier to manage and allows for centralized control over password changes</p></li>
 </ul>
 <p>An obvious solution to achieve SSO is to share session information, however it is impossible due to same origin policy.</p>
 <img alt="../../_images/sso-same-origin-policy-forbids-this.png" src="../../_images/sso-same-origin-policy-forbids-this.png" />
@@ -99,19 +102,19 @@ All parties belong to Active Directory which makes things easy.</p>
 <p>Token service encrypt token by using private key, and the client decrypt by using public key</p>
 <p>Token service endpoints:</p>
 <ul class="simple">
-<li>Authorize</li>
-<li>Token</li>
-<li>Userinfo</li>
-<li>Discovery</li>
-<li>End session</li>
-<li>Introspection</li>
-<li>Revocation</li>
+<li><p>Authorize</p></li>
+<li><p>Token</p></li>
+<li><p>Userinfo</p></li>
+<li><p>Discovery</p></li>
+<li><p>End session</p></li>
+<li><p>Introspection</p></li>
+<li><p>Revocation</p></li>
 </ul>
 <p>Other endpoints:</p>
 <ul class="simple">
-<li>Authorization endpoint: used by the client to obtain authorization from the resource owner via user-agent redirection</li>
-<li>Token endpoint: used by the client to exchange an authorization grant for an access token, typically with client authentication</li>
-<li>Redirection endpoint: used by the authorization server to return responses containing authorization credentials to the client via the resource owner user-agent</li>
+<li><p>Authorization endpoint: used by the client to obtain authorization from the resource owner via user-agent redirection</p></li>
+<li><p>Token endpoint: used by the client to exchange an authorization grant for an access token, typically with client authentication</p></li>
+<li><p>Redirection endpoint: used by the authorization server to return responses containing authorization credentials to the client via the resource owner user-agent</p></li>
 </ul>
 <p>Normally OpenID Connect (OIDC) is used for Identity issue.</p>
 </div>
@@ -120,39 +123,39 @@ All parties belong to Active Directory which makes things easy.</p>
 <h1><a class="toc-backref" href="#id4">Token</a><a class="headerlink" href="#token" title="Permalink to this headline">¶</a></h1>
 <p>Purpose of a security token</p>
 <ul class="simple">
-<li>Security tokens are (protected) data structures</li>
-<li>A client requests a token</li>
-<li>An issuer issue a token</li>
-<li>A resource consumes a token</li>
-<li>has a trust relationship with the issuer</li>
+<li><p>Security tokens are (protected) data structures</p></li>
+<li><p>A client requests a token</p></li>
+<li><p>An issuer issue a token</p></li>
+<li><p>A resource consumes a token</p></li>
+<li><p>has a trust relationship with the issuer</p></li>
 </ul>
 <p>Normally, a token:</p>
 <ul class="simple">
-<li>Contain information about issuer and subject (claims - property on the identity)</li>
-<li>Signed (tamper proof &amp; authenticity)</li>
-<li>Typically contain an expiration time</li>
-<li>Contain header: metadata, algorithms &amp; keys used</li>
+<li><p>Contain information about issuer and subject (claims - property on the identity)</p></li>
+<li><p>Signed (tamper proof &amp; authenticity)</p></li>
+<li><p>Typically contain an expiration time</p></li>
+<li><p>Contain header: metadata, algorithms &amp; keys used</p></li>
 </ul>
 <img alt="../../_images/JSON_web_token.png" src="../../_images/JSON_web_token.png" />
 <div class="section" id="protocols">
 <h2><a class="toc-backref" href="#id5">Protocols</a><a class="headerlink" href="#protocols" title="Permalink to this headline">¶</a></h2>
 <p>SAML 1.1/2.0</p>
 <ul class="simple">
-<li>XML based</li>
-<li>many encryption &amp; signature options</li>
-<li>very expensive</li>
+<li><p>XML based</p></li>
+<li><p>many encryption &amp; signature options</p></li>
+<li><p>very expensive</p></li>
 </ul>
 <p>Simple Web Token (SWT)</p>
 <ul class="simple">
-<li>Form/URL encoded</li>
-<li>symmetric signatures only</li>
+<li><p>Form/URL encoded</p></li>
+<li><p>symmetric signatures only</p></li>
 </ul>
 <p>JSON Web Token (JWT)</p>
 <ul class="simple">
-<li>JSON encoded</li>
-<li>symmetric and asymmetric signatures (HMACSHA256-384, ECDSA, RSA)</li>
-<li>symmetric and asymmetric encryption (RSA, AES/CGM)</li>
-<li>(the new standard)</li>
+<li><p>JSON encoded</p></li>
+<li><p>symmetric and asymmetric signatures (HMACSHA256-384, ECDSA, RSA)</p></li>
+<li><p>symmetric and asymmetric encryption (RSA, AES/CGM)</p></li>
+<li><p>(the new standard)</p></li>
 </ul>
 <p>SAML is very secure and advanced, which requires XML protocol. Most mobile devices do not have this.</p>
 <p>Simple Web Token use symmetric algorithm, which is too simple.</p>
@@ -163,15 +166,15 @@ All parties belong to Active Directory which makes things easy.</p>
 <h2><a class="toc-backref" href="#id6">Token types</a><a class="headerlink" href="#token-types" title="Permalink to this headline">¶</a></h2>
 <p>Refresh Token:</p>
 <ul class="simple">
-<li>A token to renew the access token</li>
-<li>User doesn’t have to re-authenticate</li>
-<li>Longer expiration time than access token</li>
+<li><p>A token to renew the access token</p></li>
+<li><p>User doesn’t have to re-authenticate</p></li>
+<li><p>Longer expiration time than access token</p></li>
 </ul>
 <p>Bearer Token &amp; Reference token</p>
 <ul class="simple">
-<li>Self-contained access token, once it is sent to the client, there is no way to revoke</li>
-<li>If the machine is stolen, then the token can be used until it is expired</li>
-<li>Reference token can fix the above issue</li>
+<li><p>Self-contained access token, once it is sent to the client, there is no way to revoke</p></li>
+<li><p>If the machine is stolen, then the token can be used until it is expired</p></li>
+<li><p>Reference token can fix the above issue</p></li>
 </ul>
 <img alt="../../_images/token_vs_password.png" src="../../_images/token_vs_password.png" />
 <p>For the details, see here: <a class="reference external" href="https://auth0.com/docs/tokens">https://auth0.com/docs/tokens</a></p>
@@ -185,22 +188,22 @@ It means Oauth only cares about resource scope and not identity scope.</p>
 Oauth2 has many variation, big players have their own implementations.</p>
 <p>From web, mobile and desktop application</p>
 <ul class="simple">
-<li>Different types of applications require different means to achieve authorization</li>
-<li>Where can the token be delivered to</li>
-<li>Can the client application safely store secrets</li>
+<li><p>Different types of applications require different means to achieve authorization</p></li>
+<li><p>Where can the token be delivered to</p></li>
+<li><p>Can the client application safely store secrets</p></li>
 </ul>
 <div class="section" id="the-main-actors">
 <h2><a class="toc-backref" href="#id8">The main actors</a><a class="headerlink" href="#the-main-actors" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>User (resource owner): An entity capable of granting access to a protected resource</li>
-<li>Client: An application making protected resource requests on behalf of the resource owner and with it authorization</li>
-<li>Resource server: The server hosting the protected resources</li>
-<li>Authorization server: The server issuing access tokens to the client after successfully authenticating the resource owner and obtaining authorization</li>
+<li><p>User (resource owner): An entity capable of granting access to a protected resource</p></li>
+<li><p>Client: An application making protected resource requests on behalf of the resource owner and with it authorization</p></li>
+<li><p>Resource server: The server hosting the protected resources</p></li>
+<li><p>Authorization server: The server issuing access tokens to the client after successfully authenticating the resource owner and obtaining authorization</p></li>
 </ul>
 <p>Client has two types:</p>
 <ul class="simple">
-<li>Confidential client: Clients capable of maintaining the confidentiality of their credentials, e.g. MVC application</li>
-<li>Public client: clients incapable of maintaining the confidentiality of their credentials, e.g. native mobile applications and javascript applications</li>
+<li><p>Confidential client: Clients capable of maintaining the confidentiality of their credentials, e.g. MVC application</p></li>
+<li><p>Public client: clients incapable of maintaining the confidentiality of their credentials, e.g. native mobile applications and javascript applications</p></li>
 </ul>
 <img alt="../../_images/oauth2_player.png" src="../../_images/oauth2_player.png" />
 </div>
@@ -219,41 +222,41 @@ Deciding which one is suited for your case depends mostly on your Client’s typ
 <h2><a class="toc-backref" href="#id11">Transitive Trust</a><a class="headerlink" href="#transitive-trust" title="Permalink to this headline">¶</a></h2>
 <p>Enabling authentication based on authenticating to a trusted third party</p>
 <ul class="simple">
-<li>User logs into site “A” using their Google or Facebook credentials</li>
-<li>Both user and site “A” trust Google or Facebook, so site “A” accepts the authentication</li>
+<li><p>User logs into site “A” using their Google or Facebook credentials</p></li>
+<li><p>Both user and site “A” trust Google or Facebook, so site “A” accepts the authentication</p></li>
 </ul>
 <p>Security concerns come into play if the trusted site is compromised</p>
 <ul class="simple">
-<li>Hacker could potentially access any sites or applications that use the third party credentials for access</li>
-<li>Understand what 3rd party trusts you allow / evaluate how security and potential risks</li>
+<li><p>Hacker could potentially access any sites or applications that use the third party credentials for access</p></li>
+<li><p>Understand what 3rd party trusts you allow / evaluate how security and potential risks</p></li>
 </ul>
 <p>Trusts that exist between domains or companies</p>
 <ul class="simple">
-<li>One-way Trust: A trusts B/ B doesn’t trust A</li>
-<li>Two-way Trust: A trusts B/ B trusts A</li>
-<li>Non-transitive Trust: A trusts B but doesn’t allow that trust to extend</li>
-<li>Transitive Trust: A trusts B, B trusts C, so A trusts C</li>
+<li><p>One-way Trust: A trusts B/ B doesn’t trust A</p></li>
+<li><p>Two-way Trust: A trusts B/ B trusts A</p></li>
+<li><p>Non-transitive Trust: A trusts B but doesn’t allow that trust to extend</p></li>
+<li><p>Transitive Trust: A trusts B, B trusts C, so A trusts C</p></li>
 </ul>
 </div>
 <div class="section" id="authorization-principles">
 <h2><a class="toc-backref" href="#id12">Authorization principles</a><a class="headerlink" href="#authorization-principles" title="Permalink to this headline">¶</a></h2>
 <p>In general, authroization needs to be:</p>
 <ul class="simple">
-<li>Least privilege</li>
-<li>Separation of duties</li>
-<li>ACLs</li>
-<li>Mandatory access (pre-defined set of capabilities and access to information e.g. who can share what to who)</li>
-<li>Discretionary access (allow users to dynamically share information with others)</li>
-<li>Rule-based access control</li>
-<li>Role-based access control</li>
-<li>Resource-based access control (between gray area with business logic)</li>
-<li>Time of day restrictions</li>
+<li><p>Least privilege</p></li>
+<li><p>Separation of duties</p></li>
+<li><p>ACLs</p></li>
+<li><p>Mandatory access (pre-defined set of capabilities and access to information e.g. who can share what to who)</p></li>
+<li><p>Discretionary access (allow users to dynamically share information with others)</p></li>
+<li><p>Rule-based access control</p></li>
+<li><p>Role-based access control</p></li>
+<li><p>Resource-based access control (between gray area with business logic)</p></li>
+<li><p>Time of day restrictions</p></li>
 </ul>
 <p>Authorization is application specific, which is one of the reason do not combine authentication and authorization.</p>
 <ul class="simple">
-<li>Introduce Authorization Provider</li>
-<li>Authorization provider need to have an Admin UI</li>
-<li>Authorization provider is to map identity to permission</li>
+<li><p>Introduce Authorization Provider</p></li>
+<li><p>Authorization provider need to have an Admin UI</p></li>
+<li><p>Authorization provider is to map identity to permission</p></li>
 </ul>
 <p><em>Written by Binwei&#64;Oslo</em></p>
 </div>
@@ -403,15 +406,15 @@ Deciding which one is suited for your case depends mostly on your Client’s typ
   <ul>
     
     
+      <li><a href="../../2019/cyber_security_for_blockchain/">09 June - 2019/Cyber_Security_For_Blockchain</a></li>
+    
+      <li><a href="../../2019/azure_datalake_warehouse/">30 April - Azure Data Lake and Warehouse</a></li>
+    
       <li><a href="../../2019/user_story_applied/">21 April - User Story Applied</a></li>
     
       <li><a href="../../2019/application_insight_introduction/">20 April - Application Insight Introduction</a></li>
     
       <li><a href="../../2019/azure_security/">19 April - Azure Security</a></li>
-    
-      <li><a href="../../2019/iot_for_smartcities/">10 February - Iot for Smart Cities</a></li>
-    
-      <li><a href="../../2019/agile_selling/">27 January - Agile Selling</a></li>
     
   </ul>
 
@@ -469,7 +472,7 @@ Deciding which one is suited for your case depends mostly on your Client’s typ
       
     
       
-      <li class="ablog-cloud ablog-cloud-1">
+      <li class="ablog-cloud ablog-cloud-2">
         <a href="../../blog/tag/cloud/">cloud</a></li>
       
     
@@ -578,7 +581,7 @@ Deciding which one is suited for your case depends mostly on your Client’s typ
     
   
     
-    <li><a href="../../blog/category/computerscience/">ComputerScience (33)</a></li>
+    <li><a href="../../blog/category/computerscience/">ComputerScience (35)</a></li>
     
   
     
@@ -599,7 +602,7 @@ Deciding which one is suited for your case depends mostly on your Client’s typ
   <ul>
   
     
-    <li><a href="../../blog/2019/">2019 (6)</a></li>
+    <li><a href="../../blog/2019/">2019 (8)</a></li>
     
   
     
@@ -613,13 +616,11 @@ Deciding which one is suited for your case depends mostly on your Client’s typ
   </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../search/" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -632,8 +633,8 @@ Deciding which one is suited for your case depends mostly on your Client’s typ
       &copy;2017, binwei.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="../../_sources/2018/authentication_authorization_explainations.rst.txt"

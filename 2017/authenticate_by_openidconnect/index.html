@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>Authenticate Node.js App by OpenId Connect &#8212; binwei  documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -13,6 +11,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="author" title="About these documents" href="../../about/" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
@@ -56,16 +55,17 @@ This blog post will go through an example to use your google account to login a 
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#authenticate-node-js-app-by-openid-connect" id="id1">Authenticate Node.js App by OpenId Connect</a></li>
-<li><a class="reference internal" href="#authentication-vs-authorization" id="id2">Authentication vs Authorization</a></li>
-<li><a class="reference internal" href="#jargon-explanations" id="id3">‘Jargon’ explanations</a><ul>
-<li><a class="reference internal" href="#openid" id="id4">OpenID</a></li>
-<li><a class="reference internal" href="#oauth" id="id5">OAuth</a></li>
-<li><a class="reference internal" href="#openid-connect" id="id6">OpenID Connect</a></li>
+<li><p><a class="reference internal" href="#authenticate-node-js-app-by-openid-connect" id="id1">Authenticate Node.js App by OpenId Connect</a></p></li>
+<li><p><a class="reference internal" href="#authentication-vs-authorization" id="id2">Authentication vs Authorization</a></p></li>
+<li><p><a class="reference internal" href="#jargon-explanations" id="id3">‘Jargon’ explanations</a></p>
+<ul>
+<li><p><a class="reference internal" href="#openid" id="id4">OpenID</a></p></li>
+<li><p><a class="reference internal" href="#oauth" id="id5">OAuth</a></p></li>
+<li><p><a class="reference internal" href="#openid-connect" id="id6">OpenID Connect</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#setup-google-account" id="id7">Setup Google Account</a></li>
-<li><a class="reference internal" href="#setup-node-js-app" id="id8">Setup Node.Js App</a></li>
+<li><p><a class="reference internal" href="#setup-google-account" id="id7">Setup Google Account</a></p></li>
+<li><p><a class="reference internal" href="#setup-node-js-app" id="id8">Setup Node.Js App</a></p></li>
 </ul>
 </div>
 </div>
@@ -73,8 +73,8 @@ This blog post will go through an example to use your google account to login a 
 <h1><a class="toc-backref" href="#id2">Authentication vs Authorization</a><a class="headerlink" href="#authentication-vs-authorization" title="Permalink to this headline">¶</a></h1>
 <p>Authentication and Authorization are big topics, this blog only touches the basic and will have follow-up blogs to explain the details.
 If you are still confused about the difference between authentication and authorization, the followings are the explanations.</p>
-<p>Authentication:&nbsp;is the process of ascertaining that somebody really is who he claims to be.</p>
-<p>Authorization:&nbsp;refers to rules that determine who is allowed to do what.</p>
+<p>Authentication: is the process of ascertaining that somebody really is who he claims to be.</p>
+<p>Authorization: refers to rules that determine who is allowed to do what.</p>
 </div>
 <div class="section" id="jargon-explanations">
 <h1><a class="toc-backref" href="#id3">‘Jargon’ explanations</a><a class="headerlink" href="#jargon-explanations" title="Permalink to this headline">¶</a></h1>
@@ -99,15 +99,15 @@ So some people use OAuth where they should be using OpenID. This schema may or m
 <p>In the hotel analogy: if I encounter a purported employee and that person shows me that he has a key which opens my room, then I suppose that this is a true employee, on the basis that the key master would not have given him a key which opens my room if he was not.</p>
 <p>OpenID Connect standardize how authentication with OAuth2 works</p>
 <ul class="simple">
-<li>OpenID connect is built on top of Oauth 2.0</li>
-<li>it contains authorization code flow and implicit flow</li>
-<li>standard scopes and claims</li>
-<li>token type is JWT (Json web token)</li>
-<li>ID token</li>
-<li>UserInfo endpoint</li>
-<li>Simple</li>
-<li>Supports multiple Relying Party (client) types</li>
-<li>Optional: encryption, discovery, dynamic client registration &amp; session management</li>
+<li><p>OpenID connect is built on top of Oauth 2.0</p></li>
+<li><p>it contains authorization code flow and implicit flow</p></li>
+<li><p>standard scopes and claims</p></li>
+<li><p>token type is JWT (Json web token)</p></li>
+<li><p>ID token</p></li>
+<li><p>UserInfo endpoint</p></li>
+<li><p>Simple</p></li>
+<li><p>Supports multiple Relying Party (client) types</p></li>
+<li><p>Optional: encryption, discovery, dynamic client registration &amp; session management</p></li>
 </ul>
 <p><a class="reference external" href="http://openid.net/connect">http://openid.net/connect</a></p>
 </div>
@@ -118,8 +118,8 @@ So some people use OAuth where they should be using OpenID. This schema may or m
 <p>Go to the following URL:</p>
 <p><a class="reference external" href="https://console.developers.google.com/apis/credentials">https://console.developers.google.com/apis/credentials</a></p>
 <ul class="simple">
-<li>Create credential</li>
-<li>Create OAuth client id</li>
+<li><p>Create credential</p></li>
+<li><p>Create OAuth client id</p></li>
 </ul>
 <p>Ensure the redirect URL is setup correctly, e.g. <a class="reference external" href="http://localhost:5000/oidc-client-sample.html">http://localhost:5000/oidc-client-sample.html</a></p>
 <p>This redirect URL will be used in the next chapter.</p>
@@ -133,11 +133,11 @@ Let’s use the existing git repository:
 <a class="reference external" href="https://github.com/IdentityModel/oidc-client-js">https://github.com/IdentityModel/oidc-client-js</a></p>
 <p>Then follow the steps:</p>
 <ul class="simple">
-<li>Clone a local git repository</li>
-<li>Install the modules by: npm i</li>
-<li>Modify the code in example/oidc-client-sample.js</li>
+<li><p>Clone a local git repository</p></li>
+<li><p>Install the modules by: npm i</p></li>
+<li><p>Modify the code in example/oidc-client-sample.js</p></li>
 </ul>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="n">settings</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="n">settings</span> <span class="o">=</span> <span class="p">{</span>
     <span class="n">authority</span><span class="p">:</span> <span class="s1">&#39;https://accounts.google.com&#39;</span><span class="p">,</span>
     <span class="n">client_id</span><span class="p">:</span> <span class="s1">&#39;xxxxx&#39;</span><span class="p">,</span>
     <span class="n">redirect_uri</span><span class="p">:</span> <span class="s1">&#39;http://localhost:5000/oidc-client-sample.html&#39;</span><span class="p">,</span>
@@ -151,13 +151,13 @@ Let’s use the existing git repository:
 </pre></div>
 </div>
 <ul class="simple">
-<li>Start the Node.JS app: npm start</li>
-<li>Test the app in browser: localhost:5000</li>
-<li>Click the signin button to sign by using your google account</li>
-<li>Click processignin response button to get the response</li>
+<li><p>Start the Node.JS app: npm start</p></li>
+<li><p>Test the app in browser: localhost:5000</p></li>
+<li><p>Click the signin button to sign by using your google account</p></li>
+<li><p>Click processignin response button to get the response</p></li>
 </ul>
 <p>If everything goes well, you are suppose to see the following response content.</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">signin</span> <span class="n">response</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">signin</span> <span class="n">response</span>
 <span class="p">{</span>
   <span class="s2">&quot;state&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="s2">&quot;bar&quot;</span><span class="p">:</span> <span class="mi">15</span>
@@ -332,15 +332,15 @@ Let’s use the existing git repository:
   <ul>
     
     
+      <li><a href="../../2019/cyber_security_for_blockchain/">09 June - 2019/Cyber_Security_For_Blockchain</a></li>
+    
+      <li><a href="../../2019/azure_datalake_warehouse/">30 April - Azure Data Lake and Warehouse</a></li>
+    
       <li><a href="../../2019/user_story_applied/">21 April - User Story Applied</a></li>
     
       <li><a href="../../2019/application_insight_introduction/">20 April - Application Insight Introduction</a></li>
     
       <li><a href="../../2019/azure_security/">19 April - Azure Security</a></li>
-    
-      <li><a href="../../2019/iot_for_smartcities/">10 February - Iot for Smart Cities</a></li>
-    
-      <li><a href="../../2019/agile_selling/">27 January - Agile Selling</a></li>
     
   </ul>
 
@@ -398,7 +398,7 @@ Let’s use the existing git repository:
       
     
       
-      <li class="ablog-cloud ablog-cloud-1">
+      <li class="ablog-cloud ablog-cloud-2">
         <a href="../../blog/tag/cloud/">cloud</a></li>
       
     
@@ -507,7 +507,7 @@ Let’s use the existing git repository:
     
   
     
-    <li><a href="../../blog/category/computerscience/">ComputerScience (33)</a></li>
+    <li><a href="../../blog/category/computerscience/">ComputerScience (35)</a></li>
     
   
     
@@ -528,7 +528,7 @@ Let’s use the existing git repository:
   <ul>
   
     
-    <li><a href="../../blog/2019/">2019 (6)</a></li>
+    <li><a href="../../blog/2019/">2019 (8)</a></li>
     
   
     
@@ -542,13 +542,11 @@ Let’s use the existing git repository:
   </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../search/" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -561,8 +559,8 @@ Let’s use the existing git repository:
       &copy;2017, binwei.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="../../_sources/2017/authenticate_by_openidconnect.rst.txt"

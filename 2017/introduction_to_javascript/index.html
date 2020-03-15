@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>Introduction to Javascript &#8212; binwei  documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -13,6 +11,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="author" title="About these documents" href="../../about/" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
@@ -55,38 +54,42 @@ This blog introduces the basic concept of Javascript language.</p>
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#introduction-to-javascript" id="id1">Introduction to Javascript</a></li>
-<li><a class="reference internal" href="#javascript-basic" id="id2">Javascript Basic</a><ul>
-<li><a class="reference internal" href="#strongly-typed-or-weakly-typed-loosely-typed" id="id3">Strongly typed or weakly typed (loosely typed)</a></li>
-<li><a class="reference internal" href="#duck-typing" id="id4">Duck typing</a></li>
-<li><a class="reference internal" href="#dynamic-typing" id="id5">Dynamic Typing</a></li>
+<li><p><a class="reference internal" href="#introduction-to-javascript" id="id1">Introduction to Javascript</a></p></li>
+<li><p><a class="reference internal" href="#javascript-basic" id="id2">Javascript Basic</a></p>
+<ul>
+<li><p><a class="reference internal" href="#strongly-typed-or-weakly-typed-loosely-typed" id="id3">Strongly typed or weakly typed (loosely typed)</a></p></li>
+<li><p><a class="reference internal" href="#duck-typing" id="id4">Duck typing</a></p></li>
+<li><p><a class="reference internal" href="#dynamic-typing" id="id5">Dynamic Typing</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#type" id="id6">Type</a><ul>
-<li><a class="reference internal" href="#type-coalescing" id="id7">Type Coalescing</a></li>
-<li><a class="reference internal" href="#types-primitives" id="id8">Types Primitives</a></li>
-<li><a class="reference internal" href="#number" id="id9">Number</a></li>
-<li><a class="reference internal" href="#operator" id="id10">Operator</a></li>
+<li><p><a class="reference internal" href="#type" id="id6">Type</a></p>
+<ul>
+<li><p><a class="reference internal" href="#type-coalescing" id="id7">Type Coalescing</a></p></li>
+<li><p><a class="reference internal" href="#types-primitives" id="id8">Types Primitives</a></p></li>
+<li><p><a class="reference internal" href="#number" id="id9">Number</a></p></li>
+<li><p><a class="reference internal" href="#operator" id="id10">Operator</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#function" id="id11">Function</a><ul>
-<li><a class="reference internal" href="#overloading-function" id="id12">Overloading function</a></li>
-<li><a class="reference internal" href="#arguments-object" id="id13">Arguments object</a></li>
-<li><a class="reference internal" href="#all-functions-return-a-value" id="id14">All functions return a value</a></li>
-<li><a class="reference internal" href="#function-is-just-an-object" id="id15">Function is just an object</a></li>
-<li><a class="reference internal" href="#function-body-variable" id="id16">Function Body Variable</a></li>
-<li><a class="reference internal" href="#closures" id="id17">Closures</a></li>
-<li><a class="reference internal" href="#self-executing-function" id="id18">Self-executing function</a></li>
-<li><a class="reference internal" href="#scope" id="id19">Scope</a></li>
+<li><p><a class="reference internal" href="#function" id="id11">Function</a></p>
+<ul>
+<li><p><a class="reference internal" href="#overloading-function" id="id12">Overloading function</a></p></li>
+<li><p><a class="reference internal" href="#arguments-object" id="id13">Arguments object</a></p></li>
+<li><p><a class="reference internal" href="#all-functions-return-a-value" id="id14">All functions return a value</a></p></li>
+<li><p><a class="reference internal" href="#function-is-just-an-object" id="id15">Function is just an object</a></p></li>
+<li><p><a class="reference internal" href="#function-body-variable" id="id16">Function Body Variable</a></p></li>
+<li><p><a class="reference internal" href="#closures" id="id17">Closures</a></p></li>
+<li><p><a class="reference internal" href="#self-executing-function" id="id18">Self-executing function</a></p></li>
+<li><p><a class="reference internal" href="#scope" id="id19">Scope</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#oop-in-javascript" id="id20">OOP in Javascript</a><ul>
-<li><a class="reference internal" href="#inheritance" id="id21">Inheritance</a></li>
-<li><a class="reference internal" href="#class-in-javascript" id="id22">‘Class’ in Javascript</a></li>
-<li><a class="reference internal" href="#static-members" id="id23">Static Members</a></li>
-<li><a class="reference internal" href="#sharing-a-function" id="id24">Sharing a function</a></li>
-<li><a class="reference internal" href="#object-reflection" id="id25">Object Reflection</a></li>
-<li><a class="reference internal" href="#extension-methods" id="id26">Extension methods</a></li>
+<li><p><a class="reference internal" href="#oop-in-javascript" id="id20">OOP in Javascript</a></p>
+<ul>
+<li><p><a class="reference internal" href="#inheritance" id="id21">Inheritance</a></p></li>
+<li><p><a class="reference internal" href="#class-in-javascript" id="id22">‘Class’ in Javascript</a></p></li>
+<li><p><a class="reference internal" href="#static-members" id="id23">Static Members</a></p></li>
+<li><p><a class="reference internal" href="#sharing-a-function" id="id24">Sharing a function</a></p></li>
+<li><p><a class="reference internal" href="#object-reflection" id="id25">Object Reflection</a></p></li>
+<li><p><a class="reference internal" href="#extension-methods" id="id26">Extension methods</a></p></li>
 </ul>
 </li>
 </ul>
@@ -95,32 +98,32 @@ This blog introduces the basic concept of Javascript language.</p>
 <div class="section" id="javascript-basic">
 <h1><a class="toc-backref" href="#id2">Javascript Basic</a><a class="headerlink" href="#javascript-basic" title="Permalink to this headline">¶</a></h1>
 <p>First, let’s compare Javascript with a OOP programming language C#.</p>
-<table border="1" class="docutils">
+<table class="docutils align-default">
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>C#</td>
-<td>Javascript</td>
+<tbody>
+<tr class="row-odd"><td><p>C#</p></td>
+<td><p>Javascript</p></td>
 </tr>
-<tr class="row-even"><td>Strongly-Typed</td>
-<td>Loosely-typed</td>
+<tr class="row-even"><td><p>Strongly-Typed</p></td>
+<td><p>Loosely-typed</p></td>
 </tr>
-<tr class="row-odd"><td>Static</td>
-<td>Dynamic</td>
+<tr class="row-odd"><td><p>Static</p></td>
+<td><p>Dynamic</p></td>
 </tr>
-<tr class="row-even"><td>Classical Inheritance</td>
-<td>Prototypal</td>
+<tr class="row-even"><td><p>Classical Inheritance</p></td>
+<td><p>Prototypal</p></td>
 </tr>
-<tr class="row-odd"><td>Classes</td>
-<td>Functions</td>
+<tr class="row-odd"><td><p>Classes</p></td>
+<td><p>Functions</p></td>
 </tr>
-<tr class="row-even"><td>Constructors</td>
-<td>Functions</td>
+<tr class="row-even"><td><p>Constructors</p></td>
+<td><p>Functions</p></td>
 </tr>
-<tr class="row-odd"><td>Methods</td>
-<td>Functions</td>
+<tr class="row-odd"><td><p>Methods</p></td>
+<td><p>Functions</p></td>
 </tr>
 </tbody>
 </table>
@@ -171,8 +174,8 @@ A language is dynamically typed if the type is associated with run-time values, 
 </div>
 <p>Most operators in Javascript are identical to .net, except…</p>
 <ul class="simple">
-<li>Equality/NotEqual (==, !=): The means determines equality with coalescing (if necessary)</li>
-<li>Javascript’s identically Equality operators (===, !==) which is similar to .Equal(). Determines quality without coalescing</li>
+<li><p>Equality/NotEqual (==, !=): The means determines equality with coalescing (if necessary)</p></li>
+<li><p>Javascript’s identically Equality operators (===, !==) which is similar to .Equal(). Determines quality without coalescing</p></li>
 </ul>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;hello&quot;</span> <span class="o">==</span> <span class="s2">&quot;hello&quot;</span><span class="p">;</span> <span class="c1">// true</span>
 <span class="mi">1</span> <span class="o">==</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// true</span>
@@ -186,10 +189,10 @@ A language is dynamically typed if the type is associated with run-time values, 
 <h2><a class="toc-backref" href="#id8">Types Primitives</a><a class="headerlink" href="#types-primitives" title="Permalink to this headline">¶</a></h2>
 <p>Javascript has basic types</p>
 <ul class="simple">
-<li>Value types: boolean, string, number</li>
-<li>Reference Type: object</li>
-<li>Delegate type: function</li>
-<li>Special: undefined, null</li>
+<li><p>Value types: boolean, string, number</p></li>
+<li><p>Reference Type: object</p></li>
+<li><p>Delegate type: function</p></li>
+<li><p>Special: undefined, null</p></li>
 </ul>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="k">typeof</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">//number</span>
 <span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="k">typeof</span> <span class="mf">1.0</span><span class="p">;</span> <span class="c1">// number</span>
@@ -203,11 +206,11 @@ A language is dynamically typed if the type is associated with run-time values, 
 <h2><a class="toc-backref" href="#id9">Number</a><a class="headerlink" href="#number" title="Permalink to this headline">¶</a></h2>
 <p>Examples of number:</p>
 <ul class="simple">
-<li>1, 1.5, 070, 0xffff, 1.34e6, 10.0</li>
-<li>Number.MIN_VALUE</li>
-<li>Number.MAX_VALUE</li>
-<li>Number.POSITIVE_INFINITY;</li>
-<li>Number.NEGATIVE_INFINITY;</li>
+<li><p>1, 1.5, 070, 0xffff, 1.34e6, 10.0</p></li>
+<li><p>Number.MIN_VALUE</p></li>
+<li><p>Number.MAX_VALUE</p></li>
+<li><p>Number.POSITIVE_INFINITY;</p></li>
+<li><p>Number.NEGATIVE_INFINITY;</p></li>
 </ul>
 </div>
 <div class="section" id="operator">
@@ -362,8 +365,8 @@ foo(1); // second
 <span class="nx">oldLog</span><span class="p">()</span> <span class="c1">//5</span>
 </pre></div>
 </div>
-<p>Note that in the above example, if you call&nbsp;setupSomeGlobals()&nbsp;again, then a new closure (stack-frame!) is created.</p>
-<p>The old&nbsp;gLogNumber,&nbsp;gIncreaseNumber,&nbsp;gSetNumber&nbsp;variables are overwritten with&nbsp;new&nbsp;functions that have the new closure.</p>
+<p>Note that in the above example, if you call setupSomeGlobals() again, then a new closure (stack-frame!) is created.</p>
+<p>The old gLogNumber, gIncreaseNumber, gSetNumber variables are overwritten with new functions that have the new closure.</p>
 <p>Closure can also introduce tricky bugs if not used correctly.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">buildList</span><span class="p">(</span><span class="nx">list</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">[];</span>
@@ -382,10 +385,10 @@ foo(1); // second
 <span class="nx">testList</span><span class="p">()</span> <span class="c1">// logs &#39;item2 undefined&#39; 3 times</span>
 </pre></div>
 </div>
-<p>This is because just like previous examples, there is only one closure for the local variables for&nbsp;buildList.
-When the anonymous functions are called on the line&nbsp;fnlist[j](); they all use the same single closure, and they use the current value for&nbsp;i&nbsp;and&nbsp;item&nbsp;within that one closure (where&nbsp;i&nbsp;has a value of&nbsp;3&nbsp;because the loop had completed, and&nbsp;item&nbsp;has a value of&nbsp;‘item2’).
-Note we are indexing from 0 hence&nbsp;item&nbsp;has a value of&nbsp;item2.
-And the i++ will increment&nbsp;i&nbsp;to the value&nbsp;3.</p>
+<p>This is because just like previous examples, there is only one closure for the local variables for buildList.
+When the anonymous functions are called on the line fnlist[j](); they all use the same single closure, and they use the current value for i and item within that one closure (where i has a value of 3 because the loop had completed, and item has a value of ‘item2’).
+Note we are indexing from 0 hence item has a value of item2.
+And the i++ will increment i to the value 3.</p>
 </div>
 <div class="section" id="self-executing-function">
 <h2><a class="toc-backref" href="#id18">Self-executing function</a><a class="headerlink" href="#self-executing-function" title="Permalink to this headline">¶</a></h2>
@@ -522,8 +525,8 @@ prototype is the object that is used to build __proto__ when you create an objec
 <h2><a class="toc-backref" href="#id25">Object Reflection</a><a class="headerlink" href="#object-reflection" title="Permalink to this headline">¶</a></h2>
 <p>Property Syntaxes</p>
 <ul class="simple">
-<li>Dot syntax: cust.name</li>
-<li>Bracket Syntax: cust[“name”]</li>
+<li><p>Dot syntax: cust.name</p></li>
+<li><p>Bracket Syntax: cust[“name”]</p></li>
 </ul>
 <p>Enumerating members: simplest version of reflection</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span>var cust = {
@@ -705,15 +708,15 @@ Add to existing type’s prototype</p>
   <ul>
     
     
+      <li><a href="../../2019/cyber_security_for_blockchain/">09 June - 2019/Cyber_Security_For_Blockchain</a></li>
+    
+      <li><a href="../../2019/azure_datalake_warehouse/">30 April - Azure Data Lake and Warehouse</a></li>
+    
       <li><a href="../../2019/user_story_applied/">21 April - User Story Applied</a></li>
     
       <li><a href="../../2019/application_insight_introduction/">20 April - Application Insight Introduction</a></li>
     
       <li><a href="../../2019/azure_security/">19 April - Azure Security</a></li>
-    
-      <li><a href="../../2019/iot_for_smartcities/">10 February - Iot for Smart Cities</a></li>
-    
-      <li><a href="../../2019/agile_selling/">27 January - Agile Selling</a></li>
     
   </ul>
 
@@ -771,7 +774,7 @@ Add to existing type’s prototype</p>
       
     
       
-      <li class="ablog-cloud ablog-cloud-1">
+      <li class="ablog-cloud ablog-cloud-2">
         <a href="../../blog/tag/cloud/">cloud</a></li>
       
     
@@ -880,7 +883,7 @@ Add to existing type’s prototype</p>
     
   
     
-    <li><a href="../../blog/category/computerscience/">ComputerScience (33)</a></li>
+    <li><a href="../../blog/category/computerscience/">ComputerScience (35)</a></li>
     
   
     
@@ -901,7 +904,7 @@ Add to existing type’s prototype</p>
   <ul>
   
     
-    <li><a href="../../blog/2019/">2019 (6)</a></li>
+    <li><a href="../../blog/2019/">2019 (8)</a></li>
     
   
     
@@ -915,13 +918,11 @@ Add to existing type’s prototype</p>
   </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../search/" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -934,8 +935,8 @@ Add to existing type’s prototype</p>
       &copy;2017, binwei.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="../../_sources/2017/introduction_to_javascript.rst.txt"

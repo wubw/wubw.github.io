@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>NoSQL: Introduction &#8212; binwei  documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -13,6 +11,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="author" title="About these documents" href="../../about/" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
@@ -55,26 +54,30 @@ NoSQL databases are not replacing relational database, there are scenarios only 
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#nosql-introduction" id="id1">NoSQL: Introduction</a><ul>
-<li><a class="reference internal" href="#motivation" id="id2">Motivation</a><ul>
-<li><a class="reference internal" href="#simplicity-of-design" id="id3">Simplicity of design</a></li>
-<li><a class="reference internal" href="#horizontal-scaling" id="id4">Horizontal scaling</a></li>
-<li><a class="reference internal" href="#finer-control-over-availability" id="id5">Finer control over availability</a></li>
+<li><p><a class="reference internal" href="#nosql-introduction" id="id1">NoSQL: Introduction</a></p>
+<ul>
+<li><p><a class="reference internal" href="#motivation" id="id2">Motivation</a></p>
+<ul>
+<li><p><a class="reference internal" href="#simplicity-of-design" id="id3">Simplicity of design</a></p></li>
+<li><p><a class="reference internal" href="#horizontal-scaling" id="id4">Horizontal scaling</a></p></li>
+<li><p><a class="reference internal" href="#finer-control-over-availability" id="id5">Finer control over availability</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#category" id="id6">Category</a><ul>
-<li><a class="reference internal" href="#key-value-store" id="id7">Key-value store</a></li>
-<li><a class="reference internal" href="#document-database" id="id8">Document database</a></li>
-<li><a class="reference internal" href="#column-family" id="id9">Column-family</a></li>
-<li><a class="reference internal" href="#graph-database" id="id10">Graph database</a></li>
+<li><p><a class="reference internal" href="#category" id="id6">Category</a></p>
+<ul>
+<li><p><a class="reference internal" href="#key-value-store" id="id7">Key-value store</a></p></li>
+<li><p><a class="reference internal" href="#document-database" id="id8">Document database</a></p></li>
+<li><p><a class="reference internal" href="#column-family" id="id9">Column-family</a></p></li>
+<li><p><a class="reference internal" href="#graph-database" id="id10">Graph database</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#technical-concepts" id="id11">Technical concepts</a><ul>
-<li><a class="reference internal" href="#map-reduce-pattern" id="id12">Map-reduce pattern</a></li>
-<li><a class="reference internal" href="#eventual-consistency" id="id13">Eventual consistency</a></li>
+<li><p><a class="reference internal" href="#technical-concepts" id="id11">Technical concepts</a></p>
+<ul>
+<li><p><a class="reference internal" href="#map-reduce-pattern" id="id12">Map-reduce pattern</a></p></li>
+<li><p><a class="reference internal" href="#eventual-consistency" id="id13">Eventual consistency</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#references" id="id14">References</a></li>
+<li><p><a class="reference internal" href="#references" id="id14">References</a></p></li>
 </ul>
 </li>
 </ul>
@@ -154,8 +157,8 @@ It means graph databases do not allow dangling relationship, and nodes can only 
 <p>There are several technical concepts relevant to NoSQL databases.</p>
 <div class="section" id="map-reduce-pattern">
 <h3><a class="toc-backref" href="#id12">Map-reduce pattern</a><a class="headerlink" href="#map-reduce-pattern" title="Permalink to this headline">¶</a></h3>
-<p>Map is a function whose input is a&nbsp;single aggregate&nbsp;and whose output is a&nbsp;bunch of key-value pairs.</p>
-<p>Reduce takes&nbsp;multiple map outputs with the same key&nbsp;and combines their values.</p>
+<p>Map is a function whose input is a single aggregate and whose output is a bunch of key-value pairs.</p>
+<p>Reduce takes multiple map outputs with the same key and combines their values.</p>
 <p>While the map function is limited to working only on data from a single aggregate, the reduce function can use all values emitted for a single key.</p>
 </div>
 <div class="section" id="eventual-consistency">
@@ -324,15 +327,15 @@ It means graph databases do not allow dangling relationship, and nodes can only 
   <ul>
     
     
+      <li><a href="../../2019/cyber_security_for_blockchain/">09 June - 2019/Cyber_Security_For_Blockchain</a></li>
+    
+      <li><a href="../../2019/azure_datalake_warehouse/">30 April - Azure Data Lake and Warehouse</a></li>
+    
       <li><a href="../../2019/user_story_applied/">21 April - User Story Applied</a></li>
     
       <li><a href="../../2019/application_insight_introduction/">20 April - Application Insight Introduction</a></li>
     
       <li><a href="../../2019/azure_security/">19 April - Azure Security</a></li>
-    
-      <li><a href="../../2019/iot_for_smartcities/">10 February - Iot for Smart Cities</a></li>
-    
-      <li><a href="../../2019/agile_selling/">27 January - Agile Selling</a></li>
     
   </ul>
 
@@ -390,7 +393,7 @@ It means graph databases do not allow dangling relationship, and nodes can only 
       
     
       
-      <li class="ablog-cloud ablog-cloud-1">
+      <li class="ablog-cloud ablog-cloud-2">
         <a href="../../blog/tag/cloud/">cloud</a></li>
       
     
@@ -499,7 +502,7 @@ It means graph databases do not allow dangling relationship, and nodes can only 
     
   
     
-    <li><a href="../../blog/category/computerscience/">ComputerScience (33)</a></li>
+    <li><a href="../../blog/category/computerscience/">ComputerScience (35)</a></li>
     
   
     
@@ -520,7 +523,7 @@ It means graph databases do not allow dangling relationship, and nodes can only 
   <ul>
   
     
-    <li><a href="../../blog/2019/">2019 (6)</a></li>
+    <li><a href="../../blog/2019/">2019 (8)</a></li>
     
   
     
@@ -534,13 +537,11 @@ It means graph databases do not allow dangling relationship, and nodes can only 
   </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../search/" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -553,8 +554,8 @@ It means graph databases do not allow dangling relationship, and nodes can only 
       &copy;2017, binwei.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="../../_sources/2017/nosql_introduction.rst.txt"

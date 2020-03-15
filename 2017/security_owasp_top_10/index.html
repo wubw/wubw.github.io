@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>Security: Owasp Top 10 &#8212; binwei  documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -13,6 +11,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="author" title="About these documents" href="../../about/" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
@@ -56,54 +55,63 @@ This blog is based on 2013 version, while 2017 version will come very soon.</p>
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#security-owasp-top-10" id="id17">Security: Owasp Top 10</a></li>
-<li><a class="reference internal" href="#injection" id="id18">1. Injection</a><ul>
-<li><a class="reference internal" href="#example" id="id19">Example</a></li>
-<li><a class="reference internal" href="#how-to-prevent" id="id20">How to prevent</a></li>
+<li><p><a class="reference internal" href="#security-owasp-top-10" id="id17">Security: Owasp Top 10</a></p></li>
+<li><p><a class="reference internal" href="#injection" id="id18">1. Injection</a></p>
+<ul>
+<li><p><a class="reference internal" href="#example" id="id19">Example</a></p></li>
+<li><p><a class="reference internal" href="#how-to-prevent" id="id20">How to prevent</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#broken-authentication-and-session-management" id="id21">2. Broken authentication and session management</a><ul>
-<li><a class="reference internal" href="#id1" id="id22">Example</a></li>
-<li><a class="reference internal" href="#id2" id="id23">How to prevent</a></li>
+<li><p><a class="reference internal" href="#broken-authentication-and-session-management" id="id21">2. Broken authentication and session management</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id1" id="id22">Example</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id23">How to prevent</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#cross-site-scripting-xss" id="id24">3. Cross-site scripting (XSS)</a><ul>
-<li><a class="reference internal" href="#id3" id="id25">Example</a></li>
-<li><a class="reference internal" href="#id4" id="id26">How to prevent</a></li>
+<li><p><a class="reference internal" href="#cross-site-scripting-xss" id="id24">3. Cross-site scripting (XSS)</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id3" id="id25">Example</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id26">How to prevent</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#insecure-direct-object-references" id="id27">4. Insecure direct object references</a><ul>
-<li><a class="reference internal" href="#id5" id="id28">Example</a></li>
-<li><a class="reference internal" href="#id6" id="id29">How to prevent</a></li>
+<li><p><a class="reference internal" href="#insecure-direct-object-references" id="id27">4. Insecure direct object references</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id5" id="id28">Example</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id29">How to prevent</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#security-misconfiguration" id="id30">5. Security misconfiguration</a><ul>
-<li><a class="reference internal" href="#id7" id="id31">Example</a></li>
-<li><a class="reference internal" href="#id8" id="id32">How to prevent</a></li>
+<li><p><a class="reference internal" href="#security-misconfiguration" id="id30">5. Security misconfiguration</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id7" id="id31">Example</a></p></li>
+<li><p><a class="reference internal" href="#id8" id="id32">How to prevent</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#sensitive-data-exposure" id="id33">6. Sensitive data exposure</a><ul>
-<li><a class="reference internal" href="#id9" id="id34">Example</a></li>
-<li><a class="reference internal" href="#id10" id="id35">How to prevent</a></li>
+<li><p><a class="reference internal" href="#sensitive-data-exposure" id="id33">6. Sensitive data exposure</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id9" id="id34">Example</a></p></li>
+<li><p><a class="reference internal" href="#id10" id="id35">How to prevent</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#missing-function-level-access-control" id="id36">7. Missing function level access control</a><ul>
-<li><a class="reference internal" href="#id11" id="id37">Example</a></li>
-<li><a class="reference internal" href="#id12" id="id38">How to prevent</a></li>
+<li><p><a class="reference internal" href="#missing-function-level-access-control" id="id36">7. Missing function level access control</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id11" id="id37">Example</a></p></li>
+<li><p><a class="reference internal" href="#id12" id="id38">How to prevent</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#cross-site-request-forgery-csrf" id="id39">8. Cross-site request forgery (CSRF)</a><ul>
-<li><a class="reference internal" href="#id13" id="id40">Example</a></li>
-<li><a class="reference internal" href="#id14" id="id41">How to prevent</a></li>
+<li><p><a class="reference internal" href="#cross-site-request-forgery-csrf" id="id39">8. Cross-site request forgery (CSRF)</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id13" id="id40">Example</a></p></li>
+<li><p><a class="reference internal" href="#id14" id="id41">How to prevent</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#using-components-with-known-vulnerabilities" id="id42">9. Using components with known vulnerabilities</a></li>
-<li><a class="reference internal" href="#unvalidated-redirects-and-forwards" id="id43">10. Unvalidated redirects and forwards</a><ul>
-<li><a class="reference internal" href="#id15" id="id44">Example</a></li>
-<li><a class="reference internal" href="#id16" id="id45">How to prevent</a></li>
+<li><p><a class="reference internal" href="#using-components-with-known-vulnerabilities" id="id42">9. Using components with known vulnerabilities</a></p></li>
+<li><p><a class="reference internal" href="#unvalidated-redirects-and-forwards" id="id43">10. Unvalidated redirects and forwards</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id15" id="id44">Example</a></p></li>
+<li><p><a class="reference internal" href="#id16" id="id45">How to prevent</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#references" id="id46">References</a></li>
+<li><p><a class="reference internal" href="#references" id="id46">References</a></p></li>
 </ul>
 </div>
 </div>
@@ -111,14 +119,14 @@ This blog is based on 2013 version, while 2017 version will come very soon.</p>
 <h1><a class="toc-backref" href="#id18">1. Injection</a><a class="headerlink" href="#injection" title="Permalink to this headline">¶</a></h1>
 <p>Injection has many types:</p>
 <ul class="simple">
-<li>SQL injection</li>
-<li>NoSQL injection</li>
-<li>Command injection</li>
-<li>Code injection</li>
-<li>Path traversal</li>
-<li>ORM injection</li>
-<li>XML injection</li>
-<li>XPath injection</li>
+<li><p>SQL injection</p></li>
+<li><p>NoSQL injection</p></li>
+<li><p>Command injection</p></li>
+<li><p>Code injection</p></li>
+<li><p>Path traversal</p></li>
+<li><p>ORM injection</p></li>
+<li><p>XML injection</p></li>
+<li><p>XPath injection</p></li>
 </ul>
 <div class="section" id="example">
 <h2><a class="toc-backref" href="#id19">Example</a><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
@@ -131,10 +139,10 @@ This blog is based on 2013 version, while 2017 version will come very soon.</p>
 <div class="section" id="how-to-prevent">
 <h2><a class="toc-backref" href="#id20">How to prevent</a><a class="headerlink" href="#how-to-prevent" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>White-list (untrusted data): What input do we trust? Does it adhere to expected pattern?</li>
-<li>Use safe API which provides parameterized interface</li>
-<li>Escape special character</li>
-<li>Positive or ‘white list’ input validation</li>
+<li><p>White-list (untrusted data): What input do we trust? Does it adhere to expected pattern?</p></li>
+<li><p>Use safe API which provides parameterized interface</p></li>
+<li><p>Escape special character</p></li>
+<li><p>Positive or ‘white list’ input validation</p></li>
 </ul>
 </div>
 </div>
@@ -149,49 +157,49 @@ This blog is based on 2013 version, while 2017 version will come very soon.</p>
 <p>There are other ways to hack the authentication and session management system.</p>
 <p>Auth cookie theft:</p>
 <ul class="simple">
-<li>Exploit an XSS risk</li>
-<li>Retrieve it from the victim’s PC</li>
-<li>Sniff it over an insecure connection</li>
+<li><p>Exploit an XSS risk</p></li>
+<li><p>Retrieve it from the victim’s PC</p></li>
+<li><p>Sniff it over an insecure connection</p></li>
 </ul>
 <p>Account management attack:</p>
 <ul class="simple">
-<li>Brute force the login</li>
-<li>Exploit password reset</li>
-<li>Discover weak credentials</li>
+<li><p>Brute force the login</p></li>
+<li><p>Exploit password reset</p></li>
+<li><p>Discover weak credentials</p></li>
 </ul>
 <p>Session ID theft:</p>
 <ul class="simple">
-<li>Copy and paste a URL with it</li>
-<li>Send it via an insecure email</li>
-<li>Retrieve it from a log</li>
+<li><p>Copy and paste a URL with it</p></li>
+<li><p>Send it via an insecure email</p></li>
+<li><p>Retrieve it from a log</p></li>
 </ul>
 </div>
 <div class="section" id="id2">
 <h2><a class="toc-backref" href="#id23">How to prevent</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Protect the cookies:</p>
 <ul class="simple">
-<li>Use the HttpOnly flag (HttpOnly is an additional flag included in a Set-Cookie HTTP response header, If the HttpOnly flag (optional) is included in the HTTP response header, the cookie cannot be accessed through client side script)</li>
-<li>Make sure they’re flagged as ‘secure’</li>
+<li><p>Use the HttpOnly flag (HttpOnly is an additional flag included in a Set-Cookie HTTP response header, If the HttpOnly flag (optional) is included in the HTTP response header, the cookie cannot be accessed through client side script)</p></li>
+<li><p>Make sure they’re flagged as ‘secure’</p></li>
 </ul>
 <p>Decrease the window of risk:</p>
 <ul class="simple">
-<li>Expire sessions quickly</li>
-<li>Re-challenge the user on key actions</li>
+<li><p>Expire sessions quickly</p></li>
+<li><p>Re-challenge the user on key actions</p></li>
 </ul>
 <p>Other ways:</p>
 <ul class="simple">
-<li>Authentication must be over TLS</li>
-<li>Passwords policy</li>
-<li>“Secure” error messages</li>
-<li>Multiple-factor authentication</li>
-<li>CAPTCHA</li>
-<li>Block accounts</li>
-<li>Restore passwords</li>
-<li>No session identifier in URL</li>
-<li>Use TLS</li>
-<li>Logout</li>
-<li>Close browser window</li>
-<li>Secure passwords storage: Do not forget salt; SHA-256, SHA-512; PBKDF2, bcrypt, scrypt</li>
+<li><p>Authentication must be over TLS</p></li>
+<li><p>Passwords policy</p></li>
+<li><p>“Secure” error messages</p></li>
+<li><p>Multiple-factor authentication</p></li>
+<li><p>CAPTCHA</p></li>
+<li><p>Block accounts</p></li>
+<li><p>Restore passwords</p></li>
+<li><p>No session identifier in URL</p></li>
+<li><p>Use TLS</p></li>
+<li><p>Logout</p></li>
+<li><p>Close browser window</p></li>
+<li><p>Secure passwords storage: Do not forget salt; SHA-256, SHA-512; PBKDF2, bcrypt, scrypt</p></li>
 </ul>
 </div>
 </div>
@@ -199,9 +207,9 @@ This blog is based on 2013 version, while 2017 version will come very soon.</p>
 <h1><a class="toc-backref" href="#id24">3. Cross-site scripting (XSS)</a><a class="headerlink" href="#cross-site-scripting-xss" title="Permalink to this headline">¶</a></h1>
 <p>XSS has the following types:</p>
 <ul class="simple">
-<li>Stored XSS</li>
-<li>Reflected XSS</li>
-<li>DOM Based XSS</li>
+<li><p>Stored XSS</p></li>
+<li><p>Reflected XSS</p></li>
+<li><p>DOM Based XSS</p></li>
 </ul>
 <div class="section" id="id3">
 <h2><a class="toc-backref" href="#id25">Example</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
@@ -218,9 +226,9 @@ This blog is based on 2013 version, while 2017 version will come very soon.</p>
 <div class="section" id="id4">
 <h2><a class="toc-backref" href="#id26">How to prevent</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Validation: Xxs-filters; Secure-filters; Xss; Validator-js</li>
-<li>HttpOnly cookies</li>
-<li>Helmet-csp (Content Security Policy)</li>
+<li><p>Validation: Xxs-filters; Secure-filters; Xss; Validator-js</p></li>
+<li><p>HttpOnly cookies</p></li>
+<li><p>Helmet-csp (Content Security Policy)</p></li>
 </ul>
 </div>
 </div>
@@ -243,9 +251,9 @@ This blog is based on 2013 version, while 2017 version will come very soon.</p>
 <div class="section" id="id6">
 <h2><a class="toc-backref" href="#id29">How to prevent</a><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Use per user or session indirect object references.</li>
-<li>Check permissions on all application’s layers</li>
-<li>Testing &amp; Code review</li>
+<li><p>Use per user or session indirect object references.</p></li>
+<li><p>Check permissions on all application’s layers</p></li>
+<li><p>Testing &amp; Code review</p></li>
 </ul>
 </div>
 </div>
@@ -261,13 +269,13 @@ Attacker discovers the standard admin pages are on your server, logs in with def
 <h2><a class="toc-backref" href="#id32">How to prevent</a><a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <p>Use following tools:</p>
 <ul class="simple">
-<li>Ansible, chef, puppet</li>
-<li>Helmet</li>
-<li>Hpp</li>
-<li>Cors</li>
-<li>Node-ipgeoblock</li>
-<li>Express-limiter</li>
-<li>Safe-regex</li>
+<li><p>Ansible, chef, puppet</p></li>
+<li><p>Helmet</p></li>
+<li><p>Hpp</p></li>
+<li><p>Cors</p></li>
+<li><p>Node-ipgeoblock</p></li>
+<li><p>Express-limiter</p></li>
+<li><p>Safe-regex</p></li>
 </ul>
 </div>
 </div>
@@ -275,8 +283,8 @@ Attacker discovers the standard admin pages are on your server, logs in with def
 <h1><a class="toc-backref" href="#id33">6. Sensitive data exposure</a><a class="headerlink" href="#sensitive-data-exposure" title="Permalink to this headline">¶</a></h1>
 <p>Relevant types:</p>
 <ul class="simple">
-<li>Sniffing</li>
-<li>Insecure cryptographic storage</li>
+<li><p>Sniffing</p></li>
+<li><p>Insecure cryptographic storage</p></li>
 </ul>
 <div class="section" id="id9">
 <h2><a class="toc-backref" href="#id34">Example</a><a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
@@ -285,41 +293,41 @@ A file upload flaw allows an attacker to retrieve the password file.
 All of the unsalted hashes can be exposed with a rainbow table of precalculated hashes.</p>
 <p>Insufficient use of SSL</p>
 <ul class="simple">
-<li>login not loaded over HTTPS</li>
-<li>Mixed mode</li>
-<li>Cookies not sent securely</li>
+<li><p>login not loaded over HTTPS</p></li>
+<li><p>Mixed mode</p></li>
+<li><p>Cookies not sent securely</p></li>
 </ul>
 <p>Bad crypto</p>
 <ul class="simple">
-<li>Incorrect password storage</li>
-<li>Poor protection of keys</li>
-<li>Weak algorithm chosen</li>
+<li><p>Incorrect password storage</p></li>
+<li><p>Poor protection of keys</p></li>
+<li><p>Weak algorithm chosen</p></li>
 </ul>
 <p>Other exposure risks</p>
 <ul class="simple">
-<li>Browser auto-complete</li>
-<li>Leaked via logs</li>
-<li>Disclosure via URL</li>
+<li><p>Browser auto-complete</p></li>
+<li><p>Leaked via logs</p></li>
+<li><p>Disclosure via URL</p></li>
 </ul>
 </div>
 <div class="section" id="id10">
 <h2><a class="toc-backref" href="#id35">How to prevent</a><a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Always use TLS (TLS 1.1 and TSL 1.2)</li>
-<li>Secured control only over HTTPS</li>
-<li>HTTP content in HTTPS pages</li>
-<li>Use cookie’s Secure attribute</li>
-<li>Minimize sensitive data collection</li>
-<li>Use strong crypto storage</li>
+<li><p>Always use TLS (TLS 1.1 and TSL 1.2)</p></li>
+<li><p>Secured control only over HTTPS</p></li>
+<li><p>HTTP content in HTTPS pages</p></li>
+<li><p>Use cookie’s Secure attribute</p></li>
+<li><p>Minimize sensitive data collection</p></li>
+<li><p>Use strong crypto storage</p></li>
 </ul>
 <p>Use Javascript Cryptography:</p>
 <ul class="simple">
-<li>Crypto</li>
-<li>Sjcl (Stanford)</li>
-<li>Crypto-js</li>
-<li>Node-forge</li>
-<li>Web Cryptography API</li>
-<li>PolyCrypt</li>
+<li><p>Crypto</p></li>
+<li><p>Sjcl (Stanford)</p></li>
+<li><p>Crypto-js</p></li>
+<li><p>Node-forge</p></li>
+<li><p>Web Cryptography API</p></li>
+<li><p>PolyCrypt</p></li>
 </ul>
 </div>
 </div>
@@ -327,17 +335,17 @@ All of the unsalted hashes can be exposed with a rainbow table of precalculated 
 <h1><a class="toc-backref" href="#id36">7. Missing function level access control</a><a class="headerlink" href="#missing-function-level-access-control" title="Permalink to this headline">¶</a></h1>
 <p>Relevant types:</p>
 <ul class="simple">
-<li>Security through obscurity</li>
-<li>Checking permissions only in UI</li>
-<li>Missing permissions check in helper services</li>
+<li><p>Security through obscurity</p></li>
+<li><p>Checking permissions only in UI</p></li>
+<li><p>Missing permissions check in helper services</p></li>
 </ul>
 <p>Relevant questions:</p>
 <ul class="simple">
-<li>Does the UI show navigation to unauthorised functions?</li>
-<li>Are server side authentication or authorization checks missing?</li>
-<li>Are server side checks done that solely rely on information provided by the attacker?</li>
-<li>Are system or diagnostic resources accessible without proper authorisation?</li>
-<li>Will “force browsing” disclosure unsecured resources?</li>
+<li><p>Does the UI show navigation to unauthorised functions?</p></li>
+<li><p>Are server side authentication or authorization checks missing?</p></li>
+<li><p>Are server side checks done that solely rely on information provided by the attacker?</p></li>
+<li><p>Are system or diagnostic resources accessible without proper authorisation?</p></li>
+<li><p>Will “force browsing” disclosure unsecured resources?</p></li>
 </ul>
 <div class="section" id="id11">
 <h2><a class="toc-backref" href="#id37">Example</a><a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
@@ -346,12 +354,12 @@ All of the unsalted hashes can be exposed with a rainbow table of precalculated 
 <div class="section" id="id12">
 <h2><a class="toc-backref" href="#id38">How to prevent</a><a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Check permission on all application’s layer</li>
-<li>Authentication middleware</li>
-<li>Testing &amp; Code review</li>
-<li>Define a clear authorisation model</li>
-<li>Check for forced browsing</li>
-<li>Always test unprivileged roles</li>
+<li><p>Check permission on all application’s layer</p></li>
+<li><p>Authentication middleware</p></li>
+<li><p>Testing &amp; Code review</p></li>
+<li><p>Define a clear authorisation model</p></li>
+<li><p>Check for forced browsing</p></li>
+<li><p>Always test unprivileged roles</p></li>
 </ul>
 </div>
 </div>
@@ -375,10 +383,10 @@ All of the unsalted hashes can be exposed with a rainbow table of precalculated 
 <div class="section" id="id14">
 <h2><a class="toc-backref" href="#id41">How to prevent</a><a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Include the unique token in a hidden field. This includes the value in the body of the HTTP request, avoiding its exposure in the URL.</li>
-<li>Employ anti-forgery tokens</li>
-<li>Validate the referrer</li>
-<li>Use csurf</li>
+<li><p>Include the unique token in a hidden field. This includes the value in the body of the HTTP request, avoiding its exposure in the URL.</p></li>
+<li><p>Employ anti-forgery tokens</p></li>
+<li><p>Validate the referrer</p></li>
+<li><p>Use csurf</p></li>
 </ul>
 </div>
 </div>
@@ -387,12 +395,12 @@ All of the unsalted hashes can be exposed with a rainbow table of precalculated 
 <p>If you build your app by using 3rd party components, the know vulnerabilities of the components impact you.
 See following links:</p>
 <ul class="simple">
-<li><a class="reference external" href="https://nodesecurity.io">https://nodesecurity.io</a></li>
-<li><a class="reference external" href="https://snyk.io">https://snyk.io</a></li>
-<li><a class="reference external" href="http://cve.mitre.org">http://cve.mitre.org</a></li>
-<li><a class="reference external" href="https://nvd.nist.gov">https://nvd.nist.gov</a></li>
-<li><a class="reference external" href="https://www.exploit-db.com">https://www.exploit-db.com</a></li>
-<li><a class="reference external" href="https://www.cvedetails.com">https://www.cvedetails.com</a></li>
+<li><p><a class="reference external" href="https://nodesecurity.io">https://nodesecurity.io</a></p></li>
+<li><p><a class="reference external" href="https://snyk.io">https://snyk.io</a></p></li>
+<li><p><a class="reference external" href="http://cve.mitre.org">http://cve.mitre.org</a></p></li>
+<li><p><a class="reference external" href="https://nvd.nist.gov">https://nvd.nist.gov</a></p></li>
+<li><p><a class="reference external" href="https://www.exploit-db.com">https://www.exploit-db.com</a></p></li>
+<li><p><a class="reference external" href="https://www.cvedetails.com">https://www.cvedetails.com</a></p></li>
 </ul>
 </div>
 <div class="section" id="unvalidated-redirects-and-forwards">
@@ -412,12 +420,12 @@ See following links:</p>
 <div class="section" id="id16">
 <h2><a class="toc-backref" href="#id45">How to prevent</a><a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Use a URL whitelist</li>
-<li>Use indirect references</li>
-<li>Check the referrer</li>
-<li>Do not use redirects</li>
-<li>Do not use parameters to create redirect link</li>
-<li>Validate destination parameter: valid-url</li>
+<li><p>Use a URL whitelist</p></li>
+<li><p>Use indirect references</p></li>
+<li><p>Check the referrer</p></li>
+<li><p>Do not use redirects</p></li>
+<li><p>Do not use parameters to create redirect link</p></li>
+<li><p>Validate destination parameter: valid-url</p></li>
 </ul>
 </div>
 </div>
@@ -425,12 +433,12 @@ See following links:</p>
 <h1><a class="toc-backref" href="#id46">References</a><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
 <p>Other valuable references to look:</p>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/OWASP/NodeGoat">https://github.com/OWASP/NodeGoat</a></li>
-<li><a class="reference external" href="https://github.com/cr0hn/vulnerable-node">https://github.com/cr0hn/vulnerable-node</a></li>
-<li><a class="reference external" href="https://github.com/clarkio/vulnerable-app">https://github.com/clarkio/vulnerable-app</a></li>
-<li><a class="reference external" href="https://github.com/toolness/security-adventure">https://github.com/toolness/security-adventure</a></li>
-<li><a class="reference external" href="https://github.com/bkimminich/juice-shop">https://github.com/bkimminich/juice-shop</a></li>
-<li><a class="reference external" href="https://www.owasp.org/index.php/">https://www.owasp.org/index.php/</a></li>
+<li><p><a class="reference external" href="https://github.com/OWASP/NodeGoat">https://github.com/OWASP/NodeGoat</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cr0hn/vulnerable-node">https://github.com/cr0hn/vulnerable-node</a></p></li>
+<li><p><a class="reference external" href="https://github.com/clarkio/vulnerable-app">https://github.com/clarkio/vulnerable-app</a></p></li>
+<li><p><a class="reference external" href="https://github.com/toolness/security-adventure">https://github.com/toolness/security-adventure</a></p></li>
+<li><p><a class="reference external" href="https://github.com/bkimminich/juice-shop">https://github.com/bkimminich/juice-shop</a></p></li>
+<li><p><a class="reference external" href="https://www.owasp.org/index.php/">https://www.owasp.org/index.php/</a></p></li>
 </ul>
 <p><em>Written by Binwei&#64;Oslo</em></p>
 </div>
@@ -579,15 +587,15 @@ See following links:</p>
   <ul>
     
     
+      <li><a href="../../2019/cyber_security_for_blockchain/">09 June - 2019/Cyber_Security_For_Blockchain</a></li>
+    
+      <li><a href="../../2019/azure_datalake_warehouse/">30 April - Azure Data Lake and Warehouse</a></li>
+    
       <li><a href="../../2019/user_story_applied/">21 April - User Story Applied</a></li>
     
       <li><a href="../../2019/application_insight_introduction/">20 April - Application Insight Introduction</a></li>
     
       <li><a href="../../2019/azure_security/">19 April - Azure Security</a></li>
-    
-      <li><a href="../../2019/iot_for_smartcities/">10 February - Iot for Smart Cities</a></li>
-    
-      <li><a href="../../2019/agile_selling/">27 January - Agile Selling</a></li>
     
   </ul>
 
@@ -645,7 +653,7 @@ See following links:</p>
       
     
       
-      <li class="ablog-cloud ablog-cloud-1">
+      <li class="ablog-cloud ablog-cloud-2">
         <a href="../../blog/tag/cloud/">cloud</a></li>
       
     
@@ -754,7 +762,7 @@ See following links:</p>
     
   
     
-    <li><a href="../../blog/category/computerscience/">ComputerScience (33)</a></li>
+    <li><a href="../../blog/category/computerscience/">ComputerScience (35)</a></li>
     
   
     
@@ -775,7 +783,7 @@ See following links:</p>
   <ul>
   
     
-    <li><a href="../../blog/2019/">2019 (6)</a></li>
+    <li><a href="../../blog/2019/">2019 (8)</a></li>
     
   
     
@@ -789,13 +797,11 @@ See following links:</p>
   </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../search/" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -808,8 +814,8 @@ See following links:</p>
       &copy;2017, binwei.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="../../_sources/2017/security_owasp_top_10.rst.txt"

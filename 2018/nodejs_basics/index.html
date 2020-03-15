@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>Node.js Basics &#8212; binwei  documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -13,6 +11,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="author" title="About these documents" href="../../about/" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
@@ -55,26 +54,29 @@ This blog covers the basics part of Node.js development.</p>
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#node-js-basics" id="id1">Node.js Basics</a></li>
-<li><a class="reference internal" href="#module" id="id2">Module</a><ul>
-<li><a class="reference internal" href="#require" id="id3">Require</a></li>
-<li><a class="reference internal" href="#module-exports" id="id4">Module exports</a></li>
-<li><a class="reference internal" href="#http-module" id="id5">Http module</a></li>
-<li><a class="reference internal" href="#file-module" id="id6">File module</a></li>
-<li><a class="reference internal" href="#url-module" id="id7">Url module</a></li>
+<li><p><a class="reference internal" href="#node-js-basics" id="id1">Node.js Basics</a></p></li>
+<li><p><a class="reference internal" href="#module" id="id2">Module</a></p>
+<ul>
+<li><p><a class="reference internal" href="#require" id="id3">Require</a></p></li>
+<li><p><a class="reference internal" href="#module-exports" id="id4">Module exports</a></p></li>
+<li><p><a class="reference internal" href="#http-module" id="id5">Http module</a></p></li>
+<li><p><a class="reference internal" href="#file-module" id="id6">File module</a></p></li>
+<li><p><a class="reference internal" href="#url-module" id="id7">Url module</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#event-model" id="id8">Event model</a></li>
-<li><a class="reference internal" href="#npm" id="id9">NPM</a><ul>
-<li><a class="reference internal" href="#commands" id="id10">Commands</a></li>
-<li><a class="reference internal" href="#version" id="id11">Version</a></li>
+<li><p><a class="reference internal" href="#event-model" id="id8">Event model</a></p></li>
+<li><p><a class="reference internal" href="#npm" id="id9">NPM</a></p>
+<ul>
+<li><p><a class="reference internal" href="#commands" id="id10">Commands</a></p></li>
+<li><p><a class="reference internal" href="#version" id="id11">Version</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#others" id="id12">Others</a><ul>
-<li><a class="reference internal" href="#difference-from-client-javascript" id="id13">Difference from client javascript</a></li>
-<li><a class="reference internal" href="#uglify" id="id14">Uglify</a></li>
-<li><a class="reference internal" href="#error-code" id="id15">Error code</a></li>
-<li><a class="reference internal" href="#compare-with-microsoft-technologies" id="id16">Compare with Microsoft technologies</a></li>
+<li><p><a class="reference internal" href="#others" id="id12">Others</a></p>
+<ul>
+<li><p><a class="reference internal" href="#difference-from-client-javascript" id="id13">Difference from client javascript</a></p></li>
+<li><p><a class="reference internal" href="#uglify" id="id14">Uglify</a></p></li>
+<li><p><a class="reference internal" href="#error-code" id="id15">Error code</a></p></li>
+<li><p><a class="reference internal" href="#compare-with-microsoft-technologies" id="id16">Compare with Microsoft technologies</a></p></li>
 </ul>
 </li>
 </ul>
@@ -87,9 +89,9 @@ This blog covers the basics part of Node.js development.</p>
 <p>Every module in node is singleton.</p>
 <p>Use require to use module, the following is the search sequence of require method:</p>
 <ul class="simple">
-<li>First find js file</li>
-<li>Then json file</li>
-<li>Then node file</li>
+<li><p>First find js file</p></li>
+<li><p>Then json file</p></li>
+<li><p>Then node file</p></li>
 </ul>
 <p>If the module name is index.js, then it is okay just write directory name in the require parameter.</p>
 <p>require() can inject objects for dependency injection.</p>
@@ -97,7 +99,7 @@ This blog covers the basics part of Node.js development.</p>
 <div class="section" id="module-exports">
 <h2><a class="toc-backref" href="#id4">Module exports</a><a class="headerlink" href="#module-exports" title="Permalink to this headline">¶</a></h2>
 <p>From the modele itself, use exports keyword to make properties and methods available outside of the module file.</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exports</span><span class="o">.</span><span class="n">myDateTime</span> <span class="o">=</span> <span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exports</span><span class="o">.</span><span class="n">myDateTime</span> <span class="o">=</span> <span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="k">return</span> <span class="n">Date</span><span class="p">();</span>
 <span class="p">};</span>
 </pre></div>
@@ -106,7 +108,7 @@ This blog covers the basics part of Node.js development.</p>
 <div class="section" id="http-module">
 <h2><a class="toc-backref" href="#id5">Http module</a><a class="headerlink" href="#http-module" title="Permalink to this headline">¶</a></h2>
 <p>http module can be used to write header or content. See following example:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="n">http</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">);</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="n">http</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">);</span>
 <span class="n">http</span><span class="o">.</span><span class="n">createServer</span><span class="p">(</span><span class="n">function</span> <span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span> <span class="p">{</span>
   <span class="n">res</span><span class="o">.</span><span class="n">writeHead</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s1">&#39;text/html&#39;</span><span class="p">});</span>
   <span class="n">res</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">);</span>
@@ -119,7 +121,7 @@ This blog covers the basics part of Node.js development.</p>
 <div class="section" id="file-module">
 <h2><a class="toc-backref" href="#id6">File module</a><a class="headerlink" href="#file-module" title="Permalink to this headline">¶</a></h2>
 <p>File module can be used for file system operation.</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">require</span><span class="p">(</span><span class="n">fs</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">require</span><span class="p">(</span><span class="n">fs</span><span class="p">)</span>
 <span class="n">var</span> <span class="n">http</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">);</span>
 <span class="n">var</span> <span class="n">fs</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">);</span>
 <span class="n">http</span><span class="o">.</span><span class="n">createServer</span><span class="p">(</span><span class="n">function</span> <span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span> <span class="p">{</span>
@@ -143,7 +145,7 @@ fs.rename()</p>
 <h2><a class="toc-backref" href="#id7">Url module</a><a class="headerlink" href="#url-module" title="Permalink to this headline">¶</a></h2>
 <p>Url module can be used to parse various parts of url.</p>
 <img alt="../../_images/url_parse.png" src="../../_images/url_parse.png" />
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">url</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;https://www.pluralsight.com/search?q=buna&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">url</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;https://www.pluralsight.com/search?q=buna&#39;</span><span class="p">)</span>
 
 <span class="n">Url</span> <span class="p">{</span>
 <span class="n">protocol</span><span class="p">:</span> <span class="s1">&#39;https:&#39;</span><span class="p">,</span>
@@ -161,7 +163,7 @@ fs.rename()</p>
 </pre></div>
 </div>
 <p>example</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">http</span><span class="o">.</span><span class="n">createServer</span><span class="p">(</span><span class="n">function</span> <span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">http</span><span class="o">.</span><span class="n">createServer</span><span class="p">(</span><span class="n">function</span> <span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span> <span class="p">{</span>
   <span class="n">res</span><span class="o">.</span><span class="n">writeHead</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s1">&#39;text/html&#39;</span><span class="p">});</span>
   <span class="n">var</span> <span class="n">q</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">url</span><span class="p">,</span> <span class="n">true</span><span class="p">)</span><span class="o">.</span><span class="n">query</span><span class="p">;</span>
   <span class="n">var</span> <span class="n">txt</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="n">year</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">q</span><span class="o">.</span><span class="n">month</span><span class="p">;</span>
@@ -178,21 +180,21 @@ Output is: 2017 July</p>
 <p>The event model of node.js is asymmetric. The core part is event loop.</p>
 <p>For example, here is how Node.js handles a file request:</p>
 <ul class="simple">
-<li>Sends the task to the computer’s file system.</li>
-<li>Ready to handle the next request.</li>
-<li>When the file system has opened and read the file, the server returns the content to the client.</li>
+<li><p>Sends the task to the computer’s file system.</p></li>
+<li><p>Ready to handle the next request.</p></li>
+<li><p>When the file system has opened and read the file, the server returns the content to the client.</p></li>
 </ul>
 <p>The event loop looks like this:</p>
 <ul class="simple">
-<li>The entity that handles external events and converts them into callback invocations</li>
-<li>A loop that picks events from the event queue and pushes their callbacks to the call back stack</li>
-<li>Node will process the event queue when call stack is empty</li>
+<li><p>The entity that handles external events and converts them into callback invocations</p></li>
+<li><p>A loop that picks events from the event queue and pushes their callbacks to the call back stack</p></li>
+<li><p>Node will process the event queue when call stack is empty</p></li>
 </ul>
 <p>There are three methods look quite similar, it will be good to understand the difference:</p>
 <ul class="simple">
-<li>setTimeout</li>
-<li>setImmediate</li>
-<li>Process.nextTick (not relevant event loop)</li>
+<li><p>setTimeout</p></li>
+<li><p>setImmediate</p></li>
+<li><p>Process.nextTick (not relevant event loop)</p></li>
 </ul>
 </div>
 <div class="section" id="npm">
@@ -216,9 +218,9 @@ will run when there is start/test script in the package.json</p>
 <h2><a class="toc-backref" href="#id11">Version</a><a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h2>
 <p>Semantic version: major.minor.patch</p>
 <ul class="simple">
-<li>Patch increase when bug fixing</li>
-<li>Minor increase when introduce new feature</li>
-<li>Major increase when breaking changes</li>
+<li><p>Patch increase when bug fixing</p></li>
+<li><p>Minor increase when introduce new feature</p></li>
+<li><p>Major increase when breaking changes</p></li>
 </ul>
 <p>In the package.json: ^means major version can be greater, ~means minor version can be greater</p>
 <p>npm version patch/minor/major to update the version info in the pcakge.json rather than manually change the version
@@ -232,9 +234,9 @@ will run when there is start/test script in the package.json</p>
 <p>Javascript in node.js app, differentiate client and server code.</p>
 <p>For example:</p>
 <ul class="simple">
-<li>server can call require while client can call windows.</li>
-<li>server code modification needs to restart node to see the changes, while client code just need browser refresh.</li>
-<li>console.log in the server code will output the message to terminal app, the client code will output the message the browser console.</li>
+<li><p>server can call require while client can call windows.</p></li>
+<li><p>server code modification needs to restart node to see the changes, while client code just need browser refresh.</p></li>
+<li><p>console.log in the server code will output the message to terminal app, the client code will output the message the browser console.</p></li>
 </ul>
 </div>
 <div class="section" id="uglify">
@@ -244,7 +246,7 @@ will run when there is start/test script in the package.json</p>
 <div class="section" id="error-code">
 <h2><a class="toc-backref" href="#id15">Error code</a><a class="headerlink" href="#error-code" title="Permalink to this headline">¶</a></h2>
 <p>If there is error, can use res.status(500).send(err) to return the error code</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bookRouter</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/Books/:bookId&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">function</span><span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">res</span><span class="p">))</span> <span class="p">{</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bookRouter</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/Books/:bookId&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">function</span><span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">res</span><span class="p">))</span> <span class="p">{</span>
     <span class="n">Book</span><span class="o">.</span><span class="n">findById</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">bookId</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span><span class="n">err</span><span class="p">,</span> <span class="n">book</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">err</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">err</span><span class="p">);</span>
@@ -412,15 +414,15 @@ will run when there is start/test script in the package.json</p>
   <ul>
     
     
+      <li><a href="../../2019/cyber_security_for_blockchain/">09 June - 2019/Cyber_Security_For_Blockchain</a></li>
+    
+      <li><a href="../../2019/azure_datalake_warehouse/">30 April - Azure Data Lake and Warehouse</a></li>
+    
       <li><a href="../../2019/user_story_applied/">21 April - User Story Applied</a></li>
     
       <li><a href="../../2019/application_insight_introduction/">20 April - Application Insight Introduction</a></li>
     
       <li><a href="../../2019/azure_security/">19 April - Azure Security</a></li>
-    
-      <li><a href="../../2019/iot_for_smartcities/">10 February - Iot for Smart Cities</a></li>
-    
-      <li><a href="../../2019/agile_selling/">27 January - Agile Selling</a></li>
     
   </ul>
 
@@ -478,7 +480,7 @@ will run when there is start/test script in the package.json</p>
       
     
       
-      <li class="ablog-cloud ablog-cloud-1">
+      <li class="ablog-cloud ablog-cloud-2">
         <a href="../../blog/tag/cloud/">cloud</a></li>
       
     
@@ -587,7 +589,7 @@ will run when there is start/test script in the package.json</p>
     
   
     
-    <li><a href="../../blog/category/computerscience/">ComputerScience (33)</a></li>
+    <li><a href="../../blog/category/computerscience/">ComputerScience (35)</a></li>
     
   
     
@@ -608,7 +610,7 @@ will run when there is start/test script in the package.json</p>
   <ul>
   
     
-    <li><a href="../../blog/2019/">2019 (6)</a></li>
+    <li><a href="../../blog/2019/">2019 (8)</a></li>
     
   
     
@@ -622,13 +624,11 @@ will run when there is start/test script in the package.json</p>
   </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../search/" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -641,8 +641,8 @@ will run when there is start/test script in the package.json</p>
       &copy;2017, binwei.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="../../_sources/2018/nodejs_basics.rst.txt"

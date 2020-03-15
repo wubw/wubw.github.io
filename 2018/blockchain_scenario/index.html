@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>Blockchain Scenario &#8212; binwei  documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -13,6 +11,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="author" title="About these documents" href="../../about/" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
@@ -54,41 +53,45 @@
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#blockchain-scenario" id="id27">Blockchain Scenario</a></li>
-<li><a class="reference internal" href="#id1" id="id28">分布式数字货币系统</a></li>
-<li><a class="reference internal" href="#id2" id="id29">区块链现状</a><ul>
-<li><a class="reference internal" href="#id3" id="id30">公开链，联盟链，私有链</a></li>
-<li><a class="reference internal" href="#id4" id="id31">区块链2.0</a></li>
-<li><a class="reference internal" href="#id5" id="id32">区块链本质</a></li>
+<li><p><a class="reference internal" href="#blockchain-scenario" id="id27">Blockchain Scenario</a></p></li>
+<li><p><a class="reference internal" href="#id1" id="id28">分布式数字货币系统</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id29">区块链现状</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id3" id="id30">公开链，联盟链，私有链</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id31">区块链2.0</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id32">区块链本质</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id6" id="id33">区块链应用场景</a><ul>
-<li><a class="reference internal" href="#id7" id="id34">传统交易</a></li>
-<li><a class="reference internal" href="#id8" id="id35">金融服务</a></li>
-<li><a class="reference internal" href="#id9" id="id36">征信管理</a></li>
-<li><a class="reference internal" href="#id10" id="id37">权属管理</a></li>
-<li><a class="reference internal" href="#id11" id="id38">物联网</a></li>
-<li><a class="reference internal" href="#id12" id="id39">公共网络服务</a></li>
-<li><a class="reference internal" href="#id13" id="id40">保险业应用</a></li>
+<li><p><a class="reference internal" href="#id6" id="id33">区块链应用场景</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id7" id="id34">传统交易</a></p></li>
+<li><p><a class="reference internal" href="#id8" id="id35">金融服务</a></p></li>
+<li><p><a class="reference internal" href="#id9" id="id36">征信管理</a></p></li>
+<li><p><a class="reference internal" href="#id10" id="id37">权属管理</a></p></li>
+<li><p><a class="reference internal" href="#id11" id="id38">物联网</a></p></li>
+<li><p><a class="reference internal" href="#id12" id="id39">公共网络服务</a></p></li>
+<li><p><a class="reference internal" href="#id13" id="id40">保险业应用</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id14" id="id41">区块链的技术</a><ul>
-<li><a class="reference internal" href="#id15" id="id42">智能合约</a></li>
-<li><a class="reference internal" href="#id16" id="id43">数字证书</a></li>
-<li><a class="reference internal" href="#id17" id="id44">业务合约和账本</a></li>
-<li><a class="reference internal" href="#consensus-process" id="id45">共识机制（consensus process )</a></li>
-<li><a class="reference internal" href="#proof-of-stake" id="id46">权益证明（Proof of Stake）</a></li>
-<li><a class="reference internal" href="#id18" id="id47">分叉</a></li>
-<li><a class="reference internal" href="#id19" id="id48">双花和51%攻击</a></li>
-<li><a class="reference internal" href="#id20" id="id49">挖矿收入</a></li>
+<li><p><a class="reference internal" href="#id14" id="id41">区块链的技术</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id15" id="id42">智能合约</a></p></li>
+<li><p><a class="reference internal" href="#id16" id="id43">数字证书</a></p></li>
+<li><p><a class="reference internal" href="#id17" id="id44">业务合约和账本</a></p></li>
+<li><p><a class="reference internal" href="#consensus-process" id="id45">共识机制（consensus process )</a></p></li>
+<li><p><a class="reference internal" href="#proof-of-stake" id="id46">权益证明（Proof of Stake）</a></p></li>
+<li><p><a class="reference internal" href="#id18" id="id47">分叉</a></p></li>
+<li><p><a class="reference internal" href="#id19" id="id48">双花和51%攻击</a></p></li>
+<li><p><a class="reference internal" href="#id20" id="id49">挖矿收入</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id21" id="id50">区块链的架构</a><ul>
-<li><a class="reference internal" href="#id22" id="id51">数据层</a></li>
-<li><a class="reference internal" href="#id23" id="id52">网络层</a></li>
-<li><a class="reference internal" href="#id24" id="id53">共识层</a></li>
-<li><a class="reference internal" href="#id25" id="id54">激励层</a></li>
-<li><a class="reference internal" href="#id26" id="id55">智能合约层</a></li>
+<li><p><a class="reference internal" href="#id21" id="id50">区块链的架构</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id22" id="id51">数据层</a></p></li>
+<li><p><a class="reference internal" href="#id23" id="id52">网络层</a></p></li>
+<li><p><a class="reference internal" href="#id24" id="id53">共识层</a></p></li>
+<li><p><a class="reference internal" href="#id25" id="id54">激励层</a></p></li>
+<li><p><a class="reference internal" href="#id26" id="id55">智能合约层</a></p></li>
 </ul>
 </li>
 </ul>
@@ -102,19 +105,19 @@
 但是，很多时候很难找到一个安全可靠的第三方机构来充当这个中心管控的角色。</p>
 <p>有一些问题是中心化数字货币难以解决的：</p>
 <ul class="simple">
-<li>发生贸易的两国可能缺乏足够的外汇储备用以支付</li>
-<li>汇率的变化导致双方对合同有不同意见</li>
-<li>网络上的匿名双方进行直接买卖而不通过电子商务平台</li>
-<li>交易的两个机构彼此互不信任，找不到双方都认可的第三方担保</li>
-<li>使用第三方担保系统，但某些时候可能无法连接</li>
-<li>第三方的系统可能会出现故障或受到篡改攻击</li>
+<li><p>发生贸易的两国可能缺乏足够的外汇储备用以支付</p></li>
+<li><p>汇率的变化导致双方对合同有不同意见</p></li>
+<li><p>网络上的匿名双方进行直接买卖而不通过电子商务平台</p></li>
+<li><p>交易的两个机构彼此互不信任，找不到双方都认可的第三方担保</p></li>
+<li><p>使用第三方担保系统，但某些时候可能无法连接</p></li>
+<li><p>第三方的系统可能会出现故障或受到篡改攻击</p></li>
 </ul>
 <p>去中心化（de-centralized）或多中心化(multi-centralized)的数字货币系统可以有效解决以上问题。</p>
 <p>然而在“去中心化”的场景下，实现数字货币存在如下几个难题：</p>
 <ul class="simple">
-<li>货币的防伪：谁来负责对货币的真伪进行鉴定</li>
-<li>货币的交易：如何确保货币从一方安全转移到另外一方</li>
-<li>避免双重支付：如何避免同一份货币支付给多个接受者</li>
+<li><p>货币的防伪：谁来负责对货币的真伪进行鉴定</p></li>
+<li><p>货币的交易：如何确保货币从一方安全转移到另外一方</p></li>
+<li><p>避免双重支付：如何避免同一份货币支付给多个接受者</p></li>
 </ul>
 <p>这就是区块链需要解决的问题。</p>
 </div>
@@ -122,17 +125,17 @@
 <h1><a class="toc-backref" href="#id29">区块链现状</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h1>
 <p>跟传统的记账技术相比，基于区块链的分布式账本应该包括如下特点：</p>
 <ul class="simple">
-<li>维护一条不断增长的链，只可能添加记录，而发生过的记录都不可篡改</li>
-<li>去中心化，或者说多中心化，无需集中控制而能达成共识，实现上尽量采用分布式</li>
-<li>通过密码学的机制来确保交易无法被抵赖和破坏，并尽量保护用户信息和记录的隐私性</li>
+<li><p>维护一条不断增长的链，只可能添加记录，而发生过的记录都不可篡改</p></li>
+<li><p>去中心化，或者说多中心化，无需集中控制而能达成共识，实现上尽量采用分布式</p></li>
+<li><p>通过密码学的机制来确保交易无法被抵赖和破坏，并尽量保护用户信息和记录的隐私性</p></li>
 </ul>
 <div class="section" id="id3">
 <h2><a class="toc-backref" href="#id30">公开链，联盟链，私有链</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>根据参与者的不同，可以分为公开（public）链、联盟（consortium）链和私有（private）链</p>
 <ul class="simple">
-<li>共有链：任何人都可以参与使用和维护，如比特币区块链，信息是完全公开的</li>
-<li>私有链：由集中管理者进行管理限制，只有内部少数人可以使用，信息不公开</li>
-<li>联盟链：介于两者之间，由若干组织一起合作维护一条区块链，该区块链的使用必须是带有权限访问，相关信息会得到保护，如供应链机构或银行联盟</li>
+<li><p>共有链：任何人都可以参与使用和维护，如比特币区块链，信息是完全公开的</p></li>
+<li><p>私有链：由集中管理者进行管理限制，只有内部少数人可以使用，信息不公开</p></li>
+<li><p>联盟链：介于两者之间，由若干组织一起合作维护一条区块链，该区块链的使用必须是带有权限访问，相关信息会得到保护，如供应链机构或银行联盟</p></li>
 </ul>
 <p>目前来看，共有链更容易吸引市场和媒体的眼球，但更多的商业价值会在联盟链和私有链上落地。</p>
 <p>公有链：是指世界上任何个体或者机构都可以发送交易，且交易能够获得该区块链的有效确认，任何人都可参与其共识过程，记账权完全由公开的共识算法决定，即整个网络是开放的。</p>
@@ -154,19 +157,19 @@ Fabric, Sawtooth, Iroha, Blockchain Explorer, Cello, Indy, Composer, Burrow</p>
 <p>区块链1.0被称之为“全球账簿”。相应的，区块链2.0可以被看作一台“全球计算机”：实现了区块链系统的图灵完备，可以在区块链上传和执行应用程序，并且程序的有效执行能得到保证，在此基础上实现了智能合约的功能。</p>
 <p>相对于区块链1.0，区块链2.0有如下优势：</p>
 <ul class="simple">
-<li>支持智能合约: 区块链2.0定位于应用平台，在这个平台上，可以发布各种智能合约，并能与其它外部IT系统进行数据交互和处理，从而实现各种行业应用。</li>
-<li>适应大部分应用场景的交易速度: 通过采用PBFT、POS、DPOS等新的共识算法，区块链2.0的交易速度有了很大的提高，峰值速度已经超过了3000TPS（每秒处理交易数量），远远高于比特币的5TPS，已经能够满足大部分的金融应用场景。</li>
-<li>支持信息加密: 区块链2.0因为支持完整的程序运行，可以通过智能合约对发送和接收的信息进行自定义加密和解密，从而达到保护企业和用户隐私的目的，同时零知识证明等先进密码学技术的应用进一步推动了其隐私性的发展。</li>
-<li>无资源消耗: 为了维护网络共识，比特币使用的算力超122029 TH/s，相当于5000台天河2号A运算速度，每天耗电超过2000MWh，约合几十万人民币（估测数据）。区块链2.0采用PBFT、DPOS、POS等新的共识算法，不再需要通过消耗算力达成共识，从而实现对资源的零消耗，使其能绿色安全的部署于企业信息中心。</li>
+<li><p>支持智能合约: 区块链2.0定位于应用平台，在这个平台上，可以发布各种智能合约，并能与其它外部IT系统进行数据交互和处理，从而实现各种行业应用。</p></li>
+<li><p>适应大部分应用场景的交易速度: 通过采用PBFT、POS、DPOS等新的共识算法，区块链2.0的交易速度有了很大的提高，峰值速度已经超过了3000TPS（每秒处理交易数量），远远高于比特币的5TPS，已经能够满足大部分的金融应用场景。</p></li>
+<li><p>支持信息加密: 区块链2.0因为支持完整的程序运行，可以通过智能合约对发送和接收的信息进行自定义加密和解密，从而达到保护企业和用户隐私的目的，同时零知识证明等先进密码学技术的应用进一步推动了其隐私性的发展。</p></li>
+<li><p>无资源消耗: 为了维护网络共识，比特币使用的算力超122029 TH/s，相当于5000台天河2号A运算速度，每天耗电超过2000MWh，约合几十万人民币（估测数据）。区块链2.0采用PBFT、DPOS、POS等新的共识算法，不再需要通过消耗算力达成共识，从而实现对资源的零消耗，使其能绿色安全的部署于企业信息中心。</p></li>
 </ul>
 </div>
 <div class="section" id="id5">
 <h2><a class="toc-backref" href="#id32">区块链本质</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>认识上的误区</p>
 <ul class="simple">
-<li>区块链不等于比特币</li>
-<li>区块链不等于数据库：虽然区块链也可以用来存储数据，但它要解决的核心问题是多方的互信问题。单纯从存储数据角度，它的效率可能不高，也不推荐把大量的原始数据放到区块链系统上。当然，现在已有的区块链系统中，数据库相关的技术十分关键，直接决定了区块链系统的吞吐性能</li>
-<li>区块链并非一门万能的颠覆性技术</li>
+<li><p>区块链不等于比特币</p></li>
+<li><p>区块链不等于数据库：虽然区块链也可以用来存储数据，但它要解决的核心问题是多方的互信问题。单纯从存储数据角度，它的效率可能不高，也不推荐把大量的原始数据放到区块链系统上。当然，现在已有的区块链系统中，数据库相关的技术十分关键，直接决定了区块链系统的吞吐性能</p></li>
+<li><p>区块链并非一门万能的颠覆性技术</p></li>
 </ul>
 <p>区块链自身维护着一个按时间顺序持续增长、不可篡改的数据记录，当现实或数字世界中的资产可以生成数字摘要时，区块链遍成为确权类应用的完美载体，提供包含所属权和时间戳的数字证据。
 可编程的智能合约使得在区块链上登记的资产可以获得在现实世界中难以提供的流动性，并能够保证合约规则的透明和不可篡改。
@@ -205,7 +208,7 @@ Fabric, Sawtooth, Iroha, Blockchain Explorer, Cello, Indy, Composer, Burrow</p>
 <p>这个叫做”智能合约账号“的账户，事实上是一个无人信托，它只会按照代码去执行。</p>
 <p>中间人浪费：
 保费里的很小一部分是真正发挥作用的，比如说如果旅行保险用智能合约来实现的话，就会如以下：</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>航班抵达时间=航空公司官网.get(航班号)
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>航班抵达时间=航空公司官网.get(航班号)
     pay 30 to I
     if(航班抵达时间-预期时间&gt;3小时）
 pay 1000 to C
@@ -213,12 +216,12 @@ pay 1000 to C
 </div>
 <p>未来几年内，可能深入应用区块链技术的场景将包括：</p>
 <ul class="simple">
-<li>金融服务：区块链带来的潜在优势包括降低交易成本、减少跨组织交易风险等。该领域的区块链应用目前最受关注，全球不少银行和金融交易机构都是主力推动者。部分投资机构也在应用区块链技术降低管理成本和管控风险。从另一方面，要注意可能引发的问题和风险。例如DAO这样的众筹实验，提醒应用者在业务和运营层面都要谨慎处理</li>
-<li>征信和权属管理：征信和权属的数字化管理是大型社交平台和保险公司都梦寐以求的。目前该领域的主要技术问题包括缺乏足够的数据和分析能力；缺乏可靠的平台支持以及有效的数据整合管理等。区块链被认为可以促进数据交易和流动，提供安全可靠的支持。征信行业的门槛比较高，需要多方资源共同推动</li>
-<li>资源共享：以Airbnb为代表的分享经济公司将欢迎去中心化应用，可以降低管理成本。该领域主题相对集中，设计空间大，受到大量的投资关注</li>
-<li>贸易管理：区块链技术可以帮助自动化国际贸易和物流供应链领域中繁琐的手续和流程。基于区块链设计的贸易管理方案会为参与的多方企业带来极大的便利。另外，贸易中销售和法律合同的数字化、货物监控与检测、实时支付等方向都可能成为创业公司的突破口</li>
-<li>物联网：物联网也是很适合应用区块链技术的一个领域，预计未来几年会有大量应用出现，特别是租赁、物流等特定场景，都是很适合区块链技术的场景。但目前阶段，物联网自身的技术局限将造成短期内不会出现大规模应用。</li>
-<li>选举: 大家的投票“绝不可能被我们——即程序员，学校管理员或学生修改、删除。”</li>
+<li><p>金融服务：区块链带来的潜在优势包括降低交易成本、减少跨组织交易风险等。该领域的区块链应用目前最受关注，全球不少银行和金融交易机构都是主力推动者。部分投资机构也在应用区块链技术降低管理成本和管控风险。从另一方面，要注意可能引发的问题和风险。例如DAO这样的众筹实验，提醒应用者在业务和运营层面都要谨慎处理</p></li>
+<li><p>征信和权属管理：征信和权属的数字化管理是大型社交平台和保险公司都梦寐以求的。目前该领域的主要技术问题包括缺乏足够的数据和分析能力；缺乏可靠的平台支持以及有效的数据整合管理等。区块链被认为可以促进数据交易和流动，提供安全可靠的支持。征信行业的门槛比较高，需要多方资源共同推动</p></li>
+<li><p>资源共享：以Airbnb为代表的分享经济公司将欢迎去中心化应用，可以降低管理成本。该领域主题相对集中，设计空间大，受到大量的投资关注</p></li>
+<li><p>贸易管理：区块链技术可以帮助自动化国际贸易和物流供应链领域中繁琐的手续和流程。基于区块链设计的贸易管理方案会为参与的多方企业带来极大的便利。另外，贸易中销售和法律合同的数字化、货物监控与检测、实时支付等方向都可能成为创业公司的突破口</p></li>
+<li><p>物联网：物联网也是很适合应用区块链技术的一个领域，预计未来几年会有大量应用出现，特别是租赁、物流等特定场景，都是很适合区块链技术的场景。但目前阶段，物联网自身的技术局限将造成短期内不会出现大规模应用。</p></li>
+<li><p>选举: 大家的投票“绝不可能被我们——即程序员，学校管理员或学生修改、删除。”</p></li>
 </ul>
 </div>
 <div class="section" id="id8">
@@ -240,9 +243,9 @@ pay 1000 to C
 虽然现在大量的互联网企业（包括各类社交网站）尝试从各种维度获取了海量的用户信息，但从征信角度看，这些数据仍然存在若干问题。</p>
 <p>这些问题主要包括：</p>
 <ul class="simple">
-<li>数据量不足：数据量大，能获得的价值自然越高，数据量过少则无法产生有效的价值</li>
-<li>相关度较差：最核心的数据也往往是最敏感的。在隐私高度敏感的今天，用户都不希望暴露过多数据给第三方，因此企业获取到的数据中有效成分往往很少。</li>
-<li>时效性不足：企业可以从明面上获取到的用户数据往往是过时的，甚至存在虚假信息，对相关分析的可信度造成严重干扰</li>
+<li><p>数据量不足：数据量大，能获得的价值自然越高，数据量过少则无法产生有效的价值</p></li>
+<li><p>相关度较差：最核心的数据也往往是最敏感的。在隐私高度敏感的今天，用户都不希望暴露过多数据给第三方，因此企业获取到的数据中有效成分往往很少。</p></li>
+<li><p>时效性不足：企业可以从明面上获取到的用户数据往往是过时的，甚至存在虚假信息，对相关分析的可信度造成严重干扰</p></li>
 </ul>
 <p>区块链天然存在无法篡改、不可抵赖的特性。
 同时，区块链平台将可能提供前所未有的相关性极高的数据，这些数据可以在时空中准确定位，并严格关联到用户。</p>
@@ -256,9 +259,9 @@ pay 1000 to C
 其中包括汽车、房屋、艺术品等各种贵重物品的交易等，也包括数字出版物，以及可以标记的数字资源。
 目前权属管理领域存在的几个难题是：</p>
 <ul class="simple">
-<li>所有权的确认和管理</li>
-<li>交易的安全性和可靠性保障</li>
-<li>必要的隐私保护机制</li>
+<li><p>所有权的确认和管理</p></li>
+<li><p>交易的安全性和可靠性保障</p></li>
+<li><p>必要的隐私保护机制</p></li>
 </ul>
 <p>以房屋交易为例。买卖双方往往需要依托中介机构来确保交易的进行，并通过纸质的材料证明房屋所有权。
 但实际上，很多时候中介机构也无法确保交易的正常进行。
@@ -286,9 +289,9 @@ pay 1000 to C
 <h2><a class="toc-backref" href="#id40">保险业应用</a><a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
 <p>综合来说，区块链是一种可以制造信用的技术，它能够让毫无任何关系的节点互相信任，并达成共识，而不需要任何权威机构作为中介进行背书，通过智能合约处理各种事务，减少了人为干预的风险，这种新的技术特点，可以应用于很多金融领域，比如：</p>
 <ul class="simple">
-<li>跨境支付与结算：实现点到点交易，减少中间费用；</li>
-<li>证券发行与交易：实现准实时资产转移，加速交易清算速度；</li>
-<li>客户征信与反欺诈：降低法律合规成本，防止金融犯罪。</li>
+<li><p>跨境支付与结算：实现点到点交易，减少中间费用；</p></li>
+<li><p>证券发行与交易：实现准实时资产转移，加速交易清算速度；</p></li>
+<li><p>客户征信与反欺诈：降低法律合规成本，防止金融犯罪。</p></li>
 </ul>
 <p>互助保险又叫相互保险，指具有同样风险保障需求的人所组成的，不以牟利为目的，以互相帮助为原则，实行“共享收益，共摊风险”的保险形式。
 相互保险与商业保险最大的不同是商业保险的承保人是公司，其利益与客户对立，而互助保险的承保人是每个参与者，实现了保险人和被保险人的身份合一。</p>
@@ -304,9 +307,9 @@ pay 1000 to C
 <p>智能合约又称智能合同，是由事件驱动的、具有状态的、获得多方承认的、运行在区块链之上的、且能够根据预设条件自动处理资产的程序，智能合约最大的优势是利用程序算法替代人仲裁和执行合同。
 本质上讲，智能合约也是一段程序，但是与传统的IT系统不同，智能合约继承了区块链的三个特性：数据透明、不可篡改、永久运行。</p>
 <ul class="simple">
-<li>数据透明: 区块链上所有的数据都是公开透明的，因此智能合约的数据处理也是公开透明的，运行时任何一方都可以查看其代码和数据。</li>
-<li>不可篡改: 区块链本身的所有数据不可篡改，因此部署在区块链上的智能合约代码以及运行产生的数据输出也是不可篡改的，运行智能合约的节点不必担心其他节点恶意修改代码与数据。</li>
-<li>永久运行: 支撑区块链网络的节点往往达到数百甚至上千，部分节点的失效并不会导致智能合约的停止，其可靠性理论上接近于永久运行，这样就保证了智能合约能像纸质合同一样每时每刻都有效。</li>
+<li><p>数据透明: 区块链上所有的数据都是公开透明的，因此智能合约的数据处理也是公开透明的，运行时任何一方都可以查看其代码和数据。</p></li>
+<li><p>不可篡改: 区块链本身的所有数据不可篡改，因此部署在区块链上的智能合约代码以及运行产生的数据输出也是不可篡改的，运行智能合约的节点不必担心其他节点恶意修改代码与数据。</p></li>
+<li><p>永久运行: 支撑区块链网络的节点往往达到数百甚至上千，部分节点的失效并不会导致智能合约的停止，其可靠性理论上接近于永久运行，这样就保证了智能合约能像纸质合同一样每时每刻都有效。</p></li>
 </ul>
 <img alt="../../_images/dapp.png" src="../../_images/dapp.png" />
 </div>
@@ -344,8 +347,8 @@ pay 1000 to C
 <h2><a class="toc-backref" href="#id45">共识机制（consensus process )</a><a class="headerlink" href="#consensus-process" title="Permalink to this headline">¶</a></h2>
 <p>在去中心化以后，整个系统中没有了权威的中心化代理，信息的可信度和准确性便会面临问题。</p>
 <ul class="simple">
-<li>两将军问题 （Two Generals Paradox）：两个将军要通过信使来达成进攻还是撤退的约定，但信使可能迷路或被敌军阻拦（消息丢失或伪造），如何达成一致？在分布式系统上，试图在异步系统和不可靠的通道上达成一致性是不可能的</li>
-<li>拜占庭将军问题（Byzantine Generals Problem）:  拜占庭罗马帝国在军事行动中，采取将军投票的策略来决定是进攻还是撤退，也就是说如果多数人决定进攻，就上去干。但是军队中如果有奸细（比如将军已经反水故意乱投票，或者传令官叛变擅自修改军令），那怎么保证最后投票的结果真正反映了忠诚的将军的意愿呢？拜占庭将军问题反映到信息交换领域中来，可以理解为在一个去中心的系统中，有一些节点是坏掉的，它们可能向外界广播错误的信息或者不广播信息，在这种情况下如何验证数据传输的准确性。</li>
+<li><p>两将军问题 （Two Generals Paradox）：两个将军要通过信使来达成进攻还是撤退的约定，但信使可能迷路或被敌军阻拦（消息丢失或伪造），如何达成一致？在分布式系统上，试图在异步系统和不可靠的通道上达成一致性是不可能的</p></li>
+<li><p>拜占庭将军问题（Byzantine Generals Problem）:  拜占庭罗马帝国在军事行动中，采取将军投票的策略来决定是进攻还是撤退，也就是说如果多数人决定进攻，就上去干。但是军队中如果有奸细（比如将军已经反水故意乱投票，或者传令官叛变擅自修改军令），那怎么保证最后投票的结果真正反映了忠诚的将军的意愿呢？拜占庭将军问题反映到信息交换领域中来，可以理解为在一个去中心的系统中，有一些节点是坏掉的，它们可能向外界广播错误的信息或者不广播信息，在这种情况下如何验证数据传输的准确性。</p></li>
 </ul>
 <p>区块链是一个放在非安全环境中的分布式数据库（系统）。
 比特币共识是最长链共识，也就是说最长链–&gt;大多数–&gt;理性，于是分叉是允许的。</p>
@@ -373,11 +376,11 @@ pay 1000 to C
 <div class="section" id="id19">
 <h2><a class="toc-backref" href="#id48">双花和51%攻击</a><a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>假设有一个名叫X-Man的坏家伙，他控制了一个计算机节点，这个节点拥有比地球上任何一个节点算力都强大的计算机集群。</li>
-<li>首先，X-Man事先创造了一条独立的（不去广而告之）、含有比较多区块的链条。其中一个区块里放着“X-Man转账给X-Man 1000元”的纸条。</li>
-<li>接着，X-Man跟张三购买了一部手机，他在小纸条上记录下“X-Man转账给张三1000元”；这条信息被三次确认后（即三个区块被真实挖出、校验和连接），然后，张三把手机给了X-Man。</li>
-<li>X-Man拿到手机之后，按下机房的开关，试图将先前已经创造的区块链条连接在自己这个节点区块链的末尾。</li>
-<li>大功告成，X-Man拥有了一条更长的区块链条，那些较短、存放着“X-Man转账给张三1000元”的区块链，以及在区块链世界里那则真实转账行为被一同成功销毁。</li>
+<li><p>假设有一个名叫X-Man的坏家伙，他控制了一个计算机节点，这个节点拥有比地球上任何一个节点算力都强大的计算机集群。</p></li>
+<li><p>首先，X-Man事先创造了一条独立的（不去广而告之）、含有比较多区块的链条。其中一个区块里放着“X-Man转账给X-Man 1000元”的纸条。</p></li>
+<li><p>接着，X-Man跟张三购买了一部手机，他在小纸条上记录下“X-Man转账给张三1000元”；这条信息被三次确认后（即三个区块被真实挖出、校验和连接），然后，张三把手机给了X-Man。</p></li>
+<li><p>X-Man拿到手机之后，按下机房的开关，试图将先前已经创造的区块链条连接在自己这个节点区块链的末尾。</p></li>
+<li><p>大功告成，X-Man拥有了一条更长的区块链条，那些较短、存放着“X-Man转账给张三1000元”的区块链，以及在区块链世界里那则真实转账行为被一同成功销毁。</p></li>
 </ul>
 <p>这个不可能成功，因为更长链意味着需要更强的算力，无法让之前的block失效。
 除非你控制着全球51%的算力，这也就是区块链世界里另外一个著名的概念，叫做“51%攻击”。
@@ -410,11 +413,11 @@ pay 1000 to C
 <h2><a class="toc-backref" href="#id53">共识层</a><a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
 <p>共识层主要实现全网所有节点对交易和数据达成一致，防范拜占庭攻击、女巫攻击、51%攻击等共识攻击，其算法称为共识机制，因为其应用场景不同，区块链2.0出现了多种富有特色的共识机制。</p>
 <ul class="simple">
-<li>PoS：Proof of Stake，权益证明。原理：节点获得区块奖励的概率与该节点持有的代币数量和时间成正比，在获取区块奖励后，该节点的代币持有时间清零，重新计算。但由于代币在初期分配时人为因素过高，容易导致后期贫富差距过大。</li>
-<li>DPoS：Delegate Proof of Stake，股份授权证明。原理：所有的节点投票选出100个（或其他数量）委托节点，区块完全由这100个委托节点按照一定算法生成，类似于美国的议会制。</li>
-<li>Casper：投注共识。原理：以太坊下一代的共识机制，每个参与共识的节点都要支付一定的押金，节点获取奖励的概率和押金成正比，如果有节点作恶押金则要被扣掉。</li>
-<li>PBFT：Practical Byzantine Fault Tolerance，拜占庭容错算法。原理：与一般公有链的共识机制主要基于经济博弈原理不同，PBFT基于异步网络环境下的状态机副本复制协议，本质上是由数学算法实现了共识，因此区块的确认不需要像公有链一样在若干区块之后才安全，可以实现出块即确认。</li>
-<li>PoET：Proof of Elapsed Time，消逝时间量证明。原理：该共识机制由Intel提出，核心是用Intel支持SGX技术的CPU硬件，在受控安全环境（TEE）下随机产生一些延时，同时CPU从硬件级别证明延时的可信性，类似于彩票算法，谁的延时最低，谁将获取记账权。这样，增加记账权的唯一方法就是多增加CPU的数量，具备了当初中本聪设想的一个CPU一票的可能，同时增加的CPU会提升整个系统的资源，变相实现了记账权与提供资源之间的正比例关系。</li>
+<li><p>PoS：Proof of Stake，权益证明。原理：节点获得区块奖励的概率与该节点持有的代币数量和时间成正比，在获取区块奖励后，该节点的代币持有时间清零，重新计算。但由于代币在初期分配时人为因素过高，容易导致后期贫富差距过大。</p></li>
+<li><p>DPoS：Delegate Proof of Stake，股份授权证明。原理：所有的节点投票选出100个（或其他数量）委托节点，区块完全由这100个委托节点按照一定算法生成，类似于美国的议会制。</p></li>
+<li><p>Casper：投注共识。原理：以太坊下一代的共识机制，每个参与共识的节点都要支付一定的押金，节点获取奖励的概率和押金成正比，如果有节点作恶押金则要被扣掉。</p></li>
+<li><p>PBFT：Practical Byzantine Fault Tolerance，拜占庭容错算法。原理：与一般公有链的共识机制主要基于经济博弈原理不同，PBFT基于异步网络环境下的状态机副本复制协议，本质上是由数学算法实现了共识，因此区块的确认不需要像公有链一样在若干区块之后才安全，可以实现出块即确认。</p></li>
+<li><p>PoET：Proof of Elapsed Time，消逝时间量证明。原理：该共识机制由Intel提出，核心是用Intel支持SGX技术的CPU硬件，在受控安全环境（TEE）下随机产生一些延时，同时CPU从硬件级别证明延时的可信性，类似于彩票算法，谁的延时最低，谁将获取记账权。这样，增加记账权的唯一方法就是多增加CPU的数量，具备了当初中本聪设想的一个CPU一票的可能，同时增加的CPU会提升整个系统的资源，变相实现了记账权与提供资源之间的正比例关系。</p></li>
 </ul>
 <p>共识机制有各自的优缺点，适应不同的场景，进行对比</p>
 <img alt="../../_images/consensus_compare.jpg" src="../../_images/consensus_compare.jpg" />
@@ -580,15 +583,15 @@ pay 1000 to C
   <ul>
     
     
+      <li><a href="../../2019/cyber_security_for_blockchain/">09 June - 2019/Cyber_Security_For_Blockchain</a></li>
+    
+      <li><a href="../../2019/azure_datalake_warehouse/">30 April - Azure Data Lake and Warehouse</a></li>
+    
       <li><a href="../../2019/user_story_applied/">21 April - User Story Applied</a></li>
     
       <li><a href="../../2019/application_insight_introduction/">20 April - Application Insight Introduction</a></li>
     
       <li><a href="../../2019/azure_security/">19 April - Azure Security</a></li>
-    
-      <li><a href="../../2019/iot_for_smartcities/">10 February - Iot for Smart Cities</a></li>
-    
-      <li><a href="../../2019/agile_selling/">27 January - Agile Selling</a></li>
     
   </ul>
 
@@ -646,7 +649,7 @@ pay 1000 to C
       
     
       
-      <li class="ablog-cloud ablog-cloud-1">
+      <li class="ablog-cloud ablog-cloud-2">
         <a href="../../blog/tag/cloud/">cloud</a></li>
       
     
@@ -755,7 +758,7 @@ pay 1000 to C
     
   
     
-    <li><a href="../../blog/category/computerscience/">ComputerScience (33)</a></li>
+    <li><a href="../../blog/category/computerscience/">ComputerScience (35)</a></li>
     
   
     
@@ -776,7 +779,7 @@ pay 1000 to C
   <ul>
   
     
-    <li><a href="../../blog/2019/">2019 (6)</a></li>
+    <li><a href="../../blog/2019/">2019 (8)</a></li>
     
   
     
@@ -790,13 +793,11 @@ pay 1000 to C
   </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../search/" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -809,8 +810,8 @@ pay 1000 to C
       &copy;2017, binwei.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="../../_sources/2018/blockchain_scenario.rst.txt"

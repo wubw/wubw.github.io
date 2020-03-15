@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>Cloud for Dummy &#8212; binwei  documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -13,6 +11,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="author" title="About these documents" href="../../about/" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
@@ -54,37 +53,42 @@
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#cloud-for-dummy" id="id1">Cloud for Dummy</a></li>
-<li><a class="reference internal" href="#introduction" id="id2">Introduction</a><ul>
-<li><a class="reference internal" href="#deployment-models" id="id3">Deployment models</a></li>
-<li><a class="reference internal" href="#cloud-ready" id="id4">Cloud ready</a></li>
+<li><p><a class="reference internal" href="#cloud-for-dummy" id="id1">Cloud for Dummy</a></p></li>
+<li><p><a class="reference internal" href="#introduction" id="id2">Introduction</a></p>
+<ul>
+<li><p><a class="reference internal" href="#deployment-models" id="id3">Deployment models</a></p></li>
+<li><p><a class="reference internal" href="#cloud-ready" id="id4">Cloud ready</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#cloud-evolution" id="id5">Cloud evolution</a><ul>
-<li><a class="reference internal" href="#soa" id="id6">SOA</a></li>
-<li><a class="reference internal" href="#saas" id="id7">SaaS</a></li>
+<li><p><a class="reference internal" href="#cloud-evolution" id="id5">Cloud evolution</a></p>
+<ul>
+<li><p><a class="reference internal" href="#soa" id="id6">SOA</a></p></li>
+<li><p><a class="reference internal" href="#saas" id="id7">SaaS</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#xaas" id="id8">XaaS</a><ul>
-<li><a class="reference internal" href="#infrastructure-as-a-service-iaas" id="id9">Infrastructure as a Service (IaaS)</a></li>
-<li><a class="reference internal" href="#platform-as-a-service-paas" id="id10">Platform as a Service (PaaS)</a></li>
-<li><a class="reference internal" href="#software-as-a-service-saas-and-framework-as-a-service-faas" id="id11">Software as a Service (SaaS) and Framework as a Service (FaaS)</a></li>
-<li><a class="reference internal" href="#benefits-and-risks-of-saas" id="id12">Benefits and Risks of SaaS</a></li>
-<li><a class="reference internal" href="#benefits-and-risks-of-saas-software-vendors" id="id13">Benefits and Risks of SaaS Software Vendors</a></li>
+<li><p><a class="reference internal" href="#xaas" id="id8">XaaS</a></p>
+<ul>
+<li><p><a class="reference internal" href="#infrastructure-as-a-service-iaas" id="id9">Infrastructure as a Service (IaaS)</a></p></li>
+<li><p><a class="reference internal" href="#platform-as-a-service-paas" id="id10">Platform as a Service (PaaS)</a></p></li>
+<li><p><a class="reference internal" href="#software-as-a-service-saas-and-framework-as-a-service-faas" id="id11">Software as a Service (SaaS) and Framework as a Service (FaaS)</a></p></li>
+<li><p><a class="reference internal" href="#benefits-and-risks-of-saas" id="id12">Benefits and Risks of SaaS</a></p></li>
+<li><p><a class="reference internal" href="#benefits-and-risks-of-saas-software-vendors" id="id13">Benefits and Risks of SaaS Software Vendors</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#private-and-hybrid-clouds" id="id14">Private and Hybrid clouds</a><ul>
-<li><a class="reference internal" href="#private-clouds" id="id15">Private clouds</a></li>
-<li><a class="reference internal" href="#hybrid-clouds" id="id16">Hybrid clouds</a></li>
+<li><p><a class="reference internal" href="#private-and-hybrid-clouds" id="id14">Private and Hybrid clouds</a></p>
+<ul>
+<li><p><a class="reference internal" href="#private-clouds" id="id15">Private clouds</a></p></li>
+<li><p><a class="reference internal" href="#hybrid-clouds" id="id16">Hybrid clouds</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#mapreduce" id="id17">MapReduce</a></li>
-<li><a class="reference internal" href="#other-important-concepts" id="id18">Other important concepts</a><ul>
-<li><a class="reference internal" href="#power-usage-effectiveness-pue" id="id19">Power usage effectiveness (PUE)</a></li>
-<li><a class="reference internal" href="#representational-state-transfer-rest" id="id20">Representational&nbsp;State Transfer (REST)</a></li>
-<li><a class="reference internal" href="#scalability" id="id21">Scalability</a></li>
-<li><a class="reference internal" href="#database-sharding" id="id22">Database sharding</a></li>
-<li><a class="reference internal" href="#attributes-between-different-architectures" id="id23">Attributes between different architectures</a></li>
+<li><p><a class="reference internal" href="#mapreduce" id="id17">MapReduce</a></p></li>
+<li><p><a class="reference internal" href="#other-important-concepts" id="id18">Other important concepts</a></p>
+<ul>
+<li><p><a class="reference internal" href="#power-usage-effectiveness-pue" id="id19">Power usage effectiveness (PUE)</a></p></li>
+<li><p><a class="reference internal" href="#representational-state-transfer-rest" id="id20">Representational State Transfer (REST)</a></p></li>
+<li><p><a class="reference internal" href="#scalability" id="id21">Scalability</a></p></li>
+<li><p><a class="reference internal" href="#database-sharding" id="id22">Database sharding</a></p></li>
+<li><p><a class="reference internal" href="#attributes-between-different-architectures" id="id23">Attributes between different architectures</a></p></li>
 </ul>
 </li>
 </ul>
@@ -94,11 +98,11 @@
 <h1><a class="toc-backref" href="#id2">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
 <p>Five main principles of cloud computing:</p>
 <ul class="simple">
-<li>Pooled resources: Available to any subscribing users</li>
-<li>Virtualization: High utilization of hardware assets</li>
-<li>Elasticity: Dynamic scale without CAPEX</li>
-<li>Automation: Build, deploy, configure, provision, and move, all without manual intervention</li>
-<li>Metered billing: Per-usage business model; pay only for what you use</li>
+<li><p>Pooled resources: Available to any subscribing users</p></li>
+<li><p>Virtualization: High utilization of hardware assets</p></li>
+<li><p>Elasticity: Dynamic scale without CAPEX</p></li>
+<li><p>Automation: Build, deploy, configure, provision, and move, all without manual intervention</p></li>
+<li><p>Metered billing: Per-usage business model; pay only for what you use</p></li>
 </ul>
 <p>The cloud offers the illusion of infinite resources, available on demand.
 You no longer need to play the guessing game of how many users need to be supported and how scalable the application is.
@@ -115,11 +119,11 @@ In this realm of true utility computing, resource utilization mirrors the way we
 <h2><a class="toc-backref" href="#id4">Cloud ready</a><a class="headerlink" href="#cloud-ready" title="Permalink to this headline">¶</a></h2>
 <p>If you can answer “yes” to some or all of the following questions, you may be cloud-ready:</p>
 <ul class="simple">
-<li>Do you have automated scripts for setting up the operating system and installing all necessary software?</li>
-<li>Do you package your software in such a way that all the configuration files are bundled with the binary artifacts, ready for one-click deployment?</li>
-<li>Do you run your software stack inside of virtual machines that can be cloned?</li>
-<li>Are common maintenance tasks (such as vacuuming the database, announcing maintenance windows, and backing up data) happening automatically or easily automated with a single click?</li>
-<li>Is your software designed to scale horizontally by adding new web servers or other machines?</li>
+<li><p>Do you have automated scripts for setting up the operating system and installing all necessary software?</p></li>
+<li><p>Do you package your software in such a way that all the configuration files are bundled with the binary artifacts, ready for one-click deployment?</p></li>
+<li><p>Do you run your software stack inside of virtual machines that can be cloned?</p></li>
+<li><p>Are common maintenance tasks (such as vacuuming the database, announcing maintenance windows, and backing up data) happening automatically or easily automated with a single click?</p></li>
+<li><p>Is your software designed to scale horizontally by adding new web servers or other machines?</p></li>
 </ul>
 </div>
 </div>
@@ -127,9 +131,9 @@ In this realm of true utility computing, resource utilization mirrors the way we
 <h1><a class="toc-backref" href="#id5">Cloud evolution</a><a class="headerlink" href="#cloud-evolution" title="Permalink to this headline">¶</a></h1>
 <p>On the software side of the cloud evolution are three important threads of development:</p>
 <ul class="simple">
-<li>virtualization</li>
-<li>SOA</li>
-<li>SaaS</li>
+<li><p>virtualization</p></li>
+<li><p>SOA</p></li>
+<li><p>SaaS</p></li>
 </ul>
 <p>Two of these are technological, and the third relates to the business model.</p>
 <div class="section" id="soa">
@@ -143,7 +147,7 @@ SOA makes practical the componentization and composition of services into applic
 Each SOA building block can play one or both of two roles: service provider or service consumer.
 The Universal Description Discovery and Integration (UDDI) specification defines a way to publish and discover information about web services.
 Other service broker technologies include (for example) Electronic Business using eXtensible Markup Language (ebXML).</p>
-<p>Whichever service the service consumers need, they have to take it&nbsp;into the brokers, bind it with respective service, and then use it.
+<p>Whichever service the service consumers need, they have to take it into the brokers, bind it with respective service, and then use it.
 Putting this more simplistically, SOA is all about the process of defining an IT solution or architecture, whereas cloud computing is an architectural alternative.</p>
 <p>We can say that SOA can’t be replaced by cloud computing.
 Most cloud computing solutions are defined through SOA.
@@ -205,38 +209,38 @@ Like a PaaS environment, a developer in a FaaS environment can only use the spec
 <h2><a class="toc-backref" href="#id12">Benefits and Risks of SaaS</a><a class="headerlink" href="#benefits-and-risks-of-saas" title="Permalink to this headline">¶</a></h2>
 <p>Benefits:</p>
 <ul class="simple">
-<li>Faster deployment: because no local installation is required</li>
-<li>Usage-based pricing: letting you pay only for what you use</li>
-<li>Less financial risk: with lower up-front cost and try-before-you-buy options</li>
-<li>Reduced need for on-premises resources: such as servers and IT staff</li>
-<li>Easier upgrades: with no on-premises software to update</li>
+<li><p>Faster deployment: because no local installation is required</p></li>
+<li><p>Usage-based pricing: letting you pay only for what you use</p></li>
+<li><p>Less financial risk: with lower up-front cost and try-before-you-buy options</p></li>
+<li><p>Reduced need for on-premises resources: such as servers and IT staff</p></li>
+<li><p>Easier upgrades: with no on-premises software to update</p></li>
 </ul>
 <p>Risks:</p>
 <ul class="simple">
-<li>Requires trusting a SaaS provider: for availability and data security</li>
-<li>Can raise legal/regulatory concerns: with storing data outside customer premises</li>
-<li>Can limit customization: if customers share a multi-tenant application</li>
-<li>Can be harder to integrate with on-premises applications</li>
-<li>Can have lower performance than on-premises applications</li>
+<li><p>Requires trusting a SaaS provider: for availability and data security</p></li>
+<li><p>Can raise legal/regulatory concerns: with storing data outside customer premises</p></li>
+<li><p>Can limit customization: if customers share a multi-tenant application</p></li>
+<li><p>Can be harder to integrate with on-premises applications</p></li>
+<li><p>Can have lower performance than on-premises applications</p></li>
 </ul>
 </div>
 <div class="section" id="benefits-and-risks-of-saas-software-vendors">
 <h2><a class="toc-backref" href="#id13">Benefits and Risks of SaaS Software Vendors</a><a class="headerlink" href="#benefits-and-risks-of-saas-software-vendors" title="Permalink to this headline">¶</a></h2>
 <p>Benefits:</p>
 <ul class="simple">
-<li>Offers potential to reach new customers in broader markets</li>
-<li>Can sell directly to business decision maker without going through IT</li>
-<li>Can provide more predictable revenue than traditional licensing</li>
-<li>Can lower support costs due to shared multi-tenant applications</li>
-<li>Provides more knowledge about how customers use the application</li>
+<li><p>Offers potential to reach new customers in broader markets</p></li>
+<li><p>Can sell directly to business decision maker without going through IT</p></li>
+<li><p>Can provide more predictable revenue than traditional licensing</p></li>
+<li><p>Can lower support costs due to shared multi-tenant applications</p></li>
+<li><p>Provides more knowledge about how customers use the application</p></li>
 </ul>
 <p>Risks:</p>
 <ul class="simple">
-<li>Must demonstrate real value up front, due to try-before-you-buy option</li>
-<li>Revenue builds up more slowly because of typical SaaS pricing models</li>
-<li>May lessen ability to sell customization services due to multi-tenant applications</li>
-<li>Can bring new sales challenges, e.g. customer resistance to the cloud</li>
-<li>Requires significant business changes, e.g. pricing and sales</li>
+<li><p>Must demonstrate real value up front, due to try-before-you-buy option</p></li>
+<li><p>Revenue builds up more slowly because of typical SaaS pricing models</p></li>
+<li><p>May lessen ability to sell customization services due to multi-tenant applications</p></li>
+<li><p>Can bring new sales challenges, e.g. customer resistance to the cloud</p></li>
+<li><p>Requires significant business changes, e.g. pricing and sales</p></li>
 </ul>
 </div>
 </div>
@@ -248,17 +252,17 @@ Like a PaaS environment, a developer in a FaaS environment can only use the spec
 <p>Private clouds are a variant of generic cloud computing where internal data-center resources of an enterprise or organization aren’t made available to the general public</p>
 <p>Benefits:</p>
 <ul class="simple">
-<li>Faster deployment of VMs and applications, because the process is automated</li>
-<li>Reduced administrative costs, because more of the process is automated</li>
-<li>Fewer deployment errors, due to automated deployment of standard services</li>
-<li>Easier cost management, with per-VM chargeback or showback</li>
+<li><p>Faster deployment of VMs and applications, because the process is automated</p></li>
+<li><p>Reduced administrative costs, because more of the process is automated</p></li>
+<li><p>Fewer deployment errors, due to automated deployment of standard services</p></li>
+<li><p>Easier cost management, with per-VM chargeback or showback</p></li>
 </ul>
 <p>Risks:</p>
 <ul class="simple">
-<li>VM administrators find it hard to trust users to deploy their own VMs and applications</li>
-<li>VM administrators might resist having part of their job automated</li>
-<li>Defining standard services can be challenging, since users want different things</li>
-<li>Changing operational process is hard for risk-averse IT departments</li>
+<li><p>VM administrators find it hard to trust users to deploy their own VMs and applications</p></li>
+<li><p>VM administrators might resist having part of their job automated</p></li>
+<li><p>Defining standard services can be challenging, since users want different things</p></li>
+<li><p>Changing operational process is hard for risk-averse IT departments</p></li>
 </ul>
 </div>
 <div class="section" id="hybrid-clouds">
@@ -293,7 +297,7 @@ The master picks idle workers and assigns each one a map task or a reduce task.<
 <p>Power usage effectiveness (PUE) is a metric used to determine the energy efficiency of a data center.</p>
 </div>
 <div class="section" id="representational-state-transfer-rest">
-<h2><a class="toc-backref" href="#id20">Representational&nbsp;State Transfer (REST)</a><a class="headerlink" href="#representational-state-transfer-rest" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id20">Representational State Transfer (REST)</a><a class="headerlink" href="#representational-state-transfer-rest" title="Permalink to this headline">¶</a></h2>
 <p>REST-style architectures consist of clients and servers.</p>
 <p>Clients initiate requests to servers; server s process requests and return appropriate responses.</p>
 <p>Requests and responses are built around the transfer of representations of resources.
@@ -315,60 +319,60 @@ Without this, the economies of moving a business/application to the cloud don’
 <div class="section" id="attributes-between-different-architectures">
 <h2><a class="toc-backref" href="#id23">Attributes between different architectures</a><a class="headerlink" href="#attributes-between-different-architectures" title="Permalink to this headline">¶</a></h2>
 <p>Critical application attributes in tightly vs loosely coupled architectures:</p>
-<table border="1" class="docutils">
+<table class="docutils align-default">
 <colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>&#160;</td>
-<td>Tightly coupled</td>
-<td>Loosely coupled</td>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p>Tightly coupled</p></td>
+<td><p>Loosely coupled</p></td>
 </tr>
-<tr class="row-even"><td>Technology mix</td>
-<td>Homogeneous</td>
-<td>Heterogeneous</td>
+<tr class="row-even"><td><p>Technology mix</p></td>
+<td><p>Homogeneous</p></td>
+<td><p>Heterogeneous</p></td>
 </tr>
-<tr class="row-odd"><td>Data typing</td>
-<td>Dependent</td>
-<td>Independent</td>
+<tr class="row-odd"><td><p>Data typing</p></td>
+<td><p>Dependent</p></td>
+<td><p>Independent</p></td>
 </tr>
-<tr class="row-even"><td>Interface model</td>
-<td>API</td>
-<td>Service</td>
+<tr class="row-even"><td><p>Interface model</p></td>
+<td><p>API</p></td>
+<td><p>Service</p></td>
 </tr>
-<tr class="row-odd"><td>Interaction style</td>
-<td>PRC</td>
-<td>Document</td>
+<tr class="row-odd"><td><p>Interaction style</p></td>
+<td><p>PRC</p></td>
+<td><p>Document</p></td>
 </tr>
-<tr class="row-even"><td>Synchronization</td>
-<td>Synchronous</td>
-<td>Asynchronous</td>
+<tr class="row-even"><td><p>Synchronization</p></td>
+<td><p>Synchronous</p></td>
+<td><p>Asynchronous</p></td>
 </tr>
-<tr class="row-odd"><td>Granularity</td>
-<td>Object</td>
-<td>Message</td>
+<tr class="row-odd"><td><p>Granularity</p></td>
+<td><p>Object</p></td>
+<td><p>Message</p></td>
 </tr>
-<tr class="row-even"><td>Syntactic definition</td>
-<td>By convention</td>
-<td>Self-describing</td>
+<tr class="row-even"><td><p>Syntactic definition</p></td>
+<td><p>By convention</p></td>
+<td><p>Self-describing</p></td>
 </tr>
-<tr class="row-odd"><td>Semantic adaptation</td>
-<td>By recoding</td>
-<td>Via transformation</td>
+<tr class="row-odd"><td><p>Semantic adaptation</p></td>
+<td><p>By recoding</p></td>
+<td><p>Via transformation</p></td>
 </tr>
-<tr class="row-even"><td>Bindings</td>
-<td>Fixed and early</td>
-<td>Delayed</td>
+<tr class="row-even"><td><p>Bindings</p></td>
+<td><p>Fixed and early</p></td>
+<td><p>Delayed</p></td>
 </tr>
-<tr class="row-odd"><td>Software objective</td>
-<td>Reusability</td>
-<td>Broad applicability</td>
+<tr class="row-odd"><td><p>Software objective</p></td>
+<td><p>Reusability</p></td>
+<td><p>Broad applicability</p></td>
 </tr>
-<tr class="row-even"><td>Consequences</td>
-<td>Anticipated</td>
-<td>Unintended</td>
+<tr class="row-even"><td><p>Consequences</p></td>
+<td><p>Anticipated</p></td>
+<td><p>Unintended</p></td>
 </tr>
 </tbody>
 </table>
@@ -520,15 +524,15 @@ Without this, the economies of moving a business/application to the cloud don’
   <ul>
     
     
+      <li><a href="../../2019/cyber_security_for_blockchain/">09 June - 2019/Cyber_Security_For_Blockchain</a></li>
+    
+      <li><a href="../../2019/azure_datalake_warehouse/">30 April - Azure Data Lake and Warehouse</a></li>
+    
       <li><a href="../../2019/user_story_applied/">21 April - User Story Applied</a></li>
     
       <li><a href="../../2019/application_insight_introduction/">20 April - Application Insight Introduction</a></li>
     
       <li><a href="../../2019/azure_security/">19 April - Azure Security</a></li>
-    
-      <li><a href="../../2019/iot_for_smartcities/">10 February - Iot for Smart Cities</a></li>
-    
-      <li><a href="../../2019/agile_selling/">27 January - Agile Selling</a></li>
     
   </ul>
 
@@ -586,7 +590,7 @@ Without this, the economies of moving a business/application to the cloud don’
       
     
       
-      <li class="ablog-cloud ablog-cloud-1">
+      <li class="ablog-cloud ablog-cloud-2">
         <a href="../../blog/tag/cloud/">cloud</a></li>
       
     
@@ -695,7 +699,7 @@ Without this, the economies of moving a business/application to the cloud don’
     
   
     
-    <li><a href="../../blog/category/computerscience/">ComputerScience (33)</a></li>
+    <li><a href="../../blog/category/computerscience/">ComputerScience (35)</a></li>
     
   
     
@@ -716,7 +720,7 @@ Without this, the economies of moving a business/application to the cloud don’
   <ul>
   
     
-    <li><a href="../../blog/2019/">2019 (6)</a></li>
+    <li><a href="../../blog/2019/">2019 (8)</a></li>
     
   
     
@@ -730,13 +734,11 @@ Without this, the economies of moving a business/application to the cloud don’
   </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../search/" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -749,8 +751,8 @@ Without this, the economies of moving a business/application to the cloud don’
       &copy;2017, binwei.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="../../_sources/2017/cloud_for_dummy.rst.txt"

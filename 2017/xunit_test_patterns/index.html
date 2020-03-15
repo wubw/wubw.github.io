@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>Xunit Test Patterns &#8212; binwei  documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -13,6 +11,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="author" title="About these documents" href="../../about/" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
@@ -54,103 +53,106 @@
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#xunit-test-patterns" id="id1">Xunit Test Patterns</a></li>
-<li><a class="reference internal" href="#test-introduction" id="id2">Test Introduction</a><ul>
-<li><a class="reference internal" href="#easy-to-run-tests" id="id3">Easy to run tests</a></li>
-<li><a class="reference internal" href="#purpose-of-tests" id="id4">Purpose of Tests</a></li>
-<li><a class="reference internal" href="#tests-and-continuous-integration" id="id5">Tests and Continuous Integration</a></li>
-<li><a class="reference internal" href="#way-of-capturing-tests" id="id6">Way of capturing tests</a></li>
+<li><p><a class="reference internal" href="#xunit-test-patterns" id="id1">Xunit Test Patterns</a></p></li>
+<li><p><a class="reference internal" href="#test-introduction" id="id2">Test Introduction</a></p>
+<ul>
+<li><p><a class="reference internal" href="#easy-to-run-tests" id="id3">Easy to run tests</a></p></li>
+<li><p><a class="reference internal" href="#purpose-of-tests" id="id4">Purpose of Tests</a></p></li>
+<li><p><a class="reference internal" href="#tests-and-continuous-integration" id="id5">Tests and Continuous Integration</a></p></li>
+<li><p><a class="reference internal" href="#way-of-capturing-tests" id="id6">Way of capturing tests</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#anti-patterns" id="id7">Anti-Patterns</a><ul>
-<li><a class="reference internal" href="#obscure-test" id="id8">Obscure Test</a></li>
-<li><a class="reference internal" href="#conditional-test-logic" id="id9">Conditional Test Logic</a></li>
-<li><a class="reference internal" href="#hard-to-test-code" id="id10">Hard-to-Test Code</a></li>
-<li><a class="reference internal" href="#test-code-duplication" id="id11">Test Code Duplication</a></li>
-<li><a class="reference internal" href="#test-logic-in-production" id="id12">Test Logic in Production</a></li>
-<li><a class="reference internal" href="#assertion-roulette" id="id13">Assertion Roulette</a></li>
-<li><a class="reference internal" href="#erratic-test" id="id14">Erratic Test</a></li>
-<li><a class="reference internal" href="#fragile-test" id="id15">Fragile Test</a></li>
-<li><a class="reference internal" href="#frequent-debugging" id="id16">Frequent Debugging</a></li>
-<li><a class="reference internal" href="#manual-intervention" id="id17">Manual Intervention</a></li>
-<li><a class="reference internal" href="#slow-tests" id="id18">Slow Tests</a></li>
-<li><a class="reference internal" href="#buggy-tests" id="id19">Buggy Tests</a></li>
-<li><a class="reference internal" href="#developers-not-writing-tests" id="id20">Developers Not Writing Tests</a></li>
-<li><a class="reference internal" href="#high-test-maintenance-cost" id="id21">High Test Maintenance Cost</a></li>
-<li><a class="reference internal" href="#production-bugs" id="id22">Production Bugs</a></li>
+<li><p><a class="reference internal" href="#anti-patterns" id="id7">Anti-Patterns</a></p>
+<ul>
+<li><p><a class="reference internal" href="#obscure-test" id="id8">Obscure Test</a></p></li>
+<li><p><a class="reference internal" href="#conditional-test-logic" id="id9">Conditional Test Logic</a></p></li>
+<li><p><a class="reference internal" href="#hard-to-test-code" id="id10">Hard-to-Test Code</a></p></li>
+<li><p><a class="reference internal" href="#test-code-duplication" id="id11">Test Code Duplication</a></p></li>
+<li><p><a class="reference internal" href="#test-logic-in-production" id="id12">Test Logic in Production</a></p></li>
+<li><p><a class="reference internal" href="#assertion-roulette" id="id13">Assertion Roulette</a></p></li>
+<li><p><a class="reference internal" href="#erratic-test" id="id14">Erratic Test</a></p></li>
+<li><p><a class="reference internal" href="#fragile-test" id="id15">Fragile Test</a></p></li>
+<li><p><a class="reference internal" href="#frequent-debugging" id="id16">Frequent Debugging</a></p></li>
+<li><p><a class="reference internal" href="#manual-intervention" id="id17">Manual Intervention</a></p></li>
+<li><p><a class="reference internal" href="#slow-tests" id="id18">Slow Tests</a></p></li>
+<li><p><a class="reference internal" href="#buggy-tests" id="id19">Buggy Tests</a></p></li>
+<li><p><a class="reference internal" href="#developers-not-writing-tests" id="id20">Developers Not Writing Tests</a></p></li>
+<li><p><a class="reference internal" href="#high-test-maintenance-cost" id="id21">High Test Maintenance Cost</a></p></li>
+<li><p><a class="reference internal" href="#production-bugs" id="id22">Production Bugs</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#patterns" id="id23">Patterns</a><ul>
-<li><a class="reference internal" href="#recorded-test" id="id24">Recorded Test</a></li>
-<li><a class="reference internal" href="#scripted-test" id="id25">Scripted Test</a></li>
-<li><a class="reference internal" href="#data-driven-test" id="id26">Data-Driven Test</a></li>
-<li><a class="reference internal" href="#test-automation-framework" id="id27">Test Automation Framework</a></li>
-<li><a class="reference internal" href="#minimal-fixture" id="id28">Minimal Fixture</a></li>
-<li><a class="reference internal" href="#standard-fixture" id="id29">Standard Fixture</a></li>
-<li><a class="reference internal" href="#fresh-fixture" id="id30">Fresh Fixture</a></li>
-<li><a class="reference internal" href="#shared-fixture" id="id31">Shared Fixture</a></li>
-<li><a class="reference internal" href="#back-door-manipulation" id="id32">Back Door Manipulation</a></li>
-<li><a class="reference internal" href="#layer-test" id="id33">Layer Test</a></li>
-<li><a class="reference internal" href="#test-method" id="id34">Test Method</a></li>
-<li><a class="reference internal" href="#four-phase-test" id="id35">Four-Phase Test</a></li>
-<li><a class="reference internal" href="#assertion-method" id="id36">Assertion Method</a></li>
-<li><a class="reference internal" href="#assertion-message" id="id37">Assertion Message</a></li>
-<li><a class="reference internal" href="#testcase-class" id="id38">Testcase Class</a></li>
-<li><a class="reference internal" href="#test-runner" id="id39">Test Runner</a></li>
-<li><a class="reference internal" href="#testcase-object" id="id40">Testcase Object</a></li>
-<li><a class="reference internal" href="#test-suite-object" id="id41">Test Suite Object</a></li>
-<li><a class="reference internal" href="#test-discovery" id="id42">Test Discovery</a></li>
-<li><a class="reference internal" href="#test-enumeration" id="id43">Test Enumeration</a></li>
-<li><a class="reference internal" href="#test-selection" id="id44">Test Selection</a></li>
-<li><a class="reference internal" href="#in-line-setup" id="id45">In-line Setup</a></li>
-<li><a class="reference internal" href="#delegated-setup" id="id46">Delegated Setup</a></li>
-<li><a class="reference internal" href="#creation-method" id="id47">Creation Method</a></li>
-<li><a class="reference internal" href="#implicit-setup" id="id48">Implicit Setup</a></li>
-<li><a class="reference internal" href="#prebuilt-fixture" id="id49">Prebuilt Fixture</a></li>
-<li><a class="reference internal" href="#lazy-setup" id="id50">Lazy Setup</a></li>
-<li><a class="reference internal" href="#suite-fixture-setup" id="id51">Suite Fixture Setup</a></li>
-<li><a class="reference internal" href="#setup-decorator" id="id52">Setup Decorator</a></li>
-<li><a class="reference internal" href="#chained-tests" id="id53">Chained Tests</a></li>
-<li><a class="reference internal" href="#state-verification" id="id54">State Verification</a></li>
-<li><a class="reference internal" href="#behavior-verification" id="id55">Behavior Verification</a></li>
-<li><a class="reference internal" href="#custom-assertion" id="id56">Custom Assertion</a></li>
-<li><a class="reference internal" href="#delta-assertion" id="id57">Delta Assertion</a></li>
-<li><a class="reference internal" href="#guard-assertion" id="id58">Guard Assertion</a></li>
-<li><a class="reference internal" href="#unfinished-test-assertion" id="id59">Unfinished Test Assertion</a></li>
-<li><a class="reference internal" href="#garbage-collected-teardown" id="id60">Garbage-Collected Teardown</a></li>
-<li><a class="reference internal" href="#automated-teardown" id="id61">Automated Teardown</a></li>
-<li><a class="reference internal" href="#in-line-teardown" id="id62">In-line Teardown</a></li>
-<li><a class="reference internal" href="#implicit-teardown" id="id63">Implicit Teardown</a></li>
-<li><a class="reference internal" href="#test-double" id="id64">Test Double</a></li>
-<li><a class="reference internal" href="#test-stub" id="id65">Test Stub</a></li>
-<li><a class="reference internal" href="#test-spy" id="id66">Test Spy</a></li>
-<li><a class="reference internal" href="#mock-object" id="id67">Mock Object</a></li>
-<li><a class="reference internal" href="#fake-object" id="id68">Fake Object</a></li>
-<li><a class="reference internal" href="#configurable-test-double" id="id69">Configurable Test Double</a></li>
-<li><a class="reference internal" href="#hard-coded-test-double" id="id70">Hard-Coded Test Double</a></li>
-<li><a class="reference internal" href="#test-specific-subclass" id="id71">Test-Specific Subclass</a></li>
-<li><a class="reference internal" href="#named-test-suite" id="id72">Named Test Suite</a></li>
-<li><a class="reference internal" href="#test-utility-method" id="id73">Test Utility Method</a></li>
-<li><a class="reference internal" href="#parameterized-test" id="id74">Parameterized Test</a></li>
-<li><a class="reference internal" href="#testcase-class-per-class" id="id75">Testcase Class per Class</a></li>
-<li><a class="reference internal" href="#testcase-class-per-feature" id="id76">Testcase Class per Feature</a></li>
-<li><a class="reference internal" href="#testcase-superclass" id="id77">Testcase Superclass</a></li>
-<li><a class="reference internal" href="#test-helper" id="id78">Test Helper</a></li>
-<li><a class="reference internal" href="#database-sandbox" id="id79">Database Sandbox</a></li>
-<li><a class="reference internal" href="#stored-procedure-test" id="id80">Stored Procedure Test</a></li>
-<li><a class="reference internal" href="#table-truncation-teardown" id="id81">Table Truncation Teardown</a></li>
-<li><a class="reference internal" href="#transaction-rollback-teardown" id="id82">Transaction Rollback Teardown</a></li>
-<li><a class="reference internal" href="#dependency-injection" id="id83">Dependency Injection</a></li>
-<li><a class="reference internal" href="#dependency-lookup" id="id84">Dependency Lookup</a></li>
-<li><a class="reference internal" href="#humble-object" id="id85">Humble Object</a></li>
-<li><a class="reference internal" href="#test-hook" id="id86">Test Hook</a></li>
-<li><a class="reference internal" href="#literal-value" id="id87">Literal Value</a></li>
-<li><a class="reference internal" href="#derived-value" id="id88">Derived Value</a></li>
-<li><a class="reference internal" href="#generated-value" id="id89">Generated Value</a></li>
-<li><a class="reference internal" href="#dummy-object" id="id90">Dummy Object</a></li>
+<li><p><a class="reference internal" href="#patterns" id="id23">Patterns</a></p>
+<ul>
+<li><p><a class="reference internal" href="#recorded-test" id="id24">Recorded Test</a></p></li>
+<li><p><a class="reference internal" href="#scripted-test" id="id25">Scripted Test</a></p></li>
+<li><p><a class="reference internal" href="#data-driven-test" id="id26">Data-Driven Test</a></p></li>
+<li><p><a class="reference internal" href="#test-automation-framework" id="id27">Test Automation Framework</a></p></li>
+<li><p><a class="reference internal" href="#minimal-fixture" id="id28">Minimal Fixture</a></p></li>
+<li><p><a class="reference internal" href="#standard-fixture" id="id29">Standard Fixture</a></p></li>
+<li><p><a class="reference internal" href="#fresh-fixture" id="id30">Fresh Fixture</a></p></li>
+<li><p><a class="reference internal" href="#shared-fixture" id="id31">Shared Fixture</a></p></li>
+<li><p><a class="reference internal" href="#back-door-manipulation" id="id32">Back Door Manipulation</a></p></li>
+<li><p><a class="reference internal" href="#layer-test" id="id33">Layer Test</a></p></li>
+<li><p><a class="reference internal" href="#test-method" id="id34">Test Method</a></p></li>
+<li><p><a class="reference internal" href="#four-phase-test" id="id35">Four-Phase Test</a></p></li>
+<li><p><a class="reference internal" href="#assertion-method" id="id36">Assertion Method</a></p></li>
+<li><p><a class="reference internal" href="#assertion-message" id="id37">Assertion Message</a></p></li>
+<li><p><a class="reference internal" href="#testcase-class" id="id38">Testcase Class</a></p></li>
+<li><p><a class="reference internal" href="#test-runner" id="id39">Test Runner</a></p></li>
+<li><p><a class="reference internal" href="#testcase-object" id="id40">Testcase Object</a></p></li>
+<li><p><a class="reference internal" href="#test-suite-object" id="id41">Test Suite Object</a></p></li>
+<li><p><a class="reference internal" href="#test-discovery" id="id42">Test Discovery</a></p></li>
+<li><p><a class="reference internal" href="#test-enumeration" id="id43">Test Enumeration</a></p></li>
+<li><p><a class="reference internal" href="#test-selection" id="id44">Test Selection</a></p></li>
+<li><p><a class="reference internal" href="#in-line-setup" id="id45">In-line Setup</a></p></li>
+<li><p><a class="reference internal" href="#delegated-setup" id="id46">Delegated Setup</a></p></li>
+<li><p><a class="reference internal" href="#creation-method" id="id47">Creation Method</a></p></li>
+<li><p><a class="reference internal" href="#implicit-setup" id="id48">Implicit Setup</a></p></li>
+<li><p><a class="reference internal" href="#prebuilt-fixture" id="id49">Prebuilt Fixture</a></p></li>
+<li><p><a class="reference internal" href="#lazy-setup" id="id50">Lazy Setup</a></p></li>
+<li><p><a class="reference internal" href="#suite-fixture-setup" id="id51">Suite Fixture Setup</a></p></li>
+<li><p><a class="reference internal" href="#setup-decorator" id="id52">Setup Decorator</a></p></li>
+<li><p><a class="reference internal" href="#chained-tests" id="id53">Chained Tests</a></p></li>
+<li><p><a class="reference internal" href="#state-verification" id="id54">State Verification</a></p></li>
+<li><p><a class="reference internal" href="#behavior-verification" id="id55">Behavior Verification</a></p></li>
+<li><p><a class="reference internal" href="#custom-assertion" id="id56">Custom Assertion</a></p></li>
+<li><p><a class="reference internal" href="#delta-assertion" id="id57">Delta Assertion</a></p></li>
+<li><p><a class="reference internal" href="#guard-assertion" id="id58">Guard Assertion</a></p></li>
+<li><p><a class="reference internal" href="#unfinished-test-assertion" id="id59">Unfinished Test Assertion</a></p></li>
+<li><p><a class="reference internal" href="#garbage-collected-teardown" id="id60">Garbage-Collected Teardown</a></p></li>
+<li><p><a class="reference internal" href="#automated-teardown" id="id61">Automated Teardown</a></p></li>
+<li><p><a class="reference internal" href="#in-line-teardown" id="id62">In-line Teardown</a></p></li>
+<li><p><a class="reference internal" href="#implicit-teardown" id="id63">Implicit Teardown</a></p></li>
+<li><p><a class="reference internal" href="#test-double" id="id64">Test Double</a></p></li>
+<li><p><a class="reference internal" href="#test-stub" id="id65">Test Stub</a></p></li>
+<li><p><a class="reference internal" href="#test-spy" id="id66">Test Spy</a></p></li>
+<li><p><a class="reference internal" href="#mock-object" id="id67">Mock Object</a></p></li>
+<li><p><a class="reference internal" href="#fake-object" id="id68">Fake Object</a></p></li>
+<li><p><a class="reference internal" href="#configurable-test-double" id="id69">Configurable Test Double</a></p></li>
+<li><p><a class="reference internal" href="#hard-coded-test-double" id="id70">Hard-Coded Test Double</a></p></li>
+<li><p><a class="reference internal" href="#test-specific-subclass" id="id71">Test-Specific Subclass</a></p></li>
+<li><p><a class="reference internal" href="#named-test-suite" id="id72">Named Test Suite</a></p></li>
+<li><p><a class="reference internal" href="#test-utility-method" id="id73">Test Utility Method</a></p></li>
+<li><p><a class="reference internal" href="#parameterized-test" id="id74">Parameterized Test</a></p></li>
+<li><p><a class="reference internal" href="#testcase-class-per-class" id="id75">Testcase Class per Class</a></p></li>
+<li><p><a class="reference internal" href="#testcase-class-per-feature" id="id76">Testcase Class per Feature</a></p></li>
+<li><p><a class="reference internal" href="#testcase-superclass" id="id77">Testcase Superclass</a></p></li>
+<li><p><a class="reference internal" href="#test-helper" id="id78">Test Helper</a></p></li>
+<li><p><a class="reference internal" href="#database-sandbox" id="id79">Database Sandbox</a></p></li>
+<li><p><a class="reference internal" href="#stored-procedure-test" id="id80">Stored Procedure Test</a></p></li>
+<li><p><a class="reference internal" href="#table-truncation-teardown" id="id81">Table Truncation Teardown</a></p></li>
+<li><p><a class="reference internal" href="#transaction-rollback-teardown" id="id82">Transaction Rollback Teardown</a></p></li>
+<li><p><a class="reference internal" href="#dependency-injection" id="id83">Dependency Injection</a></p></li>
+<li><p><a class="reference internal" href="#dependency-lookup" id="id84">Dependency Lookup</a></p></li>
+<li><p><a class="reference internal" href="#humble-object" id="id85">Humble Object</a></p></li>
+<li><p><a class="reference internal" href="#test-hook" id="id86">Test Hook</a></p></li>
+<li><p><a class="reference internal" href="#literal-value" id="id87">Literal Value</a></p></li>
+<li><p><a class="reference internal" href="#derived-value" id="id88">Derived Value</a></p></li>
+<li><p><a class="reference internal" href="#generated-value" id="id89">Generated Value</a></p></li>
+<li><p><a class="reference internal" href="#dummy-object" id="id90">Dummy Object</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#summary" id="id91">Summary</a></li>
+<li><p><a class="reference internal" href="#summary" id="id91">Summary</a></p></li>
 </ul>
 </div>
 <img alt="../../_images/xunittestgoalsprinciplesandsmells.jpg" src="../../_images/xunittestgoalsprinciplesandsmells.jpg" />
@@ -161,10 +163,10 @@
 <h2><a class="toc-backref" href="#id3">Easy to run tests</a><a class="headerlink" href="#easy-to-run-tests" title="Permalink to this headline">¶</a></h2>
 <p>What makes tests easy to run? Four specific goals answer this question:</p>
 <ul class="simple">
-<li>They must be Fully Automated Tests so they can be run without any effort.</li>
-<li>They must be Self-Checking Tests so they can detect and report any errors without manual inspection.</li>
-<li>They must be Repeatable Tests so they can be run multiple times with the same result.</li>
-<li>Ideally, each test should be an Independent Test that can be run by itself.</li>
+<li><p>They must be Fully Automated Tests so they can be run without any effort.</p></li>
+<li><p>They must be Self-Checking Tests so they can detect and report any errors without manual inspection.</p></li>
+<li><p>They must be Repeatable Tests so they can be run multiple times with the same result.</p></li>
+<li><p>Ideally, each test should be an Independent Test that can be run by itself.</p></li>
 </ul>
 <p>Our tests should be small and test one thing at a time.</p>
 <p>The major exception to the mandate to keep Test Methods short occurs with customer tests that express real usage scenarios of the application.
@@ -196,9 +198,9 @@ Things get more interesting at the whole-application level, however. Inserting f
 They often correspond to the architectural “-ilities.”
 These kinds of tests include</p>
 <ul class="simple">
-<li>Response time tests</li>
-<li>Capacity tests</li>
-<li>Stress tests</li>
+<li><p>Response time tests</p></li>
+<li><p>Capacity tests</p></li>
+<li><p>Stress tests</p></li>
 </ul>
 <p>From a test automation perspective, many of these tests must be automated (at least partially) because human testers would have a hard time creating enough load to verify the behavior under stress.
 While we can run the same test many times in a row in xUnit, the xUnit framework is not particularly well suited to automating performance tests.</p>
@@ -215,10 +217,10 @@ By its very nature, exploratory testing cannot be automated, although automated 
 <h2><a class="toc-backref" href="#id5">Tests and Continuous Integration</a><a class="headerlink" href="#tests-and-continuous-integration" title="Permalink to this headline">¶</a></h2>
 <p>By organizing the unit tests and customer tests into separate test suites, we ensure that we can run just the unit tests or just the customer tests if necessary.</p>
 <ul class="simple">
-<li>The unit tests should always pass before we check them in.</li>
-<li>To ensure that the unit tests are run frequently, we can include them in the Smoke Tests that are run as part of the Integration Build.</li>
-<li>Although many of the customer tests will fail until the corresponding functionality is built, it is nevertheless useful to run all the passing customer tests as part of the integration build phase—but only if this step does not slow the build down too much.</li>
-<li>In that case, we can leave them out of the check-in build and simply run them every night.</li>
+<li><p>The unit tests should always pass before we check them in.</p></li>
+<li><p>To ensure that the unit tests are run frequently, we can include them in the Smoke Tests that are run as part of the Integration Build.</p></li>
+<li><p>Although many of the customer tests will fail until the corresponding functionality is built, it is nevertheless useful to run all the passing customer tests as part of the integration build phase—but only if this step does not slow the build down too much.</p></li>
+<li><p>In that case, we can leave them out of the check-in build and simply run them every night.</p></li>
 </ul>
 <p>System level tests cannot be thorough</p>
 <p>TDD unit tests can be thorough</p>
@@ -236,8 +238,8 @@ By its very nature, exploratory testing cannot be automated, although automated 
 <p>It is difficult to understand the test at a glance.</p>
 <p>Automated tests should serve at least two purposes.</p>
 <ul class="simple">
-<li>First, they should act as documentation of how the SUT should behave; we call this Tests as Documentation.</li>
-<li>Second, they should be a self-verifying executable specification.</li>
+<li><p>First, they should act as documentation of how the SUT should behave; we call this Tests as Documentation.</p></li>
+<li><p>Second, they should be a self-verifying executable specification.</p></li>
 </ul>
 <p><strong>Cause: Mystery Guest</strong></p>
 <p>The test reader is not able to see the cause and effect between fixture and verification logic because part of it is done outside the Test Method.</p>
@@ -255,8 +257,8 @@ By its very nature, exploratory testing cannot be automated, although automated 
 <p>A test contains code that may or may not be executed.</p>
 <p>In general, the tests should try to:</p>
 <ul class="simple">
-<li>Eliminating “if” Statements</li>
-<li>Eliminating Loops</li>
+<li><p>Eliminating “if” Statements</p></li>
+<li><p>Eliminating Loops</p></li>
 </ul>
 <p><strong>Cause: Flexible Test</strong></p>
 <p>The test code verifies different functionality depending on when or where it is run.</p>
@@ -532,17 +534,17 @@ It requires us to decide early on in the testing process that we will design a S
 <p>Shared Fixtures violate the Independent Test principle.
 We can avoid this problem by making the Shared Fixture immutable; that is, we partition the fixture needed by tests into two logical parts.</p>
 <ul class="simple">
-<li>The first part is the stuff every test needs to have present but is never modified by any tests—that is, the Immutable Shared Fixture.</li>
-<li>The second part is the objects that any test needs to modify or delete; these objects should be built by each test as Fresh Fixtures.</li>
+<li><p>The first part is the stuff every test needs to have present but is never modified by any tests—that is, the Immutable Shared Fixture.</p></li>
+<li><p>The second part is the objects that any test needs to modify or delete; these objects should be built by each test as Fresh Fixtures.</p></li>
 </ul>
 <img alt="../../_images/transientpersistentfixture.jpg" src="../../_images/transientpersistentfixture.jpg" />
 <p>Shared Fixture Setup:</p>
 <ul class="simple">
-<li>Prebuilt Fixture</li>
-<li>Lazy Setup</li>
-<li>Setup Decorator</li>
-<li>Suite Fixture Setup</li>
-<li>Chained Tests</li>
+<li><p>Prebuilt Fixture</p></li>
+<li><p>Lazy Setup</p></li>
+<li><p>Setup Decorator</p></li>
+<li><p>Suite Fixture Setup</p></li>
+<li><p>Chained Tests</p></li>
 </ul>
 <p>A useful trick for keeping our fixture from becoming persistent during data access layer testing is to use Transaction Rollback Teardown.</p>
 <p>To do so, we rely on the Humble Transaction Controller pattern when constructing our data access layer.
@@ -574,11 +576,11 @@ fixture setup, exercise SUT, result verification, and fixture teardown.</p>
 <p>How do we make tests self-checking?</p>
 <p>We call a utility method to evaluate whether an expected outcome has been achieved.</p>
 <ul class="simple">
-<li>Single-Outcome Assertions such as fail; these take no arguments because they always behave the same way.</li>
-<li>Stated Outcome Assertions such as assertNotNull(anObjectReference) and assertTrue(aBooleanExpression); these compare a single argument to an outcome implied by the method name.</li>
-<li>Expected Exception Assertions such as assert_raises(expectedError) { codeToExecute }; these evaluate a block of code and a single expected exception argument.</li>
-<li>Equality Assertions such as assertEqual(expected, actual); these compare two objects or values for equality.</li>
-<li>Fuzzy Equality Assertions such as assertEqual(expected, actual, tolerance); these determine whether two values are “close enough” to each other by using a “tolerance” or “comparison mask.”</li>
+<li><p>Single-Outcome Assertions such as fail; these take no arguments because they always behave the same way.</p></li>
+<li><p>Stated Outcome Assertions such as assertNotNull(anObjectReference) and assertTrue(aBooleanExpression); these compare a single argument to an outcome implied by the method name.</p></li>
+<li><p>Expected Exception Assertions such as assert_raises(expectedError) { codeToExecute }; these evaluate a block of code and a single expected exception argument.</p></li>
+<li><p>Equality Assertions such as assertEqual(expected, actual); these compare two objects or values for equality.</p></li>
+<li><p>Fuzzy Equality Assertions such as assertEqual(expected, actual, tolerance); these determine whether two values are “close enough” to each other by using a “tolerance” or “comparison mask.”</p></li>
 </ul>
 </div>
 <div class="section" id="assertion-message">
@@ -836,8 +838,8 @@ A Database Sandbox is one way to keep the tests from interacting by accidentally
 <p>When there is any way to test without a database, test without the database!</p>
 <p>What kinds of database tests will we require? The answer to this question depends on how our application uses the database.</p>
 <ul class="simple">
-<li>If we have stored procedures, we should write unit tests to verify their logic.</li>
-<li>If a data access layer hides the database from the business logic, we should write tests for the data access functionality.</li>
+<li><p>If we have stored procedures, we should write unit tests to verify their logic.</p></li>
+<li><p>If a data access layer hides the database from the business logic, we should write tests for the data access functionality.</p></li>
 </ul>
 <p>Another way to tear down any changes made to the database during the fixture setup and exercise SUT phases of the test is Table Truncation Teardown.
 This “brute force” technique for deleting data works only when each developer has his or her own Database Sandbox and we want to clear out all the data in one or more tables.</p>
@@ -866,10 +868,10 @@ We simply issue the table truncation commands during fixture setup before settin
 <p>The client provides the depended-on object to the SUT.</p>
 <p>The use of Singletons can be avoided through the use of an IOC tool or a manually coded Dependency Injection mechanism.</p>
 <ul class="simple">
-<li>Constructor Injection</li>
-<li>Parameter Injection</li>
-<li>Object Factory</li>
-<li>Service Locator</li>
+<li><p>Constructor Injection</p></li>
+<li><p>Parameter Injection</p></li>
+<li><p>Object Factory</p></li>
+<li><p>Service Locator</p></li>
 </ul>
 </div>
 <div class="section" id="dependency-lookup">
@@ -1068,15 +1070,15 @@ We simply issue the table truncation commands during fixture setup before settin
   <ul>
     
     
+      <li><a href="../../2019/cyber_security_for_blockchain/">09 June - 2019/Cyber_Security_For_Blockchain</a></li>
+    
+      <li><a href="../../2019/azure_datalake_warehouse/">30 April - Azure Data Lake and Warehouse</a></li>
+    
       <li><a href="../../2019/user_story_applied/">21 April - User Story Applied</a></li>
     
       <li><a href="../../2019/application_insight_introduction/">20 April - Application Insight Introduction</a></li>
     
       <li><a href="../../2019/azure_security/">19 April - Azure Security</a></li>
-    
-      <li><a href="../../2019/iot_for_smartcities/">10 February - Iot for Smart Cities</a></li>
-    
-      <li><a href="../../2019/agile_selling/">27 January - Agile Selling</a></li>
     
   </ul>
 
@@ -1134,7 +1136,7 @@ We simply issue the table truncation commands during fixture setup before settin
       
     
       
-      <li class="ablog-cloud ablog-cloud-1">
+      <li class="ablog-cloud ablog-cloud-2">
         <a href="../../blog/tag/cloud/">cloud</a></li>
       
     
@@ -1243,7 +1245,7 @@ We simply issue the table truncation commands during fixture setup before settin
     
   
     
-    <li><a href="../../blog/category/computerscience/">ComputerScience (33)</a></li>
+    <li><a href="../../blog/category/computerscience/">ComputerScience (35)</a></li>
     
   
     
@@ -1264,7 +1266,7 @@ We simply issue the table truncation commands during fixture setup before settin
   <ul>
   
     
-    <li><a href="../../blog/2019/">2019 (6)</a></li>
+    <li><a href="../../blog/2019/">2019 (8)</a></li>
     
   
     
@@ -1278,13 +1280,11 @@ We simply issue the table truncation commands during fixture setup before settin
   </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../search/" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -1297,8 +1297,8 @@ We simply issue the table truncation commands during fixture setup before settin
       &copy;2017, binwei.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="../../_sources/2017/xunit_test_patterns.rst.txt"

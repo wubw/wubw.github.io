@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>DevOps and Continuous Delivery &#8212; binwei  documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -13,6 +11,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="author" title="About these documents" href="../../about/" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
@@ -54,27 +53,29 @@
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#devops-and-continuous-delivery" id="id1">DevOps and Continuous Delivery</a></li>
-<li><a class="reference internal" href="#devops" id="id2">DevOps</a><ul>
-<li><a class="reference internal" href="#relationship-with-lean" id="id3">Relationship with Lean</a></li>
-<li><a class="reference internal" href="#reorgnization" id="id4">Reorgnization</a></li>
-<li><a class="reference internal" href="#tools" id="id5">Tools</a></li>
-<li><a class="reference internal" href="#others-practices" id="id6">Others practices</a></li>
+<li><p><a class="reference internal" href="#devops-and-continuous-delivery" id="id1">DevOps and Continuous Delivery</a></p></li>
+<li><p><a class="reference internal" href="#devops" id="id2">DevOps</a></p>
+<ul>
+<li><p><a class="reference internal" href="#relationship-with-lean" id="id3">Relationship with Lean</a></p></li>
+<li><p><a class="reference internal" href="#reorgnization" id="id4">Reorgnization</a></p></li>
+<li><p><a class="reference internal" href="#tools" id="id5">Tools</a></p></li>
+<li><p><a class="reference internal" href="#others-practices" id="id6">Others practices</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#continuous-delivery" id="id7">Continuous Delivery</a><ul>
-<li><a class="reference internal" href="#deployment-pipeline" id="id8">Deployment pipeline</a></li>
-<li><a class="reference internal" href="#manage-changes" id="id9">Manage changes</a></li>
-<li><a class="reference internal" href="#automate-test-suite" id="id10">Automate test suite</a></li>
-<li><a class="reference internal" href="#acceptance-testing" id="id11">Acceptance testing</a></li>
-<li><a class="reference internal" href="#non-functional-requirement" id="id12">Non-functional requirement</a></li>
-<li><a class="reference internal" href="#distributed-version-control-system" id="id13">Distributed version control system</a></li>
-<li><a class="reference internal" href="#brach-by-feature" id="id14">Brach by feature</a></li>
-<li><a class="reference internal" href="#give-developers-ownership" id="id15">Give developers ownership</a></li>
-<li><a class="reference internal" href="#roll-back" id="id16">Roll back</a></li>
-<li><a class="reference internal" href="#release-experience" id="id17">Release experience</a></li>
-<li><a class="reference internal" href="#essential-practices" id="id18">Essential practices</a></li>
-<li><a class="reference internal" href="#other-practices" id="id19">Other practices</a></li>
+<li><p><a class="reference internal" href="#continuous-delivery" id="id7">Continuous Delivery</a></p>
+<ul>
+<li><p><a class="reference internal" href="#deployment-pipeline" id="id8">Deployment pipeline</a></p></li>
+<li><p><a class="reference internal" href="#manage-changes" id="id9">Manage changes</a></p></li>
+<li><p><a class="reference internal" href="#automate-test-suite" id="id10">Automate test suite</a></p></li>
+<li><p><a class="reference internal" href="#acceptance-testing" id="id11">Acceptance testing</a></p></li>
+<li><p><a class="reference internal" href="#non-functional-requirement" id="id12">Non-functional requirement</a></p></li>
+<li><p><a class="reference internal" href="#distributed-version-control-system" id="id13">Distributed version control system</a></p></li>
+<li><p><a class="reference internal" href="#brach-by-feature" id="id14">Brach by feature</a></p></li>
+<li><p><a class="reference internal" href="#give-developers-ownership" id="id15">Give developers ownership</a></p></li>
+<li><p><a class="reference internal" href="#roll-back" id="id16">Roll back</a></p></li>
+<li><p><a class="reference internal" href="#release-experience" id="id17">Release experience</a></p></li>
+<li><p><a class="reference internal" href="#essential-practices" id="id18">Essential practices</a></p></li>
+<li><p><a class="reference internal" href="#other-practices" id="id19">Other practices</a></p></li>
 </ul>
 </li>
 </ul>
@@ -91,27 +92,27 @@ DevOps strives to bring these two into one team.</p>
 <h2><a class="toc-backref" href="#id3">Relationship with Lean</a><a class="headerlink" href="#relationship-with-lean" title="Permalink to this headline">¶</a></h2>
 <p>Lean has the following principles:</p>
 <ul class="simple">
-<li>Focus on customer value</li>
-<li>Eliminate waste</li>
-<li>Reduce cycle time</li>
-<li>Shared learning</li>
-<li>Avoid batching</li>
-<li>Theory of constraints</li>
+<li><p>Focus on customer value</p></li>
+<li><p>Eliminate waste</p></li>
+<li><p>Reduce cycle time</p></li>
+<li><p>Shared learning</p></li>
+<li><p>Avoid batching</p></li>
+<li><p>Theory of constraints</p></li>
 </ul>
 <p>DevOps emphasize on the followings:</p>
 <ul class="simple">
-<li>Culture</li>
-<li>Automation</li>
-<li>Monitoring</li>
-<li>Sharing</li>
+<li><p>Culture</p></li>
+<li><p>Automation</p></li>
+<li><p>Monitoring</p></li>
+<li><p>Sharing</p></li>
 </ul>
 <p>DevOps is the result of implementing Lean principles to IT value stream.
 – Gene Kim</p>
 <p>DevOps encourage culture changes, and emphasize the followings:</p>
 <ul class="simple">
-<li>Empowerment</li>
-<li>Accountability</li>
-<li>Teamwork</li>
+<li><p>Empowerment</p></li>
+<li><p>Accountability</p></li>
+<li><p>Teamwork</p></li>
 </ul>
 </div>
 <div class="section" id="reorgnization">
@@ -128,43 +129,43 @@ Project is too dynamic.</p>
 <h2><a class="toc-backref" href="#id5">Tools</a><a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h2>
 <p>Use the right tool is important for DevOps, for DevOps there are tools to cover the whole life cycle.</p>
 <ul class="simple">
-<li>Collaboration: wiki in Github, Blog</li>
-<li>Planning: Trello</li>
-<li>Issue tracking: ZENDESK</li>
-<li>Configuration management: treat infrastructure as code, Chef, Salt, Puppet, Ansible, Powershell DSC</li>
-<li>Source control: Github</li>
-<li>Dev environment: CodeNVY, Vagrant</li>
-<li>Continuous integration: Jenkins, Travis CI,</li>
-<li>Continuous deployment: Cloudformation (Amazon), Packer, Docker, Octopus, Go (thoughtworks), Octopus deploy</li>
+<li><p>Collaboration: wiki in Github, Blog</p></li>
+<li><p>Planning: Trello</p></li>
+<li><p>Issue tracking: ZENDESK</p></li>
+<li><p>Configuration management: treat infrastructure as code, Chef, Salt, Puppet, Ansible, Powershell DSC</p></li>
+<li><p>Source control: Github</p></li>
+<li><p>Dev environment: CodeNVY, Vagrant</p></li>
+<li><p>Continuous integration: Jenkins, Travis CI,</p></li>
+<li><p>Continuous deployment: Cloudformation (Amazon), Packer, Docker, Octopus, Go (thoughtworks), Octopus deploy</p></li>
 </ul>
 <p>Application Logging &amp; Metrics</p>
 <ul class="simple">
-<li>ELMAH (Error Logging Modules and Handlers), NLog, Log4Net</li>
-<li>Serilog + Seq</li>
-<li>ELK - Elastic Search, LogStash, Kibana</li>
-<li>Application Insights</li>
-<li>RayGun.io</li>
-<li>HockeyApp (for mobile)</li>
-<li>Stackify</li>
-<li>NewRelic</li>
+<li><p>ELMAH (Error Logging Modules and Handlers), NLog, Log4Net</p></li>
+<li><p>Serilog + Seq</p></li>
+<li><p>ELK - Elastic Search, LogStash, Kibana</p></li>
+<li><p>Application Insights</p></li>
+<li><p>RayGun.io</p></li>
+<li><p>HockeyApp (for mobile)</p></li>
+<li><p>Stackify</p></li>
+<li><p>NewRelic</p></li>
 </ul>
 <p>Operation:</p>
 <ul class="simple">
-<li>Microsoft system center</li>
-<li>Splunk</li>
+<li><p>Microsoft system center</p></li>
+<li><p>Splunk</p></li>
 </ul>
 <p>Process Metrics</p>
 <ul class="simple">
-<li>Sprint Velocity</li>
-<li>Time spent by testers</li>
-<li>Time spent deploying</li>
-<li>Time spent getting a new developer up to speed</li>
+<li><p>Sprint Velocity</p></li>
+<li><p>Time spent by testers</p></li>
+<li><p>Time spent deploying</p></li>
+<li><p>Time spent getting a new developer up to speed</p></li>
 </ul>
 <p>Code Metrics</p>
 <ul class="simple">
-<li>Code Analysis</li>
-<li>SSW Code Auditor</li>
-<li>SonarQube</li>
+<li><p>Code Analysis</p></li>
+<li><p>SSW Code Auditor</p></li>
+<li><p>SonarQube</p></li>
 </ul>
 <img alt="../../_images/devopslifecycle.png" src="../../_images/devopslifecycle.png" />
 <p><a class="reference external" href="https://xebialabs.com/periodic-table-of-devops-tools/">https://xebialabs.com/periodic-table-of-devops-tools/</a></p>
@@ -173,7 +174,7 @@ Project is too dynamic.</p>
 <h2><a class="toc-backref" href="#id6">Others practices</a><a class="headerlink" href="#others-practices" title="Permalink to this headline">¶</a></h2>
 <p>You can’t take your Puppet scripts and push them to a Chef agent, nor can you do the reverse.
 Puppet/Chef/etc are fully integrated stacks - and they’re proprietary stacks</p>
-<p>Microsoft&nbsp;isn’t&nbsp;pushing DSC as a fully integrated stack.
+<p>Microsoft isn’t pushing DSC as a fully integrated stack.
 DSC is just the bottom layer that accepts a configuration and implements it.
 Puppet Labs could absolutely design their product to turn Puppet scripts into the MOF file that DSC needs.</p>
 </div>
@@ -183,27 +184,27 @@ Puppet Labs could absolutely design their product to turn Puppet scripts into th
 <p>We want to deliver software often and deliver value to customers quicker. Continuous Delivery is important.</p>
 <p>Anti patterns</p>
 <ul class="simple">
-<li>Deploying software manually</li>
-<li>Deploying to a production-like-environment only after development is complete (staging)</li>
-<li>Manual configuration management of production environment</li>
+<li><p>Deploying software manually</p></li>
+<li><p>Deploying to a production-like-environment only after development is complete (staging)</p></li>
+<li><p>Manual configuration management of production environment</p></li>
 </ul>
 <p>The principles, practices, and techniques are aimed at making release boring.</p>
 <div class="section" id="deployment-pipeline">
 <h2><a class="toc-backref" href="#id8">Deployment pipeline</a><a class="headerlink" href="#deployment-pipeline" title="Permalink to this headline">¶</a></h2>
 <p>The deployment pipeline:</p>
 <ul class="simple">
-<li>Commit Stage: Compile, Unit test, Analysis, Build installer</li>
-<li>Automated acceptance testing</li>
-<li>Automated capacity testing</li>
-<li>Manual testing: Showcases, Exploratory testing</li>
-<li>Release</li>
+<li><p>Commit Stage: Compile, Unit test, Analysis, Build installer</p></li>
+<li><p>Automated acceptance testing</p></li>
+<li><p>Automated capacity testing</p></li>
+<li><p>Manual testing: Showcases, Exploratory testing</p></li>
+<li><p>Release</p></li>
 </ul>
 <p>Ideally, a commit stage should take less than five minutes to run, and certainly no more than ten</p>
 <p>The aim of the deployment pipeline is threefold:</p>
 <ul class="simple">
-<li>It makes every part of the process of building, deploying, testing and releasing software visible to everybody involved, aiding collaboration</li>
-<li>It improves feedback so that problems are identified and so resolved, as early in the process as possible</li>
-<li>It enables teams to deploy and release any version of their software to any environment at will through a fully automated process</li>
+<li><p>It makes every part of the process of building, deploying, testing and releasing software visible to everybody involved, aiding collaboration</p></li>
+<li><p>It improves feedback so that problems are identified and so resolved, as early in the process as possible</p></li>
+<li><p>It enables teams to deploy and release any version of their software to any environment at will through a fully automated process</p></li>
 </ul>
 <p>Any stages that deploy the binaries to a production-like environment for manual testing or release purposes should require you to press a button in order to select the version to deploy, and this capability will usually require authorization.</p>
 <p>The deployment pipeline implementation you create should record every time a process starts and finishes, and what the exact changes were that went through each stage of your process.</p>
@@ -225,8 +226,8 @@ Therefore we need to keep all these four of these components under control and e
 <p>Automated Test Suite</p>
 <p>Two stages:</p>
 <ul class="simple">
-<li>Compile the software, run your suite of unit tests, create deployable binary (Commit stage)</li>
-<li>Take the binaries from first stage and run acceptance tests, integration tests, performance tests concurrently</li>
+<li><p>Compile the software, run your suite of unit tests, create deployable binary (Commit stage)</p></li>
+<li><p>Take the binaries from first stage and run acceptance tests, integration tests, performance tests concurrently</p></li>
 </ul>
 <p>Make sure that the automated tests, including smoke tests can be run on developer machines.</p>
 <p>Test automation pyramid - Mike Cohn</p>
@@ -248,11 +249,11 @@ Acceptance tests should be expressed in the language of the business, not in the
 <p>Every architecture involves some trade-off between nonfunctional requirements - hence the Software Engineering Institute’s Architecture Tradeoff Analysis Model (ATAM) designed to help teams decide upon a suitable architecture by a thorough analysis of its NFR (nonfunctional requirement, referred to as ‘quality attributes’)</p>
 <p>Here are some types of measurements that can be performed:</p>
 <ul class="simple">
-<li>Scalability testing. How do the response time of an individual request and the number of possible simultaneous users change as we add more servers, services, or threads?</li>
-<li>Longevity testing. This involves running the system for a long time to see if the performance changes over a protracted period of operation. This type of testing can catch memory leaks or stability problems</li>
-<li>Throughput testing. How many transactions, or messages, or page hits per second can the system handle?</li>
-<li>Load testing. What happens to capacity when the load on the application increases to production-like proportions and beyond? This is perhaps the most common class of capacity testing.</li>
-<li>Capacity testing. Is one of the few situations where virtualisation is not appropriate (unless your production environment is virtual) because of the performance overhead it introduces</li>
+<li><p>Scalability testing. How do the response time of an individual request and the number of possible simultaneous users change as we add more servers, services, or threads?</p></li>
+<li><p>Longevity testing. This involves running the system for a long time to see if the performance changes over a protracted period of operation. This type of testing can catch memory leaks or stability problems</p></li>
+<li><p>Throughput testing. How many transactions, or messages, or page hits per second can the system handle?</p></li>
+<li><p>Load testing. What happens to capacity when the load on the application increases to production-like proportions and beyond? This is perhaps the most common class of capacity testing.</p></li>
+<li><p>Capacity testing. Is one of the few situations where virtualisation is not appropriate (unless your production environment is virtual) because of the performance overhead it introduces</p></li>
 </ul>
 </div>
 <div class="section" id="distributed-version-control-system">
@@ -269,12 +270,12 @@ Every story or feature is developed on a separate branch.
 Only after a story is accepted by testers, it is merged to mainline so as to ensure that mainline is always releasable.</p>
 <p>Prerequisites:</p>
 <ul class="simple">
-<li>Any changes from mainline must be merged onto every branch on a daily basis</li>
-<li>Branches must be short-lived, ideally less than a few days, never more than an iteration</li>
-<li>The number of active branches that exist at any time must be limited to the number of stories in play. Nobody should start a new branch unless the branch representing their previous story is merged back to mainline.</li>
-<li>Consider having testers accept stories before they are merged. Only allow developers to merge to trunk once a story has been accepted</li>
-<li>Refactorings must be merged immediately to minimize merge conflicts. This constraint is important but can be painful, and further limits the utility of this pattern</li>
-<li>Part of the technical lead’s role is to be responsible for keeping the trunk releasable. The tech lead should review all merges, perhaps in patch form. The tech lead has the right to reject patches that may potentially break the trunk.</li>
+<li><p>Any changes from mainline must be merged onto every branch on a daily basis</p></li>
+<li><p>Branches must be short-lived, ideally less than a few days, never more than an iteration</p></li>
+<li><p>The number of active branches that exist at any time must be limited to the number of stories in play. Nobody should start a new branch unless the branch representing their previous story is merged back to mainline.</p></li>
+<li><p>Consider having testers accept stories before they are merged. Only allow developers to merge to trunk once a story has been accepted</p></li>
+<li><p>Refactorings must be merged immediately to minimize merge conflicts. This constraint is important but can be painful, and further limits the utility of this pattern</p></li>
+<li><p>Part of the technical lead’s role is to be responsible for keeping the trunk releasable. The tech lead should review all merges, perhaps in patch form. The tech lead has the right to reject patches that may potentially break the trunk.</p></li>
 </ul>
 </div>
 <div class="section" id="give-developers-ownership">
@@ -291,8 +292,8 @@ Once these ground rules are established, their specialist expertise should only 
 <p>It is essential to be able to roll back a deployment in case it goes wrong.</p>
 <p>Two important constraints:</p>
 <ul class="simple">
-<li>Data, if your release process makes changes to your data, it can be hard to roll back.</li>
-<li>The other systems you integrate with. With releases involving more than one system (known as orchestrated releases), the rollback process becomes more complex too.</li>
+<li><p>Data, if your release process makes changes to your data, it can be hard to roll back.</p></li>
+<li><p>The other systems you integrate with. With releases involving more than one system (known as orchestrated releases), the rollback process becomes more complex too.</p></li>
 </ul>
 <p>Rolling back by redeploying the previous good version</p>
 <img alt="../../_images/transitionaldeployment.png" src="../../_images/transitionaldeployment.png" />
@@ -302,16 +303,16 @@ Once these ground rules are established, their specialist expertise should only 
 <h2><a class="toc-backref" href="#id17">Release experience</a><a class="headerlink" href="#release-experience" title="Permalink to this headline">¶</a></h2>
 <p>Release a new version of software installed by users on their own machines:</p>
 <ul class="simple">
-<li>Managing and upgrade experience</li>
-<li>Migrating binaries, data, and configuration</li>
-<li>Testing the upgrade process</li>
-<li>Getting crash report from users</li>
+<li><p>Managing and upgrade experience</p></li>
+<li><p>Migrating binaries, data, and configuration</p></li>
+<li><p>Testing the upgrade process</p></li>
+<li><p>Getting crash report from users</p></li>
 </ul>
 <p>3 approaches:</p>
 <ul class="simple">
-<li>Let software check update and prompt the users to download and upgrade to the new version</li>
-<li>Download in the background and prompt for installation</li>
-<li>Download in the background and silently upgrade the next time the application is restarted</li>
+<li><p>Let software check update and prompt the users to download and upgrade to the new version</p></li>
+<li><p>Download in the background and prompt for installation</p></li>
+<li><p>Download in the background and silently upgrade the next time the application is restarted</p></li>
 </ul>
 <p>So in fact, giving users a choice simply tells them that the developers have no confidence in the upgrade process.
 Don’t delete the old files, move them</p>
@@ -320,48 +321,48 @@ Don’t delete the old files, move them</p>
 <h2><a class="toc-backref" href="#id18">Essential practices</a><a class="headerlink" href="#essential-practices" title="Permalink to this headline">¶</a></h2>
 <p>The essential practices include:</p>
 <ul class="simple">
-<li>Don’t check in on a broken build</li>
-<li>Always run all commit tests locally before committing, or get your CI server to do it for you: Pretested commit, personal build, or preflight build (supported by modern CI)</li>
-<li>Wait for commit tests to pass before moving on</li>
-<li>Never go home on a broken build</li>
-<li>Always be prepared to revert to the previous revision</li>
-<li>Time-box fixing before reverting</li>
-<li>Don’t comment out failing tests</li>
-<li>Take responsibility for all breakages that result from your changes</li>
+<li><p>Don’t check in on a broken build</p></li>
+<li><p>Always run all commit tests locally before committing, or get your CI server to do it for you: Pretested commit, personal build, or preflight build (supported by modern CI)</p></li>
+<li><p>Wait for commit tests to pass before moving on</p></li>
+<li><p>Never go home on a broken build</p></li>
+<li><p>Always be prepared to revert to the previous revision</p></li>
+<li><p>Time-box fixing before reverting</p></li>
+<li><p>Don’t comment out failing tests</p></li>
+<li><p>Take responsibility for all breakages that result from your changes</p></li>
 </ul>
 <img alt="../../_images/practicelevel.png" src="../../_images/practicelevel.png" />
 <p>Deploying user stories</p>
 <ul class="simple">
-<li>Stories are the unit of work for building the product</li>
-<li>Stories should be tested as soon as they are finished</li>
-<li>Stories can be deployed as soon as they are tested</li>
-<li>Stories may be deployed in batch in order to reduce overhead</li>
+<li><p>Stories are the unit of work for building the product</p></li>
+<li><p>Stories should be tested as soon as they are finished</p></li>
+<li><p>Stories can be deployed as soon as they are tested</p></li>
+<li><p>Stories may be deployed in batch in order to reduce overhead</p></li>
 </ul>
 <p>CI/CD:</p>
 <ul class="simple">
-<li>Only build your binaries once</li>
-<li>Automate deployment</li>
-<li>(easy rollback)</li>
-<li>Deploy the same way to every environment</li>
-<li>Smoke test your deployments</li>
-<li>Deploy into a copy of production</li>
-<li>If any part of the pipeline fails, stop the line</li>
+<li><p>Only build your binaries once</p></li>
+<li><p>Automate deployment</p></li>
+<li><p>(easy rollback)</p></li>
+<li><p>Deploy the same way to every environment</p></li>
+<li><p>Smoke test your deployments</p></li>
+<li><p>Deploy into a copy of production</p></li>
+<li><p>If any part of the pipeline fails, stop the line</p></li>
 </ul>
 </div>
 <div class="section" id="other-practices">
 <h2><a class="toc-backref" href="#id19">Other practices</a><a class="headerlink" href="#other-practices" title="Permalink to this headline">¶</a></h2>
 <p>What we end up with is (in lean parlance) a pull system:</p>
 <ul class="simple">
-<li>Book: Lean software development: An Agile Toolkit</li>
-<li>Implementing Lean Software Development: From Concept to Cash</li>
+<li><p>Book: Lean software development: An Agile Toolkit</p></li>
+<li><p>Implementing Lean Software Development: From Concept to Cash</p></li>
 </ul>
 <p>Visualize the release status through Release dashboard</p>
 <p>Zero-downtime releases</p>
 <p>Canary release:</p>
 <ul class="simple">
-<li>Rolling back easily</li>
-<li>A/B testing</li>
-<li>Check capacity requirements gradually</li>
+<li><p>Rolling back easily</p></li>
+<li><p>A/B testing</p></li>
+<li><p>Check capacity requirements gradually</p></li>
 </ul>
 <p><em>Written by Binwei&#64;Oslo</em></p>
 </div>
@@ -524,15 +525,15 @@ Don’t delete the old files, move them</p>
   <ul>
     
     
+      <li><a href="../../2019/cyber_security_for_blockchain/">09 June - 2019/Cyber_Security_For_Blockchain</a></li>
+    
+      <li><a href="../../2019/azure_datalake_warehouse/">30 April - Azure Data Lake and Warehouse</a></li>
+    
       <li><a href="../../2019/user_story_applied/">21 April - User Story Applied</a></li>
     
       <li><a href="../../2019/application_insight_introduction/">20 April - Application Insight Introduction</a></li>
     
       <li><a href="../../2019/azure_security/">19 April - Azure Security</a></li>
-    
-      <li><a href="../../2019/iot_for_smartcities/">10 February - Iot for Smart Cities</a></li>
-    
-      <li><a href="../../2019/agile_selling/">27 January - Agile Selling</a></li>
     
   </ul>
 
@@ -590,7 +591,7 @@ Don’t delete the old files, move them</p>
       
     
       
-      <li class="ablog-cloud ablog-cloud-1">
+      <li class="ablog-cloud ablog-cloud-2">
         <a href="../../blog/tag/cloud/">cloud</a></li>
       
     
@@ -699,7 +700,7 @@ Don’t delete the old files, move them</p>
     
   
     
-    <li><a href="../../blog/category/computerscience/">ComputerScience (33)</a></li>
+    <li><a href="../../blog/category/computerscience/">ComputerScience (35)</a></li>
     
   
     
@@ -720,7 +721,7 @@ Don’t delete the old files, move them</p>
   <ul>
   
     
-    <li><a href="../../blog/2019/">2019 (6)</a></li>
+    <li><a href="../../blog/2019/">2019 (8)</a></li>
     
   
     
@@ -734,13 +735,11 @@ Don’t delete the old files, move them</p>
   </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../search/" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -753,8 +752,8 @@ Don’t delete the old files, move them</p>
       &copy;2017, binwei.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="../../_sources/2017/devops_and_continuous_delivery.rst.txt"
