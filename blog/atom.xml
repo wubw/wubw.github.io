@@ -2,10 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">binwei Blog</title>
   <id>https://wubw.github.io/blog/atom.xml</id>
-  <updated>2020-05-16T00:00:00Z</updated>
+  <updated>2020-06-07T00:00:00Z</updated>
   <link href="https://wubw.github.io/" />
   <link href="https://wubw.github.io/blog/atom.xml" rel="self" />
   <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://wubw.github.io/blog/atom.xml">
+    <title type="text">Intelligent Web Sentences</title>
+    <id>https://wubw.github.io/2020/intelligent_web_sentences/</id>
+    <updated>2020-06-07T00:00:00Z</updated>
+    <published>2020-06-07T00:00:00Z</published>
+    <link href="https://wubw.github.io/2020/intelligent_web_sentences/" />
+    <author>
+      <name></name>
+    </author>
+    <content type="html">&lt;p&gt;I read a lot on Zhihu and Quora, and collect the followings intelligent sentences, even though they are not written by famous people.
+They are full of wisdom, and mixed with Chinese and English.&lt;/p&gt;
+</content>
+  </entry>
   <entry xml:base="https://wubw.github.io/blog/atom.xml">
     <title type="text">Arduino Introduction</title>
     <id>https://wubw.github.io/2020/arduino_introduction/</id>
