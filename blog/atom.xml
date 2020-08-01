@@ -2,10 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">binwei Blog</title>
   <id>https://wubw.github.io/blog/atom.xml</id>
-  <updated>2020-07-31T00:00:00Z</updated>
+  <updated>2020-08-01T00:00:00Z</updated>
   <link href="https://wubw.github.io/" />
   <link href="https://wubw.github.io/blog/atom.xml" rel="self" />
   <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://wubw.github.io/blog/atom.xml">
+    <title type="text">Enlightenment from Singing</title>
+    <id>https://wubw.github.io/2020/enlightenment_from_singing/</id>
+    <updated>2020-08-01T00:00:00Z</updated>
+    <published>2020-08-01T00:00:00Z</published>
+    <link href="https://wubw.github.io/2020/enlightenment_from_singing/" />
+    <author>
+      <name></name>
+    </author>
+    <content type="html">&lt;p&gt;Recently, I have been using app “QuanMinKGe” to sing for fun quite a lot.
+I got some enlightenment from playing this app, and write it down as this blog.&lt;/p&gt;
+</content>
+  </entry>
   <entry xml:base="https://wubw.github.io/blog/atom.xml">
     <title type="text">Mac Tips</title>
     <id>https://wubw.github.io/2020/mac_tips/</id>
