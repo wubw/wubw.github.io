@@ -1,0 +1,643 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Data Science Basic &#8212; binwei  documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="author" title="About these documents" href="../../about/" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+  
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  
+  <link rel="alternate" type="application/atom+xml"  href="../../blog/atom.xml" title="binwei Blog">
+  
+  
+  <link href="True" rel="stylesheet">
+  
+  <style type="text/css">
+    ul.ablog-archive {list-style: none; overflow: auto; margin-left: 0px}
+    ul.ablog-archive li {float: left; margin-right: 5px; font-size: 80%}
+    ul.postlist a {font-style: italic;}
+    ul.postlist-style-disc {list-style-type: disc;}
+    ul.postlist-style-none {list-style-type: none;}
+    ul.postlist-style-circle {list-style-type: circle;}
+  </style>
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="data-science-basic">
+<h1><a class="toc-backref" href="#id1">Data Science Basic</a><a class="headerlink" href="#data-science-basic" title="Permalink to this headline">¶</a></h1>
+<p>Data science involves principles, processes, and techniques for understanding phenomena via the (automated) analysis of data. This article talks about the basic part of data science.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#data-science-basic" id="id1">Data Science Basic</a></p></li>
+<li><p><a class="reference internal" href="#data-driven-decision-ddd" id="id2">Data Driven Decision (DDD)</a></p>
+<ul>
+<li><p><a class="reference internal" href="#data-and-data-science-capability-as-a-strategic-asset" id="id3">Data and data science capability as a strategic asset</a></p></li>
+<li><p><a class="reference internal" href="#examples" id="id4">Examples</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#data-science-skills" id="id5">Data Science Skills</a></p>
+<ul>
+<li><p><a class="reference internal" href="#data-management" id="id6">Data management</a></p></li>
+<li><p><a class="reference internal" href="#extract-transform-load" id="id7">Extract, Transform, Load</a></p></li>
+<li><p><a class="reference internal" href="#data-analysis" id="id8">Data Analysis</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#data-relevant-career" id="id9">Data relevant career</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="data-driven-decision-ddd">
+<h1><a class="toc-backref" href="#id2">Data Driven Decision (DDD)</a><a class="headerlink" href="#data-driven-decision-ddd" title="Permalink to this headline">¶</a></h1>
+<p>Data-driven decision-making (DDD) refers to the practice of basing decisions on the analysis of data, rather than purely on intuition. DDD is not an all-or-nothing practice, and different firms engage in DDD to greater or lesser degrees.</p>
+<p>One standard deviation higher on the DDD scale is associated with a 4%-6% increase in productivity. DDD also is correlated with higher return on assets, return on equity, asset utilization, and market value, and the relationship seems to be causal.</p>
+<img alt="../../_images/steps_of_data.png" src="../../_images/steps_of_data.png" />
+<div class="section" id="data-and-data-science-capability-as-a-strategic-asset">
+<h2><a class="toc-backref" href="#id3">Data and data science capability as a strategic asset</a><a class="headerlink" href="#data-and-data-science-capability-as-a-strategic-asset" title="Permalink to this headline">¶</a></h2>
+<p>Data, and the capability to extract useful knowledge from data, should be regarded as key strategic assets.</p>
+<p>Too many businesses regard data analytics as pertaining mainly to realizing value from some existing data, and often without careful regard to whether the business has the appropriate analytical talent.
+Viewing these as assets allows us to think explicitly about the extent to which one should invest one them. Often, we don’t have exactly the right data to best make decisions and/or the right talent to best support making decisions from the data.</p>
+<p>The best data science team can yield little value without the appropriate data; the right data often cannot substantially improve decisions without suitable data science talent.</p>
+<p>As with all assets, it is often necessary to make investments. Building a top-notch data science team is a non-trivial undertaking, but can make a huge difference for decision-marking.</p>
+<img alt="../../_images/data_driven_decision.png" src="../../_images/data_driven_decision.png" />
+</div>
+<div class="section" id="examples">
+<h2><a class="toc-backref" href="#id4">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p><em>Hurricane Frances</em></p>
+<p>New York Times story from 2004.</p>
+<p>Hurricane Frances was on its way, barreling across the Caribbean, threatening a direct hit on Florida’s Atlantic coast.
+Residents made for higher ground, but far away, in Bentonville, Ark., executives at Wal-Mart Stores decided that the situation offered a great opportunity for one of their newest data-driven weapons … predictive technology.</p>
+<p>It might be useful to project the amount of increase in sales due to the hurricane, to ensure that local Wal-Marts are properly stocked.</p>
+<p>Indeed, that is what happened. The New York Times (Hays, 2004) reported that: “…the experts mined the data and found that the stores would indeed need certain products - and not just the usual flashlights.
+‘We didn’t know in the past that strawberry PopTarts increase in sales, like seven times their normal sales rate, ahead of a hurricane, ‘ Ms. Dillman said in a recent interview. ‘And the pre-hurricane top-selling items was beer’</p>
+<p><em>Predicting customer churn</em></p>
+<p>Attracting new customers is much more expensive than retaining existing ones, so a good deal of marketing budget is allocated to prevent churn.
+How to devise a precise, step-by-step plan for how the data science team should use company vast data resources to decide which customers should be offered the special retention deal prior to the expiration of their contracts.</p>
+<p><em>Target</em></p>
+<p>Like most retailers, Target cares about consumers’ shopping habits, what drives them and what can influence them.</p>
+<p>Consumers tend to have inertia in their habits and getting them to change is very difficult. Decision makers at Target knew, however, that the arrival of a new baby in a family is one point where people do change their shopping habits significantly. In the Target analyst’s words, ‘as soon as we get them buying diapers from us, they’re going to start buying everything else too.’ Since most birth records are public, retailers obtain information on births and send out special offers to the new parents.</p>
+<p>However, Target wanted to get a jump on their competition. They were interested in whether they could predict that people are expecting a baby. If they could, they would gain an advantage by making offers before their competitors. Using techniques of data science, Target analyzed historical data on customers who later were revealed to have been pregnant, and were able to extract information that could predict which consumers were pregnant. For example, pregnant mothers often change their diets, their wardrobes, their vitamin regiments, and so on.</p>
+</div>
+</div>
+<div class="section" id="data-science-skills">
+<h1><a class="toc-backref" href="#id5">Data Science Skills</a><a class="headerlink" href="#data-science-skills" title="Permalink to this headline">¶</a></h1>
+<p>Extracting useful knowledge from data to solve business problems can be treated systematically by following a process with reasonably well-defined stages.</p>
+<img alt="../../_images/data_science.png" src="../../_images/data_science.png" />
+<div class="section" id="data-management">
+<h2><a class="toc-backref" href="#id6">Data management</a><a class="headerlink" href="#data-management" title="Permalink to this headline">¶</a></h2>
+<p>Before doing any data analysis, the data need to be well managed.</p>
+<p>Normally enterprise data management includes 3 parts:</p>
+<ul class="simple">
+<li><p>Governance, Architecture &amp; Modeling (Preparing an Enterprise Data Strategy)</p></li>
+<li><p>Engineering &amp; Administration (Managing &amp; Working with Data)</p></li>
+<li><p>Business Intelligence, Analytics &amp; Predictive Modeling (Getting Value from Data)</p></li>
+</ul>
+<p>Examples of Data Governance Policies</p>
+<ul class="simple">
+<li><p>Corporate glossary</p></li>
+<li><p>Naming conventions</p></li>
+<li><p>Change management</p></li>
+<li><p>Enterprise data dictionary</p></li>
+<li><p>Information security</p></li>
+<li><p>Data project management</p></li>
+</ul>
+<p>Roles in a data governance program</p>
+<ul class="simple">
+<li><p>CDO</p></li>
+<li><p>Data governance director</p></li>
+<li><p>Data stewards</p></li>
+<li><p>Subject matter experts (SME)</p></li>
+<li><p>Enterprise information architect</p></li>
+<li><p>Data modeler</p></li>
+</ul>
+</div>
+<div class="section" id="extract-transform-load">
+<h2><a class="toc-backref" href="#id7">Extract, Transform, Load</a><a class="headerlink" href="#extract-transform-load" title="Permalink to this headline">¶</a></h2>
+<p>ELT tools</p>
+<ul class="simple">
+<li><p>Informatica</p></li>
+<li><p>Syncsort dmx and dmx-h</p></li>
+<li><p>Microsoft SSIS</p></li>
+<li><p>IBM infosphere datastage</p></li>
+<li><p>Talend</p></li>
+<li><p>Pentaho data integration</p></li>
+<li><p>Apache camel</p></li>
+</ul>
+<p>For different kinds of data types, the ways to handle them are different.</p>
+<ul class="simple">
+<li><p>Master: Customer, Hotel, Sensor</p></li>
+<li><p>Transactional: Purchase, Check-in, Auto-order</p></li>
+<li><p>Lookup: Describes codes/IDs, FK relationships, “w” = “work phone”</p></li>
+<li><p>Metadata: Table data object, Description, Data type = “string”</p></li>
+</ul>
+</div>
+<div class="section" id="data-analysis">
+<h2><a class="toc-backref" href="#id8">Data Analysis</a><a class="headerlink" href="#data-analysis" title="Permalink to this headline">¶</a></h2>
+<p><em>Data mining</em>
+The Cross Industry Standard Process for Data Mining, abbreviated CRISP-DM is one codification of this process. Keeping such a process in mind provides a framework to structure our thinking about data analytics problems.</p>
+<p><em>Data profiling</em></p>
+<p>Data profiling refers to dimensions of data quality that can be measured and quantified without considering the intended use of the data. Data profiling techniques are largely generic across applications and do not quantify data quality. Rather, data profiling provides indicators of potential data quality issues and offers a general assessment of data reliability.</p>
+<p><em>Supervised</em></p>
+<ul class="simple">
+<li><p>Decision tree</p></li>
+<li><p>Naïve bayes classification</p></li>
+<li><p>Regression</p></li>
+<li><p>SVM</p></li>
+</ul>
+<p><em>Unsupervised</em></p>
+<ul class="simple">
+<li><p>Anomaly detection</p></li>
+<li><p>Clustering</p></li>
+<li><p>k-means clustering</p></li>
+<li><p>k-nn (nearest neighbours)</p></li>
+<li><p>Semi-supervised learning</p></li>
+</ul>
+<p>Besides the above, there are other technologies like Reinforced Learning, Deep Learning, and many others.</p>
+</div>
+</div>
+<div class="section" id="data-relevant-career">
+<h1><a class="toc-backref" href="#id9">Data relevant career</a><a class="headerlink" href="#data-relevant-career" title="Permalink to this headline">¶</a></h1>
+<p>For various skills in data science, the following pictures show clearly how useful they are and how easy to learn.</p>
+<img alt="../../_images/data_matrix.png" src="../../_images/data_matrix.png" />
+<p>There are different roles relevant to data:</p>
+<ul class="simple">
+<li><ol class="arabic simple">
+<li><p>Business understanding</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="2">
+<li><p>Data Acquisition</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="3">
+<li><p>Data Cleanup</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="4">
+<li><p>Modeling Analysis</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="5">
+<li><p>Deployment</p></li>
+</ol>
+</li>
+</ul>
+<p>For above:</p>
+<ul class="simple">
+<li><p>1, 5: Business Analyst</p></li>
+<li><p>2, 3: Data engineering</p></li>
+<li><p>4: Data scientist</p></li>
+</ul>
+<p><em>Written by Binwei&#64;Singapore</em></p>
+</div>
+
+  <div class="section">
+  
+    
+
+
+<div class="section">
+  <span style="float: left;">
+  
+  
+  <a href="../enlightenment_from_singing/">
+    <i class="fa fa-arrow-circle-left"></i>
+    Enlightenment from Singing
+  </a>
+  
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right;">
+  
+</div>
+
+  
+  
+    <div class="section">
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'wubw-github-io';
+        var disqus_identifier = '/2020/data_science_basic/';
+        var disqus_title = 'Data Science Basic';
+        var disqus_url = 'https://wubw.github.io/2020/data_science_basic';
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  
+  </div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../../">
+    <img class="logo" src="../../_static/logo.jpg" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=wubw&repo=BinweiBlog&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+
+  
+  
+  <h2>
+  
+  <i class="fa fa-calendar"></i>
+    02 August 2020
+  
+  </h2>
+
+  <ul>
+    
+
+  
+
+  
+
+  
+
+  
+  <li id="category"><span><i class="fa-fw fa fa-folder-open"></i></span>
+    
+      
+      <a href="../../blog/category/computerscience/">ComputerScience</a>
+      
+    </li>
+  
+
+  
+  <li id="tags"><span><i class="fa-fw fa fa-tag"></i></span>
+    
+      
+      <a href="../../blog/tag/data/">data</a>
+      
+    </li>
+  
+  
+  <li id="comments">
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'wubw-github-io'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+    <i class="fa-fw fa fa-comments"></i>
+    <a href="#disqus_thread" data-disqus-identifier="/2020/data_science_basic/"> </a>
+  </li>
+  
+  </ul>
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../about/">About binwei</a></li>
+</ul>
+
+
+  <h3><a href="../../blog/">Recent Posts</a></h3>
+  <ul>
+    
+    
+      <li><a href="../enlightenment_from_singing/">01 August - Enlightenment from Singing</a></li>
+    
+      <li><a href="../mac_tips/">31 July - Mac Tips</a></li>
+    
+      <li><a href="../about_consulting/">10 July - About Consulting</a></li>
+    
+      <li><a href="../xiao_gou_qian_qian/">09 July - Book note: Xiao Gou Qian Qian</a></li>
+    
+      <li><a href="../intelligent_web_sentences/">07 June - Intelligent Web Sentences</a></li>
+    
+  </ul>
+
+  <h3><a href="../../blog/tag/">Tags</a></h3>
+  <style type="text/css">
+    ul.ablog-cloud {list-style: none; overflow: auto;}
+    ul.ablog-cloud li {float: left; height: 20pt; line-height: 18pt; margin-right: 5px;}
+    ul.ablog-cloud a {text-decoration: none; vertical-align: middle;}
+    li.ablog-cloud-1{font-size: 80%;}
+    li.ablog-cloud-2{font-size: 95%;}
+    li.ablog-cloud-3{font-size: 110%;}
+    li.ablog-cloud-4{font-size: 125%;}
+    li.ablog-cloud-5{font-size: 140%;}
+  </style>
+  <ul class="ablog-cloud">
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/ai/">ai</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/architecture/">architecture</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/backend/">backend</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/blockchain/">blockchain</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/blog/">blog</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-5">
+        <a href="../../blog/tag/booknotes/">booknotes</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-2">
+        <a href="../../blog/tag/career/">career</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-2">
+        <a href="../../blog/tag/chinese/">chinese</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-2">
+        <a href="../../blog/tag/cloud/">cloud</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/consulting/">consulting</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/continuousdelivery/">continuousdelivery</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/data/">data</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/database/">database</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/devops/">devops</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/docker/">docker</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/efficiency/">efficiency</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/frontend/">frontend</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-2">
+        <a href="../../blog/tag/git/">git</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/hardware/">hardware</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/investment/">investment</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/iot/">iot</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/lean/">lean</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/nosql/">nosql</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/opensource/">opensource</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-2">
+        <a href="../../blog/tag/process/">process</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/reading/">reading</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/sales/">sales</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-3">
+        <a href="../../blog/tag/security/">security</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/shell/">shell</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/smartcity/">smartcity</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/telemetry/">telemetry</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/vi/">vi</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/web/">web</a></li>
+      
+    
+  </ul>
+
+  <h3><a href="../../blog/category/">Categories</a></h3>
+  <ul>
+  
+    
+    <li><a href="../../blog/category/business/">Business (1)</a></li>
+    
+  
+    
+    <li><a href="../../blog/category/computerscience/">ComputerScience (39)</a></li>
+    
+  
+    
+    <li><a href="../../blog/category/general/">General (1)</a></li>
+    
+  
+    
+    <li><a href="../../blog/category/life/">Life (4)</a></li>
+    
+  
+    
+    <li><a href="../../blog/category/literature/">Literature (3)</a></li>
+    
+  
+    
+    <li><a href="../../blog/category/management/">Management (14)</a></li>
+    
+  
+  </ul>
+
+  <h3><a href="../../blog/archive/">Archives</a></h3>
+  <ul>
+  
+    
+    <li><a href="../../blog/2020/">2020 (9)</a></li>
+    
+  
+    
+    <li><a href="../../blog/2019/">2019 (8)</a></li>
+    
+  
+    
+    <li><a href="../../blog/2018/">2018 (11)</a></li>
+    
+  
+    
+    <li><a href="../../blog/2017/">2017 (34)</a></li>
+    
+  
+  </ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, binwei.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../_sources/2020/data_science_basic.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-97414429-1']);
+      _gaq.push(['_setDomainName', 'none']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    
+  </body>
+</html>
