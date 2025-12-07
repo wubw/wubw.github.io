@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Azure Data Lake and Warehouse - Binwei's Blog</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Binwei's Blog</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Welcome to Binwei's Blog</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2017</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2017/authenticate_by_openidconnect/" class="dropdown-item">Authenticate Node.js App by OpenId Connect</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/bash_useful_commands/" class="dropdown-item">How to Become an Outlier</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/become_outlier/" class="dropdown-item">How to Become an Outlier</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/blockchain_introduction/" class="dropdown-item">Blockchain Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/book-bian_zhi_lin_shi_xuan/" class="dropdown-item">Book notes: Bian Zhi Lin Anthology</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/book-cai_gen_tan/" class="dropdown-item">Book Notes: Cai Gen Tan</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/cloud_for_dummy/" class="dropdown-item">Cloud for Dummy</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/devops_and_continuous_delivery/" class="dropdown-item">DevOps and Continuous Delivery</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/domain_driven_design_introduction/" class="dropdown-item">Domain Driven Design: Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_areas/" class="dropdown-item">Git: Areas</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_branch-basic/" class="dropdown-item">Git: Branch Basic</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_branch-continued/" class="dropdown-item">Git: Branch Continue</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_getting-started/" class="dropdown-item">Git: Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_resolve-conflicts/" class="dropdown-item">Git: Resolve Conflicts</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/how_to_read_books/" class="dropdown-item">How to Read Books</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/introduction_to_javascript/" class="dropdown-item">Introduction to Javascript</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/job_security/" class="dropdown-item">Job Security</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/kotter_binwei_change_model/" class="dropdown-item">Kotter-Binwei Change Model</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/lean_principles/" class="dropdown-item">Lean: Principles</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/lean_toolkit_for_software_development/" class="dropdown-item">Lean Toolkit for Software Development</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/nosql_introduction/" class="dropdown-item">NoSQL: Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/security_owasp_top_10/" class="dropdown-item">Security: Owasp Top 10</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/setup-blog_using-sphinx-ablog/" class="dropdown-item">Setup Blog: Using Sphinx and Ablog</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/specification_by_example/" class="dropdown-item">Specification by Example</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/technology_to_learn_next/" class="dropdown-item">Technology to Learn Next</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/telemetry_overview/" class="dropdown-item">Telemetry: Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_art_of_simplicity/" class="dropdown-item">The Art of Simplicity</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_effective_executive/" class="dropdown-item">The Effective Executive</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_mckinsey_engagement/" class="dropdown-item">The Mckinsey Engagement</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_mythical_deadline_of_peopleware_man_month/" class="dropdown-item">The Mythical Deadline of Peopleware Man-month</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/threat_modeling_introduction/" class="dropdown-item">Threat Modeling: Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/vi_configuration-example/" class="dropdown-item">Vi: Configuration Example</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/work_in_big_company/" class="dropdown-item">Work in Big Company</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/xunit_test_patterns/" class="dropdown-item">Xunit Test Patterns</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2018</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2018/ai_for_smartcities/" class="dropdown-item">AI for Smart Cities</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/authentication_authorization_explainations/" class="dropdown-item">Authentication &amp; Authorization Basic</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/blockchain_scenario/" class="dropdown-item">Blockchain Scenario</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/career_advice/" class="dropdown-item">职场菜根谭</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/cryptography_introduction/" class="dropdown-item">Cryptography Introduction (with .NET code example)</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/docker_introduction/" class="dropdown-item">Docker Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/https/" class="dropdown-item">Https Explainations</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/microservices_introduction/" class="dropdown-item">Microservices Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/nodejs_basics/" class="dropdown-item">Node.js Basics</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/personal_branding/" class="dropdown-item">Personal Branding</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/the_personal_mba/" class="dropdown-item">The Personal MBA</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2019</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../agile_selling/" class="dropdown-item">Agile Selling</a>
+</li>
+                                    
+<li>
+    <a href="../application_insight_introduction/" class="dropdown-item">Application Insight Introduction</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Azure Data Lake and Warehouse</a>
+</li>
+                                    
+<li>
+    <a href="../azure_security/" class="dropdown-item">Azure Security</a>
+</li>
+                                    
+<li>
+    <a href="../cyber_security_for_blockchain/" class="dropdown-item">Cyber Security for Blockchain</a>
+</li>
+                                    
+<li>
+    <a href="../iot_for_smartcities/" class="dropdown-item">Iot for Smart Cities</a>
+</li>
+                                    
+<li>
+    <a href="../machine_learning_basic/" class="dropdown-item">Machine Learning Basic</a>
+</li>
+                                    
+<li>
+    <a href="../user_story_applied/" class="dropdown-item">User Story Applied</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2020</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2020/about_consulting/" class="dropdown-item">About Consulting</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/arduino_introduction/" class="dropdown-item">Arduino Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/azure_design_pattern/" class="dropdown-item">Azure Design Pattern</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/china_70_anniversary_bigdata/" class="dropdown-item">China 70 Anniversary Big Data</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/data_science_basic/" class="dropdown-item">Data Science Basic</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/enlightenment_from_singing/" class="dropdown-item">Enlightenment from Singing</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/intelligent_web_sentences/" class="dropdown-item">Intelligent Web Sentences</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/mac_tips/" class="dropdown-item">Mac Tips</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/xiao_gou_qian_qian/" class="dropdown-item">Book note: Xiao Gou Qian Qian</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2021</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2021/measure_anything/" class="dropdown-item">Measure Anything</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../application_insight_introduction/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../azure_security/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#azure-data-lake-and-warehouse" class="nav-link">Azure Data Lake and Warehouse</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#table-of-contents" class="nav-link">Table of Contents</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#data-lake" class="nav-link">Data Lake</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#azure-data-lake-store" class="nav-link">Azure Data Lake Store</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#azure-data-lake-analytics" class="nav-link">Azure Data Lake Analytics</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#sql-data-warehouse" class="nav-link">SQL Data Warehouse</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#polybase" class="nav-link">PolyBase</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#practices" class="nav-link">Practices</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#olap-and-oltp" class="nav-link">OLAP and OLTP</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#comparision" class="nav-link">Comparision</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#data-warehousing-vs-data-lakes" class="nav-link">Data Warehousing vs Data Lakes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#azure-data-lake-store-vs-blob-storage" class="nav-link">Azure Data Lake Store vs Blob Storage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#azure-data-lake-analytics-vs-hdinsight" class="nav-link">Azure Data Lake Analytics vs HDInsight</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#azure-data-lake-vs-azure-data-factory" class="nav-link">Azure Data Lake vs Azure Data Factory</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#learn-more" class="nav-link">Learn more</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="azure-data-lake-and-warehouse">Azure Data Lake and Warehouse</h1>
+<p><strong>Published:</strong> Apr 30, 2019
+<strong>Tags:</strong> cloud
+<strong>Category:</strong> ComputerScience</p>
+<p>Data Lack and Data Warehouse are two concepts causing confusion.
+This blog introduces these two concepts and provides comparision for other relevant concepts.</p>
+<p>In general, there is a good article:
+https://www.talend.com/resources/data-lake-vs-data-warehouse/</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<h1 id="data-lake">Data Lake</h1>
+<p>Analyzing Big Data in Azure</p>
+<ul>
+<li>Data Lake Store: No limits data Lake</li>
+<li>Data Lake Aanlytics: Analytics job service</li>
+<li>HDInsight: Managed clusters</li>
+</ul>
+<h2 id="azure-data-lake-store">Azure Data Lake Store</h2>
+<p>Hyper-scale repository for your big data analytics.</p>
+<ul>
+<li>WebHDFS compatible</li>
+<li>Any size</li>
+<li>Any format as-is</li>
+<li>Write-once-read-many</li>
+<li>Enterprise-grade security</li>
+<li>The big data store in Azure</li>
+</ul>
+<p>Data lake store is mainly for cold data.</p>
+<h2 id="azure-data-lake-analytics">Azure Data Lake Analytics</h2>
+<p>Run big data analysis jobs that scale to massive data sets.</p>
+<ul>
+<li>Run analytics jobs on managed clusters: No maintenance Serverless</li>
+<li>Written in U-SQL: SQL Syntax and Extensibility in C#</li>
+<li>Easily scaled with Analytics Units</li>
+<li>Pay for processing time only</li>
+</ul>
+<p>Data Sources</p>
+<ul>
+<li>Built-in partitioned tables</li>
+<li>Query data where it lives, No need to prepare data</li>
+<li>One query that runs on multiple data stores</li>
+<li>Use the correct data store for the job</li>
+</ul>
+<p><img alt="image" src="../images/usql.png" /></p>
+<p>Basic Data Lake Analytics process:</p>
+<ul>
+<li>Create a Data Lake Analytics account.</li>
+<li>Prepare the source data. Data Lake Analytics jobs can read data from either Azure Data Lake Store accounts or Azure Blob storage accounts.</li>
+<li>Develop a U-SQL script.</li>
+<li>Submit a job (U-SQL script) to the Data Lake Analytics account. The job reads from the source data, process the data as instructed in the U-SQL script, and then save the output to either a Data Lake Store account or a Blob storage account.</li>
+</ul>
+<p>"Mastering Azure Analytics" by Zoiner Tejada:
+http://shop.oreilly.com/product/0636920050568.do</p>
+<p>U-SQL Documentation:
+https://usql.io</p>
+<p>U-SQL is a language that unifies the benefits of SQL with the expressive power of your own code to process all data at any scale. U-SQL’s scalable distributed query capability enables you to efficiently analyze data in the store and across relational stores such as Azure SQL Database. It enables you to process unstructured data by applying schema on read, insert custom logic and UDF's, and includes extensibility to enable fine grained control over how to execute at scale.</p>
+<p>Code example:</p>
+<pre><code>    @searchlog =
+EXTRACT UserId          int,
+        Start           DateTime,
+        Region          string,
+        Query           string,
+        Duration        int?,
+        Urls            string,
+        ClickedUrls     string
+FROM &quot;/Samples/Data/SearchLog.tsv&quot;
+USING Extractors.Tsv();
+    OUTPUT @searchlog
+TO &quot;/Output/SearchLog-from-Data-Lake.csv&quot;
+USING Outputters.Csv();
+</code></pre>
+<p>Azure Data Lake GitHub Repo:</p>
+<p>https://azure.github.io/AzureDataLake/</p>
+<h1 id="sql-data-warehouse">SQL Data Warehouse</h1>
+<p>Azure SQL Data Warehouse is a scale out database service designed to answer your ad hoc queries and questions.
+By spreading your data across distributions SQL Data Warehouse is designed for analytics at scale.
+To make the most of your database there are opportunities to tailor your table design and optimize for performance.</p>
+<p>Built on SQL server engine. It is SQL on SQL.</p>
+<h2 id="polybase">PolyBase</h2>
+<p>Polybase is to simplfy and enable distributed analytics.</p>
+<p>Polybase allows you to leverage your data from different sources by using familiar T-SQL commands.
+Polybase enables you to query non-relational data held in Azure Blob storage as though it is a regular table.
+Use Polybase to query non-relational data, or to import non-relational data into SQL Data Warehouse.</p>
+<h2 id="practices">Practices</h2>
+<p>If the data is less than 1 TB, it is not a big data problem. Use SQL server directly.</p>
+<p>You can pause the data warehouse, then not charge anymore</p>
+<p>Distribution mode: round_robin(random), or on a key using hash. (check the row count to see whether the distribution is even)</p>
+<h2 id="olap-and-oltp">OLAP and OLTP</h2>
+<p>Data Warehouse (or OLAP) workload is very different than online transaction processing (OLTP) workload with very different indexing strategy and data access pattern.</p>
+<p>Unsuitable workloads: Operational workloads (OLTP)</p>
+<ul>
+<li>High frequency reads &amp; writes</li>
+<li>Large numbers of singleton selects</li>
+<li>High volumes of single row inserts</li>
+</ul>
+<p>On the other hand, traditionally data warehouse workloads are write once and read many times.</p>
+<p>Good links:</p>
+<p>https://azure.microsoft.com/en-us/documentation/articles/sql-data-warehouse-overview-what-is/#data-warehouse-units</p>
+<p>https://azure.microsoft.com/en-us/documentation/articles/sql-data-warehouse-load-polybase-guide/</p>
+<p>https://techcommunity.microsoft.com/t5/DataCAT/Azure-SQL-Data-Warehouse-Workload-Patterns-and-Anti-Patterns/ba-p/305472</p>
+<p><img alt="image" src="../images/sql-data-warehouse-diagram.png" /></p>
+<h1 id="comparision">Comparision</h1>
+<h2 id="data-warehousing-vs-data-lakes">Data Warehousing vs Data Lakes</h2>
+<p>Data Warehousing</p>
+<ul>
+<li>Structured data</li>
+<li>Defined set of schemas</li>
+<li>Requires Extract-Transform-Load (ET L) before storing</li>
+<li>Exploratory analysis is hard because of transforming the data</li>
+</ul>
+<p>Data Lakes</p>
+<ul>
+<li>Raw data (unstructured/semi-structured/structured)</li>
+<li>"Dump" all your data in the lake</li>
+<li>Data scientists will interpret data from the lake</li>
+<li>Without metadata, turns in a data swamp pretty fast</li>
+</ul>
+<p><img alt="image" src="../images/azure_datalake_warehouse_analytics.png" /></p>
+<h2 id="azure-data-lake-store-vs-blob-storage">Azure Data Lake Store vs Blob Storage</h2>
+<ul>
+<li>No Limitations Store whatever you want in any format</li>
+<li>Redundancy: It's there but no control over it</li>
+<li>Security Built-in Azure Active Directory support</li>
+<li>Built for Scale Optimized for high- scale reads</li>
+<li>Pricing More expensive than Storage GRS</li>
+<li>Integration With Data Factory, Data Catalog &amp; HDlnsight</li>
+</ul>
+<h2 id="azure-data-lake-analytics-vs-hdinsight">Azure Data Lake Analytics vs HDInsight</h2>
+<p>HDInsight the developers need to care about the clusters.</p>
+<p>Azure data lake analytics developers just like Uber -&gt; USQL.</p>
+<p>Very good support from Visual studio compared to hadoop, hive directly.
+Visual studio can support playback the execution.</p>
+<h2 id="azure-data-lake-vs-azure-data-factory">Azure Data Lake vs Azure Data Factory</h2>
+<p>Azure Data Lake (ADL) makes processing Big Data simpler and more accessible by providing several key technologies.
+The U-SQL language is a powerful combination of SQL and C# that supports parallel execution.</p>
+<p>Azure Data Factory (ADF) is a cloud-based data integration service that orchestrates and automate the movement and transformation of data.</p>
+<ul>
+<li>create linked services, datasets, pipelines for source (blob), target (datawarehouse)</li>
+<li>table and columns need to be setup in datawarehouse</li>
+</ul>
+<p>The ADL-ADF integration allows you to:</p>
+<ul>
+<li>Move data from a given source to the ADL store</li>
+<li>Create BigData ADF pipelines that run U-SQL as a processing step on the ADL Analytics service</li>
+</ul>
+<h1 id="learn-more">Learn more</h1>
+<p>Azure Data Architecture Guide</p>
+<p>https://docs.microsoft.com/en-us/azure/architecture/data-guide/</p>
+<p><em>Written by Binwei@Singapore</em></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

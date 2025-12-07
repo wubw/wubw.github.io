@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>AI for Smart Cities - Binwei's Blog</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Binwei's Blog</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Welcome to Binwei's Blog</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2017</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2017/authenticate_by_openidconnect/" class="dropdown-item">Authenticate Node.js App by OpenId Connect</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/bash_useful_commands/" class="dropdown-item">How to Become an Outlier</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/become_outlier/" class="dropdown-item">How to Become an Outlier</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/blockchain_introduction/" class="dropdown-item">Blockchain Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/book-bian_zhi_lin_shi_xuan/" class="dropdown-item">Book notes: Bian Zhi Lin Anthology</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/book-cai_gen_tan/" class="dropdown-item">Book Notes: Cai Gen Tan</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/cloud_for_dummy/" class="dropdown-item">Cloud for Dummy</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/devops_and_continuous_delivery/" class="dropdown-item">DevOps and Continuous Delivery</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/domain_driven_design_introduction/" class="dropdown-item">Domain Driven Design: Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_areas/" class="dropdown-item">Git: Areas</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_branch-basic/" class="dropdown-item">Git: Branch Basic</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_branch-continued/" class="dropdown-item">Git: Branch Continue</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_getting-started/" class="dropdown-item">Git: Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_resolve-conflicts/" class="dropdown-item">Git: Resolve Conflicts</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/how_to_read_books/" class="dropdown-item">How to Read Books</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/introduction_to_javascript/" class="dropdown-item">Introduction to Javascript</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/job_security/" class="dropdown-item">Job Security</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/kotter_binwei_change_model/" class="dropdown-item">Kotter-Binwei Change Model</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/lean_principles/" class="dropdown-item">Lean: Principles</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/lean_toolkit_for_software_development/" class="dropdown-item">Lean Toolkit for Software Development</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/nosql_introduction/" class="dropdown-item">NoSQL: Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/security_owasp_top_10/" class="dropdown-item">Security: Owasp Top 10</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/setup-blog_using-sphinx-ablog/" class="dropdown-item">Setup Blog: Using Sphinx and Ablog</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/specification_by_example/" class="dropdown-item">Specification by Example</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/technology_to_learn_next/" class="dropdown-item">Technology to Learn Next</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/telemetry_overview/" class="dropdown-item">Telemetry: Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_art_of_simplicity/" class="dropdown-item">The Art of Simplicity</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_effective_executive/" class="dropdown-item">The Effective Executive</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_mckinsey_engagement/" class="dropdown-item">The Mckinsey Engagement</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_mythical_deadline_of_peopleware_man_month/" class="dropdown-item">The Mythical Deadline of Peopleware Man-month</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/threat_modeling_introduction/" class="dropdown-item">Threat Modeling: Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/vi_configuration-example/" class="dropdown-item">Vi: Configuration Example</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/work_in_big_company/" class="dropdown-item">Work in Big Company</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/xunit_test_patterns/" class="dropdown-item">Xunit Test Patterns</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2018</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">AI for Smart Cities</a>
+</li>
+                                    
+<li>
+    <a href="../authentication_authorization_explainations/" class="dropdown-item">Authentication &amp; Authorization Basic</a>
+</li>
+                                    
+<li>
+    <a href="../blockchain_scenario/" class="dropdown-item">Blockchain Scenario</a>
+</li>
+                                    
+<li>
+    <a href="../career_advice/" class="dropdown-item">职场菜根谭</a>
+</li>
+                                    
+<li>
+    <a href="../cryptography_introduction/" class="dropdown-item">Cryptography Introduction (with .NET code example)</a>
+</li>
+                                    
+<li>
+    <a href="../docker_introduction/" class="dropdown-item">Docker Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../https/" class="dropdown-item">Https Explainations</a>
+</li>
+                                    
+<li>
+    <a href="../microservices_introduction/" class="dropdown-item">Microservices Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../nodejs_basics/" class="dropdown-item">Node.js Basics</a>
+</li>
+                                    
+<li>
+    <a href="../personal_branding/" class="dropdown-item">Personal Branding</a>
+</li>
+                                    
+<li>
+    <a href="../the_personal_mba/" class="dropdown-item">The Personal MBA</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2019</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2019/agile_selling/" class="dropdown-item">Agile Selling</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/application_insight_introduction/" class="dropdown-item">Application Insight Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/azure_datalake_warehouse/" class="dropdown-item">Azure Data Lake and Warehouse</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/azure_security/" class="dropdown-item">Azure Security</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/cyber_security_for_blockchain/" class="dropdown-item">Cyber Security for Blockchain</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/iot_for_smartcities/" class="dropdown-item">Iot for Smart Cities</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/machine_learning_basic/" class="dropdown-item">Machine Learning Basic</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/user_story_applied/" class="dropdown-item">User Story Applied</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2020</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2020/about_consulting/" class="dropdown-item">About Consulting</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/arduino_introduction/" class="dropdown-item">Arduino Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/azure_design_pattern/" class="dropdown-item">Azure Design Pattern</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/china_70_anniversary_bigdata/" class="dropdown-item">China 70 Anniversary Big Data</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/data_science_basic/" class="dropdown-item">Data Science Basic</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/enlightenment_from_singing/" class="dropdown-item">Enlightenment from Singing</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/intelligent_web_sentences/" class="dropdown-item">Intelligent Web Sentences</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/mac_tips/" class="dropdown-item">Mac Tips</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/xiao_gou_qian_qian/" class="dropdown-item">Book note: Xiao Gou Qian Qian</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2021</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2021/measure_anything/" class="dropdown-item">Measure Anything</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../2017/xunit_test_patterns/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../authentication_authorization_explainations/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#ai-for-smart-cities" class="nav-link">AI for Smart Cities</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#table-of-contents" class="nav-link">Table of Contents</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#why-cities-need-to-be-smart" class="nav-link">Why Cities need to be smart?</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#data-from-cities" class="nav-link">Data from cities</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#why-ai-is-relevant" class="nav-link">Why AI is relevant?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#dnvgls-smart-city-footprint" class="nav-link">DNVGL's Smart city footprint</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#infrastructure-performance" class="nav-link">Infrastructure performance</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#smart-lift" class="nav-link">Smart Lift</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#digital-twin" class="nav-link">Digital Twin</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#edge-computing" class="nav-link">Edge Computing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="ai-for-smart-cities">AI for Smart Cities</h1>
+<p><strong>Published:</strong> Dec 07, 2018
+<strong>Tags:</strong> ai, smartcity
+<strong>Category:</strong> ComputerScience</p>
+<p>I had the honer to give an 'AI for Smart Cities' presentation in 'Big Data &amp; AI Asia' conference Dec 5.
+The conference was hold in Suntec and it was a big event around hundreds people participated.</p>
+<p><img alt="image" src="images/suntec.jpg" /></p>
+<p>I managed to convey the following messages in my talk:</p>
+<ul>
+<li>What is smart city</li>
+<li>Why AI is relevant</li>
+<li>What DNVGL has done and what we can offer to the market.</li>
+</ul>
+<p>This is a picture of my presentation. And in this blog, I will briefly introduce the relevant content.</p>
+<p><img alt="image" src="../images/pic_of_binwei.jpg" /></p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<h1 id="why-cities-need-to-be-smart">Why Cities need to be smart?</h1>
+<p>According to statistics, urbanization is increasing world-wide and it also bring challenges:</p>
+<ul>
+<li>By 2050 cities will accommodate about 66% percent of the world's population</li>
+<li>In 2012 cities occupied only about 3% of the global land area</li>
+<li>In 2012 cities consumed about 75% of natural resources</li>
+<li>In 2012 cities produced 60%-80% of all greenhouse gas (GHG) emissions</li>
+</ul>
+<p>In order to address the above challenges, new and efficient ways have to be found for city operation.
+According to investigation from Cisco, there are improvements potential on many city operation aspects.</p>
+<p><img alt="image" src="../images/smartcity_improvementpoints.png" /></p>
+<p>In order to be more efficient to operate city, we need to rely on digital way to have better insight of infrastructure status,
+automate operation to replace repetitive human work, take better action based on historical data,
+optimize infrastructure efficiency, etc.</p>
+<p>The crucial parts of the digital way are to get the data, manage the data, bring value from the data, and take action accordingly.
+We call this new way of operating city as 'Smart city', which is mainly a data business.</p>
+<h2 id="data-from-cities">Data from cities</h2>
+<p>The Smart city business all starts from data.
+In order to find a better way to operate city, first you need to understand how the city is operating.</p>
+<p>Everyone in the cities is generating new data every day, e.g. shopping records, register personal data online, medical data etc.
+It is huge amount of data set from human being.</p>
+<p>With the boost of IoT technology, we predict even more data will come from sensors than human being.
+We see cheaper sensors, faster network, better toolset will be the trend,
+and much more data will be collected in an automatic manner.</p>
+<p><img alt="image" src="../images/iot_connections_overview.png" /></p>
+<p>Yes, it is big data problem!
+In order to process the big data, we need high automation level and new ways of processing.
+AI technology needs to be adopted.</p>
+<p>Even though AI is mainly about data analytics part, without proper data acquisition, data management, data visualization,
+it will be difficult to succeed.</p>
+<h2 id="why-ai-is-relevant">Why AI is relevant?</h2>
+<p>The first question maybe deserve answering is what is AI.</p>
+<p>According to definition on wikipedia, AI means:
+Any device that perceives its environment and takes actions that maximize its chance of successfully achieving its goals.</p>
+<p>To put it simple, it is to get the data, do analytics then facilitate better decision making.
+Still it is data business, it is all about data.</p>
+<p>There are different ways to categorize AI technology:</p>
+<ul>
+<li>Classical rule based AI, Machine Learning, Deep learning</li>
+<li>Supervised and unsupervised learning depends on whether the data is labled or not</li>
+<li>Regression or classification depends on whether the label is continuous or not</li>
+<li>In-house algorithm or cloud SaaS services</li>
+</ul>
+<p>I am pretty sure there are other ways to categorize AI, and I do not want to be too technical in this blog and will talk about more in later blogs.
+One thing worth mentioning is all the above AI technical choices are relevant to Smart city context which depends on detailed scenario.</p>
+<h2 id="dnvgls-smart-city-footprint">DNVGL's Smart city footprint</h2>
+<p>DNVGL recently setup a digital hub in Singapore aimed at digitising for our traditional industry sectors like oil and gas, maritime and energy.
+At the meantime, we are also trying to 'penetrate' into the smart city market.</p>
+<p>You can have a check of following news:
+https://sg.channelasia.tech/article/646408/solution-provider-dnv-gl-launches-digital-hub-singapore/</p>
+<p>On the competence wise, the digital hub has mixed competence:</p>
+<ul>
+<li>Data analytics</li>
+<li>Software development</li>
+<li>IoT and domain knowledge in various industry sectors</li>
+</ul>
+<p>Smart city is a big concept, digital hub Singapore mainly focus on the following areas:</p>
+<ul>
+<li>Infrastructure performance</li>
+<li>Climate change</li>
+<li>Cyber security</li>
+</ul>
+<p>I will introduce you what we have done and our offerings in the following parts.</p>
+<h1 id="infrastructure-performance">Infrastructure performance</h1>
+<p>We see aging infrastructures in the cities.
+In order to address the pressure from urbanization, there is need to extend the life cycle of infrastructure.</p>
+<p>Energy consumption is also a big challenge for cities with increasing population, how to reduce the energy consumption is a big topic.</p>
+<p>To maintenance the infrastructure also requires a lot of effort, we need to find a way to reduce the operational cost.</p>
+<p>And how to improve the efficiency of infrastructures like electric grid, ports, transportation systems will be important for big cities.</p>
+<p>Digital hub Singapore completes a smart lift project, I will introduce the high level concept in the following part.</p>
+<h2 id="smart-lift">Smart Lift</h2>
+<p>There are 61,000 lifts in Singapore. The total number of lifts is projected to double to 121,100 in the next 10 years.</p>
+<p>These days, the lift maintenance work is mainly done by human being.
+Imaging if you want to understand the status of the lifts, you have to invite lift technician to the site, open the lifts, then do the measurement.
+It is also required that the lifts need to be checked regularly.
+It is expensive to do the check and some times, lift break down in-between the regular checks, and measurement results are inaccurate sometimes.</p>
+<p>The smart lift project is to address the above challenge.
+The main purpose of smart lift project is to do predictive maintenance by utlizing IoT and anomaly detection technology.</p>
+<p><img alt="image" src="../images/smartlift_techdetails.png" /></p>
+<p>We installed laser, vibration, current, temperature, humidity sensors on lift car top and lift motor room.
+The raw data will be pre-processed in the gateway, then send to server for further processing.
+The main metrics we are measuring is peak speed during trip, levelling issues, door operation, car vibration, etc.</p>
+<p>The methodology of anomaly detection, which belongs to unsupervised learning.
+To put it simple, it figures out the normal pattern from operation data first.
+Then use the pattern to detect anomaly in the future.</p>
+<p>Once anomaly is detected, then further analysis will start to see whether to send alert to users or not.</p>
+<p>Besides that, we also provide trending chart to see whether the operational data e.g. levelling is on the right direction or not.</p>
+<p>In fact, we believes the methodology we use in smart lift project applies for all kinds of smart city projects and data driven projects.</p>
+<p><img alt="image" src="../images/smartcity_pipeline.png" /></p>
+<p>We see big potential to consolidate the framework and make future development much more efficient.</p>
+<h2 id="digital-twin">Digital Twin</h2>
+<p>DNVGL has adopted digital twin concept in existing industries, e.g. Maritime.
+We will introduce the digital twin for the smart lift too.</p>
+<p>Digital twin refers to a digital replica of physical assets.
+The digital representation provides both the elements and the dynamics of how an Internet of things device operates and lives throughout its life cycle.</p>
+<p><img alt="image" src="../images/digitaltwin_evolution.png" /></p>
+<p>For the smart lift, the digital twin means the data sychornization between physical space and digital space.
+We introduce 3d viewer and dashboard to make it much easier for the users to do monitoring the system and trouble shooting.</p>
+<h2 id="edge-computing">Edge Computing</h2>
+<p>We see edge computing is playing important role in smart lift project.
+Edge computing can address the following issues:</p>
+<ul>
+<li>Reduce operational cost by reducing the data transferred</li>
+<li>Take actions for urgent issues by avoiding back-and-forth communication</li>
+<li>Do data processing for offline scenario</li>
+<li>Address some scenario requires high data sampling resolution</li>
+</ul>
+<p>If we take a look of the amount of data generated from lift:</p>
+<p>+-----------------------+-----------------------------------+-----------------------------------+
+| Number of lifts       | Time period                       | Data size                         |
++-----------------------+-----------------------------------+-----------------------------------+
+| 1                     | 0.1 second                        | 360 bytes                         |
++-----------------------+-----------------------------------+-----------------------------------+
+| 1                     | 1 day                             | 311 MB                            |
++-----------------------+-----------------------------------+-----------------------------------+
+| 10                    | 1 day                             | 3 GB                              |
++-----------------------+-----------------------------------+-----------------------------------+
+| 100                   | 1 day                             | 30 GB                             |
++-----------------------+-----------------------------------+-----------------------------------+
+| 100                   | 1 month                           | 1 TB                              |
++-----------------------+-----------------------------------+-----------------------------------+
+| 60, 000               | 1 month                           | 600 TB                            |
++-----------------------+-----------------------------------+-----------------------------------+</p>
+<p>As you can see the big amount of data will cause pressure on the computational power and also increase the operational cost.
+And we also find out in order to detect anomaly in some scenario, we need 10 times higher sampling resolution than the normal ones.
+If we increase the communication sampling resolution, it will cause data loss and also increase cost a lot.</p>
+<p>Edge computing can definitely help a lot.</p>
+<p>For climate change and information security, which are big topics too.
+I will write another blog to introduce them.</p>
+<p><em>Written by Binwei@Singapore</em></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

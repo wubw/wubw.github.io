@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Authentication &amp; Authorization Basic - Binwei's Blog</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Binwei's Blog</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Welcome to Binwei's Blog</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2017</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2017/authenticate_by_openidconnect/" class="dropdown-item">Authenticate Node.js App by OpenId Connect</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/bash_useful_commands/" class="dropdown-item">How to Become an Outlier</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/become_outlier/" class="dropdown-item">How to Become an Outlier</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/blockchain_introduction/" class="dropdown-item">Blockchain Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/book-bian_zhi_lin_shi_xuan/" class="dropdown-item">Book notes: Bian Zhi Lin Anthology</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/book-cai_gen_tan/" class="dropdown-item">Book Notes: Cai Gen Tan</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/cloud_for_dummy/" class="dropdown-item">Cloud for Dummy</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/devops_and_continuous_delivery/" class="dropdown-item">DevOps and Continuous Delivery</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/domain_driven_design_introduction/" class="dropdown-item">Domain Driven Design: Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_areas/" class="dropdown-item">Git: Areas</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_branch-basic/" class="dropdown-item">Git: Branch Basic</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_branch-continued/" class="dropdown-item">Git: Branch Continue</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_getting-started/" class="dropdown-item">Git: Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_resolve-conflicts/" class="dropdown-item">Git: Resolve Conflicts</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/how_to_read_books/" class="dropdown-item">How to Read Books</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/introduction_to_javascript/" class="dropdown-item">Introduction to Javascript</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/job_security/" class="dropdown-item">Job Security</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/kotter_binwei_change_model/" class="dropdown-item">Kotter-Binwei Change Model</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/lean_principles/" class="dropdown-item">Lean: Principles</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/lean_toolkit_for_software_development/" class="dropdown-item">Lean Toolkit for Software Development</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/nosql_introduction/" class="dropdown-item">NoSQL: Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/security_owasp_top_10/" class="dropdown-item">Security: Owasp Top 10</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/setup-blog_using-sphinx-ablog/" class="dropdown-item">Setup Blog: Using Sphinx and Ablog</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/specification_by_example/" class="dropdown-item">Specification by Example</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/technology_to_learn_next/" class="dropdown-item">Technology to Learn Next</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/telemetry_overview/" class="dropdown-item">Telemetry: Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_art_of_simplicity/" class="dropdown-item">The Art of Simplicity</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_effective_executive/" class="dropdown-item">The Effective Executive</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_mckinsey_engagement/" class="dropdown-item">The Mckinsey Engagement</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_mythical_deadline_of_peopleware_man_month/" class="dropdown-item">The Mythical Deadline of Peopleware Man-month</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/threat_modeling_introduction/" class="dropdown-item">Threat Modeling: Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/vi_configuration-example/" class="dropdown-item">Vi: Configuration Example</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/work_in_big_company/" class="dropdown-item">Work in Big Company</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/xunit_test_patterns/" class="dropdown-item">Xunit Test Patterns</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2018</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ai_for_smartcities/" class="dropdown-item">AI for Smart Cities</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Authentication &amp; Authorization Basic</a>
+</li>
+                                    
+<li>
+    <a href="../blockchain_scenario/" class="dropdown-item">Blockchain Scenario</a>
+</li>
+                                    
+<li>
+    <a href="../career_advice/" class="dropdown-item">职场菜根谭</a>
+</li>
+                                    
+<li>
+    <a href="../cryptography_introduction/" class="dropdown-item">Cryptography Introduction (with .NET code example)</a>
+</li>
+                                    
+<li>
+    <a href="../docker_introduction/" class="dropdown-item">Docker Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../https/" class="dropdown-item">Https Explainations</a>
+</li>
+                                    
+<li>
+    <a href="../microservices_introduction/" class="dropdown-item">Microservices Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../nodejs_basics/" class="dropdown-item">Node.js Basics</a>
+</li>
+                                    
+<li>
+    <a href="../personal_branding/" class="dropdown-item">Personal Branding</a>
+</li>
+                                    
+<li>
+    <a href="../the_personal_mba/" class="dropdown-item">The Personal MBA</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2019</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2019/agile_selling/" class="dropdown-item">Agile Selling</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/application_insight_introduction/" class="dropdown-item">Application Insight Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/azure_datalake_warehouse/" class="dropdown-item">Azure Data Lake and Warehouse</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/azure_security/" class="dropdown-item">Azure Security</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/cyber_security_for_blockchain/" class="dropdown-item">Cyber Security for Blockchain</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/iot_for_smartcities/" class="dropdown-item">Iot for Smart Cities</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/machine_learning_basic/" class="dropdown-item">Machine Learning Basic</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/user_story_applied/" class="dropdown-item">User Story Applied</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2020</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2020/about_consulting/" class="dropdown-item">About Consulting</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/arduino_introduction/" class="dropdown-item">Arduino Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/azure_design_pattern/" class="dropdown-item">Azure Design Pattern</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/china_70_anniversary_bigdata/" class="dropdown-item">China 70 Anniversary Big Data</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/data_science_basic/" class="dropdown-item">Data Science Basic</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/enlightenment_from_singing/" class="dropdown-item">Enlightenment from Singing</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/intelligent_web_sentences/" class="dropdown-item">Intelligent Web Sentences</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/mac_tips/" class="dropdown-item">Mac Tips</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/xiao_gou_qian_qian/" class="dropdown-item">Book note: Xiao Gou Qian Qian</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2021</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2021/measure_anything/" class="dropdown-item">Measure Anything</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../ai_for_smartcities/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../blockchain_scenario/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#authentication-authorization-basic" class="nav-link">Authentication &amp; Authorization Basic</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#table-of-contents" class="nav-link">Table of Contents</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#single-sign-on" class="nav-link">Single sign on</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#token-service" class="nav-link">Token service</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#token" class="nav-link">Token</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#protocols" class="nav-link">Protocols</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#token-types" class="nav-link">Token types</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#oauth-20" class="nav-link">OAuth 2.0</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#the-main-actors" class="nav-link">The main actors</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#flows" class="nav-link">Flows</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#principles" class="nav-link">Principles</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#transitive-trust" class="nav-link">Transitive Trust</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#authorization-principles" class="nav-link">Authorization principles</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="authentication-authorization-basic">Authentication &amp; Authorization Basic</h1>
+<p><strong>Published:</strong> Mar 14, 2018
+<strong>Tags:</strong> security
+<strong>Category:</strong> ComputerScience</p>
+<p>Authentication and Authorization are two relevant but different concepts, which causes confusion sometimes.
+Both of them are important for SaaS solution.
+This blog explains the basic of these two concepts.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<h1 id="single-sign-on">Single sign on</h1>
+<p>In classic intranet scenarios, normally windows authentication will be used in intranet scenario.
+All parties belong to Active Directory which makes things easy.</p>
+<p>However, in a micro services scenario the authentication becomes a challenge.</p>
+<ul>
+<li>Method of allowing users access to all resources they need within an environment with a single username and password</li>
+<li>Negates having to remember multiple usernames and passwords</li>
+<li>Mitigates risk by keeping users from writing down credentials</li>
+<li>Easier to manage and allows for centralized control over password changes</li>
+</ul>
+<p>An obvious solution to achieve SSO is to share session information, however it is impossible due to same origin policy.</p>
+<p><img alt="image" src="../images/sso-same-origin-policy-forbids-this.png" /></p>
+<h2 id="token-service">Token service</h2>
+<p>Normally a centralized token service can help to achieve SSO.</p>
+<p><img alt="image" src="../images/typical-sso.png" /></p>
+<p>Token service encrypt token by using private key, and the client decrypt by using public key</p>
+<p>Token service endpoints:</p>
+<ul>
+<li>Authorize</li>
+<li>Token</li>
+<li>Userinfo</li>
+<li>Discovery</li>
+<li>End session</li>
+<li>Introspection</li>
+<li>Revocation</li>
+</ul>
+<p>Other endpoints:</p>
+<ul>
+<li>Authorization endpoint: used by the client to obtain authorization from the resource owner via user-agent redirection</li>
+<li>Token endpoint: used by the client to exchange an authorization grant for an access token, typically with client authentication</li>
+<li>Redirection endpoint: used by the authorization server to return responses containing authorization credentials to the client via the resource owner user-agent</li>
+</ul>
+<p>Normally OpenID Connect (OIDC) is used for Identity issue.</p>
+<h1 id="token">Token</h1>
+<p>Purpose of a security token</p>
+<ul>
+<li>Security tokens are (protected) data structures</li>
+<li>A client requests a token</li>
+<li>An issuer issue a token</li>
+<li>A resource consumes a token</li>
+<li>has a trust relationship with the issuer</li>
+</ul>
+<p>Normally, a token:</p>
+<ul>
+<li>Contain information about issuer and subject (claims - property on the identity)</li>
+<li>Signed (tamper proof &amp; authenticity)</li>
+<li>Typically contain an expiration time</li>
+<li>Contain header: metadata, algorithms &amp; keys used</li>
+</ul>
+<p><img alt="image" src="../images/JSON_web_token.png" /></p>
+<h2 id="protocols">Protocols</h2>
+<p>SAML 1.1/2.0</p>
+<ul>
+<li>XML based</li>
+<li>many encryption &amp; signature options</li>
+<li>very expensive</li>
+</ul>
+<p>Simple Web Token (SWT)</p>
+<ul>
+<li>Form/URL encoded</li>
+<li>symmetric signatures only</li>
+</ul>
+<p>JSON Web Token (JWT)</p>
+<ul>
+<li>JSON encoded</li>
+<li>symmetric and asymmetric signatures (HMACSHA256-384, ECDSA, RSA)</li>
+<li>symmetric and asymmetric encryption (RSA, AES/CGM)</li>
+<li>(the new standard)</li>
+</ul>
+<p>SAML is very secure and advanced, which requires XML protocol. Most mobile devices do not have this.</p>
+<p>Simple Web Token use symmetric algorithm, which is too simple.</p>
+<p>JWT is in-between, and on its way to official standardization.
+http://self-issued.info/docs/draft-ietf-oauth-json-web-token.html</p>
+<h2 id="token-types">Token types</h2>
+<p>Refresh Token:</p>
+<ul>
+<li>A token to renew the access token</li>
+<li>User doesn't have to re-authenticate</li>
+<li>Longer expiration time than access token</li>
+</ul>
+<p>Bearer Token &amp; Reference token</p>
+<ul>
+<li>Self-contained access token, once it is sent to the client, there is no way to revoke</li>
+<li>If the machine is stolen, then the token can be used until it is expired</li>
+<li>Reference token can fix the above issue</li>
+</ul>
+<p><img alt="image" src="../images/token_vs_password.png" /></p>
+<p>For the details, see here: https://auth0.com/docs/tokens</p>
+<h1 id="oauth-20">OAuth 2.0</h1>
+<p>Oauth 2.0 is about authorization. The standard doesn't say anything about the user.
+It means Oauth only cares about resource scope and not identity scope.</p>
+<p>Oauth does not build on SSL transportation protocol.
+Oauth2 has many variation, big players have their own implementations.</p>
+<p>From web, mobile and desktop application</p>
+<ul>
+<li>Different types of applications require different means to achieve authorization</li>
+<li>Where can the token be delivered to</li>
+<li>Can the client application safely store secrets</li>
+</ul>
+<h2 id="the-main-actors">The main actors</h2>
+<ul>
+<li>User (resource owner): An entity capable of granting access to a protected resource</li>
+<li>Client: An application making protected resource requests on behalf of the resource owner and with it authorization</li>
+<li>Resource server: The server hosting the protected resources</li>
+<li>Authorization server: The server issuing access tokens to the client after successfully authenticating the resource owner and obtaining authorization</li>
+</ul>
+<p>Client has two types:</p>
+<ul>
+<li>Confidential client: Clients capable of maintaining the confidentiality of their credentials, e.g. MVC application</li>
+<li>Public client: clients incapable of maintaining the confidentiality of their credentials, e.g. native mobile applications and javascript applications</li>
+</ul>
+<p><img alt="image" src="../images/oauth2_player.png" /></p>
+<h2 id="flows">Flows</h2>
+<p>OAuth 2.0 supports several different grants.
+By grants we mean ways of retrieving an Access Token.
+Deciding which one is suited for your case depends mostly on your Client's type, but other parameters weigh in as well, like the level of trust for the Client, or the experience you want your users to have.</p>
+<p><img alt="image" src="../images/oauth2-grants-flow.png" /></p>
+<p>See details here: https://auth0.com/docs/api-auth/which-oauth-flow-to-use</p>
+<h1 id="principles">Principles</h1>
+<h2 id="transitive-trust">Transitive Trust</h2>
+<p>Enabling authentication based on authenticating to a trusted third party</p>
+<ul>
+<li>User logs into site "A" using their Google or Facebook credentials</li>
+<li>Both user and site "A" trust Google or Facebook, so site "A" accepts the authentication</li>
+</ul>
+<p>Security concerns come into play if the trusted site is compromised</p>
+<ul>
+<li>Hacker could potentially access any sites or applications that use the third party credentials for access</li>
+<li>Understand what 3rd party trusts you allow / evaluate how security and potential risks</li>
+</ul>
+<p>Trusts that exist between domains or companies</p>
+<ul>
+<li>One-way Trust: A trusts B/ B doesn't trust A</li>
+<li>Two-way Trust: A trusts B/ B trusts A</li>
+<li>Non-transitive Trust: A trusts B but doesn't allow that trust to extend</li>
+<li>Transitive Trust: A trusts B, B trusts C, so A trusts C</li>
+</ul>
+<h2 id="authorization-principles">Authorization principles</h2>
+<p>In general, authroization needs to be:</p>
+<ul>
+<li>Least privilege</li>
+<li>Separation of duties</li>
+<li>ACLs</li>
+<li>Mandatory access (pre-defined set of capabilities and access to information e.g. who can share what to who)</li>
+<li>Discretionary access (allow users to dynamically share information with others)</li>
+<li>Rule-based access control</li>
+<li>Role-based access control</li>
+<li>Resource-based access control (between gray area with business logic)</li>
+<li>Time of day restrictions</li>
+</ul>
+<p>Authorization is application specific, which is one of the reason do not combine authentication and authorization.</p>
+<ul>
+<li>Introduce Authorization Provider</li>
+<li>Authorization provider need to have an Admin UI</li>
+<li>Authorization provider is to map identity to permission</li>
+</ul>
+<p><em>Written by Binwei@Oslo</em></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Machine Learning Basic - Binwei's Blog</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Binwei's Blog</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Welcome to Binwei's Blog</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2017</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2017/authenticate_by_openidconnect/" class="dropdown-item">Authenticate Node.js App by OpenId Connect</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/bash_useful_commands/" class="dropdown-item">How to Become an Outlier</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/become_outlier/" class="dropdown-item">How to Become an Outlier</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/blockchain_introduction/" class="dropdown-item">Blockchain Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/book-bian_zhi_lin_shi_xuan/" class="dropdown-item">Book notes: Bian Zhi Lin Anthology</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/book-cai_gen_tan/" class="dropdown-item">Book Notes: Cai Gen Tan</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/cloud_for_dummy/" class="dropdown-item">Cloud for Dummy</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/devops_and_continuous_delivery/" class="dropdown-item">DevOps and Continuous Delivery</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/domain_driven_design_introduction/" class="dropdown-item">Domain Driven Design: Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_areas/" class="dropdown-item">Git: Areas</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_branch-basic/" class="dropdown-item">Git: Branch Basic</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_branch-continued/" class="dropdown-item">Git: Branch Continue</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_getting-started/" class="dropdown-item">Git: Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_resolve-conflicts/" class="dropdown-item">Git: Resolve Conflicts</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/how_to_read_books/" class="dropdown-item">How to Read Books</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/introduction_to_javascript/" class="dropdown-item">Introduction to Javascript</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/job_security/" class="dropdown-item">Job Security</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/kotter_binwei_change_model/" class="dropdown-item">Kotter-Binwei Change Model</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/lean_principles/" class="dropdown-item">Lean: Principles</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/lean_toolkit_for_software_development/" class="dropdown-item">Lean Toolkit for Software Development</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/nosql_introduction/" class="dropdown-item">NoSQL: Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/security_owasp_top_10/" class="dropdown-item">Security: Owasp Top 10</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/setup-blog_using-sphinx-ablog/" class="dropdown-item">Setup Blog: Using Sphinx and Ablog</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/specification_by_example/" class="dropdown-item">Specification by Example</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/technology_to_learn_next/" class="dropdown-item">Technology to Learn Next</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/telemetry_overview/" class="dropdown-item">Telemetry: Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_art_of_simplicity/" class="dropdown-item">The Art of Simplicity</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_effective_executive/" class="dropdown-item">The Effective Executive</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_mckinsey_engagement/" class="dropdown-item">The Mckinsey Engagement</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_mythical_deadline_of_peopleware_man_month/" class="dropdown-item">The Mythical Deadline of Peopleware Man-month</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/threat_modeling_introduction/" class="dropdown-item">Threat Modeling: Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/vi_configuration-example/" class="dropdown-item">Vi: Configuration Example</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/work_in_big_company/" class="dropdown-item">Work in Big Company</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/xunit_test_patterns/" class="dropdown-item">Xunit Test Patterns</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2018</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2018/ai_for_smartcities/" class="dropdown-item">AI for Smart Cities</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/authentication_authorization_explainations/" class="dropdown-item">Authentication &amp; Authorization Basic</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/blockchain_scenario/" class="dropdown-item">Blockchain Scenario</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/career_advice/" class="dropdown-item">职场菜根谭</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/cryptography_introduction/" class="dropdown-item">Cryptography Introduction (with .NET code example)</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/docker_introduction/" class="dropdown-item">Docker Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/https/" class="dropdown-item">Https Explainations</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/microservices_introduction/" class="dropdown-item">Microservices Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/nodejs_basics/" class="dropdown-item">Node.js Basics</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/personal_branding/" class="dropdown-item">Personal Branding</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/the_personal_mba/" class="dropdown-item">The Personal MBA</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2019</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../agile_selling/" class="dropdown-item">Agile Selling</a>
+</li>
+                                    
+<li>
+    <a href="../application_insight_introduction/" class="dropdown-item">Application Insight Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../azure_datalake_warehouse/" class="dropdown-item">Azure Data Lake and Warehouse</a>
+</li>
+                                    
+<li>
+    <a href="../azure_security/" class="dropdown-item">Azure Security</a>
+</li>
+                                    
+<li>
+    <a href="../cyber_security_for_blockchain/" class="dropdown-item">Cyber Security for Blockchain</a>
+</li>
+                                    
+<li>
+    <a href="../iot_for_smartcities/" class="dropdown-item">Iot for Smart Cities</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Machine Learning Basic</a>
+</li>
+                                    
+<li>
+    <a href="../user_story_applied/" class="dropdown-item">User Story Applied</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2020</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2020/about_consulting/" class="dropdown-item">About Consulting</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/arduino_introduction/" class="dropdown-item">Arduino Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/azure_design_pattern/" class="dropdown-item">Azure Design Pattern</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/china_70_anniversary_bigdata/" class="dropdown-item">China 70 Anniversary Big Data</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/data_science_basic/" class="dropdown-item">Data Science Basic</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/enlightenment_from_singing/" class="dropdown-item">Enlightenment from Singing</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/intelligent_web_sentences/" class="dropdown-item">Intelligent Web Sentences</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/mac_tips/" class="dropdown-item">Mac Tips</a>
+</li>
+                                    
+<li>
+    <a href="../../2020/xiao_gou_qian_qian/" class="dropdown-item">Book note: Xiao Gou Qian Qian</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2021</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2021/measure_anything/" class="dropdown-item">Measure Anything</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../iot_for_smartcities/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../user_story_applied/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#machine-learning-basic" class="nav-link">Machine Learning Basic</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#table-of-contents" class="nav-link">Table of Contents</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#process" class="nav-link">Process</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#crisp-cycle" class="nav-link">CRISP-cycle</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#learning-algorithm-overview" class="nav-link">Learning Algorithm Overview</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#supervised-learning" class="nav-link">Supervised Learning</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#unsupervised-learning" class="nav-link">Unsupervised Learning</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#semi-supervised-learning" class="nav-link">Semi-supervised learning</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#reinforcement-learning" class="nav-link">Reinforcement learning</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#other-algorithms" class="nav-link">Other algorithms</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#accuracy-and-precision" class="nav-link">Accuracy and Precision</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#utility-function-or-fitness-function" class="nav-link">Utility function or fitness function</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#regularization" class="nav-link">Regularization</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#measurement" class="nav-link">Measurement</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#k-folds-cross-validation" class="nav-link">K-folds cross-validation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#data-amount" class="nav-link">Data Amount</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#drawbacks" class="nav-link">Drawbacks</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#others" class="nav-link">Others</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#cloud-machine-learning-services" class="nav-link">Cloud machine learning services</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#deep-learning" class="nav-link">Deep learning</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="machine-learning-basic">Machine Learning Basic</h1>
+<p><strong>Published:</strong> Jan 13, 2019
+<strong>Tags:</strong> ai
+<strong>Category:</strong> ComputerScience</p>
+<p>This blog introduces the basic knowledge of machine learning. The details of algorithm and programming will come in later blogs.
+Machine learning is a technology which can resolve the computational problem without programming specifically.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<h1 id="process">Process</h1>
+<p>Machine learning project has its own process, which starts with asking the right questions.</p>
+<ul>
+<li>Ask yourself: Do you have the right data to answer the question?</li>
+<li>Ask yourself: Do you know how you'll measure success?</li>
+</ul>
+<p>The process also includes re-create model regularly, see following picture.</p>
+<p><img alt="image" src="../images/recreate_model_regularly.png" /></p>
+<p>People are highly involved in the iteration of machine learning, e.g. adjusting algorithm, training data, selected features, parameters to algorithm.</p>
+<h2 id="crisp-cycle">CRISP-cycle</h2>
+<p>Cross-industry standard process for data mining, also known as CRISP-DM. It is also very relevant to machine learning projects.</p>
+<ul>
+<li>Business understanding</li>
+<li>Data understanding</li>
+<li>Data preparation</li>
+<li>Modeling</li>
+<li>Evaluation</li>
+<li>Deployment</li>
+</ul>
+<h1 id="learning-algorithm-overview">Learning Algorithm Overview</h1>
+<p>The data contains the pattern, the algorithm find the patterns, and the trained model can recognizes the patterns.</p>
+<h2 id="supervised-learning">Supervised Learning</h2>
+<p>The value you want to predict is in the training data. The data is labeled.</p>
+<p>Supervised Learning includes the following algorithms:</p>
+<ul>
+<li>K-Nearest neighbors</li>
+<li>Linear regression</li>
+<li>Logistic regression (sigmoid function, one-versus-all (OvA) strategy or one-versus-the-rest, one-versus-one (OvO) strategy)</li>
+<li>Support vector machines (SVMs)</li>
+<li>Decision trees and random forests</li>
+<li>Neural network</li>
+</ul>
+<h2 id="unsupervised-learning">Unsupervised Learning</h2>
+<p>The value you want to predict is not in the training data. The data is unlabeled.</p>
+<p>Unsupervised Learning includes the following algorithms:</p>
+<h4 id="clustering">Clustering</h4>
+<p>Example question: What are our customer segments?</p>
+<ul>
+<li>k-means</li>
+<li>Hierarchical cluster analysis (HCA)</li>
+<li>Expectation maximization</li>
+</ul>
+<h4 id="visualization-and-dimensionality-reduction">Visualization and dimensionality reduction</h4>
+<ul>
+<li>Principal component analysis (PCA)</li>
+<li>Kernel PCA</li>
+<li>Locally-Linear embedding (LLE)</li>
+<li>t-distributed stochastic neighbor embedding (t-SNE)</li>
+</ul>
+<p>In machine learning, kernel methods are a class of algorithms for pattern analysis, whose best known member is the support vector machine (SVM).
+The general task of pattern analysis is to find and study general types of relations
+(for example clusters, rankings, principal components, correlations, classifications) in datasets.
+In its simplest form, the kernel trick means transforming data into another dimension that has a clear dividing margin between classes of data.
+For many algorithms that solve these tasks,
+the data in raw representation have to be explicitly transformed into feature vector representations via a user-specified feature map:
+in contrast, kernel methods require only a user-specified kernel, i.e., a similarity function over pairs of data points in raw representation.</p>
+<p>To simplify the data without losing too much information, one way to do this is to merge several correlated features into one =&gt; feature extraction</p>
+<p>Linear Discriminant Analysis: characterizes or separates two or more classes of objects or events.
+The resulting combination may be used as a linear classifier, or more commonly, for dimensionality reduction before later classification.</p>
+<h4 id="association-rule-learning">Association rule learning</h4>
+<p>Association rule learning is a rule-based machine learning method for discovering interesting relations between variables in large databases.
+It is intended to identify strong rules discovered in databases using some measures of interestingness.
+This rule-based approach also generates new rules as it analyzes more data.
+The ultimate goal, assuming a large enough dataset, is to help a machine mimic the human brain’s feature extraction and abstract association capabilities from new uncategorized data.</p>
+<ul>
+<li>Apriori: It proceeds by identifying the frequent individual items in the database and extending them to larger and larger item sets as long as those item sets appear sufficiently often in the database.</li>
+<li>Eclat</li>
+</ul>
+<p>Unsupervised learning is also used on Anomaly detection use cases, e.g. distributed Gaussian.</p>
+<h2 id="semi-supervised-learning">Semi-supervised learning</h2>
+<p>Semi-supervised learning is a class of machine learning tasks and techniques that also make use of unlabeled data for training –
+typically a small amount of labeled data with a large amount of unlabeled data.</p>
+<p>Deep belief networks (DBN)：
+Based on unsupervised components called restricted Boltzmann machines(RBMs).
+Deep belief network (DBN) is a generative graphical model,
+or alternatively a class of deep neural network, composed of multiple layers of latent variables ("hidden units"),
+with connections between the layers but not between units within each layer.</p>
+<h2 id="reinforcement-learning">Reinforcement learning</h2>
+<p>Reinforcement learning (RL) is an area of machine learning concerned with how software agents ought to take actions in an environment so as to maximize some notion of cumulative reward.</p>
+<p>Agent can observe the environment, select and perform actions and get rewards in return.
+It must then learn by itself what is the best strategy, called a policy to get the most reward over time.</p>
+<h2 id="other-algorithms">Other algorithms</h2>
+<h4 id="batch-learning">Batch learning</h4>
+<p>The system is incapable of learning incrementally: it must be trained using all the available data.
+It can also be called offline learning.
+Retrain the model if necessary.</p>
+<h4 id="online-learning">Online learning</h4>
+<p>The system is trained incrementally by feeding it data instances sequentially,
+either individually or by small groups called mini-batches or out-of-core learning, incremental learning.</p>
+<p>Learning rate: how fast they should adapt to changing data.</p>
+<h4 id="instance-based-vs-model-based-learning">Instance based vs Model based learning</h4>
+<p>Instance based learning: the system learns the examples by heart, then generalizes to new cases using a similarity measure.
+Instance based learning is a family of learning algorithms that, instead of performing explicit generalization,
+compares new problem instances with instances seen in training, which have been stored in memory.</p>
+<p>Model based: to build a model first.</p>
+<h1 id="accuracy-and-precision">Accuracy and Precision</h1>
+<p>There is no surprise for Machine Learning projects, one of the goal is to achieve high enough accuracy.</p>
+<p>The following picture explains the difference between Accuracy and Precision well.</p>
+<p><img alt="image" src="../images/accuracy_precision.jpg" /></p>
+<ul>
+<li>High variance: is normally overfitting problem</li>
+<li>High bias: is normally underfitting problem</li>
+</ul>
+<h2 id="utility-function-or-fitness-function">Utility function or fitness function</h2>
+<p>Untility function measures how good your model is or you can define a cost function that measures how bad it is.
+Cost function applies on training set, gradient descent, used in regression.
+Alternative option of gradient descent is Stochastic Gradient Descent (SGD) classifier.</p>
+<h2 id="regularization">Regularization</h2>
+<p>Overfit: resolved by regulation, by reducing number of theta (degree of polynomial).</p>
+<p>The amount of regularization to apply during learning can be controlled by a hyperparameter.
+A hyperparameter is a parameter of a learning algorithm (not of the model).</p>
+<h2 id="measurement">Measurement</h2>
+<p>Root mean square error (RMSE): measures the standard deviation</p>
+<p>Mean Absolute Error (MAE)</p>
+<p>The higher the norm index, the more it focuses on large values and neglects small ones. This is why the RMSE is more sensitive to outlier than the MAE.</p>
+<p>Precision = TP/TP+FP</p>
+<p>Recall = TP/TP+FN</p>
+<p>If someone says 'let's reach 99% precision', you should ask, 'at what recall'.</p>
+<p>F1 score is useful for skewed class. F1 = 2<em>P</em>R/(P+R)</p>
+<p>ROC (receiver operating characteristic) curve is a measure of binary classifier.
+The ROC curve is created by plotting the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings.
+Measure ROC AUC (area under the curve)</p>
+<p>Break-Even point P = R</p>
+<h2 id="k-folds-cross-validation">K-folds cross-validation</h2>
+<p>3 dataset: train set, cross-validation set, test dataset.</p>
+<p>Accuracy is generally not the preferred performance measure for classifiers, especially when you are dealing with skewed datasets.</p>
+<p>A much better way to evaluate the performance of a classifier is to look at the confusion matrix.</p>
+<p>Cost matrix:
+Cost matrix is similar to the confusion matrix except the fact that we are calculating the cost of wrong prediction or right prediction.
+In different context, the cost of error will be different.</p>
+<p>Training and test dataset need to ensure data distribution is consistent, to avoid the data distributed not evenly and impact the final results. stratified sampling</p>
+<h2 id="data-amount">Data Amount</h2>
+<p>The amount of data is also important for accuracy.</p>
+<p><img alt="image" src="../images/importance_of_data_versus_algorithms.png" /></p>
+<h1 id="drawbacks">Drawbacks</h1>
+<p>https://www.quora.com/What-are-the-dangers-of-using-machine-learning-libraries-without-any-understanding</p>
+<p><img alt="image" src="../images/cat.jpg" /></p>
+<p>Here’s a picture of a cat right? Google’s Inception model thinks it’s a guacamole.
+As much as the image looks like a cat, the image is digitally altered which confused the model.</p>
+<p><img alt="image" src="../images/rotate_cat.jpg" /></p>
+<p>Slightly rotating the image led the model to correctly classify the image as a cat (and as an animal)</p>
+<p>The above image is what’s called as an adversarial image,
+trying to fool your model into thinking the image is something you want it to be instead of what the image actually is.</p>
+<p>We have many technologies that allow us to use AI/ML (and not just deep learning) as a blackbox.
+The real danger is in the application, especially in healthcare and defense.
+For example, how would you convince that your model for predicting cancer actually works?
+How do you know your model is not susceptible to noise? How do you know that your model has actually learnt what it is supposed to be learning?
+How do you actually read interpretability here?
+If you can’t interpret what the model has learnt, then you can’t sell it.</p>
+<p>Another case can be found here:</p>
+<p>https://www.theverge.com/2017/11/2/16597276/google-ai-image-attacks-adversarial-turtle-rifle-3d-printed</p>
+<p>But the questions to be asked are:</p>
+<ul>
+<li>How would you now ensure that the results be consistent in application, without posing any vulnerabilities or risk?</li>
+<li>Did you really need a AI/ML solution?</li>
+</ul>
+<p>If you can't explain it simply, you don't understand it well enough.
+- Albert Einstein</p>
+<h1 id="others">Others</h1>
+<p>The good news is there is no need for you to build everything from scrach.
+You can use cloud machine learning services out-of-box.</p>
+<h2 id="cloud-machine-learning-services">Cloud machine learning services</h2>
+<p>Azure Cognitive Services:
+Pattern recognition-as-a-Service</p>
+<p><img alt="image" src="../images/azure_cognitive_services.png" /></p>
+<h2 id="deep-learning">Deep learning</h2>
+<p>Will explain the details of deep learning in later blogs.</p>
+<p>With the increasing data especially reach some amount, the deep learning algorithm will have better performance than machine learning.</p>
+<p><img alt="image" src="../images/why_deep_learning.jpg" /></p>
+<p>Normally, machine learning needs human being to be involved to extract features rely on human experience.
+However deep learning consists of several layers. They combine simpler models together and pass data from one layer to another to build up a complicated model.</p>
+<p><img alt="image" src="../images/machine_learning_and_deep_learning.png" /></p>
+<p><em>Written by Binwei@Singapore</em></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

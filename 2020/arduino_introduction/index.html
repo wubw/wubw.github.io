@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Arduino Introduction - Binwei's Blog</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Binwei's Blog</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Welcome to Binwei's Blog</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2017</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2017/authenticate_by_openidconnect/" class="dropdown-item">Authenticate Node.js App by OpenId Connect</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/bash_useful_commands/" class="dropdown-item">How to Become an Outlier</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/become_outlier/" class="dropdown-item">How to Become an Outlier</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/blockchain_introduction/" class="dropdown-item">Blockchain Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/book-bian_zhi_lin_shi_xuan/" class="dropdown-item">Book notes: Bian Zhi Lin Anthology</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/book-cai_gen_tan/" class="dropdown-item">Book Notes: Cai Gen Tan</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/cloud_for_dummy/" class="dropdown-item">Cloud for Dummy</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/devops_and_continuous_delivery/" class="dropdown-item">DevOps and Continuous Delivery</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/domain_driven_design_introduction/" class="dropdown-item">Domain Driven Design: Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_areas/" class="dropdown-item">Git: Areas</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_branch-basic/" class="dropdown-item">Git: Branch Basic</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_branch-continued/" class="dropdown-item">Git: Branch Continue</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_getting-started/" class="dropdown-item">Git: Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/git_resolve-conflicts/" class="dropdown-item">Git: Resolve Conflicts</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/how_to_read_books/" class="dropdown-item">How to Read Books</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/introduction_to_javascript/" class="dropdown-item">Introduction to Javascript</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/job_security/" class="dropdown-item">Job Security</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/kotter_binwei_change_model/" class="dropdown-item">Kotter-Binwei Change Model</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/lean_principles/" class="dropdown-item">Lean: Principles</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/lean_toolkit_for_software_development/" class="dropdown-item">Lean Toolkit for Software Development</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/nosql_introduction/" class="dropdown-item">NoSQL: Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/security_owasp_top_10/" class="dropdown-item">Security: Owasp Top 10</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/setup-blog_using-sphinx-ablog/" class="dropdown-item">Setup Blog: Using Sphinx and Ablog</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/specification_by_example/" class="dropdown-item">Specification by Example</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/technology_to_learn_next/" class="dropdown-item">Technology to Learn Next</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/telemetry_overview/" class="dropdown-item">Telemetry: Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_art_of_simplicity/" class="dropdown-item">The Art of Simplicity</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_effective_executive/" class="dropdown-item">The Effective Executive</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_mckinsey_engagement/" class="dropdown-item">The Mckinsey Engagement</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/the_mythical_deadline_of_peopleware_man_month/" class="dropdown-item">The Mythical Deadline of Peopleware Man-month</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/threat_modeling_introduction/" class="dropdown-item">Threat Modeling: Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/vi_configuration-example/" class="dropdown-item">Vi: Configuration Example</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/work_in_big_company/" class="dropdown-item">Work in Big Company</a>
+</li>
+                                    
+<li>
+    <a href="../../2017/xunit_test_patterns/" class="dropdown-item">Xunit Test Patterns</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2018</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2018/ai_for_smartcities/" class="dropdown-item">AI for Smart Cities</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/authentication_authorization_explainations/" class="dropdown-item">Authentication &amp; Authorization Basic</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/blockchain_scenario/" class="dropdown-item">Blockchain Scenario</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/career_advice/" class="dropdown-item">职场菜根谭</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/cryptography_introduction/" class="dropdown-item">Cryptography Introduction (with .NET code example)</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/docker_introduction/" class="dropdown-item">Docker Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/https/" class="dropdown-item">Https Explainations</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/microservices_introduction/" class="dropdown-item">Microservices Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/nodejs_basics/" class="dropdown-item">Node.js Basics</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/personal_branding/" class="dropdown-item">Personal Branding</a>
+</li>
+                                    
+<li>
+    <a href="../../2018/the_personal_mba/" class="dropdown-item">The Personal MBA</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2019</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2019/agile_selling/" class="dropdown-item">Agile Selling</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/application_insight_introduction/" class="dropdown-item">Application Insight Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/azure_datalake_warehouse/" class="dropdown-item">Azure Data Lake and Warehouse</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/azure_security/" class="dropdown-item">Azure Security</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/cyber_security_for_blockchain/" class="dropdown-item">Cyber Security for Blockchain</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/iot_for_smartcities/" class="dropdown-item">Iot for Smart Cities</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/machine_learning_basic/" class="dropdown-item">Machine Learning Basic</a>
+</li>
+                                    
+<li>
+    <a href="../../2019/user_story_applied/" class="dropdown-item">User Story Applied</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2020</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../about_consulting/" class="dropdown-item">About Consulting</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Arduino Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../azure_design_pattern/" class="dropdown-item">Azure Design Pattern</a>
+</li>
+                                    
+<li>
+    <a href="../china_70_anniversary_bigdata/" class="dropdown-item">China 70 Anniversary Big Data</a>
+</li>
+                                    
+<li>
+    <a href="../data_science_basic/" class="dropdown-item">Data Science Basic</a>
+</li>
+                                    
+<li>
+    <a href="../enlightenment_from_singing/" class="dropdown-item">Enlightenment from Singing</a>
+</li>
+                                    
+<li>
+    <a href="../intelligent_web_sentences/" class="dropdown-item">Intelligent Web Sentences</a>
+</li>
+                                    
+<li>
+    <a href="../mac_tips/" class="dropdown-item">Mac Tips</a>
+</li>
+                                    
+<li>
+    <a href="../xiao_gou_qian_qian/" class="dropdown-item">Book note: Xiao Gou Qian Qian</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2021</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../2021/measure_anything/" class="dropdown-item">Measure Anything</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../about_consulting/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../azure_design_pattern/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#arduino-introduction" class="nav-link">Arduino Introduction</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#table-of-contents" class="nav-link">Table of Contents</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#project-introduction" class="nav-link">Project Introduction</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#slide-pot" class="nav-link">Slide pot</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#arduino" class="nav-link">Arduino</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#pinout" class="nav-link">pinout</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#i2c" class="nav-link">I2C</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#arduino-development" class="nav-link">Arduino development</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#debugging" class="nav-link">Debugging</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#dac" class="nav-link">DAC</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#analog-to-digital-conversion" class="nav-link">Analog-to-digital conversion</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#digital-to-analog-conversion" class="nav-link">Digital-to-analog conversion</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#breadboard" class="nav-link">Breadboard</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="arduino-introduction">Arduino Introduction</h1>
+<p><strong>Published:</strong> May 16, 2020
+<strong>Tags:</strong> iot, hardware
+<strong>Category:</strong> ComputerScience</p>
+<p>Recently, my recent project use Arduino and relevant devices to help to emulate signals from sensors.
+It helps our development quite a lot especially the 'up-stream' part like data acquisition.
+The setup looks like following, which just shows very small part of the whole setup and this setup is evolving no matter the hardware and the software.
+Due to confidential consideration, this article will only stay on high level.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<h1 id="project-introduction">Project Introduction</h1>
+<p>Our main solution is an IoT project for vessel to help optimize operation.
+So we start this project to emulate the sensor signals from the vessel, which allows the development team to ease the development without access to the vessel.
+This project is very helpful for the crucial part e.g. data acquisition. The setup looks like following picture:</p>
+<p><img alt="image" src="../images/arduino_setup.png" /></p>
+<p>There are several parts:</p>
+<ul>
+<li>Slide pot</li>
+<li>Arduino</li>
+<li>DAC</li>
+<li>Breadboard</li>
+</ul>
+<h1 id="slide-pot">Slide pot</h1>
+<p>On real vessel deployment, one crucial parameter is the fuel rack position which indicate the rpm, and have big impact to the rest of the solution.</p>
+<p>We use slide pot device to emulate the fuel rack. And we can change the bar position of the slide pot to emulate the change of the fuel rack position.
+This change will impact all the following signal generation like cycle length, rpm and pressure amplitude just like the vessel.</p>
+<p><img alt="image" src="../images/slide_pot.jpg" /></p>
+<h1 id="arduino">Arduino</h1>
+<p>Arduino boards are used to generate signals. Arduino is uC.</p>
+<p>uC means microController (MCU).
+In modern terminology, it is similar to, but less sophisticated than, a system on a chip (SoC);
+a SoC may include a microcontroller as one of its components.
+As for system on a chip, that is a less well defined term.
+These are basically a microcontroller with small FPGA on the same chip.
+Instead of having built in peripherals, you can make whatever you want within the available resources of the FPGA.</p>
+<h2 id="pinout">pinout</h2>
+<p>The first step is to understand the board functionality by reading pinout like following.</p>
+<p><img alt="image" src="../images/arduino_due_pinout.png" /></p>
+<p>Based on the project needs, we look into the pinout and decide how many pins to use, also GND pin.</p>
+<h2 id="i2c">I2C</h2>
+<p>I2C (Inter-Integrated Circuit) computer bus</p>
+<p>widely used for attaching lower-speed peripheral ICs to processors and microcontrollers in short-distance, intra-board communication.
+I2C is appropriate for peripherals where simplicity and low manufacturing cost are more important than speed.
+Standard I2C devices only run at 100 kHz.</p>
+<p><img alt="image" src="../images/i2c.png" /></p>
+<p>SCL and SDA pins are I2C pins.</p>
+<ul>
+<li>SCL stands for Serial CLock.</li>
+<li>SDA stands for Serial DAta.</li>
+</ul>
+<h2 id="arduino-development">Arduino development</h2>
+<p>The first step of Arduino development is to install Arduino IDE.
+Once the IDE is installed, it is quite straight forward to configure library and board type in the IDE settings.</p>
+<p>And the focus area for the coding is two methods:</p>
+<pre><code>   setup()
+   loop()
+</code></pre>
+<p>There are plenty of resources online to describe the basic programming part of Arduino.</p>
+<p>For our project, we generate both analog and digital signals.</p>
+<pre><code>   writeDigital()
+</code></pre>
+<h2 id="debugging">Debugging</h2>
+<p>There are ways to help your development, one is serial output.</p>
+<p>another one is Saleae Logic device</p>
+<p><img alt="image" src="../images/saleae-logic-8-logic-analyzer.jpg" /></p>
+<p>Once you connect the Saleae Logic to the Arduino output pins, you can see the signals on the Logic UI.
+The following picture is just an example. The UI is highly configurable and also straight forward to use for debugging purpose.</p>
+<p><img alt="image" src="../images/saleae_logic_ui.png" /></p>
+<h1 id="dac">DAC</h1>
+<p>DAC means digital analog convert, d means digital, a means voltage/current.
+数字模拟转换器（英語：Digital to analog converter，英文缩写：DAC）是一种将数字信号转换为模拟信号（以电流、电压或电荷的形式）的设备。
+模拟数字转换器（ADC）则是以相反的方向工作。
+典型的数字模拟转换器将抽象数转换为具体的脉冲序列，然后利用插值法输出近似连续的量。
+其他的转换方法（例如基于ΔΣ调变的方法）则产生脉冲密度调制（Pulse-density modulation, PDM）进而产生平滑的连续信号。</p>
+<h2 id="analog-to-digital-conversion">Analog-to-digital conversion</h2>
+<p>A PDM bitstream is encoded from an analog signal through the process of delta-sigma modulation.
+This process uses a one bit quantizer that produces either a 1 or 0 depending on the amplitude of the analog signal.
+A 1 or 0 corresponds to a signal that is all the way up or all the way down, respectively.
+Because in the real world, analog signals are rarely all the way in one direction, there is a quantization error, the difference between the 1 or 0 and the actual amplitude it represents.
+This error is fed back negatively in the ΔΣ process loop.
+In this way, every error successively influences every other quantization measurement and its error. This has the effect of averaging out the quantization error.</p>
+<h2 id="digital-to-analog-conversion">Digital-to-analog conversion</h2>
+<p>The process of decoding a PDM signal into an analog one is simple: one only has to pass the PDM signal through a low-pass filter.
+This works because the function of a low-pass filter is essentially to average the signal.
+The average amplitude of pulses is measured by the density of those pulses over time, thus a low pass filter is the only step required in the decoding process.</p>
+<p>In our project, we use DAC device with multiple channels to output analog signals.</p>
+<h1 id="breadboard">Breadboard</h1>
+<p>A breadboard is a construction base for prototyping of electronics.
+It plays as 'glue' role in the project, and it connect different devices.</p>
+<p><img alt="image" src="../images/breadboard.jpg" /></p>
+<p>For example, all electric wires are connected if they are on the same row (with same number).
+At meantime, positive wire and gnd wire can be easily put on +/- columns.</p>
+<p>Breadboard is very helpful when you use many devices to connect to each other to achieve some complicated logic.</p>
+<p>This is a very simple introduction about what we do for signal generation for our project.</p>
+<p><em>Written by Binwei@Singapore</em></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
