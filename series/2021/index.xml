@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2021 on </title>
+    <link>http://localhost:1313/series/2021/</link>
+    <description>Recent content in 2021 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright Binwei Wu Corp</copyright>
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/series/2021/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Measure Anything</title>
+      <link>http://localhost:1313/post/2021/measure_anything/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021/measure_anything/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;measure-anything&#34;&gt;Measure Anything&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 01, 2021
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes, process
+&lt;strong&gt;Category:&lt;/strong&gt; Management&lt;/p&gt;
+&lt;p&gt;If you don&#39;t measure it, you can&#39;t manage it;
+If you don&#39;t measure it, you can&#39;t improve it;
+If you don&#39;t measure it, you probably don&#39;t care;
+If you can&#39;t influence it, then don&#39;t measure it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Randy A. Steinberg&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;why-measure-anything&#34;&gt;Why Measure Anything&lt;/h1&gt;
+&lt;p&gt;There is important logic, see below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If it matters at all, it is detectable/observable&lt;/li&gt;
+&lt;li&gt;If it is detectable, it can be detected as an amount (or range of possible amounts)&lt;/li&gt;
+&lt;li&gt;If it can be detected as a range of possible amounts, it can be measured&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4 useful measurement assumptions:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

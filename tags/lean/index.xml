@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lean on </title>
+    <link>http://localhost:1313/tags/lean/</link>
+    <description>Recent content in Lean on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright Binwei Wu Corp</copyright>
+    <lastBuildDate>Tue, 16 May 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/lean/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lean Toolkit for Software Development</title>
+      <link>http://localhost:1313/post/2017/lean_toolkit_for_software_development/</link>
+      <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/lean_toolkit_for_software_development/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;lean-toolkit-for-software-development&#34;&gt;Lean Toolkit for Software Development&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; May 16, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; lean, process
+&lt;strong&gt;Category:&lt;/strong&gt; Management&lt;/p&gt;
+&lt;p&gt;Lean has huge impact on current software industry.
+No matter your team adopts Devops, Scrum, Kanban or other Agile methodologies, you can find impact from Lean methodology.
+Even though Lean was invented decades ago, the concepts are still shining and toolkit are still very useful.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;identify-bottleneck&#34;&gt;Identify Bottleneck&lt;/h1&gt;
+&lt;p&gt;Any improvements made anywhere besides the bottleneck are an illusion.
+-- Mary Poppendieck&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Lean: Principles</title>
+      <link>http://localhost:1313/post/2017/lean_principles/</link>
+      <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/lean_principles/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;lean-principles&#34;&gt;Lean: Principles&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 27, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; lean, process
+&lt;strong&gt;Category:&lt;/strong&gt; Management&lt;/p&gt;
+&lt;p&gt;The core idea of Lean is to maximize customer value while minimizing waste. A lean organization understands customer value and focuses its key processes to continuously increase it.&lt;/p&gt;
+&lt;p&gt;To accomplish this, lean thinking changes the focus of management from optimizing separate technologies, assets, and vertical departments to optimizing the flow of products and services through entire value streams that flow horizontally across technologies, assets, and departments to customers.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

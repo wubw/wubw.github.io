@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smartcity on </title>
+    <link>http://localhost:1313/tags/smartcity/</link>
+    <description>Recent content in Smartcity on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright Binwei Wu Corp</copyright>
+    <lastBuildDate>Sun, 10 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/smartcity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Iot for Smart Cities</title>
+      <link>http://localhost:1313/post/2019/iot_for_smartcities/</link>
+      <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/iot_for_smartcities/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;iot-for-smart-cities&#34;&gt;Iot for Smart Cities&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Feb 10, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; iot, booknotes, smartcity
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Smart cities: Everyone&#39;s connected
+If everyone, every home, and every business is connected via the IoT, why not take the next step and connect your entire neighborhood, or even the whole city?
+Connected devices can help reduce congestion on local roadways, alert the fire department in case of emergencies, and even signal the need for road maintenance or additional police patrols.
+The smart city might mean a smaller government – or a more intrusive one.
+It all depends.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>AI for Smart Cities</title>
+      <link>http://localhost:1313/post/2018/ai_for_smartcities/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/ai_for_smartcities/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;ai-for-smart-cities&#34;&gt;AI for Smart Cities&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Dec 07, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; ai, smartcity
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;I had the honer to give an &#39;AI for Smart Cities&#39; presentation in &#39;Big Data &amp;amp; AI Asia&#39; conference Dec 5.
+The conference was hold in Suntec and it was a big event around hundreds people participated.&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/Suntec.jpg&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;I managed to convey the following messages in my talk:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is smart city&lt;/li&gt;
+&lt;li&gt;Why AI is relevant&lt;/li&gt;
+&lt;li&gt;What DNVGL has done and what we can offer to the market.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is a picture of my presentation. And in this blog, I will briefly introduce the relevant content.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ComputerScience on </title>
+    <link>http://localhost:1313/categories/computerscience/</link>
+    <description>Recent content in ComputerScience on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright Binwei Wu Corp</copyright>
+    <lastBuildDate>Sun, 02 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/computerscience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Science Basic</title>
+      <link>http://localhost:1313/post/2020/data_science_basic/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2020/data_science_basic/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;data-science-basic&#34;&gt;Data Science Basic&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Aug 02, 2020
+&lt;strong&gt;Tags:&lt;/strong&gt; data
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Data science involves principles, processes, and techniques for understanding phenomena via the (automated) analysis of data. This article talks about the basic part of data science.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;data-driven-decision-ddd&#34;&gt;Data Driven Decision (DDD)&lt;/h1&gt;
+&lt;p&gt;Data-driven decision-making (DDD) refers to the practice of basing decisions on the analysis of data, rather than purely on intuition. DDD is not an all-or-nothing practice, and different firms engage in DDD to greater or lesser degrees.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mac Tips</title>
+      <link>http://localhost:1313/post/2020/mac_tips/</link>
+      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2020/mac_tips/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;mac-tips&#34;&gt;Mac Tips&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jul 31, 2020
+&lt;strong&gt;Tags:&lt;/strong&gt; efficiency
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;I got first Macbook 3 years ago, but only use Macbook as production environment 9 months ago.
+In order to use Macbook in an efficient way, some tips can be important to know.&lt;/p&gt;
+&lt;h1 id=&#34;short-cut-keys&#34;&gt;Short cut keys&lt;/h1&gt;
+&lt;h2 id=&#34;capture-window&#34;&gt;Capture window&lt;/h2&gt;
+&lt;p&gt;+-------------------------------+-----------------------------------+
+| Command + Shift + 5           | Record video for screen           |
++-------------------------------+-----------------------------------+
+| Command + Shift + 4           | Capture screen to file            |
++-------------------------------+-----------------------------------+
+| Command + Shift + 4 + space   | Capture current screen            |
++-------------------------------+-----------------------------------+
+| Command + Control + Shift + 4 | Capture screen to clip-board      |
++-------------------------------+-----------------------------------+&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Arduino Introduction</title>
+      <link>http://localhost:1313/post/2020/arduino_introduction/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2020/arduino_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;arduino-introduction&#34;&gt;Arduino Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; May 16, 2020
+&lt;strong&gt;Tags:&lt;/strong&gt; iot, hardware
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Recently, my recent project use Arduino and relevant devices to help to emulate signals from sensors.
+It helps our development quite a lot especially the &#39;up-stream&#39; part like data acquisition.
+The setup looks like following, which just shows very small part of the whole setup and this setup is evolving no matter the hardware and the software.
+Due to confidential consideration, this article will only stay on high level.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Azure Design Pattern</title>
+      <link>http://localhost:1313/post/2020/azure_design_pattern/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2020/azure_design_pattern/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;azure-design-pattern&#34;&gt;Azure Design Pattern&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; May 01, 2020&lt;br&gt;
+&lt;strong&gt;Tags:&lt;/strong&gt; cloud, architecture&lt;br&gt;
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Just like programming, for many technical challenges for using cloud and Azure there are best practices.
+We call these best practices as Design Pattern.
+This blog introduce these design patterns and also discuss relevant tools on Azure.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#data-management-and-performance&#34;&gt;Data Management and Performance&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#event-sourcing&#34;&gt;Event sourcing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#sharding-pattern&#34;&gt;Sharding Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#static-content-hosting-pattern&#34;&gt;Static Content Hosting Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#the-cache-aside-pattern&#34;&gt;The Cache-aside Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#cqrs-pattern&#34;&gt;CQRS pattern&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#availability-and-resilience&#34;&gt;Availability and resilience&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#circuit-breaker-pattern&#34;&gt;Circuit Breaker Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#compensating-transaction-pattern&#34;&gt;Compensating Transaction Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#health-endpoint-monitoring-pattern&#34;&gt;Health Endpoint Monitoring Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#queue-based-load-levelling-pattern&#34;&gt;Queue-based load levelling pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#retry-pattern&#34;&gt;Retry pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#throttling-pattern&#34;&gt;Throttling Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#design-and-implementation&#34;&gt;Design and Implementation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#external-configuration-store-pattern&#34;&gt;External Configuration Store Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#federated-identity-pattern&#34;&gt;Federated Identity Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#gatekeeper-pattern&#34;&gt;Gatekeeper Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#runtime-reconfiguration-pattern&#34;&gt;Runtime Reconfiguration Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#valet-key-pattern&#34;&gt;Valet Key Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#resources&#34;&gt;Resources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;We categorize the design patterns into followings:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cyber Security for Blockchain</title>
+      <link>http://localhost:1313/post/2019/cyber_security_for_blockchain/</link>
+      <pubDate>Sun, 09 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/cyber_security_for_blockchain/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;cyber-security-for-blockchain&#34;&gt;Cyber Security for Blockchain&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jun 09, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; blockchain, security
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This year, I worked on a project and the topic for me is cyber security for blockchain in Oil and Gas industry.
+It was really good experience since I got the chance to think through this topic and deliver research report to client.
+Both cyber security and blockchain are interesting areas for me, besides the above project I still have a lot of things not mentioned mainly technical things.
+So I decide to write this blog as supplement to above project.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Azure Data Lake and Warehouse</title>
+      <link>http://localhost:1313/post/2019/azure_datalake_warehouse/</link>
+      <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/azure_datalake_warehouse/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;azure-data-lake-and-warehouse&#34;&gt;Azure Data Lake and Warehouse&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 30, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; cloud
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Data Lack and Data Warehouse are two concepts causing confusion.
+This blog introduces these two concepts and provides comparision for other relevant concepts.&lt;/p&gt;
+&lt;p&gt;In general, there is a good article:
+&lt;a href=&#34;https://www.talend.com/resources/data-lake-vs-data-warehouse/&#34;&gt;https://www.talend.com/resources/data-lake-vs-data-warehouse/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;data-lake&#34;&gt;Data Lake&lt;/h1&gt;
+&lt;p&gt;Analyzing Big Data in Azure&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data Lake Store: No limits data Lake&lt;/li&gt;
+&lt;li&gt;Data Lake Aanlytics: Analytics job service&lt;/li&gt;
+&lt;li&gt;HDInsight: Managed clusters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;azure-data-lake-store&#34;&gt;Azure Data Lake Store&lt;/h2&gt;
+&lt;p&gt;Hyper-scale repository for your big data analytics.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>User Story Applied</title>
+      <link>http://localhost:1313/post/2019/user_story_applied/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/user_story_applied/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;user-story-applied&#34;&gt;User Story Applied&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 21, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes, process
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This blog is the book notes for user story applied.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;user-stories-principles&#34;&gt;User stories principles&lt;/h1&gt;
+&lt;p&gt;A good story is: Independent, Negotiable, Valuable to users or customers, Estimable, Small, Testable&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;User stories emphasize verbal rather than written communication&lt;/li&gt;
+&lt;li&gt;User stories are comprehensible by both stakeholders and the developers&lt;/li&gt;
+&lt;li&gt;User stories are the right size for planning&lt;/li&gt;
+&lt;li&gt;User stories work for iterative development&lt;/li&gt;
+&lt;li&gt;User stories encourage deferring detail until you have the best understanding you are going to have about what you really need.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;emphasize-verbal-communication&#34;&gt;Emphasize verbal communication&lt;/h2&gt;
+&lt;p&gt;There’s nothing wrong with making a few annotations on a story card based on a discussion.
+However, the conversation is the key, not the note on the story card.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Application Insight Introduction</title>
+      <link>http://localhost:1313/post/2019/application_insight_introduction/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/application_insight_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;application-insight-introduction&#34;&gt;Application Insight Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 20, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; cloud, telemetry
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This blog introduces what Application Insight can do.&lt;/p&gt;
+&lt;h1 id=&#34;application-insight-basics&#34;&gt;Application Insight Basics&lt;/h1&gt;
+&lt;p&gt;Application Insights is aimed at the development team, to help you understand how your app is performing and how it&#39;s being used.&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/application_insight_overview.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;It includes functions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Detect, triage, and diagnose issues in web apps and services (Detect: Know about any issues before your users, Triage: how many users are affected? How often does this happen? Diagnose: Where is the problem? When does it happen?)&lt;/li&gt;
+&lt;li&gt;Detect issues through email and webhook alerts&lt;/li&gt;
+&lt;li&gt;Diagnose exceptions and web app performance issues&lt;/li&gt;
+&lt;li&gt;Perform root cause analysis with ad-hoc queries and full-text search&lt;/li&gt;
+&lt;li&gt;Live application monitoring&lt;/li&gt;
+&lt;li&gt;HTTP request rates, response times, success rates.&lt;/li&gt;
+&lt;li&gt;Dependency (HTTP &amp;amp; SQL) call rates, response times, success rates.&lt;/li&gt;
+&lt;li&gt;Exception traces from both server and client.&lt;/li&gt;
+&lt;li&gt;Page view counts, user and session counts, browser load times, exceptions.&lt;/li&gt;
+&lt;li&gt;AJAX call rates, response times and success rates.&lt;/li&gt;
+&lt;li&gt;Server performance counters. (your Windows or Linux server machines, such as CPU, memory, and network usage)&lt;/li&gt;
+&lt;li&gt;Segmentation by client location, browser version, OS version, server instance, custom dimensions, and more.&lt;/li&gt;
+&lt;li&gt;Availability tests.&lt;/li&gt;
+&lt;li&gt;Host diagnostics from Docker or Azure.&lt;/li&gt;
+&lt;li&gt;Diagnostic trace logs from your app - so that you can correlate trace events with requests.&lt;/li&gt;
+&lt;li&gt;Custom events and metrics that you write yourself in the client or server code, to track business events such as items sold or games won.&lt;/li&gt;
+&lt;li&gt;Integrate with DevOps processes using Visual Studio Team Services&lt;/li&gt;
+&lt;li&gt;Monitor web apps hosted on Azure, other cloud services, or on-premises servers&lt;/li&gt;
+&lt;li&gt;Get started with Visual Studio or monitor existing apps without re-deploying&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/application_insight_in_devops.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Azure Security</title>
+      <link>http://localhost:1313/post/2019/azure_security/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/azure_security/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;azure-security&#34;&gt;Azure Security&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; April 19, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; security, cloud
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Cyber Security is important aspect to digital transformation.
+To use Azure well, the understanding of the security building blocks is crucial.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.microsoft.com/en-us/azure/security/azure-security-getting-started&#34;&gt;https://docs.microsoft.com/en-us/azure/security/azure-security-getting-started&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;security-basics&#34;&gt;Security Basics&lt;/h1&gt;
+&lt;p&gt;Every company has some level of security requirement that stretches across almost every element of the business.
+It&#39;s important to think of security in layers rather than a single protection element.&lt;/p&gt;
+&lt;p&gt;Defense in Depth: The best security is based on layers of protection and this is especially true with networking.
+See following picture.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Iot for Smart Cities</title>
+      <link>http://localhost:1313/post/2019/iot_for_smartcities/</link>
+      <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/iot_for_smartcities/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;iot-for-smart-cities&#34;&gt;Iot for Smart Cities&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Feb 10, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; iot, booknotes, smartcity
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Smart cities: Everyone&#39;s connected
+If everyone, every home, and every business is connected via the IoT, why not take the next step and connect your entire neighborhood, or even the whole city?
+Connected devices can help reduce congestion on local roadways, alert the fire department in case of emergencies, and even signal the need for road maintenance or additional police patrols.
+The smart city might mean a smaller government – or a more intrusive one.
+It all depends.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Machine Learning Basic</title>
+      <link>http://localhost:1313/post/2019/machine_learning_basic/</link>
+      <pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/machine_learning_basic/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;machine-learning-basic&#34;&gt;Machine Learning Basic&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 13, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; ai
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This blog introduces the basic knowledge of machine learning. The details of algorithm and programming will come in later blogs.
+Machine learning is a technology which can resolve the computational problem without programming specifically.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;process&#34;&gt;Process&lt;/h1&gt;
+&lt;p&gt;Machine learning project has its own process, which starts with asking the right questions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ask yourself: Do you have the right data to answer the question?&lt;/li&gt;
+&lt;li&gt;Ask yourself: Do you know how you&#39;ll measure success?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The process also includes re-create model regularly, see following picture.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>AI for Smart Cities</title>
+      <link>http://localhost:1313/post/2018/ai_for_smartcities/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/ai_for_smartcities/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;ai-for-smart-cities&#34;&gt;AI for Smart Cities&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Dec 07, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; ai, smartcity
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;I had the honer to give an &#39;AI for Smart Cities&#39; presentation in &#39;Big Data &amp;amp; AI Asia&#39; conference Dec 5.
+The conference was hold in Suntec and it was a big event around hundreds people participated.&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/Suntec.jpg&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;I managed to convey the following messages in my talk:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is smart city&lt;/li&gt;
+&lt;li&gt;Why AI is relevant&lt;/li&gt;
+&lt;li&gt;What DNVGL has done and what we can offer to the market.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is a picture of my presentation. And in this blog, I will briefly introduce the relevant content.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Node.js Basics</title>
+      <link>http://localhost:1313/post/2018/nodejs_basics/</link>
+      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/nodejs_basics/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;nodejs-basics&#34;&gt;Node.js Basics&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Aug 11, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; web, backend
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Recently, I used Node.js quite a lot to handle personal projects. It is easy to start, and also easy to get wrong.
+This blog covers the basics part of Node.js development.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;module&#34;&gt;Module&lt;/h1&gt;
+&lt;h2 id=&#34;require&#34;&gt;Require&lt;/h2&gt;
+&lt;p&gt;Every module in node is singleton.&lt;/p&gt;
+&lt;p&gt;Use require to use module, the following is the search sequence of require method:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First find js file&lt;/li&gt;
+&lt;li&gt;Then json file&lt;/li&gt;
+&lt;li&gt;Then node file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If the module name is index.js, then it is okay just write directory name in the require parameter.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Authentication &amp; Authorization Basic</title>
+      <link>http://localhost:1313/post/2018/authentication_authorization_explainations/</link>
+      <pubDate>Wed, 14 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/authentication_authorization_explainations/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;authentication--authorization-basic&#34;&gt;Authentication &amp;amp; Authorization Basic&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Mar 14, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; security
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Authentication and Authorization are two relevant but different concepts, which causes confusion sometimes.
+Both of them are important for SaaS solution.
+This blog explains the basic of these two concepts.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;single-sign-on&#34;&gt;Single sign on&lt;/h1&gt;
+&lt;p&gt;In classic intranet scenarios, normally windows authentication will be used in intranet scenario.
+All parties belong to Active Directory which makes things easy.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Microservices Introduction</title>
+      <link>http://localhost:1313/post/2018/microservices_introduction/</link>
+      <pubDate>Wed, 07 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/microservices_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;microservices-introduction&#34;&gt;Microservices Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Mar 07, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; architecture, cloud
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Microservice is a software architecture style, in which complex applications are composed of small, autonomous process communicating with each other using language-agnostic API, which is a very common cloud pattern.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;microservices-design-principles&#34;&gt;Microservices Design Principles&lt;/h1&gt;
+&lt;h2 id=&#34;high-cohesion&#34;&gt;High cohesion&lt;/h2&gt;
+&lt;p&gt;High cohesion means single focus and single responsibility.
+It follows SOLID principle, which means service only change for one reason.&lt;/p&gt;
+&lt;h2 id=&#34;autonomous&#34;&gt;Autonomous&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Loose coupling&lt;/li&gt;
+&lt;li&gt;Honor contracts and interfaces&lt;/li&gt;
+&lt;li&gt;Stateless&lt;/li&gt;
+&lt;li&gt;Independently changeable&lt;/li&gt;
+&lt;li&gt;Independently deployable&lt;/li&gt;
+&lt;li&gt;Backwards compatible&lt;/li&gt;
+&lt;li&gt;Concurrent development&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Approach:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Blockchain Scenario</title>
+      <link>http://localhost:1313/post/2018/blockchain_scenario/</link>
+      <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/blockchain_scenario/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;blockchain-scenario&#34;&gt;Blockchain Scenario&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Feb 26, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; blockchain, security
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This blog explain the potential scenarios of blockchain usage. The content comes from good articles on web.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;分布式数字货币系统&#34;&gt;分布式数字货币系统&lt;/h1&gt;
+&lt;p&gt;现实生活中常用的纸币具备良好的可转移性，可以相对容易地完成价值的交割。
+但是对于数字货币来说，数字化内容容易被复制，数字货币的持有人可以将同一份货币发给多个接受者，这种攻击称为“双重支付攻击”。&lt;/p&gt;
+&lt;p&gt;中心化控制下，数字货币的实现相对容易。
+但是，很多时候很难找到一个安全可靠的第三方机构来充当这个中心管控的角色。&lt;/p&gt;
+&lt;p&gt;有一些问题是中心化数字货币难以解决的：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;发生贸易的两国可能缺乏足够的外汇储备用以支付&lt;/li&gt;
+&lt;li&gt;汇率的变化导致双方对合同有不同意见&lt;/li&gt;
+&lt;li&gt;网络上的匿名双方进行直接买卖而不通过电子商务平台&lt;/li&gt;
+&lt;li&gt;交易的两个机构彼此互不信任，找不到双方都认可的第三方担保&lt;/li&gt;
+&lt;li&gt;使用第三方担保系统，但某些时候可能无法连接&lt;/li&gt;
+&lt;li&gt;第三方的系统可能会出现故障或受到篡改攻击&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;去中心化（de-centralized）或多中心化(multi-centralized)的数字货币系统可以有效解决以上问题。&lt;/p&gt;
+&lt;p&gt;然而在“去中心化”的场景下，实现数字货币存在如下几个难题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;货币的防伪：谁来负责对货币的真伪进行鉴定&lt;/li&gt;
+&lt;li&gt;货币的交易：如何确保货币从一方安全转移到另外一方&lt;/li&gt;
+&lt;li&gt;避免双重支付：如何避免同一份货币支付给多个接受者&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这就是区块链需要解决的问题。&lt;/p&gt;
+&lt;h1 id=&#34;区块链现状&#34;&gt;区块链现状&lt;/h1&gt;
+&lt;p&gt;跟传统的记账技术相比，基于区块链的分布式账本应该包括如下特点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;维护一条不断增长的链，只可能添加记录，而发生过的记录都不可篡改&lt;/li&gt;
+&lt;li&gt;去中心化，或者说多中心化，无需集中控制而能达成共识，实现上尽量采用分布式&lt;/li&gt;
+&lt;li&gt;通过密码学的机制来确保交易无法被抵赖和破坏，并尽量保护用户信息和记录的隐私性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;公开链联盟链私有链&#34;&gt;公开链，联盟链，私有链&lt;/h2&gt;
+&lt;p&gt;根据参与者的不同，可以分为公开（public）链、联盟（consortium）链和私有（private）链&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;共有链：任何人都可以参与使用和维护，如比特币区块链，信息是完全公开的&lt;/li&gt;
+&lt;li&gt;私有链：由集中管理者进行管理限制，只有内部少数人可以使用，信息不公开&lt;/li&gt;
+&lt;li&gt;联盟链：介于两者之间，由若干组织一起合作维护一条区块链，该区块链的使用必须是带有权限访问，相关信息会得到保护，如供应链机构或银行联盟&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目前来看，共有链更容易吸引市场和媒体的眼球，但更多的商业价值会在联盟链和私有链上落地。&lt;/p&gt;
+&lt;p&gt;公有链：是指世界上任何个体或者机构都可以发送交易，且交易能够获得该区块链的有效确认，任何人都可参与其共识过程，记账权完全由公开的共识算法决定，即整个网络是开放的。&lt;/p&gt;
+&lt;p&gt;联盟链：顾名思义，一般是指由少数的机构组成联盟节点，进入和退出需要授权的区块链，联盟之间是有价值传输的，属于协作关系但同时又不能完全信任，典型的场景有跨境支付，票据市场，场外市场等等。
+一般由PBFT一致性算法改造的共识算法，节点数不会太多，同时要求出块速度快，并且所有节点是需要准入的，也就是通过许可才能访问该联盟链（我们也称联盟链为许可链）。&lt;/p&gt;
+&lt;p&gt;私有链：是完全被单独的个人或某个组织控制的区块链，仅仅使用区块链的分布式账本技术进行记账，与其他的分布式存储方案没有太大区别。&lt;/p&gt;
+&lt;p&gt;公有链不适合大部分企业应用场景，未来企业应用的重点是联盟链，但现阶段关注的重点是公有链，公有链是区块链技术的试验田，会遇到各种复杂的情况和问题，是对新技术和新业务的测试，这对企业应用提供很好的借鉴。
+对于区块链的去中心化、安全、高效这三个特性，符合蒙代尔不可能三角关系，即不可能同时满足三个条件。公有链实现了完全的去中心化和安全，因此在性能上就很低，联盟链为了企业应用，提高了性能和安全，就不得不在去中心化上进行妥协，通过一个中心化的授权方式来管理节点，实现了半中心化。&lt;/p&gt;
+&lt;p&gt;根据使用目的和场景不同，又可以分为货币链，记录产权为目的的产权链，以众筹为目的的众筹链等，也有不局限特定应用场景的通用链。
+现有大部分区块链实现都至少包括了网络层，共识层，智能合约和应用层等结构，联盟链实现往往还会引入一定的权限管理机制。&lt;/p&gt;
+&lt;h2 id=&#34;区块链20&#34;&gt;区块链2.0&lt;/h2&gt;
+&lt;p&gt;区块链2.0的典型代表是以太坊（Ethereum）和超级账本（Hyperledger），分别代表了区块链的两个重要的发展方向：应用于公众的公有链和应用于企业的联盟链。
+Hyperledger项目是首个面向企业应用场景的开源分布式账本平台。
+主打联盟链，Linux基金会项目。
+面向不同目的和场景的子项目组成：
+Fabric, Sawtooth, Iroha, Blockchain Explorer, Cello, Indy, Composer, Burrow&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Https Explainations</title>
+      <link>http://localhost:1313/post/2018/https/</link>
+      <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/https/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;https-explainations&#34;&gt;Https Explainations&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 24, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; security
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Hypertext Transfer Protocol Secure (HTTPS) is a safer version of HTTP, which is the communications protocol of the World Wide Web.
+An HTTPS session is encrypted using either the SSL protocol (Secure Socket Layer) or TLS protocol (Transport Layer Security) and offers protection against &amp;quot;eavesdropping&amp;quot; and that any change in the transmitted data.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;First Man in the middle attack in Chinese history. From &amp;quot;资治通鉴&amp;quot;:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cryptography Introduction (with .NET code example)</title>
+      <link>http://localhost:1313/post/2018/cryptography_introduction/</link>
+      <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/cryptography_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;cryptography-introduction-with-net-code-example&#34;&gt;Cryptography Introduction (with .NET code example)&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 07, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; security
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Cryptography is the core part of security, this blog introduces the basic concepts in cryptography and uses .NET as code example.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;randomness&#34;&gt;Randomness&lt;/h1&gt;
+&lt;p&gt;System.Random and its problems&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;System.Random is a pseudo random number generator&lt;/li&gt;
+&lt;li&gt;A seed value is passed into the constructor&lt;/li&gt;
+&lt;li&gt;The seed value should be different each time&lt;/li&gt;
+&lt;li&gt;System.Random is deterministic and predictable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Solution is to use RNGCryptoServiceProvider instead.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docker Introduction</title>
+      <link>http://localhost:1313/post/2018/docker_introduction/</link>
+      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/docker_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;docker-introduction&#34;&gt;Docker Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 4, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; docker
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Docker is the world&#39;s leading software containerization platform.
+Docker/container technology becomes more and more popular these days.
+This blog introduces the basic concept of the above technology.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;what-is-docker&#34;&gt;What is docker&lt;/h1&gt;
+&lt;p&gt;In the old days, physical machine is the basic deployment unit which means one server hosts one application.
+The application has good isolation, however it is too expensive not only the hardware but also the maintaince effort.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cloud for Dummy</title>
+      <link>http://localhost:1313/post/2017/cloud_for_dummy/</link>
+      <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/cloud_for_dummy/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;cloud-for-dummy&#34;&gt;Cloud for Dummy&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Sep 04, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; cloud
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This is a blog to explain what cloud is to dummies.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Five main principles of cloud computing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pooled resources: Available to any subscribing users&lt;/li&gt;
+&lt;li&gt;Virtualization: High utilization of hardware assets&lt;/li&gt;
+&lt;li&gt;Elasticity: Dynamic scale without CAPEX&lt;/li&gt;
+&lt;li&gt;Automation: Build, deploy, configure, provision, and move, all without manual intervention&lt;/li&gt;
+&lt;li&gt;Metered billing: Per-usage business model; pay only for what you use&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The cloud offers the illusion of infinite resources, available on demand.
+You no longer need to play the guessing game of how many users need to be supported and how scalable the application is.
+The cloud takes care of the peaks and troughs of utilization times.
+In the world of the cloud, you pay for only the resources you use, when you use them.
+This is the revolutionary change: the ability to handle scale without paying a premium.
+In this realm of true utility computing, resource utilization mirrors the way we consume electricity or water.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Introduction to Javascript</title>
+      <link>http://localhost:1313/post/2017/introduction_to_javascript/</link>
+      <pubDate>Sat, 09 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/introduction_to_javascript/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;introduction-to-javascript&#34;&gt;Introduction to Javascript&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Sep 9, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; web, frontend
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Javascript is the fundumantal programming language for frontend development.
+This blog introduces the basic concept of Javascript language.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;javascript-basic&#34;&gt;Javascript Basic&lt;/h1&gt;
+&lt;p&gt;First, let&#39;s compare Javascript with a OOP programming language C#.&lt;/p&gt;
+&lt;p&gt;+-----------------------+-----------------------+
+| C#	                | Javascript            |
++-----------------------+-----------------------+
+| Strongly-Typed        | Loosely-typed         |
++-----------------------+-----------------------+
+| Static                | Dynamic               |
++-----------------------+-----------------------+
+| Classical Inheritance	| Prototypal            |
++-----------------------+-----------------------+
+| Classes               | Functions             |
++-----------------------+-----------------------+
+| Constructors	        | Functions             |
++-----------------------+-----------------------+
+| Methods               | Functions             |
++-----------------------+-----------------------+&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Blockchain Introduction</title>
+      <link>http://localhost:1313/post/2017/blockchain_introduction/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/blockchain_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;blockchain-introduction&#34;&gt;Blockchain Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Sep 06, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; blockchain, security
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Blockchain is the technology behind Bitcoin, this blog introduce what the Blockchain is.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;what-is-blockchain&#34;&gt;What is Blockchain&lt;/h1&gt;
+&lt;p&gt;Blockchain is a distributed ledger system which makes the transactions transparent and anonymous. By doing this, Blockchain brings a secure system.&lt;/p&gt;
+&lt;p&gt;Based on cryptographic proof instead of trust, allowing any two willing parties to transact directly with each other without the need for a trusted third party&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>DevOps and Continuous Delivery</title>
+      <link>http://localhost:1313/post/2017/devops_and_continuous_delivery/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/devops_and_continuous_delivery/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;devops-and-continuous-delivery&#34;&gt;DevOps and Continuous Delivery&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Sep 01, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes, process, devops, continuousdelivery
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;DevOps and continuous delivery are two hot topics these days, which play more and more important role in software development especially for the SaaS (Software as a Service) solution.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;devops&#34;&gt;DevOps&lt;/h1&gt;
+&lt;p&gt;DevOps is a software development and delivery process that emphasizes communication and collaboration between product management, software development, and operations professionals.
+It supports this by automating and monitoring the process of software integration, testing, deployment, and infrastructure changes by establishing a culture and environment where building, testing, and releasing software can happen rapidly, frequently, and more reliably.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Xunit Test Patterns</title>
+      <link>http://localhost:1313/post/2017/xunit_test_patterns/</link>
+      <pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/xunit_test_patterns/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;xunit-test-patterns&#34;&gt;Xunit Test Patterns&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Aug 27, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes, architecture
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Xunit Test Pattern is a fantastic book which shares the experience and good practice to write tests.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/xunittestgoalsprinciplesandsmells.jpg&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;test-introduction&#34;&gt;Test Introduction&lt;/h1&gt;
+&lt;h2 id=&#34;easy-to-run-tests&#34;&gt;Easy to run tests&lt;/h2&gt;
+&lt;p&gt;What makes tests easy to run? Four specific goals answer this question:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;They must be Fully Automated Tests so they can be run without any effort.&lt;/li&gt;
+&lt;li&gt;They must be Self-Checking Tests so they can detect and report any errors without manual inspection.&lt;/li&gt;
+&lt;li&gt;They must be Repeatable Tests so they can be run multiple times with the same result.&lt;/li&gt;
+&lt;li&gt;Ideally, each test should be an Independent Test that can be run by itself.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our tests should be small and test one thing at a time.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Bash: Useful Commands</title>
+      <link>http://localhost:1313/post/2017/bash_useful_commands/</link>
+      <pubDate>Sat, 19 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/bash_useful_commands/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;bash-useful-commands&#34;&gt;Bash: Useful Commands&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Aug 19, 2017&lt;br&gt;
+&lt;strong&gt;Tags:&lt;/strong&gt; shell&lt;br&gt;
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Bash is a widely shell, which is the default shell in many operating systems, e.g. Unix, Linux, Mac OS.
+Bash can help you achieve a lot.
+To invest time to learn some useful commands in bash is a good idea.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#directory-commands&#34;&gt;Directory commands&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#home-directory&#34;&gt;Home directory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#handle-space&#34;&gt;Handle space&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#list-files&#34;&gt;List files&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#others&#34;&gt;Others&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#wildcard&#34;&gt;Wildcard&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#brace-expansion&#34;&gt;Brace Expansion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#file-manipulation&#34;&gt;File Manipulation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#inputoutput-redirection&#34;&gt;Input/Output redirection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#cp&#34;&gt;cp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#modify-file&#34;&gt;Modify file&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#search-file&#34;&gt;Search file&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#view-help-and-file-content&#34;&gt;View help and file content&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#process&#34;&gt;Process&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#other-tips&#34;&gt;Other tips&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#commands-parameters&#34;&gt;Commands parameters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#avoid-keeping-sudo&#34;&gt;Avoid keeping sudo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#shortcut-keys&#34;&gt;Shortcut keys&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#alias&#34;&gt;Alias&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#others-1&#34;&gt;Others&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;directory-commands&#34;&gt;Directory commands&lt;/h2&gt;
+&lt;h3 id=&#34;home-directory&#34;&gt;Home directory&lt;/h3&gt;
+&lt;p&gt;For every user, there is a home directory which is presented by ~&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Domain Driven Design: Introduction</title>
+      <link>http://localhost:1313/post/2017/domain_driven_design_introduction/</link>
+      <pubDate>Wed, 19 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/domain_driven_design_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;domain-driven-design-introduction&#34;&gt;Domain Driven Design: Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jun 19, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; architecture, process
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Domain Driven Design (DDD) is about trying to make your software a model of a real-world system or process.
+The philosophy of DDD is about placing our attention at the heart of the application, focusing on the complexity that is intrinsic to the business domain itself.
+In using DDD, you are meant to work closely with a domain expert who can explain how the real-world system works.
+It also acts as the conceptual foundation for the design of the software itself - how it&#39;s broken down into objects or functions.
+In this blog post, I will cover the key elements of DDD.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Authenticate Node.js App by OpenId Connect</title>
+      <link>http://localhost:1313/post/2017/authenticate_by_openidconnect/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/authenticate_by_openidconnect/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;authenticate-nodejs-app-by-openid-connect&#34;&gt;Authenticate Node.js App by OpenId Connect&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jul 09, 2017&lt;br&gt;
+&lt;strong&gt;Tags:&lt;/strong&gt; security&lt;br&gt;
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;OpenID Connect (OIDC) is an authentication layer on top of OAuth 2.0; while OAuth 2.0 is an authorization framework.
+The standard is controlled by the OpenID Foundation.
+This blog post will go through an example to use your google account to login a Node.js app by using OpenID Connect.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/authenticate_by_openidconnect/#authentication-vs-authorization&#34;&gt;Authentication vs Authorization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/authenticate_by_openidconnect/#jargon-explanations&#34;&gt;&#39;Jargon&#39; explanations&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/authenticate_by_openidconnect/#openid&#34;&gt;OpenID&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/authenticate_by_openidconnect/#oauth&#34;&gt;OAuth&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/authenticate_by_openidconnect/#openid-connect&#34;&gt;OpenID Connect&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/authenticate_by_openidconnect/#setup-google-account&#34;&gt;Setup Google Account&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/authenticate_by_openidconnect/#setup-nodejs-app&#34;&gt;Setup Node.Js App&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;authentication-vs-authorization&#34;&gt;Authentication vs Authorization&lt;/h2&gt;
+&lt;p&gt;Authentication and Authorization are big topics, this blog only touches the basic and will have follow-up blogs to explain the details.
+If you are still confused about the difference between authentication and authorization, the followings are the explanations.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Security: Owasp Top 10</title>
+      <link>http://localhost:1313/post/2017/security_owasp_top_10/</link>
+      <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/security_owasp_top_10/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;security-owasp-top-10&#34;&gt;Security: Owasp Top 10&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jul 05, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; security
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://www.owasp.org&#34;&gt;Open Web Application Security Project (OWASP) &lt;/a&gt; is an open community dedicated to enabling organizations to develop, purchase, and maintain applications and APIs that can be trusted.
+The goal of the Top 10 project is to raise awareness about application security by identifying some of the most critical risks facing organizations.
+This blog is based on 2013 version, while 2017 version will come very soon.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Threat Modeling: Introduction</title>
+      <link>http://localhost:1313/post/2017/threat_modeling_introduction/</link>
+      <pubDate>Sun, 07 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/threat_modeling_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;threat-modeling-introduction&#34;&gt;Threat Modeling: Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; May 07, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; security
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;With more and more data and software go to internet, the security becomes crucial for software development.
+OWASP (Open Web Application Security Project) lists top 10 security risks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Injection&lt;/li&gt;
+&lt;li&gt;Broken Authentication and session management&lt;/li&gt;
+&lt;li&gt;Cross-site scripting&lt;/li&gt;
+&lt;li&gt;Insecure Direct Object Reference&lt;/li&gt;
+&lt;li&gt;Security Misconfiguration&lt;/li&gt;
+&lt;li&gt;Sensitive data exposure&lt;/li&gt;
+&lt;li&gt;Missing function level access control&lt;/li&gt;
+&lt;li&gt;Cross site request forging&lt;/li&gt;
+&lt;li&gt;Components with known vulnerabilities&lt;/li&gt;
+&lt;li&gt;Invalidated requests and forwards&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Security risks are everywhere and it is difficult to make secure software.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>NoSQL: Introduction</title>
+      <link>http://localhost:1313/post/2017/nosql_introduction/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/nosql_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;nosql-introduction&#34;&gt;NoSQL: Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; May 1, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; database, nosql
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;NoSQL originally refers to &amp;quot;non SQL&amp;quot;, &amp;quot;non relational&amp;quot;, or &amp;quot;not only SQL&amp;quot;. NoSQL databases are increasingly used in big data and real-time web applications.
+NoSQL databases are not replacing relational database, there are scenarios only fit for NoSQL database. This blog give a brief introduction of NoSQL databases.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;The benefits you can get from NoSQL include:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Specification by Example</title>
+      <link>http://localhost:1313/post/2017/specification_by_example/</link>
+      <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/specification_by_example/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;specification-by-example&#34;&gt;Specification by Example&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Aug 25, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes, process
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Specification by Example is a set of process patterns that helps teams build the right software product.
+With Specification by Example, teams write just enough documentation to facilitate change effectively in short iterations (Scrum or XP) or in flow-based development (Kanban).&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;“The hardest single part of building a software system is deciding precisely what to build.”&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Telemetry: Overview</title>
+      <link>http://localhost:1313/post/2017/telemetry_overview/</link>
+      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/telemetry_overview/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;telemetry-overview&#34;&gt;Telemetry: Overview&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 20, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; telemetry
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Telemetry technology plays more and more important role in the &#39;cloud era&#39;. This blog will explain what is telemetry technology, how we can benefit from telemetry technology, and briefly discuss some technical choices.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;what-is-telemetry&#34;&gt;What is Telemetry&lt;/h1&gt;
+&lt;p&gt;According to Wikipedia: Telemetry is an automated communications process by which measurements and other data are collected at remote or inaccessible points and transmitted to receiving equipment for monitoring.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Setup Blog: Using Sphinx and Ablog</title>
+      <link>http://localhost:1313/post/2017/setup-blog_using-sphinx-ablog/</link>
+      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/setup-blog_using-sphinx-ablog/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;setup-blog-using-sphinx-and-ablog&#34;&gt;Setup Blog: Using Sphinx and Ablog&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 12, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; blog, opensource
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Writing blogs is a good way to learn.
+The brain of human being has retention rate of what is learned. In order to learn efficiently, people need to be more active on discussing, practicing and teaching.
+No matter your blog has already got millions of followers or not, the blog writing itself is very beneficial for yourself to learn better.
+This blog post will teach you how to setup your personal blog by using open source technology like Sphinx and Ablog.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Git: Resolve Conflicts</title>
+      <link>http://localhost:1313/post/2017/git_resolve-conflicts/</link>
+      <pubDate>Sun, 09 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/git_resolve-conflicts/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;git-resolve-conflicts&#34;&gt;Git: Resolve Conflicts&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 9, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; git
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Git provides various tools to resolve conflicts during the merge process, and in this blog we only discuss one of them gvimdiff in Windows Operating System.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h2 id=&#34;software-installation&#34;&gt;Software installation&lt;/h2&gt;
+&lt;p&gt;gvimdiff needs Gvim installed, which is GUI Vi text editor and can be downloaded from:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.vim.org/download.php&#34;&gt;http://www.vim.org/download.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After the installation, please ensure the executable file path is included in PATH environment variable. You can test it in console by typing gvim to see whether you get the application invoked.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Vi: Configuration Example</title>
+      <link>http://localhost:1313/post/2017/vi_configuration-example/</link>
+      <pubDate>Sat, 08 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/vi_configuration-example/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;vi-configuration-example&#34;&gt;Vi: Configuration Example&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 8, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; vi
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Among various text editors, I like Vi a lot. It help me a lot if I work on various operating systems and different environment since Vi is installed by default on most operating systems.
+There is GUI Vi tool available on Windows called Gvim, which can be downloaded from here: &lt;a href=&#34;http://www.vim.org/download.php&#34;&gt;http://www.vim.org/download.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The configuration file is named as _vimrc which is located around ProgramFiles(x86)\Vim. Just open and edit the _vimrc file, but you need to restart Gvim to see the changes.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Git: Branch Continue</title>
+      <link>http://localhost:1313/post/2017/git_branch-continued/</link>
+      <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/git_branch-continued/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;git-branch-continue&#34;&gt;Git: Branch Continue&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 30, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; git
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This blog will cover the Git commands which to transfer the changes between branches. If you are not familiar with the basic Git branch commands, you can have a look of my previous blog: &lt;a href=&#34;http://localhost:1313/post/2017/git_branch-continued/#git_branch-basic&#34;&gt;git_branch-basic&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h2 id=&#34;merge-branch&#34;&gt;Merge Branch&lt;/h2&gt;
+&lt;p&gt;When you have two or more branches, you need to integrate some changes from one branch to another.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;git merge f1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Git merge command will try to integrate all the changes from branch f1 into the current branch (HEAD points to). After run this command, you can check the status by &lt;em&gt;git status&lt;/em&gt; and use &lt;em&gt;git add/commit&lt;/em&gt; to check-in the changes.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Git: Branch Basic</title>
+      <link>http://localhost:1313/post/2017/git_branch-basic/</link>
+      <pubDate>Wed, 18 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/git_branch-basic/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;git-branch-basic&#34;&gt;Git: Branch Basic&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 18, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; git
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;One of the biggest advantage of Git is branching. Git is very strong at handling branches, no matter on functionality or on efficiency. Let&#39;s try out the Git branch commands.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h2 id=&#34;create-branch&#34;&gt;Create Branch&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;git branch f1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The command will create a new branch called f1. Compared to &#39;classical&#39; version control system, git will not create a separate folder for new branch. All the branches &#39;share&#39; the same folder on your file system.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Git: Areas</title>
+      <link>http://localhost:1313/post/2017/git_areas/</link>
+      <pubDate>Sat, 14 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/git_areas/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;git-areas&#34;&gt;Git: Areas&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 14, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; git
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Git has four areas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Working area&lt;/li&gt;
+&lt;li&gt;Index&lt;/li&gt;
+&lt;li&gt;Repository&lt;/li&gt;
+&lt;li&gt;Stash&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To understand these four areas is essential to learn the git workflow. The following paragraphs will go through these four areas and explain the git workflow. If you are new to git and not familiar with the basic git commands, it is recommended to read my blog post &lt;a href=&#34;http://localhost:1313/post/2017/git_areas/#git_getting-started&#34;&gt;git_getting-started&lt;/a&gt; first.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h2 id=&#34;working-area&#34;&gt;Working area&lt;/h2&gt;
+&lt;p&gt;Working area is where you start adding/modifying/deleting files. Working area is equal to what you see on your file system.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Git: Getting Started</title>
+      <link>http://localhost:1313/post/2017/git_getting-started/</link>
+      <pubDate>Wed, 11 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/git_getting-started/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;git-getting-started&#34;&gt;Git: Getting Started&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 11, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; git
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Git is an open source distributed version control system, which plays important role in current software ecosystem.
+You may find many GUI Git tools like SourceTree, Github Desktop, TortoiseGit etc, however the best way to learn Git is to deep dive into the Git commands and understand the fundamental. Let&#39;s start the &#39;Git journey&#39; by using the basic commands.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

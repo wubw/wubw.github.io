@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on </title>
+    <link>http://localhost:1313/tags/blog/</link>
+    <description>Recent content in Blog on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright Binwei Wu Corp</copyright>
+    <lastBuildDate>Wed, 12 Apr 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup Blog: Using Sphinx and Ablog</title>
+      <link>http://localhost:1313/post/2017/setup-blog_using-sphinx-ablog/</link>
+      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/setup-blog_using-sphinx-ablog/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;setup-blog-using-sphinx-and-ablog&#34;&gt;Setup Blog: Using Sphinx and Ablog&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 12, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; blog, opensource
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Writing blogs is a good way to learn.
+The brain of human being has retention rate of what is learned. In order to learn efficiently, people need to be more active on discussing, practicing and teaching.
+No matter your blog has already got millions of followers or not, the blog writing itself is very beneficial for yourself to learn better.
+This blog post will teach you how to setup your personal blog by using open source technology like Sphinx and Ablog.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

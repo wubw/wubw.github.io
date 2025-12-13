@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Telemetry on </title>
+    <link>http://localhost:1313/tags/telemetry/</link>
+    <description>Recent content in Telemetry on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright Binwei Wu Corp</copyright>
+    <lastBuildDate>Sat, 20 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/telemetry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Application Insight Introduction</title>
+      <link>http://localhost:1313/post/2019/application_insight_introduction/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/application_insight_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;application-insight-introduction&#34;&gt;Application Insight Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 20, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; cloud, telemetry
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This blog introduces what Application Insight can do.&lt;/p&gt;
+&lt;h1 id=&#34;application-insight-basics&#34;&gt;Application Insight Basics&lt;/h1&gt;
+&lt;p&gt;Application Insights is aimed at the development team, to help you understand how your app is performing and how it&#39;s being used.&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/application_insight_overview.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;It includes functions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Detect, triage, and diagnose issues in web apps and services (Detect: Know about any issues before your users, Triage: how many users are affected? How often does this happen? Diagnose: Where is the problem? When does it happen?)&lt;/li&gt;
+&lt;li&gt;Detect issues through email and webhook alerts&lt;/li&gt;
+&lt;li&gt;Diagnose exceptions and web app performance issues&lt;/li&gt;
+&lt;li&gt;Perform root cause analysis with ad-hoc queries and full-text search&lt;/li&gt;
+&lt;li&gt;Live application monitoring&lt;/li&gt;
+&lt;li&gt;HTTP request rates, response times, success rates.&lt;/li&gt;
+&lt;li&gt;Dependency (HTTP &amp;amp; SQL) call rates, response times, success rates.&lt;/li&gt;
+&lt;li&gt;Exception traces from both server and client.&lt;/li&gt;
+&lt;li&gt;Page view counts, user and session counts, browser load times, exceptions.&lt;/li&gt;
+&lt;li&gt;AJAX call rates, response times and success rates.&lt;/li&gt;
+&lt;li&gt;Server performance counters. (your Windows or Linux server machines, such as CPU, memory, and network usage)&lt;/li&gt;
+&lt;li&gt;Segmentation by client location, browser version, OS version, server instance, custom dimensions, and more.&lt;/li&gt;
+&lt;li&gt;Availability tests.&lt;/li&gt;
+&lt;li&gt;Host diagnostics from Docker or Azure.&lt;/li&gt;
+&lt;li&gt;Diagnostic trace logs from your app - so that you can correlate trace events with requests.&lt;/li&gt;
+&lt;li&gt;Custom events and metrics that you write yourself in the client or server code, to track business events such as items sold or games won.&lt;/li&gt;
+&lt;li&gt;Integrate with DevOps processes using Visual Studio Team Services&lt;/li&gt;
+&lt;li&gt;Monitor web apps hosted on Azure, other cloud services, or on-premises servers&lt;/li&gt;
+&lt;li&gt;Get started with Visual Studio or monitor existing apps without re-deploying&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/application_insight_in_devops.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Telemetry: Overview</title>
+      <link>http://localhost:1313/post/2017/telemetry_overview/</link>
+      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/telemetry_overview/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;telemetry-overview&#34;&gt;Telemetry: Overview&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 20, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; telemetry
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Telemetry technology plays more and more important role in the &#39;cloud era&#39;. This blog will explain what is telemetry technology, how we can benefit from telemetry technology, and briefly discuss some technical choices.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;what-is-telemetry&#34;&gt;What is Telemetry&lt;/h1&gt;
+&lt;p&gt;According to Wikipedia: Telemetry is an automated communications process by which measurements and other data are collected at remote or inaccessible points and transmitted to receiving equipment for monitoring.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

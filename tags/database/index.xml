@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Database on </title>
+    <link>http://localhost:1313/tags/database/</link>
+    <description>Recent content in Database on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright Binwei Wu Corp</copyright>
+    <lastBuildDate>Mon, 01 May 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NoSQL: Introduction</title>
+      <link>http://localhost:1313/post/2017/nosql_introduction/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/nosql_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;nosql-introduction&#34;&gt;NoSQL: Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; May 1, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; database, nosql
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;NoSQL originally refers to &amp;quot;non SQL&amp;quot;, &amp;quot;non relational&amp;quot;, or &amp;quot;not only SQL&amp;quot;. NoSQL databases are increasingly used in big data and real-time web applications.
+NoSQL databases are not replacing relational database, there are scenarios only fit for NoSQL database. This blog give a brief introduction of NoSQL databases.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;The benefits you can get from NoSQL include:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

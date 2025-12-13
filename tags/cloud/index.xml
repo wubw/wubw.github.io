@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud on </title>
+    <link>http://localhost:1313/tags/cloud/</link>
+    <description>Recent content in Cloud on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright Binwei Wu Corp</copyright>
+    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Design Pattern</title>
+      <link>http://localhost:1313/post/2020/azure_design_pattern/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2020/azure_design_pattern/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;azure-design-pattern&#34;&gt;Azure Design Pattern&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; May 01, 2020&lt;br&gt;
+&lt;strong&gt;Tags:&lt;/strong&gt; cloud, architecture&lt;br&gt;
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Just like programming, for many technical challenges for using cloud and Azure there are best practices.
+We call these best practices as Design Pattern.
+This blog introduce these design patterns and also discuss relevant tools on Azure.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#data-management-and-performance&#34;&gt;Data Management and Performance&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#event-sourcing&#34;&gt;Event sourcing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#sharding-pattern&#34;&gt;Sharding Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#static-content-hosting-pattern&#34;&gt;Static Content Hosting Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#the-cache-aside-pattern&#34;&gt;The Cache-aside Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#cqrs-pattern&#34;&gt;CQRS pattern&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#availability-and-resilience&#34;&gt;Availability and resilience&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#circuit-breaker-pattern&#34;&gt;Circuit Breaker Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#compensating-transaction-pattern&#34;&gt;Compensating Transaction Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#health-endpoint-monitoring-pattern&#34;&gt;Health Endpoint Monitoring Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#queue-based-load-levelling-pattern&#34;&gt;Queue-based load levelling pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#retry-pattern&#34;&gt;Retry pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#throttling-pattern&#34;&gt;Throttling Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#design-and-implementation&#34;&gt;Design and Implementation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#external-configuration-store-pattern&#34;&gt;External Configuration Store Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#federated-identity-pattern&#34;&gt;Federated Identity Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#gatekeeper-pattern&#34;&gt;Gatekeeper Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#runtime-reconfiguration-pattern&#34;&gt;Runtime Reconfiguration Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#valet-key-pattern&#34;&gt;Valet Key Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#resources&#34;&gt;Resources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;We categorize the design patterns into followings:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Azure Data Lake and Warehouse</title>
+      <link>http://localhost:1313/post/2019/azure_datalake_warehouse/</link>
+      <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/azure_datalake_warehouse/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;azure-data-lake-and-warehouse&#34;&gt;Azure Data Lake and Warehouse&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 30, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; cloud
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Data Lack and Data Warehouse are two concepts causing confusion.
+This blog introduces these two concepts and provides comparision for other relevant concepts.&lt;/p&gt;
+&lt;p&gt;In general, there is a good article:
+&lt;a href=&#34;https://www.talend.com/resources/data-lake-vs-data-warehouse/&#34;&gt;https://www.talend.com/resources/data-lake-vs-data-warehouse/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;data-lake&#34;&gt;Data Lake&lt;/h1&gt;
+&lt;p&gt;Analyzing Big Data in Azure&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data Lake Store: No limits data Lake&lt;/li&gt;
+&lt;li&gt;Data Lake Aanlytics: Analytics job service&lt;/li&gt;
+&lt;li&gt;HDInsight: Managed clusters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;azure-data-lake-store&#34;&gt;Azure Data Lake Store&lt;/h2&gt;
+&lt;p&gt;Hyper-scale repository for your big data analytics.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Application Insight Introduction</title>
+      <link>http://localhost:1313/post/2019/application_insight_introduction/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/application_insight_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;application-insight-introduction&#34;&gt;Application Insight Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 20, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; cloud, telemetry
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This blog introduces what Application Insight can do.&lt;/p&gt;
+&lt;h1 id=&#34;application-insight-basics&#34;&gt;Application Insight Basics&lt;/h1&gt;
+&lt;p&gt;Application Insights is aimed at the development team, to help you understand how your app is performing and how it&#39;s being used.&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/application_insight_overview.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;It includes functions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Detect, triage, and diagnose issues in web apps and services (Detect: Know about any issues before your users, Triage: how many users are affected? How often does this happen? Diagnose: Where is the problem? When does it happen?)&lt;/li&gt;
+&lt;li&gt;Detect issues through email and webhook alerts&lt;/li&gt;
+&lt;li&gt;Diagnose exceptions and web app performance issues&lt;/li&gt;
+&lt;li&gt;Perform root cause analysis with ad-hoc queries and full-text search&lt;/li&gt;
+&lt;li&gt;Live application monitoring&lt;/li&gt;
+&lt;li&gt;HTTP request rates, response times, success rates.&lt;/li&gt;
+&lt;li&gt;Dependency (HTTP &amp;amp; SQL) call rates, response times, success rates.&lt;/li&gt;
+&lt;li&gt;Exception traces from both server and client.&lt;/li&gt;
+&lt;li&gt;Page view counts, user and session counts, browser load times, exceptions.&lt;/li&gt;
+&lt;li&gt;AJAX call rates, response times and success rates.&lt;/li&gt;
+&lt;li&gt;Server performance counters. (your Windows or Linux server machines, such as CPU, memory, and network usage)&lt;/li&gt;
+&lt;li&gt;Segmentation by client location, browser version, OS version, server instance, custom dimensions, and more.&lt;/li&gt;
+&lt;li&gt;Availability tests.&lt;/li&gt;
+&lt;li&gt;Host diagnostics from Docker or Azure.&lt;/li&gt;
+&lt;li&gt;Diagnostic trace logs from your app - so that you can correlate trace events with requests.&lt;/li&gt;
+&lt;li&gt;Custom events and metrics that you write yourself in the client or server code, to track business events such as items sold or games won.&lt;/li&gt;
+&lt;li&gt;Integrate with DevOps processes using Visual Studio Team Services&lt;/li&gt;
+&lt;li&gt;Monitor web apps hosted on Azure, other cloud services, or on-premises servers&lt;/li&gt;
+&lt;li&gt;Get started with Visual Studio or monitor existing apps without re-deploying&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/application_insight_in_devops.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Azure Security</title>
+      <link>http://localhost:1313/post/2019/azure_security/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/azure_security/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;azure-security&#34;&gt;Azure Security&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; April 19, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; security, cloud
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Cyber Security is important aspect to digital transformation.
+To use Azure well, the understanding of the security building blocks is crucial.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.microsoft.com/en-us/azure/security/azure-security-getting-started&#34;&gt;https://docs.microsoft.com/en-us/azure/security/azure-security-getting-started&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;security-basics&#34;&gt;Security Basics&lt;/h1&gt;
+&lt;p&gt;Every company has some level of security requirement that stretches across almost every element of the business.
+It&#39;s important to think of security in layers rather than a single protection element.&lt;/p&gt;
+&lt;p&gt;Defense in Depth: The best security is based on layers of protection and this is especially true with networking.
+See following picture.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Microservices Introduction</title>
+      <link>http://localhost:1313/post/2018/microservices_introduction/</link>
+      <pubDate>Wed, 07 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/microservices_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;microservices-introduction&#34;&gt;Microservices Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Mar 07, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; architecture, cloud
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Microservice is a software architecture style, in which complex applications are composed of small, autonomous process communicating with each other using language-agnostic API, which is a very common cloud pattern.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;microservices-design-principles&#34;&gt;Microservices Design Principles&lt;/h1&gt;
+&lt;h2 id=&#34;high-cohesion&#34;&gt;High cohesion&lt;/h2&gt;
+&lt;p&gt;High cohesion means single focus and single responsibility.
+It follows SOLID principle, which means service only change for one reason.&lt;/p&gt;
+&lt;h2 id=&#34;autonomous&#34;&gt;Autonomous&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Loose coupling&lt;/li&gt;
+&lt;li&gt;Honor contracts and interfaces&lt;/li&gt;
+&lt;li&gt;Stateless&lt;/li&gt;
+&lt;li&gt;Independently changeable&lt;/li&gt;
+&lt;li&gt;Independently deployable&lt;/li&gt;
+&lt;li&gt;Backwards compatible&lt;/li&gt;
+&lt;li&gt;Concurrent development&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Approach:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cloud for Dummy</title>
+      <link>http://localhost:1313/post/2017/cloud_for_dummy/</link>
+      <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/cloud_for_dummy/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;cloud-for-dummy&#34;&gt;Cloud for Dummy&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Sep 04, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; cloud
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This is a blog to explain what cloud is to dummies.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Five main principles of cloud computing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pooled resources: Available to any subscribing users&lt;/li&gt;
+&lt;li&gt;Virtualization: High utilization of hardware assets&lt;/li&gt;
+&lt;li&gt;Elasticity: Dynamic scale without CAPEX&lt;/li&gt;
+&lt;li&gt;Automation: Build, deploy, configure, provision, and move, all without manual intervention&lt;/li&gt;
+&lt;li&gt;Metered billing: Per-usage business model; pay only for what you use&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The cloud offers the illusion of infinite resources, available on demand.
+You no longer need to play the guessing game of how many users need to be supported and how scalable the application is.
+The cloud takes care of the peaks and troughs of utilization times.
+In the world of the cloud, you pay for only the resources you use, when you use them.
+This is the revolutionary change: the ability to handle scale without paying a premium.
+In this realm of true utility computing, resource utilization mirrors the way we consume electricity or water.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

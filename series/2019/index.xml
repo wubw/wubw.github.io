@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2019 on </title>
+    <link>http://localhost:1313/series/2019/</link>
+    <description>Recent content in 2019 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright Binwei Wu Corp</copyright>
+    <lastBuildDate>Sun, 09 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/series/2019/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cyber Security for Blockchain</title>
+      <link>http://localhost:1313/post/2019/cyber_security_for_blockchain/</link>
+      <pubDate>Sun, 09 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/cyber_security_for_blockchain/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;cyber-security-for-blockchain&#34;&gt;Cyber Security for Blockchain&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jun 09, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; blockchain, security
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This year, I worked on a project and the topic for me is cyber security for blockchain in Oil and Gas industry.
+It was really good experience since I got the chance to think through this topic and deliver research report to client.
+Both cyber security and blockchain are interesting areas for me, besides the above project I still have a lot of things not mentioned mainly technical things.
+So I decide to write this blog as supplement to above project.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Azure Data Lake and Warehouse</title>
+      <link>http://localhost:1313/post/2019/azure_datalake_warehouse/</link>
+      <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/azure_datalake_warehouse/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;azure-data-lake-and-warehouse&#34;&gt;Azure Data Lake and Warehouse&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 30, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; cloud
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Data Lack and Data Warehouse are two concepts causing confusion.
+This blog introduces these two concepts and provides comparision for other relevant concepts.&lt;/p&gt;
+&lt;p&gt;In general, there is a good article:
+&lt;a href=&#34;https://www.talend.com/resources/data-lake-vs-data-warehouse/&#34;&gt;https://www.talend.com/resources/data-lake-vs-data-warehouse/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;data-lake&#34;&gt;Data Lake&lt;/h1&gt;
+&lt;p&gt;Analyzing Big Data in Azure&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data Lake Store: No limits data Lake&lt;/li&gt;
+&lt;li&gt;Data Lake Aanlytics: Analytics job service&lt;/li&gt;
+&lt;li&gt;HDInsight: Managed clusters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;azure-data-lake-store&#34;&gt;Azure Data Lake Store&lt;/h2&gt;
+&lt;p&gt;Hyper-scale repository for your big data analytics.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>User Story Applied</title>
+      <link>http://localhost:1313/post/2019/user_story_applied/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/user_story_applied/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;user-story-applied&#34;&gt;User Story Applied&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 21, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes, process
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This blog is the book notes for user story applied.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;user-stories-principles&#34;&gt;User stories principles&lt;/h1&gt;
+&lt;p&gt;A good story is: Independent, Negotiable, Valuable to users or customers, Estimable, Small, Testable&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;User stories emphasize verbal rather than written communication&lt;/li&gt;
+&lt;li&gt;User stories are comprehensible by both stakeholders and the developers&lt;/li&gt;
+&lt;li&gt;User stories are the right size for planning&lt;/li&gt;
+&lt;li&gt;User stories work for iterative development&lt;/li&gt;
+&lt;li&gt;User stories encourage deferring detail until you have the best understanding you are going to have about what you really need.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;emphasize-verbal-communication&#34;&gt;Emphasize verbal communication&lt;/h2&gt;
+&lt;p&gt;There’s nothing wrong with making a few annotations on a story card based on a discussion.
+However, the conversation is the key, not the note on the story card.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Application Insight Introduction</title>
+      <link>http://localhost:1313/post/2019/application_insight_introduction/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/application_insight_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;application-insight-introduction&#34;&gt;Application Insight Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 20, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; cloud, telemetry
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This blog introduces what Application Insight can do.&lt;/p&gt;
+&lt;h1 id=&#34;application-insight-basics&#34;&gt;Application Insight Basics&lt;/h1&gt;
+&lt;p&gt;Application Insights is aimed at the development team, to help you understand how your app is performing and how it&#39;s being used.&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/application_insight_overview.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;It includes functions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Detect, triage, and diagnose issues in web apps and services (Detect: Know about any issues before your users, Triage: how many users are affected? How often does this happen? Diagnose: Where is the problem? When does it happen?)&lt;/li&gt;
+&lt;li&gt;Detect issues through email and webhook alerts&lt;/li&gt;
+&lt;li&gt;Diagnose exceptions and web app performance issues&lt;/li&gt;
+&lt;li&gt;Perform root cause analysis with ad-hoc queries and full-text search&lt;/li&gt;
+&lt;li&gt;Live application monitoring&lt;/li&gt;
+&lt;li&gt;HTTP request rates, response times, success rates.&lt;/li&gt;
+&lt;li&gt;Dependency (HTTP &amp;amp; SQL) call rates, response times, success rates.&lt;/li&gt;
+&lt;li&gt;Exception traces from both server and client.&lt;/li&gt;
+&lt;li&gt;Page view counts, user and session counts, browser load times, exceptions.&lt;/li&gt;
+&lt;li&gt;AJAX call rates, response times and success rates.&lt;/li&gt;
+&lt;li&gt;Server performance counters. (your Windows or Linux server machines, such as CPU, memory, and network usage)&lt;/li&gt;
+&lt;li&gt;Segmentation by client location, browser version, OS version, server instance, custom dimensions, and more.&lt;/li&gt;
+&lt;li&gt;Availability tests.&lt;/li&gt;
+&lt;li&gt;Host diagnostics from Docker or Azure.&lt;/li&gt;
+&lt;li&gt;Diagnostic trace logs from your app - so that you can correlate trace events with requests.&lt;/li&gt;
+&lt;li&gt;Custom events and metrics that you write yourself in the client or server code, to track business events such as items sold or games won.&lt;/li&gt;
+&lt;li&gt;Integrate with DevOps processes using Visual Studio Team Services&lt;/li&gt;
+&lt;li&gt;Monitor web apps hosted on Azure, other cloud services, or on-premises servers&lt;/li&gt;
+&lt;li&gt;Get started with Visual Studio or monitor existing apps without re-deploying&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/application_insight_in_devops.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Azure Security</title>
+      <link>http://localhost:1313/post/2019/azure_security/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/azure_security/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;azure-security&#34;&gt;Azure Security&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; April 19, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; security, cloud
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Cyber Security is important aspect to digital transformation.
+To use Azure well, the understanding of the security building blocks is crucial.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.microsoft.com/en-us/azure/security/azure-security-getting-started&#34;&gt;https://docs.microsoft.com/en-us/azure/security/azure-security-getting-started&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;security-basics&#34;&gt;Security Basics&lt;/h1&gt;
+&lt;p&gt;Every company has some level of security requirement that stretches across almost every element of the business.
+It&#39;s important to think of security in layers rather than a single protection element.&lt;/p&gt;
+&lt;p&gt;Defense in Depth: The best security is based on layers of protection and this is especially true with networking.
+See following picture.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Iot for Smart Cities</title>
+      <link>http://localhost:1313/post/2019/iot_for_smartcities/</link>
+      <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/iot_for_smartcities/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;iot-for-smart-cities&#34;&gt;Iot for Smart Cities&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Feb 10, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; iot, booknotes, smartcity
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Smart cities: Everyone&#39;s connected
+If everyone, every home, and every business is connected via the IoT, why not take the next step and connect your entire neighborhood, or even the whole city?
+Connected devices can help reduce congestion on local roadways, alert the fire department in case of emergencies, and even signal the need for road maintenance or additional police patrols.
+The smart city might mean a smaller government – or a more intrusive one.
+It all depends.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Agile Selling</title>
+      <link>http://localhost:1313/post/2019/agile_selling/</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/agile_selling/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;agile-selling&#34;&gt;Agile Selling&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 27, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes, sales
+&lt;strong&gt;Category:&lt;/strong&gt; Business&lt;/p&gt;
+&lt;p&gt;There is new challenge to sell since buyers have changed.
+When they have an issue, they go online to research their problem.
+Buyers self-educate, leaving the seller totally out of the loop.
+Without deep buyer understanding, it&#39;s increasingly difficult to get business.
+You&#39;re dealing with educated people who want conversations and collaboration, not pitches of any sort.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;reframing-failures&#34;&gt;Reframing Failures&lt;/h1&gt;
+&lt;p&gt;Turn the sales problem into a challenge rather than a personal problem.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Machine Learning Basic</title>
+      <link>http://localhost:1313/post/2019/machine_learning_basic/</link>
+      <pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/machine_learning_basic/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;machine-learning-basic&#34;&gt;Machine Learning Basic&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 13, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; ai
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This blog introduces the basic knowledge of machine learning. The details of algorithm and programming will come in later blogs.
+Machine learning is a technology which can resolve the computational problem without programming specifically.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;process&#34;&gt;Process&lt;/h1&gt;
+&lt;p&gt;Machine learning project has its own process, which starts with asking the right questions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ask yourself: Do you have the right data to answer the question?&lt;/li&gt;
+&lt;li&gt;Ask yourself: Do you know how you&#39;ll measure success?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The process also includes re-create model regularly, see following picture.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

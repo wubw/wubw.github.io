@@ -1,0 +1,2690 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on </title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright Binwei Wu Corp</copyright>
+    <lastBuildDate>Thu, 24 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Hugo page bundles</title>
+      <link>http://localhost:1313/post/bundle/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/bundle/</guid>
+      <description>
+        
+          
+            Page bundles are an optional way to organize page resources within Hugo. You can opt-in to using page bundles in Hugo Clarity with `usePageBundles` in your site configuration --- or in a page&#39;s front matter.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Using OpenStreetMap</title>
+      <link>http://localhost:1313/post/hugo/map/</link>
+      <pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/hugo/map/</guid>
+      <description>
+        
+          
+            &lt;iframe class=&#34;openstreetmap&#34; width=&#34;100%&#34; height=&#34;600px&#34; src=&#34;https://umap.openstreetmap.fr/en/map/demo-map_1?scaleControl=true&amp;miniMap=false&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=true&amp;searchControl=true&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=none&amp;captionBar=false#14/-37.7989/145.0003&#34;&gt;&lt;/iframe&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Using Notices</title>
+      <link>http://localhost:1313/post/hugo/notices/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/hugo/notices/</guid>
+      <description>
+        
+          
+            &lt;p&gt;The &amp;quot;Notices&amp;quot; shortcode enables you to call out pieces of information - sidebars, warnings, tips, etc.&lt;/p&gt;
+&lt;p&gt;To create a notice on a page, you can use the &lt;code&gt;notice&lt;/code&gt; shortcode.&lt;br&gt;
+You use the &lt;code&gt;notice&lt;/code&gt; shortcode, with the first parameter being one of &lt;code&gt;note&lt;/code&gt;, &lt;code&gt;info&lt;/code&gt;, &lt;code&gt;tip&lt;/code&gt;, and &lt;code&gt;warning&lt;/code&gt;.  Then add a title for your
+note in quotes as the second parameter.  The inner body of the note can be whatever markdown you want to create.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Measure Anything</title>
+      <link>http://localhost:1313/post/2021/measure_anything/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021/measure_anything/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;measure-anything&#34;&gt;Measure Anything&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 01, 2021
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes, process
+&lt;strong&gt;Category:&lt;/strong&gt; Management&lt;/p&gt;
+&lt;p&gt;If you don&#39;t measure it, you can&#39;t manage it;
+If you don&#39;t measure it, you can&#39;t improve it;
+If you don&#39;t measure it, you probably don&#39;t care;
+If you can&#39;t influence it, then don&#39;t measure it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Randy A. Steinberg&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;why-measure-anything&#34;&gt;Why Measure Anything&lt;/h1&gt;
+&lt;p&gt;There is important logic, see below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If it matters at all, it is detectable/observable&lt;/li&gt;
+&lt;li&gt;If it is detectable, it can be detected as an amount (or range of possible amounts)&lt;/li&gt;
+&lt;li&gt;If it can be detected as a range of possible amounts, it can be measured&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4 useful measurement assumptions:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Data Science Basic</title>
+      <link>http://localhost:1313/post/2020/data_science_basic/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2020/data_science_basic/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;data-science-basic&#34;&gt;Data Science Basic&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Aug 02, 2020
+&lt;strong&gt;Tags:&lt;/strong&gt; data
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Data science involves principles, processes, and techniques for understanding phenomena via the (automated) analysis of data. This article talks about the basic part of data science.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;data-driven-decision-ddd&#34;&gt;Data Driven Decision (DDD)&lt;/h1&gt;
+&lt;p&gt;Data-driven decision-making (DDD) refers to the practice of basing decisions on the analysis of data, rather than purely on intuition. DDD is not an all-or-nothing practice, and different firms engage in DDD to greater or lesser degrees.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Enlightenment from Singing</title>
+      <link>http://localhost:1313/post/2020/enlightenment_from_singing/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2020/enlightenment_from_singing/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;enlightenment-from-singing&#34;&gt;Enlightenment from Singing&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Aug 01, 2020
+&lt;strong&gt;Tags:&lt;/strong&gt; chinese
+&lt;strong&gt;Category:&lt;/strong&gt; Life&lt;/p&gt;
+&lt;p&gt;Recently, I have been using app &amp;quot;QuanMinKGe&amp;quot; to sing for fun quite a lot.
+I got some enlightenment from playing this app, and write it down as this blog.&lt;/p&gt;
+&lt;h1 id=&#34;全民k歌&#34;&gt;全民k歌&lt;/h1&gt;
+&lt;p&gt;刚接触全民k歌应该是在16年底，那个时候的宗旨就是两个字：白玩。坚决不给平台充钱。
+自己录歌玩，和几个有限好友之间互动一下，然后领一些免费花花送人玩。
+然后用的版本是个几年前非常老的版本，从来没有升级。&lt;/p&gt;
+&lt;p&gt;其实当然知道自己不充钱，就是知道是靠着别的玩家砸钱支持平台，我来蹭。
+有些朋友喜欢充钱玩币的，我也是解释一番，坚持不充钱。&lt;/p&gt;
+&lt;h1 id=&#34;升级后发现&#34;&gt;升级后发现&lt;/h1&gt;
+&lt;p&gt;自从19年底换了新的手机以后(iPhone 11)，全民k歌装了个新版本，然后突然一下感觉打开了一个新的天地。&lt;/p&gt;
+&lt;p&gt;主要是发现原来之前朋友送我的币，都会部分返还给我。
+然后系统还送了我若干花花绿绿的免费礼物。
+这种感觉就像是一下子暴发户一下子突然有钱了一样。&lt;/p&gt;
+&lt;p&gt;这个时候才真正领会到之前有些朋友对我的建议。
+然后娱乐性也感觉一下子提高了好多，去歌房里频繁了，慢慢得了些门道，认识了一些新的朋友。
+等上边礼物送完了以后，也终于没忍住冲了第一次人民币。&lt;/p&gt;
+&lt;h1 id=&#34;小感悟&#34;&gt;小感悟&lt;/h1&gt;
+&lt;p&gt;这几个月玩得比较疯，也有了一些自己的新感悟。在此总结下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;免费玩法省钱，但会影响体验，因为在心态上没发完全放下。不停得和玩币的朋友解释，而且很多规则都不懂，在全民k歌的世界中会有一种低人一等的感觉。自己投入时间，却不是理想的体验&lt;/li&gt;
+&lt;li&gt;软件版本的更新很重要，始终要老版本的app，除非甘于一个人默默唱歌，做个世外高人，否则别人的各种新功能可能都不知道怎么回事&lt;/li&gt;
+&lt;li&gt;歌房非常适合与人交流，虽说不能直接提高歌唱水平，不过可以知道新歌动态之类的，可以知道很多好听的歌，新的伴奏，尝试很多新的唱法，&lt;/li&gt;
+&lt;li&gt;但是也会耽误学新歌，因为在歌房唱歌和别人互动很容易上瘾，没有时间好好学习新歌&lt;/li&gt;
+&lt;li&gt;手中有些k币礼物，确实会帮助到社交，全民设计这套系统确实充分考虑到了心理学，社会学各方面，让大家不得不乖乖掏钱。我一直坚持不掏钱坚持了两年，最后还是掏钱，足够说明这套机制的设计有其合理的方面&lt;/li&gt;
+&lt;li&gt;之前由于圈子的限制，想去歌房，会盼星星盼月亮等一些朋友在歌房唱或者开歌房，然后进去唱，很珍惜这种机会。在一个微信群里也特别希望有些新的消息。等后来圈子大了以后，真的这些都不是个事，只是觉得消息好多，根本看不过来。比如一开始认识个喜欢唱邓丽君的女生，唱得很好，如获至宝，后来很长时间不看到她玩，觉得每天都在等她，很失落。但这个状态在社交圈拓展以后明显滴改进了，不会再那么依赖于一个人&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在全民的这些经验是不是可以也能适用在现实生活中呢？&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Written by Binwei@Singapore&lt;/em&gt;&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mac Tips</title>
+      <link>http://localhost:1313/post/2020/mac_tips/</link>
+      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2020/mac_tips/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;mac-tips&#34;&gt;Mac Tips&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jul 31, 2020
+&lt;strong&gt;Tags:&lt;/strong&gt; efficiency
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;I got first Macbook 3 years ago, but only use Macbook as production environment 9 months ago.
+In order to use Macbook in an efficient way, some tips can be important to know.&lt;/p&gt;
+&lt;h1 id=&#34;short-cut-keys&#34;&gt;Short cut keys&lt;/h1&gt;
+&lt;h2 id=&#34;capture-window&#34;&gt;Capture window&lt;/h2&gt;
+&lt;p&gt;+-------------------------------+-----------------------------------+
+| Command + Shift + 5           | Record video for screen           |
++-------------------------------+-----------------------------------+
+| Command + Shift + 4           | Capture screen to file            |
++-------------------------------+-----------------------------------+
+| Command + Shift + 4 + space   | Capture current screen            |
++-------------------------------+-----------------------------------+
+| Command + Control + Shift + 4 | Capture screen to clip-board      |
++-------------------------------+-----------------------------------+&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>About Consulting</title>
+      <link>http://localhost:1313/post/2020/about_consulting/</link>
+      <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2020/about_consulting/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;about-consulting&#34;&gt;About Consulting&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jul 10, 2020
+&lt;strong&gt;Tags:&lt;/strong&gt; consulting, booknotes
+&lt;strong&gt;Category:&lt;/strong&gt; Management&lt;/p&gt;
+&lt;p&gt;This blog contains notes from several books relevant to consulting.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;麦肯锡工具&#34;&gt;麦肯锡工具&lt;/h1&gt;
+&lt;p&gt;我们可能会变得冲动进行激烈的争辩以使他人接受自己的观点。
+不过，最好的办法是说出自己的观点，把问题本身和提出问题的人相分离，然后从正反两面对观点展开讨论，重点关注积极的方面&lt;/p&gt;
+&lt;p&gt;信任，但要确认&lt;/p&gt;
+&lt;h2 id=&#34;5p原则&#34;&gt;5P原则&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;认真准备（prepare）：观察身边之人的积极行为并了解他们的背景&lt;/li&gt;
+&lt;li&gt;他人为重（put others first）：这是生活中需要遵循的普遍法则&lt;/li&gt;
+&lt;li&gt;真诚赞美（praise sincerely）：与他人分享你的发现，但切忌过分与虚伪&lt;/li&gt;
+&lt;li&gt;勿施压于人（pressure no one）：互动时，避免谈及令人尴尬的话题和靠得太近&lt;/li&gt;
+&lt;li&gt;提供帮助（provide value）：为了强化你的成果，还要设法长期提供帮助&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;关于汇报&#34;&gt;关于汇报&lt;/h2&gt;
+&lt;p&gt;从项目开始实施的第一天起，就应该开始准备最终汇报&lt;/p&gt;
+&lt;p&gt;一天绘制一张图表这样的说法，旨在强调用图表形式记录你的观察和想法的重要性。
+实际上，你每天可能需要绘制很多这样的草图&lt;/p&gt;
+&lt;h2 id=&#34;team&#34;&gt;Team&lt;/h2&gt;
+&lt;p&gt;Talk&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;沟通不息&lt;/li&gt;
+&lt;li&gt;用心倾听&lt;/li&gt;
+&lt;li&gt;人事分离&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Evaluate&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;讨论团队协作状态&lt;/li&gt;
+&lt;li&gt;确定期望与监控完成情况&lt;/li&gt;
+&lt;li&gt;明确个人发展目标并相应调整工作计划&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assist&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;充分利用专场&lt;/li&gt;
+&lt;li&gt;各司其职&lt;/li&gt;
+&lt;li&gt;实时反馈&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Motivate&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;确定个性化激励因素&lt;/li&gt;
+&lt;li&gt;积极正面影响团队成员&lt;/li&gt;
+&lt;li&gt;庆祝成就&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;focus&#34;&gt;Focus&lt;/h2&gt;
+&lt;p&gt;Frame&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;明确关键问题&lt;/li&gt;
+&lt;li&gt;创建议题树&lt;/li&gt;
+&lt;li&gt;形成基本假设&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Organize&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建总体流程图&lt;/li&gt;
+&lt;li&gt;制定内容计划以检验假设&lt;/li&gt;
+&lt;li&gt;设计故事线索&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Collect&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Book note: Xiao Gou Qian Qian</title>
+      <link>http://localhost:1313/post/2020/xiao_gou_qian_qian/</link>
+      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2020/xiao_gou_qian_qian/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;book-note-xiao-gou-qian-qian&#34;&gt;Book note: Xiao Gou Qian Qian&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jul 09, 2020
+&lt;strong&gt;Tags:&lt;/strong&gt; investment
+&lt;strong&gt;Category:&lt;/strong&gt; Life&lt;/p&gt;
+&lt;p&gt;Xiao Gou Qian Qian is the Chinese name of the book: Ein Hund Namens Money&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;梦想可视化&#34;&gt;梦想可视化&lt;/h1&gt;
+&lt;h2 id=&#34;梦想-1---房子&#34;&gt;梦想 1 - 房子&lt;/h2&gt;
+&lt;p&gt;房子小区环境优美，有个宽敞的客厅，温馨的卧室，和放满书的书房。&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/house.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/house2.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/house5.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/house4.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;梦想-2---事业&#34;&gt;梦想 2 - 事业&lt;/h2&gt;
+&lt;p&gt;有个豪华的独立办公室，以及很强的影响力。&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/office.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/public_presentation.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;梦想-3---魅力&#34;&gt;梦想 3 - 魅力&lt;/h2&gt;
+&lt;p&gt;富有魅力，坚持锻炼。&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Intelligent Web Sentences</title>
+      <link>http://localhost:1313/post/2020/intelligent_web_sentences/</link>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2020/intelligent_web_sentences/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;intelligent-web-sentences&#34;&gt;Intelligent Web Sentences&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jun 07, 2020
+&lt;strong&gt;Tags:&lt;/strong&gt; career
+&lt;strong&gt;Category:&lt;/strong&gt; Life&lt;/p&gt;
+&lt;p&gt;I read a lot on Zhihu and Quora, and collect the followings intelligent sentences, even though they are not written by famous people.
+They are full of wisdom, and mixed with Chinese and English.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;career&#34;&gt;Career&lt;/h1&gt;
+&lt;h2 id=&#34;choose-to-learn&#34;&gt;Choose to learn&lt;/h2&gt;
+&lt;p&gt;There are a lot of things to learn, then what to choose?&lt;/p&gt;
+&lt;p&gt;E = I x L / T&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Arduino Introduction</title>
+      <link>http://localhost:1313/post/2020/arduino_introduction/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2020/arduino_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;arduino-introduction&#34;&gt;Arduino Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; May 16, 2020
+&lt;strong&gt;Tags:&lt;/strong&gt; iot, hardware
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Recently, my recent project use Arduino and relevant devices to help to emulate signals from sensors.
+It helps our development quite a lot especially the &#39;up-stream&#39; part like data acquisition.
+The setup looks like following, which just shows very small part of the whole setup and this setup is evolving no matter the hardware and the software.
+Due to confidential consideration, this article will only stay on high level.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>China 70 Anniversary Big Data</title>
+      <link>http://localhost:1313/post/2020/china_70_anniversary_bigdata/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2020/china_70_anniversary_bigdata/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;china-70-anniversary-big-data&#34;&gt;China 70 Anniversary Big Data&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Mar 15, 2020
+&lt;strong&gt;Tags:&lt;/strong&gt; chinese
+&lt;strong&gt;Category:&lt;/strong&gt; General&lt;/p&gt;
+&lt;p&gt;The series of pictures show the progress of China development within 70 years.
+It is amazing!&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/1949.jpg&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/1959.jpg&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/1969.jpg&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/1979.jpg&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/1989.jpg&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/1999.jpg&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/2009.jpg&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/2019.jpg&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Written by Binwei@Singapore&lt;/em&gt;&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Azure Design Pattern</title>
+      <link>http://localhost:1313/post/2020/azure_design_pattern/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2020/azure_design_pattern/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;azure-design-pattern&#34;&gt;Azure Design Pattern&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; May 01, 2020&lt;br&gt;
+&lt;strong&gt;Tags:&lt;/strong&gt; cloud, architecture&lt;br&gt;
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Just like programming, for many technical challenges for using cloud and Azure there are best practices.
+We call these best practices as Design Pattern.
+This blog introduce these design patterns and also discuss relevant tools on Azure.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#data-management-and-performance&#34;&gt;Data Management and Performance&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#event-sourcing&#34;&gt;Event sourcing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#sharding-pattern&#34;&gt;Sharding Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#static-content-hosting-pattern&#34;&gt;Static Content Hosting Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#the-cache-aside-pattern&#34;&gt;The Cache-aside Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#cqrs-pattern&#34;&gt;CQRS pattern&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#availability-and-resilience&#34;&gt;Availability and resilience&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#circuit-breaker-pattern&#34;&gt;Circuit Breaker Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#compensating-transaction-pattern&#34;&gt;Compensating Transaction Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#health-endpoint-monitoring-pattern&#34;&gt;Health Endpoint Monitoring Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#queue-based-load-levelling-pattern&#34;&gt;Queue-based load levelling pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#retry-pattern&#34;&gt;Retry pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#throttling-pattern&#34;&gt;Throttling Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#design-and-implementation&#34;&gt;Design and Implementation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#external-configuration-store-pattern&#34;&gt;External Configuration Store Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#federated-identity-pattern&#34;&gt;Federated Identity Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#gatekeeper-pattern&#34;&gt;Gatekeeper Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#runtime-reconfiguration-pattern&#34;&gt;Runtime Reconfiguration Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#valet-key-pattern&#34;&gt;Valet Key Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2020/azure_design_pattern/#resources&#34;&gt;Resources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;We categorize the design patterns into followings:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cyber Security for Blockchain</title>
+      <link>http://localhost:1313/post/2019/cyber_security_for_blockchain/</link>
+      <pubDate>Sun, 09 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/cyber_security_for_blockchain/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;cyber-security-for-blockchain&#34;&gt;Cyber Security for Blockchain&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jun 09, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; blockchain, security
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This year, I worked on a project and the topic for me is cyber security for blockchain in Oil and Gas industry.
+It was really good experience since I got the chance to think through this topic and deliver research report to client.
+Both cyber security and blockchain are interesting areas for me, besides the above project I still have a lot of things not mentioned mainly technical things.
+So I decide to write this blog as supplement to above project.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Azure Data Lake and Warehouse</title>
+      <link>http://localhost:1313/post/2019/azure_datalake_warehouse/</link>
+      <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/azure_datalake_warehouse/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;azure-data-lake-and-warehouse&#34;&gt;Azure Data Lake and Warehouse&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 30, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; cloud
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Data Lack and Data Warehouse are two concepts causing confusion.
+This blog introduces these two concepts and provides comparision for other relevant concepts.&lt;/p&gt;
+&lt;p&gt;In general, there is a good article:
+&lt;a href=&#34;https://www.talend.com/resources/data-lake-vs-data-warehouse/&#34;&gt;https://www.talend.com/resources/data-lake-vs-data-warehouse/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;data-lake&#34;&gt;Data Lake&lt;/h1&gt;
+&lt;p&gt;Analyzing Big Data in Azure&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data Lake Store: No limits data Lake&lt;/li&gt;
+&lt;li&gt;Data Lake Aanlytics: Analytics job service&lt;/li&gt;
+&lt;li&gt;HDInsight: Managed clusters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;azure-data-lake-store&#34;&gt;Azure Data Lake Store&lt;/h2&gt;
+&lt;p&gt;Hyper-scale repository for your big data analytics.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>User Story Applied</title>
+      <link>http://localhost:1313/post/2019/user_story_applied/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/user_story_applied/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;user-story-applied&#34;&gt;User Story Applied&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 21, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes, process
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This blog is the book notes for user story applied.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;user-stories-principles&#34;&gt;User stories principles&lt;/h1&gt;
+&lt;p&gt;A good story is: Independent, Negotiable, Valuable to users or customers, Estimable, Small, Testable&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;User stories emphasize verbal rather than written communication&lt;/li&gt;
+&lt;li&gt;User stories are comprehensible by both stakeholders and the developers&lt;/li&gt;
+&lt;li&gt;User stories are the right size for planning&lt;/li&gt;
+&lt;li&gt;User stories work for iterative development&lt;/li&gt;
+&lt;li&gt;User stories encourage deferring detail until you have the best understanding you are going to have about what you really need.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;emphasize-verbal-communication&#34;&gt;Emphasize verbal communication&lt;/h2&gt;
+&lt;p&gt;There’s nothing wrong with making a few annotations on a story card based on a discussion.
+However, the conversation is the key, not the note on the story card.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Application Insight Introduction</title>
+      <link>http://localhost:1313/post/2019/application_insight_introduction/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/application_insight_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;application-insight-introduction&#34;&gt;Application Insight Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 20, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; cloud, telemetry
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This blog introduces what Application Insight can do.&lt;/p&gt;
+&lt;h1 id=&#34;application-insight-basics&#34;&gt;Application Insight Basics&lt;/h1&gt;
+&lt;p&gt;Application Insights is aimed at the development team, to help you understand how your app is performing and how it&#39;s being used.&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/application_insight_overview.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;It includes functions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Detect, triage, and diagnose issues in web apps and services (Detect: Know about any issues before your users, Triage: how many users are affected? How often does this happen? Diagnose: Where is the problem? When does it happen?)&lt;/li&gt;
+&lt;li&gt;Detect issues through email and webhook alerts&lt;/li&gt;
+&lt;li&gt;Diagnose exceptions and web app performance issues&lt;/li&gt;
+&lt;li&gt;Perform root cause analysis with ad-hoc queries and full-text search&lt;/li&gt;
+&lt;li&gt;Live application monitoring&lt;/li&gt;
+&lt;li&gt;HTTP request rates, response times, success rates.&lt;/li&gt;
+&lt;li&gt;Dependency (HTTP &amp;amp; SQL) call rates, response times, success rates.&lt;/li&gt;
+&lt;li&gt;Exception traces from both server and client.&lt;/li&gt;
+&lt;li&gt;Page view counts, user and session counts, browser load times, exceptions.&lt;/li&gt;
+&lt;li&gt;AJAX call rates, response times and success rates.&lt;/li&gt;
+&lt;li&gt;Server performance counters. (your Windows or Linux server machines, such as CPU, memory, and network usage)&lt;/li&gt;
+&lt;li&gt;Segmentation by client location, browser version, OS version, server instance, custom dimensions, and more.&lt;/li&gt;
+&lt;li&gt;Availability tests.&lt;/li&gt;
+&lt;li&gt;Host diagnostics from Docker or Azure.&lt;/li&gt;
+&lt;li&gt;Diagnostic trace logs from your app - so that you can correlate trace events with requests.&lt;/li&gt;
+&lt;li&gt;Custom events and metrics that you write yourself in the client or server code, to track business events such as items sold or games won.&lt;/li&gt;
+&lt;li&gt;Integrate with DevOps processes using Visual Studio Team Services&lt;/li&gt;
+&lt;li&gt;Monitor web apps hosted on Azure, other cloud services, or on-premises servers&lt;/li&gt;
+&lt;li&gt;Get started with Visual Studio or monitor existing apps without re-deploying&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/application_insight_in_devops.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Azure Security</title>
+      <link>http://localhost:1313/post/2019/azure_security/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/azure_security/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;azure-security&#34;&gt;Azure Security&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; April 19, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; security, cloud
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Cyber Security is important aspect to digital transformation.
+To use Azure well, the understanding of the security building blocks is crucial.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.microsoft.com/en-us/azure/security/azure-security-getting-started&#34;&gt;https://docs.microsoft.com/en-us/azure/security/azure-security-getting-started&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;security-basics&#34;&gt;Security Basics&lt;/h1&gt;
+&lt;p&gt;Every company has some level of security requirement that stretches across almost every element of the business.
+It&#39;s important to think of security in layers rather than a single protection element.&lt;/p&gt;
+&lt;p&gt;Defense in Depth: The best security is based on layers of protection and this is especially true with networking.
+See following picture.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>http://localhost:1313/post/hugo/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/hugo/markdown-syntax/</guid>
+      <description>
+        
+          
+            &lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Rich Content</title>
+      <link>http://localhost:1313/post/hugo/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/hugo/rich-content/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#embedded&#34;&gt;Embedded Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Math Typesetting</title>
+      <link>http://localhost:1313/post/hugo/math-typesetting/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/hugo/math-typesetting/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Emoji Support</title>
+      <link>http://localhost:1313/post/hugo/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/hugo/emoji-support/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Iot for Smart Cities</title>
+      <link>http://localhost:1313/post/2019/iot_for_smartcities/</link>
+      <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/iot_for_smartcities/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;iot-for-smart-cities&#34;&gt;Iot for Smart Cities&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Feb 10, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; iot, booknotes, smartcity
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Smart cities: Everyone&#39;s connected
+If everyone, every home, and every business is connected via the IoT, why not take the next step and connect your entire neighborhood, or even the whole city?
+Connected devices can help reduce congestion on local roadways, alert the fire department in case of emergencies, and even signal the need for road maintenance or additional police patrols.
+The smart city might mean a smaller government – or a more intrusive one.
+It all depends.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Agile Selling</title>
+      <link>http://localhost:1313/post/2019/agile_selling/</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/agile_selling/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;agile-selling&#34;&gt;Agile Selling&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 27, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes, sales
+&lt;strong&gt;Category:&lt;/strong&gt; Business&lt;/p&gt;
+&lt;p&gt;There is new challenge to sell since buyers have changed.
+When they have an issue, they go online to research their problem.
+Buyers self-educate, leaving the seller totally out of the loop.
+Without deep buyer understanding, it&#39;s increasingly difficult to get business.
+You&#39;re dealing with educated people who want conversations and collaboration, not pitches of any sort.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;reframing-failures&#34;&gt;Reframing Failures&lt;/h1&gt;
+&lt;p&gt;Turn the sales problem into a challenge rather than a personal problem.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Machine Learning Basic</title>
+      <link>http://localhost:1313/post/2019/machine_learning_basic/</link>
+      <pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2019/machine_learning_basic/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;machine-learning-basic&#34;&gt;Machine Learning Basic&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 13, 2019
+&lt;strong&gt;Tags:&lt;/strong&gt; ai
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This blog introduces the basic knowledge of machine learning. The details of algorithm and programming will come in later blogs.
+Machine learning is a technology which can resolve the computational problem without programming specifically.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;process&#34;&gt;Process&lt;/h1&gt;
+&lt;p&gt;Machine learning project has its own process, which starts with asking the right questions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ask yourself: Do you have the right data to answer the question?&lt;/li&gt;
+&lt;li&gt;Ask yourself: Do you know how you&#39;ll measure success?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The process also includes re-create model regularly, see following picture.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Personal Branding</title>
+      <link>http://localhost:1313/post/2018/personal_branding/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/personal_branding/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;personal-branding&#34;&gt;Personal Branding&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Dec 25, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; career
+&lt;strong&gt;Category:&lt;/strong&gt; Management&lt;/p&gt;
+&lt;p&gt;To be a great technical expert, you do not only do exceptional technical work, and also exceptional job to let people see your skills.&lt;/p&gt;
+&lt;h1 id=&#34;build-your-personal-brand&#34;&gt;Build your personal brand&lt;/h1&gt;
+&lt;p&gt;Your personal brand is how others perceive you.
+It means you can ask others, capture their language, use their language in your branding.&lt;/p&gt;
+&lt;p&gt;First, let&#39;s write down what is your personal brand is.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>职场菜根谭</title>
+      <link>http://localhost:1313/post/2018/career_advice/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/career_advice/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;职场菜根谭&#34;&gt;职场菜根谭&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Dec 09, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; career
+&lt;strong&gt;Category:&lt;/strong&gt; Management&lt;/p&gt;
+&lt;p&gt;之前在网络上搜集到了多种关于职场建议的养分，也结合个人的经验教训，提取出些所谓的精华，大言不惭，称之为职场菜根谭。&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;职场潜规则&#34;&gt;职场潜规则&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;入职工资很重要: 这就是企业对于你的价值的一种认可程度，当然对自己的价值也需要有个清晰的认识，做决定时候应综合考虑&lt;/li&gt;
+&lt;li&gt;人事部不是你的倾谈对象&lt;/li&gt;
+&lt;li&gt;你的能力并不能确保你的安全: 熟悉企业‘政治’，摸清游戏规则&lt;/li&gt;
+&lt;li&gt;不要和老板作对: 赢率太小&lt;/li&gt;
+&lt;li&gt;学会要求加薪：证明价值，不能威胁上司，立场应该为“我很喜欢这个公司还有目前的业务，但是我觉得目前的工资跟我实际做的工作有差距，我希望工资能体现我的价值”&lt;/li&gt;
+&lt;li&gt;晋升方面不要多出意见：主要做出成绩，让上司看到热情和能力&lt;/li&gt;
+&lt;li&gt;积极配合新上司&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;创业&#34;&gt;创业&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;要想创业，首先要对创业有火一样的激情。&lt;/li&gt;
+&lt;li&gt;良好的用户体验至关重要，很多产品失败的原因就是产品本身过于复杂，用户难以从中获得很好的使用体验。&lt;/li&gt;
+&lt;li&gt;要掌握一定的技术，你可以不用编写代码，但必须了解产品的生产过程和运作流程。&lt;/li&gt;
+&lt;li&gt;创业公司的CEO必须是公司的产品经理。&lt;/li&gt;
+&lt;li&gt;了解公司的轻重缓急，重点发展核心项目。&lt;/li&gt;
+&lt;li&gt;对产品的用户体验进行跟踪调查，产品和用户体验的提升是个永无止境的过程。&lt;/li&gt;
+&lt;li&gt;注重产品的出货，只有用户使用了产品并给了回馈后你才能了解产品究竟怎么样。&lt;/li&gt;
+&lt;li&gt;公司要把提高产品质量放在第一位。&lt;/li&gt;
+&lt;li&gt;评判产品好坏的唯一标准就是产品用户数量的多少。如果一个公司的产品没有用户，那么就不能称之为真正的公司。&lt;/li&gt;
+&lt;li&gt;创业公司能否发展顺利首先要看公司产品的销售量。&lt;/li&gt;
+&lt;li&gt;如果你能实现最初计划实现目标的50%，你就已经很成功了。&lt;/li&gt;
+&lt;li&gt;大部分人常用的的服务只有5-7种，你要抓住用户的兴趣点，让自己提供的产品服务成为消费者最爱使用的。&lt;/li&gt;
+&lt;li&gt;让那些最合适的人参与公司的项目，不要考虑距离的远近。&lt;/li&gt;
+&lt;li&gt;和那些你想和他们在一起的人一块工作，你没必要和你讨厌的人一块工作。&lt;/li&gt;
+&lt;li&gt;和你信任的人一块工作，因为他们会一直支持你，会像你一样来关心公司的发展。&lt;/li&gt;
+&lt;li&gt;如果条件允许，尽可能地在家里工作，因为家里环境舒适并且能节约资金。&lt;/li&gt;
+&lt;li&gt;办公室里的办公桌要这样布置：公司联合创始人坐在办公桌旁能看到对方。如果你讨厌看到对方就说明你正在和错误的人一块工作。&lt;/li&gt;
+&lt;li&gt;公司内部要有一个像Yammer一样的内部交流平台。&lt;/li&gt;
+&lt;li&gt;要很快找到自己最擅长什么，并多花点时间在这方面。&lt;/li&gt;
+&lt;li&gt;保证你周围的人都弥补你某方面的不足，并让他们做他们擅长的事，你不要参与，同时要向他们学习。&lt;/li&gt;
+&lt;li&gt;和那些能与你持不同意见并敢于与你辩论的人一块工作，这有利于公司的发展。&lt;/li&gt;
+&lt;li&gt;和那些像你一样对解决某个问题有很大热情的人一块工作，因为你们有一样的动力和远见。&lt;/li&gt;
+&lt;li&gt;多鼓励周围的人，因为每个人都需要这种鼓励。&lt;/li&gt;
+&lt;li&gt;要忠诚。&lt;/li&gt;
+&lt;li&gt;要知道，你永远不会如自己想象的那么完美，要善于聆听别人的观点。&lt;/li&gt;
+&lt;li&gt;每周至少运动4次，强健的体魄是健全的心智的前提。&lt;/li&gt;
+&lt;li&gt;在选择投资者前，你必须知道你到底想和谁一块合作共事，而不要依据估值来选择投资者。&lt;/li&gt;
+&lt;li&gt;在公司创立之初，要尽量少地融资，这样你才能学会如何花好每一分钱。花每一分钱时都将它视为公司的最后一分钱。&lt;/li&gt;
+&lt;li&gt;你必须知道你究竟想创立一家什么样的公司。&lt;/li&gt;
+&lt;li&gt;要将自己的商业目标与投资者的利益结合起来。&lt;/li&gt;
+&lt;li&gt;不要过多地开公司会议，很多时候那都是在浪费时间。&lt;/li&gt;
+&lt;li&gt;要经常面带微笑，保持愉快的心情。&lt;/li&gt;
+&lt;li&gt;要尽量多穿自己公司的T恤，对公司的品牌感到自豪。&lt;/li&gt;
+&lt;li&gt;决不能说谎。&lt;/li&gt;
+&lt;li&gt;可以犯错，但必须从中吸取教训。&lt;/li&gt;
+&lt;li&gt;决不放弃。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;持续学习&#34;&gt;持续学习&lt;/h1&gt;
+&lt;p&gt;即使在一个组织里一路升入决策层也不是就可以高枕无忧了，如果自己不能不断进取，公司也不能不断进步，市场自然会淘汰你，或者淘汰你的公司。&lt;/p&gt;
+&lt;p&gt;做任何工作都有危机感的。终身学习，把变化视为唯一的不变&lt;/p&gt;
+&lt;h2 id=&#34;打好基础&#34;&gt;打好基础&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;学习更多数学知识，比如逻辑学、离散数学、微积分、概率论、统计学、抽象代数、数论、范畴论、偏序理论&lt;/li&gt;
+&lt;li&gt;整理，备份你的数据&lt;/li&gt;
+&lt;li&gt;学习更多理论知识，比如形式语言，自动机与可计算性理论，计算复杂性理论，形式化方法，语义学，算法与数据结构&lt;/li&gt;
+&lt;li&gt;接触艺术和人文，比如工业设计，哲学，摄影，绘画，素描，音乐及音乐理论，电影，文学，社会科学和经济学等&lt;/li&gt;
+&lt;li&gt;向新的软件学习&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;提高竞争力&#34;&gt;提高竞争力&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;选对行业很重要，随时保持行业的敏感性。&lt;/li&gt;
+&lt;li&gt;要努力成为有不可替代的人，提升自己的不可替代性。&lt;/li&gt;
+&lt;li&gt;职场上保持竞争力的人共同点都是愿景清晰。&lt;/li&gt;
+&lt;li&gt;成功者都是行动派，对事物保持好奇。&lt;/li&gt;
+&lt;li&gt;社交媒体时代要时刻注意打照自己个人品牌，经营自己的人脉。&lt;/li&gt;
+&lt;li&gt;更重要的是我们必须把自己活成U盘，即用即插，可以依托但不依附于哪个公司哪个组织，拓展到不开公司却做自己的老板，每份工作都把自己当老板。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;培养情商&#34;&gt;培养情商&lt;/h1&gt;
+&lt;p&gt;不要去欺骗别人，因为你能骗到的人，都是相信你的人。&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>AI for Smart Cities</title>
+      <link>http://localhost:1313/post/2018/ai_for_smartcities/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/ai_for_smartcities/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;ai-for-smart-cities&#34;&gt;AI for Smart Cities&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Dec 07, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; ai, smartcity
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;I had the honer to give an &#39;AI for Smart Cities&#39; presentation in &#39;Big Data &amp;amp; AI Asia&#39; conference Dec 5.
+The conference was hold in Suntec and it was a big event around hundreds people participated.&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/Suntec.jpg&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;I managed to convey the following messages in my talk:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is smart city&lt;/li&gt;
+&lt;li&gt;Why AI is relevant&lt;/li&gt;
+&lt;li&gt;What DNVGL has done and what we can offer to the market.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is a picture of my presentation. And in this blog, I will briefly introduce the relevant content.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Node.js Basics</title>
+      <link>http://localhost:1313/post/2018/nodejs_basics/</link>
+      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/nodejs_basics/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;nodejs-basics&#34;&gt;Node.js Basics&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Aug 11, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; web, backend
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Recently, I used Node.js quite a lot to handle personal projects. It is easy to start, and also easy to get wrong.
+This blog covers the basics part of Node.js development.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;module&#34;&gt;Module&lt;/h1&gt;
+&lt;h2 id=&#34;require&#34;&gt;Require&lt;/h2&gt;
+&lt;p&gt;Every module in node is singleton.&lt;/p&gt;
+&lt;p&gt;Use require to use module, the following is the search sequence of require method:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First find js file&lt;/li&gt;
+&lt;li&gt;Then json file&lt;/li&gt;
+&lt;li&gt;Then node file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If the module name is index.js, then it is okay just write directory name in the require parameter.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Authentication &amp; Authorization Basic</title>
+      <link>http://localhost:1313/post/2018/authentication_authorization_explainations/</link>
+      <pubDate>Wed, 14 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/authentication_authorization_explainations/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;authentication--authorization-basic&#34;&gt;Authentication &amp;amp; Authorization Basic&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Mar 14, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; security
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Authentication and Authorization are two relevant but different concepts, which causes confusion sometimes.
+Both of them are important for SaaS solution.
+This blog explains the basic of these two concepts.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;single-sign-on&#34;&gt;Single sign on&lt;/h1&gt;
+&lt;p&gt;In classic intranet scenarios, normally windows authentication will be used in intranet scenario.
+All parties belong to Active Directory which makes things easy.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Microservices Introduction</title>
+      <link>http://localhost:1313/post/2018/microservices_introduction/</link>
+      <pubDate>Wed, 07 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/microservices_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;microservices-introduction&#34;&gt;Microservices Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Mar 07, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; architecture, cloud
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Microservice is a software architecture style, in which complex applications are composed of small, autonomous process communicating with each other using language-agnostic API, which is a very common cloud pattern.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;microservices-design-principles&#34;&gt;Microservices Design Principles&lt;/h1&gt;
+&lt;h2 id=&#34;high-cohesion&#34;&gt;High cohesion&lt;/h2&gt;
+&lt;p&gt;High cohesion means single focus and single responsibility.
+It follows SOLID principle, which means service only change for one reason.&lt;/p&gt;
+&lt;h2 id=&#34;autonomous&#34;&gt;Autonomous&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Loose coupling&lt;/li&gt;
+&lt;li&gt;Honor contracts and interfaces&lt;/li&gt;
+&lt;li&gt;Stateless&lt;/li&gt;
+&lt;li&gt;Independently changeable&lt;/li&gt;
+&lt;li&gt;Independently deployable&lt;/li&gt;
+&lt;li&gt;Backwards compatible&lt;/li&gt;
+&lt;li&gt;Concurrent development&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Approach:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Blockchain Scenario</title>
+      <link>http://localhost:1313/post/2018/blockchain_scenario/</link>
+      <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/blockchain_scenario/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;blockchain-scenario&#34;&gt;Blockchain Scenario&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Feb 26, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; blockchain, security
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This blog explain the potential scenarios of blockchain usage. The content comes from good articles on web.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;分布式数字货币系统&#34;&gt;分布式数字货币系统&lt;/h1&gt;
+&lt;p&gt;现实生活中常用的纸币具备良好的可转移性，可以相对容易地完成价值的交割。
+但是对于数字货币来说，数字化内容容易被复制，数字货币的持有人可以将同一份货币发给多个接受者，这种攻击称为“双重支付攻击”。&lt;/p&gt;
+&lt;p&gt;中心化控制下，数字货币的实现相对容易。
+但是，很多时候很难找到一个安全可靠的第三方机构来充当这个中心管控的角色。&lt;/p&gt;
+&lt;p&gt;有一些问题是中心化数字货币难以解决的：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;发生贸易的两国可能缺乏足够的外汇储备用以支付&lt;/li&gt;
+&lt;li&gt;汇率的变化导致双方对合同有不同意见&lt;/li&gt;
+&lt;li&gt;网络上的匿名双方进行直接买卖而不通过电子商务平台&lt;/li&gt;
+&lt;li&gt;交易的两个机构彼此互不信任，找不到双方都认可的第三方担保&lt;/li&gt;
+&lt;li&gt;使用第三方担保系统，但某些时候可能无法连接&lt;/li&gt;
+&lt;li&gt;第三方的系统可能会出现故障或受到篡改攻击&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;去中心化（de-centralized）或多中心化(multi-centralized)的数字货币系统可以有效解决以上问题。&lt;/p&gt;
+&lt;p&gt;然而在“去中心化”的场景下，实现数字货币存在如下几个难题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;货币的防伪：谁来负责对货币的真伪进行鉴定&lt;/li&gt;
+&lt;li&gt;货币的交易：如何确保货币从一方安全转移到另外一方&lt;/li&gt;
+&lt;li&gt;避免双重支付：如何避免同一份货币支付给多个接受者&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这就是区块链需要解决的问题。&lt;/p&gt;
+&lt;h1 id=&#34;区块链现状&#34;&gt;区块链现状&lt;/h1&gt;
+&lt;p&gt;跟传统的记账技术相比，基于区块链的分布式账本应该包括如下特点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;维护一条不断增长的链，只可能添加记录，而发生过的记录都不可篡改&lt;/li&gt;
+&lt;li&gt;去中心化，或者说多中心化，无需集中控制而能达成共识，实现上尽量采用分布式&lt;/li&gt;
+&lt;li&gt;通过密码学的机制来确保交易无法被抵赖和破坏，并尽量保护用户信息和记录的隐私性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;公开链联盟链私有链&#34;&gt;公开链，联盟链，私有链&lt;/h2&gt;
+&lt;p&gt;根据参与者的不同，可以分为公开（public）链、联盟（consortium）链和私有（private）链&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;共有链：任何人都可以参与使用和维护，如比特币区块链，信息是完全公开的&lt;/li&gt;
+&lt;li&gt;私有链：由集中管理者进行管理限制，只有内部少数人可以使用，信息不公开&lt;/li&gt;
+&lt;li&gt;联盟链：介于两者之间，由若干组织一起合作维护一条区块链，该区块链的使用必须是带有权限访问，相关信息会得到保护，如供应链机构或银行联盟&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目前来看，共有链更容易吸引市场和媒体的眼球，但更多的商业价值会在联盟链和私有链上落地。&lt;/p&gt;
+&lt;p&gt;公有链：是指世界上任何个体或者机构都可以发送交易，且交易能够获得该区块链的有效确认，任何人都可参与其共识过程，记账权完全由公开的共识算法决定，即整个网络是开放的。&lt;/p&gt;
+&lt;p&gt;联盟链：顾名思义，一般是指由少数的机构组成联盟节点，进入和退出需要授权的区块链，联盟之间是有价值传输的，属于协作关系但同时又不能完全信任，典型的场景有跨境支付，票据市场，场外市场等等。
+一般由PBFT一致性算法改造的共识算法，节点数不会太多，同时要求出块速度快，并且所有节点是需要准入的，也就是通过许可才能访问该联盟链（我们也称联盟链为许可链）。&lt;/p&gt;
+&lt;p&gt;私有链：是完全被单独的个人或某个组织控制的区块链，仅仅使用区块链的分布式账本技术进行记账，与其他的分布式存储方案没有太大区别。&lt;/p&gt;
+&lt;p&gt;公有链不适合大部分企业应用场景，未来企业应用的重点是联盟链，但现阶段关注的重点是公有链，公有链是区块链技术的试验田，会遇到各种复杂的情况和问题，是对新技术和新业务的测试，这对企业应用提供很好的借鉴。
+对于区块链的去中心化、安全、高效这三个特性，符合蒙代尔不可能三角关系，即不可能同时满足三个条件。公有链实现了完全的去中心化和安全，因此在性能上就很低，联盟链为了企业应用，提高了性能和安全，就不得不在去中心化上进行妥协，通过一个中心化的授权方式来管理节点，实现了半中心化。&lt;/p&gt;
+&lt;p&gt;根据使用目的和场景不同，又可以分为货币链，记录产权为目的的产权链，以众筹为目的的众筹链等，也有不局限特定应用场景的通用链。
+现有大部分区块链实现都至少包括了网络层，共识层，智能合约和应用层等结构，联盟链实现往往还会引入一定的权限管理机制。&lt;/p&gt;
+&lt;h2 id=&#34;区块链20&#34;&gt;区块链2.0&lt;/h2&gt;
+&lt;p&gt;区块链2.0的典型代表是以太坊（Ethereum）和超级账本（Hyperledger），分别代表了区块链的两个重要的发展方向：应用于公众的公有链和应用于企业的联盟链。
+Hyperledger项目是首个面向企业应用场景的开源分布式账本平台。
+主打联盟链，Linux基金会项目。
+面向不同目的和场景的子项目组成：
+Fabric, Sawtooth, Iroha, Blockchain Explorer, Cello, Indy, Composer, Burrow&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Https Explainations</title>
+      <link>http://localhost:1313/post/2018/https/</link>
+      <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/https/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;https-explainations&#34;&gt;Https Explainations&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 24, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; security
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Hypertext Transfer Protocol Secure (HTTPS) is a safer version of HTTP, which is the communications protocol of the World Wide Web.
+An HTTPS session is encrypted using either the SSL protocol (Secure Socket Layer) or TLS protocol (Transport Layer Security) and offers protection against &amp;quot;eavesdropping&amp;quot; and that any change in the transmitted data.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;First Man in the middle attack in Chinese history. From &amp;quot;资治通鉴&amp;quot;:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>The Personal MBA</title>
+      <link>http://localhost:1313/post/2018/the_personal_mba/</link>
+      <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/the_personal_mba/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;the-personal-mba&#34;&gt;The Personal MBA&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 22, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes
+&lt;strong&gt;Category:&lt;/strong&gt; Management&lt;/p&gt;
+&lt;p&gt;This blog contains the booknotes of the book &amp;quot;The Personal MBA&amp;quot;.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;how-to-learn&#34;&gt;How to Learn&lt;/h1&gt;
+&lt;p&gt;One of the beautiful things about learning any subject is the fact that you don&#39;t need to know everything.
+You only need to understand a few critically important concepts that provide most of the value.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When you first start to study a field, it seems like you have to memorize a zillion things. You don&#39;t.&lt;/li&gt;
+&lt;li&gt;What you need is to identify the core principles - generally three to twelve of them - that govern the field.&lt;/li&gt;
+&lt;li&gt;The million things you thought you had to memorize are simply various combinations of the core principles.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;business-processes&#34;&gt;Business Processes&lt;/h1&gt;
+&lt;p&gt;Roughly defined, a business is a repeatable process that:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cryptography Introduction (with .NET code example)</title>
+      <link>http://localhost:1313/post/2018/cryptography_introduction/</link>
+      <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/cryptography_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;cryptography-introduction-with-net-code-example&#34;&gt;Cryptography Introduction (with .NET code example)&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 07, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; security
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Cryptography is the core part of security, this blog introduces the basic concepts in cryptography and uses .NET as code example.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;randomness&#34;&gt;Randomness&lt;/h1&gt;
+&lt;p&gt;System.Random and its problems&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;System.Random is a pseudo random number generator&lt;/li&gt;
+&lt;li&gt;A seed value is passed into the constructor&lt;/li&gt;
+&lt;li&gt;The seed value should be different each time&lt;/li&gt;
+&lt;li&gt;System.Random is deterministic and predictable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Solution is to use RNGCryptoServiceProvider instead.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docker Introduction</title>
+      <link>http://localhost:1313/post/2018/docker_introduction/</link>
+      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018/docker_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;docker-introduction&#34;&gt;Docker Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 4, 2018
+&lt;strong&gt;Tags:&lt;/strong&gt; docker
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Docker is the world&#39;s leading software containerization platform.
+Docker/container technology becomes more and more popular these days.
+This blog introduces the basic concept of the above technology.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;what-is-docker&#34;&gt;What is docker&lt;/h1&gt;
+&lt;p&gt;In the old days, physical machine is the basic deployment unit which means one server hosts one application.
+The application has good isolation, however it is too expensive not only the hardware but also the maintaince effort.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>The Effective Executive</title>
+      <link>http://localhost:1313/post/2017/the_effective_executive/</link>
+      <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/the_effective_executive/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;the-effective-executive&#34;&gt;The Effective Executive&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Dec 29, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes
+&lt;strong&gt;Category:&lt;/strong&gt; Management&lt;/p&gt;
+&lt;p&gt;This is the notes from book &lt;The Effective Executive&gt; by Peter Drucker.
+According to Drucker, the task of leadership is to create an alignment of strengths, making our weakness irrelevant&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;有效企业管理&#34;&gt;有效企业管理&lt;/h1&gt;
+&lt;p&gt;企业的管理必须有效，否则企业无法生存。&lt;/p&gt;
+&lt;p&gt;管理得好的工厂，一般单调乏味，没有任何激动人心的事件发生。
+那些“心中无数决心大”的誓师大会表面是轰轰烈烈，但从本质上看对提高管理的有效性却没有任何帮助；
+那些在突发事件中表现英勇的人和事的确激动人心，但我们需要的不是停留在对这些英雄人物大张旗鼓地表彰上，而是要扎扎实实建立避免发生这类事件的机制。&lt;/p&gt;
+&lt;p&gt;这使我们认识到有效管理的重要性，有效就要防范于未然，将例外管理变成例行管理。&lt;/p&gt;
+&lt;h1 id=&#34;管理自己&#34;&gt;管理自己&lt;/h1&gt;
+&lt;p&gt;“管理有效性”的关键，不在于有效地“管理别人”，而在于有效地“管理自己”。&lt;/p&gt;
+&lt;p&gt;管理者的有效性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;强调的是“做正确的事情，把事情做正确”；&lt;/li&gt;
+&lt;li&gt;强调的是“按时做完自己该做的事情并产生成果”；&lt;/li&gt;
+&lt;li&gt;强调的是把“知识转化为成果”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;管理者的价值不在于任劳任怨，埋头苦干，服从领导或听命于上司，也不在于提供各种精专的知识、工具、观念和术语，更不在于职称、头衔或地位，而在于依靠自身的知识、才干和贡献意识，促进组织产生成果.&lt;/p&gt;
+&lt;p&gt;组织中的管理者通常会遇到四种情况，而他自己基本无法控制。每种情况都会向他施加压力，将工作推向无效，使机构运作不灵&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;管理者的时间往往只属于别人，而不属于自己&lt;/li&gt;
+&lt;li&gt;管理者往往被迫按照老一套方法开展工作&lt;/li&gt;
+&lt;li&gt;只有当别人使用管理者的贡献时，管理者才具有有效性&lt;/li&gt;
+&lt;li&gt;管理者身处组织之内，但如果他要有效工作，还必须努力认识组织以外的情况&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;作为一个有效的管理者，必须在思想上养成如下的习惯：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;知道如何利用自己的时间&lt;/li&gt;
+&lt;li&gt;注意使自己的努力产生必要的成果，而不是工作本身，重视对外界的贡献&lt;/li&gt;
+&lt;li&gt;把工作建立在优势上--他们自己的优势，善于利用自己的长处，上级、同事和下级的长处&lt;/li&gt;
+&lt;li&gt;精力集中于少数主要领域。在这少数重要的领域中，如果能有优秀的绩效就可以产生卓越的成果。他们会按照工作的轻重缓急设定优先次序，而且坚守优先次序。他们知道：要事第一。重要的事先做，不重要的事放一放，除此之外也没有其他办法，否则反倒一事无成&lt;/li&gt;
+&lt;li&gt;善于做出有效的决策。他们知道有效的决策事关处事的条理和秩序问题，也就是如何按正确的次序采取正确的步骤。他们知道一项有效的决策，总是在“不同意见讨论”的基础上做出的判断，它绝不会是“一致意见”的产物。他们知道快速的决策多为错误的决策，真正不可或缺的决策数量并不多，但一定是根本性的决策。他们需要的是正确的战略，而不是令人眼花缭乱的战术。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;有效时间管理&#34;&gt;有效时间管理&lt;/h2&gt;
+&lt;p&gt;管理者工作的失效，乃至失败，往往是因为没有足够的时间去思考如何做正确的事情或把事情做正确。
+他们的时间往往被掠夺，使自己陷于日常事物和内部复杂的关系中，疲于奔命，被现实的压力牵着鼻子走，以致忽略了产生成果的方向，忽略了产生成果的外部联系。
+进而，随着企业规模的扩大，以及内部专业化分工体系的深化，使他们更看不到外部的机会以及协同的必要。&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cloud for Dummy</title>
+      <link>http://localhost:1313/post/2017/cloud_for_dummy/</link>
+      <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/cloud_for_dummy/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;cloud-for-dummy&#34;&gt;Cloud for Dummy&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Sep 04, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; cloud
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This is a blog to explain what cloud is to dummies.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Five main principles of cloud computing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pooled resources: Available to any subscribing users&lt;/li&gt;
+&lt;li&gt;Virtualization: High utilization of hardware assets&lt;/li&gt;
+&lt;li&gt;Elasticity: Dynamic scale without CAPEX&lt;/li&gt;
+&lt;li&gt;Automation: Build, deploy, configure, provision, and move, all without manual intervention&lt;/li&gt;
+&lt;li&gt;Metered billing: Per-usage business model; pay only for what you use&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The cloud offers the illusion of infinite resources, available on demand.
+You no longer need to play the guessing game of how many users need to be supported and how scalable the application is.
+The cloud takes care of the peaks and troughs of utilization times.
+In the world of the cloud, you pay for only the resources you use, when you use them.
+This is the revolutionary change: the ability to handle scale without paying a premium.
+In this realm of true utility computing, resource utilization mirrors the way we consume electricity or water.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Introduction to Javascript</title>
+      <link>http://localhost:1313/post/2017/introduction_to_javascript/</link>
+      <pubDate>Sat, 09 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/introduction_to_javascript/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;introduction-to-javascript&#34;&gt;Introduction to Javascript&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Sep 9, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; web, frontend
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Javascript is the fundumantal programming language for frontend development.
+This blog introduces the basic concept of Javascript language.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;javascript-basic&#34;&gt;Javascript Basic&lt;/h1&gt;
+&lt;p&gt;First, let&#39;s compare Javascript with a OOP programming language C#.&lt;/p&gt;
+&lt;p&gt;+-----------------------+-----------------------+
+| C#	                | Javascript            |
++-----------------------+-----------------------+
+| Strongly-Typed        | Loosely-typed         |
++-----------------------+-----------------------+
+| Static                | Dynamic               |
++-----------------------+-----------------------+
+| Classical Inheritance	| Prototypal            |
++-----------------------+-----------------------+
+| Classes               | Functions             |
++-----------------------+-----------------------+
+| Constructors	        | Functions             |
++-----------------------+-----------------------+
+| Methods               | Functions             |
++-----------------------+-----------------------+&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Blockchain Introduction</title>
+      <link>http://localhost:1313/post/2017/blockchain_introduction/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/blockchain_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;blockchain-introduction&#34;&gt;Blockchain Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Sep 06, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; blockchain, security
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Blockchain is the technology behind Bitcoin, this blog introduce what the Blockchain is.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;what-is-blockchain&#34;&gt;What is Blockchain&lt;/h1&gt;
+&lt;p&gt;Blockchain is a distributed ledger system which makes the transactions transparent and anonymous. By doing this, Blockchain brings a secure system.&lt;/p&gt;
+&lt;p&gt;Based on cryptographic proof instead of trust, allowing any two willing parties to transact directly with each other without the need for a trusted third party&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>The Mckinsey Engagement</title>
+      <link>http://localhost:1313/post/2017/the_mckinsey_engagement/</link>
+      <pubDate>Sun, 03 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/the_mckinsey_engagement/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;the-mckinsey-engagement&#34;&gt;The Mckinsey Engagement&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Sep 03, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes
+&lt;strong&gt;Category:&lt;/strong&gt; Management&lt;/p&gt;
+&lt;p&gt;The book notes of &lt;The Mckinsey Engagement&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;开会与交流&#34;&gt;开会与交流&lt;/h1&gt;
+&lt;p&gt;所有会议都应该有一个明确的议程（或列出一张供讨论的问题清单），并做出具体的决定和新的行动方案。
+通过频繁的电子邮件交流使团队成员了解项目的最新进程，不过格式要简单统一。请记住，过度交流肯定会好于交流不足&lt;/p&gt;
+&lt;p&gt;观点遭到小组的反对，我们可能会变得冲动并进行激烈的争辩以使他人接受自己的观点。不过，最好的办法是说出自己的观点，把问题本身和提出问题的人相分离，然后从正反两面对观点展开讨论，重点关注积极的方面。&lt;/p&gt;
+&lt;p&gt;在评估问题和意见的正反两面时，一定要把人与他所提出的见解分开。在评价问题时，应就事论事，要摒弃针对人的个人成见
+在项目实施前，举行一个简短轻松的会议，交流一下各自的个性和工作方法偏好。在项目实施过程中，保持这样的交流
+了解自己的本性，同时在与不同性格类型的成员相处时保持良好的心态&lt;/p&gt;
+&lt;h1 id=&#34;团队合作&#34;&gt;团队合作&lt;/h1&gt;
+&lt;p&gt;信任，但要确认
+--罗纳德 里根 常引用的俄罗斯谚语&lt;/p&gt;
+&lt;p&gt;作为附加策略，竞争理念的融合也有助于所有团队的互动。&lt;/p&gt;
+&lt;p&gt;5P原则：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;认真准备 (prepare): 观察身边之人的积极行为并了解他们的背景&lt;/li&gt;
+&lt;li&gt;他人为重(put others first): 这是生活中需遵循的普通法则&lt;/li&gt;
+&lt;li&gt;真诚赞美 (praise sincerely): 与他人分享你的发现，但切忌过分与虚伪&lt;/li&gt;
+&lt;li&gt;勿施压于人 (puressure no one): 互动时，避免谈及令人尴尬的话题和靠得太近&lt;/li&gt;
+&lt;li&gt;提供帮助 (provide value): 为了强化你的成果，还要设法长期提供帮助 （我最喜欢的方式就是给他们寄一些他们感兴趣的读物）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;时间紧迫往往会使人更加兴奋地工作，压力就是最大的动力&lt;/p&gt;
+&lt;p&gt;Team Focus模型&lt;/p&gt;
+&lt;p&gt;+---------------------------------------+-------------------------------+
+| Team                                  | Focus                         |
++---------------------------------------+-------------------------------+
+| 交流 (Talk)                           | 界定 （Frame）                |
+|                                       |                               |
+| * 沟通不息                            | * 明确关键问题                |
+| * 用心倾听                            | * 创建议题树                  |
+| * 人事分离                            | * 形成基本假设                |
++---------------------------------------+-------------------------------+
+| 评价 (Evaluate)                       | 组织 (Organize)               |
+|                                       |                               |
+| * 讨论团队协作状态                    | * 构建总体流程图              |
+| * 确定期望与监控完成情况              | * 制定内容计划以检验假设      |
+| * 明确个人发展目标并相应调整工作计划  | * 设计故事线索                |
++---------------------------------------+-------------------------------+
+| 协助 (Assist)                         | 收集 (Collect)                |
+|                                       |                               |
+| * 充分利用专长                        | * 通过“草图”呈现必要数据      |
+| * 各司其职                            | * 进行针对性的访问            |
+| * 实时反馈                            | * 收集第三方数据、资料        |
++---------------------------------------+-------------------------------+
+| 激励 (Motivate)                       | 解读 (Understand)             |
+|                                       |                               |
+| * 确定个性化激励因素                  | * 明确 “so what&amp;quot; (为什么)     |
+| * 积极正面影响团队成员                | * 理清对项目相关方面的启示    |
+| * 庆祝成就                            | * 记录所有图表中的核心见解    |
++---------------------------------------+-------------------------------+
+|                                       | 提炼 (Synthesize)             |
+|                                       |                               |
+|                                       | * 获取意见，确保认可          |
+|                                       | * 提供具体的改进意见          |
+|                                       | * 讲述一个好故事              |
++---------------------------------------+-------------------------------+&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>DevOps and Continuous Delivery</title>
+      <link>http://localhost:1313/post/2017/devops_and_continuous_delivery/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/devops_and_continuous_delivery/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;devops-and-continuous-delivery&#34;&gt;DevOps and Continuous Delivery&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Sep 01, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes, process, devops, continuousdelivery
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;DevOps and continuous delivery are two hot topics these days, which play more and more important role in software development especially for the SaaS (Software as a Service) solution.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;devops&#34;&gt;DevOps&lt;/h1&gt;
+&lt;p&gt;DevOps is a software development and delivery process that emphasizes communication and collaboration between product management, software development, and operations professionals.
+It supports this by automating and monitoring the process of software integration, testing, deployment, and infrastructure changes by establishing a culture and environment where building, testing, and releasing software can happen rapidly, frequently, and more reliably.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>The Art of Simplicity</title>
+      <link>http://localhost:1313/post/2017/the_art_of_simplicity/</link>
+      <pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/the_art_of_simplicity/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;the-art-of-simplicity&#34;&gt;The Art of Simplicity&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Aug 31, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes
+&lt;strong&gt;Category:&lt;/strong&gt; Life&lt;/p&gt;
+&lt;p&gt;The original version was written in French named &amp;lt;L&#39;art de la simplicite&amp;gt; by Dominique Loreau.
+This book show the tips regarding to have a simplified but high quality life.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;简单&#34;&gt;简单&lt;/h1&gt;
+&lt;p&gt;简单，就是拥有极少，把空间留给必需和精华。
+简单，让生活摆脱使人精力分散、紧张不安的偏见、拘束和压力，为我们提供很多问题的解决方法。&lt;/p&gt;
+&lt;p&gt;不要再拥有过多的到东西，你将省出更多时间来关注自己的身体。
+当对自己的身体感觉良好时，就能忘记肉体的存在，专注于精神发展，达到充满意义的生命状态。你将感到更加幸福。&lt;/p&gt;
+&lt;p&gt;只保留你喜欢的东西，其他的都没有意义。
+别让俗气和过时的东西侵占你的空间。&lt;/p&gt;
+&lt;p&gt;拥有极少，但都要最好的。
+别满足于一只不错的沙发，而要买最漂亮，最轻柔，最符合“人体工学”，最舒适的沙发。&lt;/p&gt;
+&lt;p&gt;毫不迟疑地甩掉“差不多”，代之以完美的东西。
+哪怕这样做会让很多人认为你大手大脚。
+极简主义可不便宜，但付出这样的代价，你能达到自足于严格的极简。&lt;/p&gt;
+&lt;p&gt;作出错误的决定，才能发现最适合我们的。
+错误是我们的老师。&lt;/p&gt;
+&lt;p&gt;时不时“变换速度”，可以让你不至于在庸常事物中越陷越深，以更大的热情投入每一刻&lt;/p&gt;
+&lt;p&gt;记录你所有收入和支出。这有助于你采取更多节约措施，更好地管理你的财务状况，让你的生活简单化。&lt;/p&gt;
+&lt;h1 id=&#34;去除平庸&#34;&gt;去除平庸&lt;/h1&gt;
+&lt;p&gt;绝不接受你不想要的东西&lt;/p&gt;
+&lt;p&gt;丢弃东西或者把东西送人时，不要有负罪感。&lt;/p&gt;
+&lt;p&gt;不要在浴室里收集一堆化妆品小样&lt;/p&gt;
+&lt;p&gt;设想你的房子毁于火灾，把你要重新买的东西列出来。
+然后把不打算买的东西也列出来。
+给你喜爱但从不使用的东西拍照留念，然后把它们清理一空。&lt;/p&gt;
+&lt;p&gt;体验一下你的需要，如有迟疑，就放弃这种需要&lt;/p&gt;
+&lt;p&gt;把今年一次也没用到的东西清理掉&lt;/p&gt;
+&lt;p&gt;牢记如下符咒：“除了必不可少的，我一无所需。”&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Xunit Test Patterns</title>
+      <link>http://localhost:1313/post/2017/xunit_test_patterns/</link>
+      <pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/xunit_test_patterns/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;xunit-test-patterns&#34;&gt;Xunit Test Patterns&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Aug 27, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes, architecture
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Xunit Test Pattern is a fantastic book which shares the experience and good practice to write tests.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;image&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/xunittestgoalsprinciplesandsmells.jpg&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;test-introduction&#34;&gt;Test Introduction&lt;/h1&gt;
+&lt;h2 id=&#34;easy-to-run-tests&#34;&gt;Easy to run tests&lt;/h2&gt;
+&lt;p&gt;What makes tests easy to run? Four specific goals answer this question:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;They must be Fully Automated Tests so they can be run without any effort.&lt;/li&gt;
+&lt;li&gt;They must be Self-Checking Tests so they can detect and report any errors without manual inspection.&lt;/li&gt;
+&lt;li&gt;They must be Repeatable Tests so they can be run multiple times with the same result.&lt;/li&gt;
+&lt;li&gt;Ideally, each test should be an Independent Test that can be run by itself.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our tests should be small and test one thing at a time.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>How to Become an Outlier</title>
+      <link>http://localhost:1313/post/2017/become_outlier/</link>
+      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/become_outlier/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;how-to-become-an-outlier&#34;&gt;How to Become an Outlier&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Aug 20, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; career
+&lt;strong&gt;Category:&lt;/strong&gt; Management&lt;/p&gt;
+&lt;p&gt;Do you want to be an outlier?
+How do you measure success? Money? Friends and Family? Recognition? Fame? Making a difference?
+Does your definition of success drive the direction of your career? ... Or is it the other way around?&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;p&gt;If you want to be an outlier, you may be out of place, have to compromise on some areas in your life and people may see you as weirdo.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Bash: Useful Commands</title>
+      <link>http://localhost:1313/post/2017/bash_useful_commands/</link>
+      <pubDate>Sat, 19 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/bash_useful_commands/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;bash-useful-commands&#34;&gt;Bash: Useful Commands&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Aug 19, 2017&lt;br&gt;
+&lt;strong&gt;Tags:&lt;/strong&gt; shell&lt;br&gt;
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Bash is a widely shell, which is the default shell in many operating systems, e.g. Unix, Linux, Mac OS.
+Bash can help you achieve a lot.
+To invest time to learn some useful commands in bash is a good idea.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#directory-commands&#34;&gt;Directory commands&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#home-directory&#34;&gt;Home directory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#handle-space&#34;&gt;Handle space&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#list-files&#34;&gt;List files&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#others&#34;&gt;Others&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#wildcard&#34;&gt;Wildcard&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#brace-expansion&#34;&gt;Brace Expansion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#file-manipulation&#34;&gt;File Manipulation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#inputoutput-redirection&#34;&gt;Input/Output redirection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#cp&#34;&gt;cp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#modify-file&#34;&gt;Modify file&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#search-file&#34;&gt;Search file&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#view-help-and-file-content&#34;&gt;View help and file content&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#process&#34;&gt;Process&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#other-tips&#34;&gt;Other tips&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#commands-parameters&#34;&gt;Commands parameters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#avoid-keeping-sudo&#34;&gt;Avoid keeping sudo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#shortcut-keys&#34;&gt;Shortcut keys&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#alias&#34;&gt;Alias&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/bash_useful_commands/#others-1&#34;&gt;Others&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;directory-commands&#34;&gt;Directory commands&lt;/h2&gt;
+&lt;h3 id=&#34;home-directory&#34;&gt;Home directory&lt;/h3&gt;
+&lt;p&gt;For every user, there is a home directory which is presented by ~&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Domain Driven Design: Introduction</title>
+      <link>http://localhost:1313/post/2017/domain_driven_design_introduction/</link>
+      <pubDate>Wed, 19 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/domain_driven_design_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;domain-driven-design-introduction&#34;&gt;Domain Driven Design: Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jun 19, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; architecture, process
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Domain Driven Design (DDD) is about trying to make your software a model of a real-world system or process.
+The philosophy of DDD is about placing our attention at the heart of the application, focusing on the complexity that is intrinsic to the business domain itself.
+In using DDD, you are meant to work closely with a domain expert who can explain how the real-world system works.
+It also acts as the conceptual foundation for the design of the software itself - how it&#39;s broken down into objects or functions.
+In this blog post, I will cover the key elements of DDD.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Authenticate Node.js App by OpenId Connect</title>
+      <link>http://localhost:1313/post/2017/authenticate_by_openidconnect/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/authenticate_by_openidconnect/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;authenticate-nodejs-app-by-openid-connect&#34;&gt;Authenticate Node.js App by OpenId Connect&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jul 09, 2017&lt;br&gt;
+&lt;strong&gt;Tags:&lt;/strong&gt; security&lt;br&gt;
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;OpenID Connect (OIDC) is an authentication layer on top of OAuth 2.0; while OAuth 2.0 is an authorization framework.
+The standard is controlled by the OpenID Foundation.
+This blog post will go through an example to use your google account to login a Node.js app by using OpenID Connect.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/authenticate_by_openidconnect/#authentication-vs-authorization&#34;&gt;Authentication vs Authorization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/authenticate_by_openidconnect/#jargon-explanations&#34;&gt;&#39;Jargon&#39; explanations&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/authenticate_by_openidconnect/#openid&#34;&gt;OpenID&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/authenticate_by_openidconnect/#oauth&#34;&gt;OAuth&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/authenticate_by_openidconnect/#openid-connect&#34;&gt;OpenID Connect&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/authenticate_by_openidconnect/#setup-google-account&#34;&gt;Setup Google Account&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2017/authenticate_by_openidconnect/#setup-nodejs-app&#34;&gt;Setup Node.Js App&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;authentication-vs-authorization&#34;&gt;Authentication vs Authorization&lt;/h2&gt;
+&lt;p&gt;Authentication and Authorization are big topics, this blog only touches the basic and will have follow-up blogs to explain the details.
+If you are still confused about the difference between authentication and authorization, the followings are the explanations.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Security: Owasp Top 10</title>
+      <link>http://localhost:1313/post/2017/security_owasp_top_10/</link>
+      <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/security_owasp_top_10/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;security-owasp-top-10&#34;&gt;Security: Owasp Top 10&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jul 05, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; security
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://www.owasp.org&#34;&gt;Open Web Application Security Project (OWASP) &lt;/a&gt; is an open community dedicated to enabling organizations to develop, purchase, and maintain applications and APIs that can be trusted.
+The goal of the Top 10 project is to raise awareness about application security by identifying some of the most critical risks facing organizations.
+This blog is based on 2013 version, while 2017 version will come very soon.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Kotter-Binwei Change Model</title>
+      <link>http://localhost:1313/post/2017/kotter_binwei_change_model/</link>
+      <pubDate>Thu, 25 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/kotter_binwei_change_model/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;kotter-binwei-change-model&#34;&gt;Kotter-Binwei Change Model&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; May 25, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; process
+&lt;strong&gt;Category:&lt;/strong&gt; Management&lt;/p&gt;
+&lt;p&gt;&amp;quot;Change is the only constant.&amp;quot;
+– Heraclitus, Greek philosopher.
+Kotter 8-step change model will help you to implement changes powerfully and successfully.
+In addition, Binwei adds 2 more steps to help you figure out whether you are doing the right changes.
+To implement right changes is even more important in the current changing world.&lt;/p&gt;
+&lt;h1 id=&#34;kotter-8-step-change-model&#34;&gt;Kotter 8-step change model&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Step 1: Create Urgency&lt;/li&gt;
+&lt;li&gt;Step 2: Form a Powerful Coalition&lt;/li&gt;
+&lt;li&gt;Step 3: Create a Vision for Change&lt;/li&gt;
+&lt;li&gt;Step 4: Communicate the Vision&lt;/li&gt;
+&lt;li&gt;Step 5: Remove Obstacles&lt;/li&gt;
+&lt;li&gt;Step 6: Create Short-term Wins&lt;/li&gt;
+&lt;li&gt;Step 7: Build on the Change&lt;/li&gt;
+&lt;li&gt;Step 8: Anchor the Changes in Corporate Culture&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The above 8 steps will help you to implement the changes in the corporation. You can find a lot of content from internet.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Work in Big Company</title>
+      <link>http://localhost:1313/post/2017/work_in_big_company/</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/work_in_big_company/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;work-in-big-company&#34;&gt;Work in Big Company&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; May 17, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; chinese, booknotes
+&lt;strong&gt;Category:&lt;/strong&gt; Management&lt;/p&gt;
+&lt;p&gt;&#39;Hacker and Painter&#39; is a fantastic book for people work in IT industry, which enlightens me quite a lot.
+One point of view in this book is about the &#39;dark side&#39; to work in big company.&lt;/p&gt;
+&lt;h1 id=&#34;测量贡献&#34;&gt;测量贡献&lt;/h1&gt;
+&lt;p&gt;大公司最大的困扰，就是无法准确测量每个员工的贡献。
+它会把所有人的贡献平均化。&lt;/p&gt;
+&lt;p&gt;销售员是一个例外。
+他们产生的收入，很容易测量，他们的薪水往往是销售额的一个百分比。
+如果一个销售员想更努力地工作，他马上就可以这样做，并且自动按比例得到更多的报酬。&lt;/p&gt;
+&lt;p&gt;此外，还有一个职位是可以测量的，那就是高级的管理职位，他们对整家公司的表现负责。
+高级经理就像销售员一样，不得不用数字证明自己。
+一个表现糟糕的CEO，是不能推托说自己已经尽了全力。
+如果公司的表现不好，就是他的表现不好。&lt;/p&gt;
+&lt;p&gt;不幸的是，公司不可能对每个人都像销售员那样付薪。销售员是单独工作的，大多数雇员则是集体工作。&lt;/p&gt;
+&lt;p&gt;假设有一家公司制造某种消费品，工程师为它做出各种功能，设计师为它设计一个漂亮的外壳，营销人员让顾客相信这是值得拥有的商品。
+请问如何评价每个人对这个商品销售额的贡献？&lt;/p&gt;
+&lt;p&gt;还有，上一代产品的工作人员，为这个公司树立了质量可靠的形象，请问最新产品的销售额有多少应该归功于他们？&lt;/p&gt;
+&lt;p&gt;根本没有办法把所有人的贡献一一分解清楚。
+你想更努力地工作，但是你的工作与其他许多人的工作混杂在一起，这就产生了问题。
+在大公司中，个人的表现无法单独测量，公司里其他人会“平均化”你。&lt;/p&gt;
+&lt;p&gt;你不能对老板说，我打算十倍努力地工作，请你把我的薪水也增加十倍吧！
+因为公司已经假定你在全力工作了，而且更重要的是：实际上，公司无法测量你的贡献。&lt;/p&gt;
+&lt;h1 id=&#34;深层原因&#34;&gt;深层原因&lt;/h1&gt;
+&lt;p&gt;但是，就算无法测量每个员工的贡献，却有办法得到近似值，那就是测量小团队的贡献。&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Lean Toolkit for Software Development</title>
+      <link>http://localhost:1313/post/2017/lean_toolkit_for_software_development/</link>
+      <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/lean_toolkit_for_software_development/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;lean-toolkit-for-software-development&#34;&gt;Lean Toolkit for Software Development&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; May 16, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; lean, process
+&lt;strong&gt;Category:&lt;/strong&gt; Management&lt;/p&gt;
+&lt;p&gt;Lean has huge impact on current software industry.
+No matter your team adopts Devops, Scrum, Kanban or other Agile methodologies, you can find impact from Lean methodology.
+Even though Lean was invented decades ago, the concepts are still shining and toolkit are still very useful.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;identify-bottleneck&#34;&gt;Identify Bottleneck&lt;/h1&gt;
+&lt;p&gt;Any improvements made anywhere besides the bottleneck are an illusion.
+-- Mary Poppendieck&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>The Mythical Deadline of Peopleware Man-month</title>
+      <link>http://localhost:1313/post/2017/the_mythical_deadline_of_peopleware_man_month/</link>
+      <pubDate>Sun, 14 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/the_mythical_deadline_of_peopleware_man_month/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;the-mythical-deadline-of-peopleware-man-month&#34;&gt;The Mythical Deadline of Peopleware Man-month&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; May 14, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes, chinese
+&lt;strong&gt;Category:&lt;/strong&gt; Management&lt;/p&gt;
+&lt;p&gt;This blog post is the book note of three famous books in project/people management in IT industry: The Mythical Man-month, The Deadline, Peopleware. They are enlightenment books to me on the management topics when I read these books decade ago. There are a lot of shinning points in these books, and I try to list them with my own thoughts.
+The book notes will be in Chinese, since I read the Chinese version that time.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Threat Modeling: Introduction</title>
+      <link>http://localhost:1313/post/2017/threat_modeling_introduction/</link>
+      <pubDate>Sun, 07 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/threat_modeling_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;threat-modeling-introduction&#34;&gt;Threat Modeling: Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; May 07, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; security
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;With more and more data and software go to internet, the security becomes crucial for software development.
+OWASP (Open Web Application Security Project) lists top 10 security risks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Injection&lt;/li&gt;
+&lt;li&gt;Broken Authentication and session management&lt;/li&gt;
+&lt;li&gt;Cross-site scripting&lt;/li&gt;
+&lt;li&gt;Insecure Direct Object Reference&lt;/li&gt;
+&lt;li&gt;Security Misconfiguration&lt;/li&gt;
+&lt;li&gt;Sensitive data exposure&lt;/li&gt;
+&lt;li&gt;Missing function level access control&lt;/li&gt;
+&lt;li&gt;Cross site request forging&lt;/li&gt;
+&lt;li&gt;Components with known vulnerabilities&lt;/li&gt;
+&lt;li&gt;Invalidated requests and forwards&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Security risks are everywhere and it is difficult to make secure software.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Bian Zhi Lin Anthology</title>
+      <link>http://localhost:1313/post/2017/book-bian_zhi_lin_shi_xuan/</link>
+      <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/book-bian_zhi_lin_shi_xuan/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;book-notes-bian-zhi-lin-anthology&#34;&gt;Book notes: Bian Zhi Lin Anthology&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; May 02, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes, chinese
+&lt;strong&gt;Category:&lt;/strong&gt; Literature&lt;/p&gt;
+&lt;p&gt;Bian Zhi Lin is modern poet, and is also alumnus of my high school (PuDong High School, Graduated in 1929). His poems are graceful, the most famous one is &#39;The Fragment&#39; (DuanZhang).&lt;/p&gt;
+&lt;h1 id=&#34;断章&#34;&gt;断章&lt;/h1&gt;
+&lt;p&gt;你站在桥上看风景，&lt;/p&gt;
+&lt;p&gt;看风景的人在楼上看你。&lt;/p&gt;
+&lt;p&gt;明月装饰了你的窗子，&lt;/p&gt;
+&lt;p&gt;你装饰了别人的梦。&lt;/p&gt;
+&lt;h1 id=&#34;投&#34;&gt;投&lt;/h1&gt;
+&lt;p&gt;独自在山坡上，&lt;/p&gt;
+&lt;p&gt;小孩儿，我见你&lt;/p&gt;
+&lt;p&gt;一边走一边唱，&lt;/p&gt;
+&lt;p&gt;都厌了，随地&lt;/p&gt;
+&lt;p&gt;捡一块小石头&lt;/p&gt;
+&lt;p&gt;向山谷一投。&lt;/p&gt;
+&lt;p&gt;说不定有人，&lt;/p&gt;
+&lt;p&gt;小孩儿，曾把你&lt;/p&gt;
+&lt;p&gt;（也不爱也不憎）&lt;/p&gt;
+&lt;p&gt;好玩地捡起，&lt;/p&gt;
+&lt;p&gt;像一块小石头&lt;/p&gt;
+&lt;p&gt;向尘世一投。&lt;/p&gt;
+&lt;h1 id=&#34;雨同我&#34;&gt;雨同我&lt;/h1&gt;
+&lt;p&gt;“天天下雨，自从你走了。”&lt;/p&gt;
+&lt;p&gt;“自从你来了，天天下雨。”&lt;/p&gt;
+&lt;p&gt;两地友人雨，我乐意负责。&lt;/p&gt;
+&lt;p&gt;第三处没消息，寄一把伞去？&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>NoSQL: Introduction</title>
+      <link>http://localhost:1313/post/2017/nosql_introduction/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/nosql_introduction/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;nosql-introduction&#34;&gt;NoSQL: Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; May 1, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; database, nosql
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;NoSQL originally refers to &amp;quot;non SQL&amp;quot;, &amp;quot;non relational&amp;quot;, or &amp;quot;not only SQL&amp;quot;. NoSQL databases are increasingly used in big data and real-time web applications.
+NoSQL databases are not replacing relational database, there are scenarios only fit for NoSQL database. This blog give a brief introduction of NoSQL databases.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;The benefits you can get from NoSQL include:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Job Security</title>
+      <link>http://localhost:1313/post/2017/job_security/</link>
+      <pubDate>Sat, 29 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/job_security/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;job-security&#34;&gt;Job Security&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 29, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; career
+&lt;strong&gt;Category:&lt;/strong&gt; Management&lt;/p&gt;
+&lt;p&gt;In your company, there is only one should care about your job security: that is yourself. Many people treat the company as their home, put all their energy and be 100% loyal to the company, but seldom to think about themselves. There is nothing wrong with the attitude only if you are aware of the job security.
+Marketing is up-and-down and most companies needs to be profitable to survive. They have to lay off people if necessary, these people can be you no matter you treat the company as home or not.
+It will put you into a very negative situation if you do not prepare well for your job security.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Lean: Principles</title>
+      <link>http://localhost:1313/post/2017/lean_principles/</link>
+      <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/lean_principles/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;lean-principles&#34;&gt;Lean: Principles&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 27, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; lean, process
+&lt;strong&gt;Category:&lt;/strong&gt; Management&lt;/p&gt;
+&lt;p&gt;The core idea of Lean is to maximize customer value while minimizing waste. A lean organization understands customer value and focuses its key processes to continuously increase it.&lt;/p&gt;
+&lt;p&gt;To accomplish this, lean thinking changes the focus of management from optimizing separate technologies, assets, and vertical departments to optimizing the flow of products and services through entire value streams that flow horizontally across technologies, assets, and departments to customers.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Specification by Example</title>
+      <link>http://localhost:1313/post/2017/specification_by_example/</link>
+      <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/specification_by_example/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;specification-by-example&#34;&gt;Specification by Example&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Aug 25, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes, process
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Specification by Example is a set of process patterns that helps teams build the right software product.
+With Specification by Example, teams write just enough documentation to facilitate change effectively in short iterations (Scrum or XP) or in flow-based development (Kanban).&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;“The hardest single part of building a software system is deciding precisely what to build.”&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Technology to Learn Next</title>
+      <link>http://localhost:1313/post/2017/technology_to_learn_next/</link>
+      <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/technology_to_learn_next/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;technology-to-learn-next&#34;&gt;Technology to Learn Next&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 18, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; career
+&lt;strong&gt;Category:&lt;/strong&gt; Management&lt;/p&gt;
+&lt;p&gt;Nowadays, we are in a rapid changing world, and the velocity of the change is increasing. Especially in some young industries like Information technology, new opportunities and exciting news keep popping-up everyday. If you are in IT industry like the me (Binwei, the author), you are lucky.
+And it is simply too many technologies for you to learn, this blog will discuss the topic: what to learn next.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Telemetry: Overview</title>
+      <link>http://localhost:1313/post/2017/telemetry_overview/</link>
+      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/telemetry_overview/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;telemetry-overview&#34;&gt;Telemetry: Overview&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 20, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; telemetry
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Telemetry technology plays more and more important role in the &#39;cloud era&#39;. This blog will explain what is telemetry technology, how we can benefit from telemetry technology, and briefly discuss some technical choices.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h1 id=&#34;what-is-telemetry&#34;&gt;What is Telemetry&lt;/h1&gt;
+&lt;p&gt;According to Wikipedia: Telemetry is an automated communications process by which measurements and other data are collected at remote or inaccessible points and transmitted to receiving equipment for monitoring.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>How to Read Books</title>
+      <link>http://localhost:1313/post/2017/how_to_read_books/</link>
+      <pubDate>Sun, 16 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/how_to_read_books/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;how-to-read-books&#34;&gt;How to Read Books&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 16, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; reading
+&lt;strong&gt;Category:&lt;/strong&gt; Literature&lt;/p&gt;
+&lt;p&gt;I like the following Quota post a lot:
+&lt;em&gt;When I was a child I ate a lot of food. Most of it is long gone and forgotten, but certainly some of it became my very bones and flesh.&lt;/em&gt;
+Personally I like reading, almost read every day and enjoying reading. This blog post is to share my experience and lessons learned how to improve the reading skills.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cai Gen Tan</title>
+      <link>http://localhost:1313/post/2017/book-cai_gen_tan/</link>
+      <pubDate>Fri, 14 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/book-cai_gen_tan/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;book-notes-cai-gen-tan&#34;&gt;Book Notes: Cai Gen Tan&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 14, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; booknotes, chinese
+&lt;strong&gt;Category:&lt;/strong&gt; Literature&lt;/p&gt;
+&lt;p&gt;&#39;Cai Gen Tan&#39; is an old Chinese book written in Ming dynasty. This book contains the wisdom from Confucianism, Taoists and Buddhism. It is a compact book but providing a lot of life advices.&lt;/p&gt;
+&lt;p&gt;《菜根谭》是明朝还初道人洪应明收集编著的一部论述修养、人生、处世、出世的语录集。其文字简炼明隽，兼采雅俗。&lt;/p&gt;
+&lt;h2 id=&#34;求学&#34;&gt;求学&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;夜眠八尺，日啖二升，何须要有百般计较？书读五车，才分八斗，怎么能得一日清闲？&lt;/li&gt;
+&lt;li&gt;学者要收拾精神并归一处。如修德而留意于事功名誉，必无实谊；读书而寄兴于吟咏风雅，定不深心。&lt;/li&gt;
+&lt;li&gt;做人无甚高远事业，摆脱得俗情便入名流；为学无甚增益功夫，减除得物累便臻圣境。&lt;/li&gt;
+&lt;li&gt;学者有段兢业的心思，又要有段潇洒的趣味。若一味敛束清苦，是有秋杀无春生，何以发育万物。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;明事理&#34;&gt;明事理&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;一勺水，便具四海水味，世法不必尽尝；千江月，总是一轮月光，心珠宜当独朗&lt;/li&gt;
+&lt;li&gt;事理因人言而悟者，有悟还有迷，总不如自悟之了了。意兴从外境而得者，有得还有失，总不如自得之休休。&lt;/li&gt;
+&lt;li&gt;为善而欲自高胜人，施恩而欲要名结好，修业而欲惊世骇俗，植节而欲标异见奇，此皆是善念中戈矛，理路上荆棘，最易夹带，最难拔除者也。须是涤尽渣滓，斩绝萌芽，才见本来真体。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;检点自身&#34;&gt;检点自身&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;无事便思有闲杂念想否。有事便思有粗浮意气否。得意便思有骄矜辞色否。失意便思有怨望情怀否。时时检点，到得从多入少、从有入无处，才是学问的真消息。&lt;/li&gt;
+&lt;li&gt;忙处事为，常向闲中先检点，过举自稀。动时念想，预从静里密操持，非心自息&lt;/li&gt;
+&lt;li&gt;无事常如有事时提防，才可以弥意外之变；有事常如无事时镇定，方可以消局中之危&lt;/li&gt;
+&lt;li&gt;忙处事为，常向闲中先检点，过举自稀。动时念想，预从静里密操持，非心自息。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;戒欲&#34;&gt;戒欲&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;仕途虽赫奕，常思林下的风味，则权势之念自轻；世途虽纷华，常思泉下的光景，则利欲之心自淡。&lt;/li&gt;
+&lt;li&gt;优人傅粉调朱，效妍丑于毫端，俄而歌残场罢，妍丑何存？弈者争先竞后，较雌雄于着子，俄而局尽子收，雌雄安在？&lt;/li&gt;
+&lt;li&gt;缠脱只在自心,心了则屠肆糟糠居然净土。不然纵一琴一鹤,一花一卉,嗜好虽清,魔障终在。语云:“能休尘境为真境,未了僧家是俗家。”&lt;/li&gt;
+&lt;li&gt;宠辱不惊 闲看庭前花开花落 去留无意 漫随天外云卷云舒&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;修身&#34;&gt;修身&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;心体澄澈，常在明镜止水之中，则天下自无可厌之事；意气和平，常在丽日光风之内，则天下自无可恶之人。&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Setup Blog: Using Sphinx and Ablog</title>
+      <link>http://localhost:1313/post/2017/setup-blog_using-sphinx-ablog/</link>
+      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/setup-blog_using-sphinx-ablog/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;setup-blog-using-sphinx-and-ablog&#34;&gt;Setup Blog: Using Sphinx and Ablog&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 12, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; blog, opensource
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Writing blogs is a good way to learn.
+The brain of human being has retention rate of what is learned. In order to learn efficiently, people need to be more active on discussing, practicing and teaching.
+No matter your blog has already got millions of followers or not, the blog writing itself is very beneficial for yourself to learn better.
+This blog post will teach you how to setup your personal blog by using open source technology like Sphinx and Ablog.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Git: Resolve Conflicts</title>
+      <link>http://localhost:1313/post/2017/git_resolve-conflicts/</link>
+      <pubDate>Sun, 09 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/git_resolve-conflicts/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;git-resolve-conflicts&#34;&gt;Git: Resolve Conflicts&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 9, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; git
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Git provides various tools to resolve conflicts during the merge process, and in this blog we only discuss one of them gvimdiff in Windows Operating System.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h2 id=&#34;software-installation&#34;&gt;Software installation&lt;/h2&gt;
+&lt;p&gt;gvimdiff needs Gvim installed, which is GUI Vi text editor and can be downloaded from:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.vim.org/download.php&#34;&gt;http://www.vim.org/download.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After the installation, please ensure the executable file path is included in PATH environment variable. You can test it in console by typing gvim to see whether you get the application invoked.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Vi: Configuration Example</title>
+      <link>http://localhost:1313/post/2017/vi_configuration-example/</link>
+      <pubDate>Sat, 08 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/vi_configuration-example/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;vi-configuration-example&#34;&gt;Vi: Configuration Example&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Apr 8, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; vi
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Among various text editors, I like Vi a lot. It help me a lot if I work on various operating systems and different environment since Vi is installed by default on most operating systems.
+There is GUI Vi tool available on Windows called Gvim, which can be downloaded from here: &lt;a href=&#34;http://www.vim.org/download.php&#34;&gt;http://www.vim.org/download.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The configuration file is named as _vimrc which is located around ProgramFiles(x86)\Vim. Just open and edit the _vimrc file, but you need to restart Gvim to see the changes.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Git: Branch Continue</title>
+      <link>http://localhost:1313/post/2017/git_branch-continued/</link>
+      <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/git_branch-continued/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;git-branch-continue&#34;&gt;Git: Branch Continue&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 30, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; git
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;This blog will cover the Git commands which to transfer the changes between branches. If you are not familiar with the basic Git branch commands, you can have a look of my previous blog: &lt;a href=&#34;http://localhost:1313/post/2017/git_branch-continued/#git_branch-basic&#34;&gt;git_branch-basic&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h2 id=&#34;merge-branch&#34;&gt;Merge Branch&lt;/h2&gt;
+&lt;p&gt;When you have two or more branches, you need to integrate some changes from one branch to another.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;git merge f1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Git merge command will try to integrate all the changes from branch f1 into the current branch (HEAD points to). After run this command, you can check the status by &lt;em&gt;git status&lt;/em&gt; and use &lt;em&gt;git add/commit&lt;/em&gt; to check-in the changes.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Git: Branch Basic</title>
+      <link>http://localhost:1313/post/2017/git_branch-basic/</link>
+      <pubDate>Wed, 18 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/git_branch-basic/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;git-branch-basic&#34;&gt;Git: Branch Basic&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 18, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; git
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;One of the biggest advantage of Git is branching. Git is very strong at handling branches, no matter on functionality or on efficiency. Let&#39;s try out the Git branch commands.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h2 id=&#34;create-branch&#34;&gt;Create Branch&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;git branch f1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The command will create a new branch called f1. Compared to &#39;classical&#39; version control system, git will not create a separate folder for new branch. All the branches &#39;share&#39; the same folder on your file system.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Git: Areas</title>
+      <link>http://localhost:1313/post/2017/git_areas/</link>
+      <pubDate>Sat, 14 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/git_areas/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;git-areas&#34;&gt;Git: Areas&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 14, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; git
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Git has four areas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Working area&lt;/li&gt;
+&lt;li&gt;Index&lt;/li&gt;
+&lt;li&gt;Repository&lt;/li&gt;
+&lt;li&gt;Stash&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To understand these four areas is essential to learn the git workflow. The following paragraphs will go through these four areas and explain the git workflow. If you are new to git and not familiar with the basic git commands, it is recommended to read my blog post &lt;a href=&#34;http://localhost:1313/post/2017/git_areas/#git_getting-started&#34;&gt;git_getting-started&lt;/a&gt; first.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h2 id=&#34;working-area&#34;&gt;Working area&lt;/h2&gt;
+&lt;p&gt;Working area is where you start adding/modifying/deleting files. Working area is equal to what you see on your file system.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Git: Getting Started</title>
+      <link>http://localhost:1313/post/2017/git_getting-started/</link>
+      <pubDate>Wed, 11 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2017/git_getting-started/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;git-getting-started&#34;&gt;Git: Getting Started&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Published:&lt;/strong&gt; Jan 11, 2017
+&lt;strong&gt;Tags:&lt;/strong&gt; git
+&lt;strong&gt;Category:&lt;/strong&gt; ComputerScience&lt;/p&gt;
+&lt;p&gt;Git is an open source distributed version control system, which plays important role in current software ecosystem.
+You may find many GUI Git tools like SourceTree, Github Desktop, TortoiseGit etc, however the best way to learn Git is to deep dive into the Git commands and understand the fundamental. Let&#39;s start the &#39;Git journey&#39; by using the basic commands.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
