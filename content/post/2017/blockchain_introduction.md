@@ -12,18 +12,13 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
-
-# Blockchain Introduction
 
 **Published:** Sep 06, 2017
 **Tags:** blockchain, security
 **Category:** ComputerScience
 
 Blockchain is the technology behind Bitcoin, this blog introduce what the Blockchain is.
-
-## Table of Contents
 
 # What is Blockchain
 

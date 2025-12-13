@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2019"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Iot for Smart Cities
++++
 
 **Published:** Feb 10, 2019
 **Tags:** iot, booknotes, smartcity

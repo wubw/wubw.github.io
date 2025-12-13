@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
+thumbnail = "images/security.png"
 +++
-
-# Threat Modeling: Introduction
 
 **Published:** May 07, 2017
 **Tags:** security

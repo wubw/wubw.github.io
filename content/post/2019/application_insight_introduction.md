@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2019"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Application Insight Introduction
++++
 
 **Published:** Apr 20, 2019
 **Tags:** cloud, telemetry

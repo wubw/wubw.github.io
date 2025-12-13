@@ -12,18 +12,14 @@ categories = [
 ]
 series = "2020"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# About Consulting
++++
 
 **Published:** Jul 10, 2020
 **Tags:** consulting, booknotes
 **Category:** Management
 
 This blog contains notes from several books relevant to consulting.
-
-## Table of Contents
 
 # 麦肯锡工具
 

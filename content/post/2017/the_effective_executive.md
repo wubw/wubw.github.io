@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# The Effective Executive
++++
 
 **Published:** Dec 29, 2017
 **Tags:** booknotes
@@ -23,8 +21,6 @@ thumbnail = "images/building.png"
 
 This is the notes from book <The Effective Executive> by Peter Drucker.
 According to Drucker, the task of leadership is to create an alignment of strengths, making our weakness irrelevant
-
-## Table of Contents
 
 # 有效企业管理
 

@@ -12,10 +12,7 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
-
-# Bash: Useful Commands
 
 **Published:** Aug 19, 2017  
 **Tags:** shell  

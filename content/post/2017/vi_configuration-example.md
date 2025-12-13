@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Vi: Configuration Example
++++
 
 **Published:** Apr 8, 2017
 **Tags:** vi

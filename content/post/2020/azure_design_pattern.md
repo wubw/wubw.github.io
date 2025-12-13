@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2020"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Azure Design Pattern
++++
 
 **Published:** May 01, 2020  
 **Tags:** cloud, architecture  

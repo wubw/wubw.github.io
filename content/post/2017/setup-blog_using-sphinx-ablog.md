@@ -12,10 +12,7 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
-
-# Setup Blog: Using Sphinx and Ablog
 
 **Published:** Apr 12, 2017
 **Tags:** blog, opensource
@@ -27,8 +24,6 @@ No matter your blog has already got millions of followers or not, the blog writi
 This blog post will teach you how to setup your personal blog by using open source technology like Sphinx and Ablog.
 
 ![image](images/learningrententionrates.png)
-
-## Table of Contents
 
 ## Why DIY?
 

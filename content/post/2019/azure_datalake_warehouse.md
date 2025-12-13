@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2019"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Azure Data Lake and Warehouse
++++
 
 **Published:** Apr 30, 2019
 **Tags:** cloud
@@ -26,8 +24,6 @@ This blog introduces these two concepts and provides comparision for other relev
 
 In general, there is a good article:
 https://www.talend.com/resources/data-lake-vs-data-warehouse/
-
-## Table of Contents
 
 # Data Lake
 

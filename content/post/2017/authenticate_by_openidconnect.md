@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
+thumbnail = "images/security.png"
 +++
-
-# Authenticate Node.js App by OpenId Connect
 
 **Published:** Jul 09, 2017  
 **Tags:** security  
@@ -25,7 +23,7 @@ OpenID Connect (OIDC) is an authentication layer on top of OAuth 2.0; while OAut
 The standard is controlled by the OpenID Foundation. 
 This blog post will go through an example to use your google account to login a Node.js app by using OpenID Connect.
 
-## Table of Contents
+# Table of Contents
 
 - [Authentication vs Authorization](#authentication-vs-authorization)
 - ['Jargon' explanations](#jargon-explanations)

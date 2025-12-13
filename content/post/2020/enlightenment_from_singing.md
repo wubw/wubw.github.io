@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2020"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Enlightenment from Singing
++++
 
 **Published:** Aug 01, 2020
 **Tags:** chinese

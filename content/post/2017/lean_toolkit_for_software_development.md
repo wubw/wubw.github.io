@@ -12,10 +12,7 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
-
-# Lean Toolkit for Software Development
 
 **Published:** May 16, 2017
 **Tags:** lean, process
@@ -24,8 +21,6 @@ thumbnail = "images/building.png"
 Lean has huge impact on current software industry.
 No matter your team adopts Devops, Scrum, Kanban or other Agile methodologies, you can find impact from Lean methodology.
 Even though Lean was invented decades ago, the concepts are still shining and toolkit are still very useful.
-
-## Table of Contents
 
 # Identify Bottleneck
 

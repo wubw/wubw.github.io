@@ -12,10 +12,7 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
-
-# Kotter-Binwei Change Model
 
 **Published:** May 25, 2017
 **Tags:** process

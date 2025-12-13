@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2019"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
+thumbnail = "images/security.png"
 +++
-
-# Cyber Security for Blockchain
 
 **Published:** Jun 09, 2019
 **Tags:** blockchain, security
@@ -25,8 +23,6 @@ This year, I worked on a project and the topic for me is cyber security for bloc
 It was really good experience since I got the chance to think through this topic and deliver research report to client.
 Both cyber security and blockchain are interesting areas for me, besides the above project I still have a lot of things not mentioned mainly technical things.
 So I decide to write this blog as supplement to above project.
-
-## Table of Contents
 
 Blockchain allows people to exchange assets and perform transactions without a third party.
 In order to compromise or hack a blockchain network, someone would have to gain control of the majority of computers in that network.

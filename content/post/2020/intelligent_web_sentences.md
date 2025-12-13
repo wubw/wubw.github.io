@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2020"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Intelligent Web Sentences
++++
 
 **Published:** Jun 07, 2020
 **Tags:** career
@@ -23,8 +21,6 @@ thumbnail = "images/building.png"
 
 I read a lot on Zhihu and Quora, and collect the followings intelligent sentences, even though they are not written by famous people.
 They are full of wisdom, and mixed with Chinese and English.
-
-## Table of Contents
 
 # Career
 

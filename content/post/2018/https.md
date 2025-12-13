@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2018"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Https Explainations
++++
 
 **Published:** Jan 24, 2018
 **Tags:** security
@@ -23,8 +21,6 @@ thumbnail = "images/building.png"
 
 Hypertext Transfer Protocol Secure (HTTPS) is a safer version of HTTP, which is the communications protocol of the World Wide Web.
 An HTTPS session is encrypted using either the SSL protocol (Secure Socket Layer) or TLS protocol (Transport Layer Security) and offers protection against "eavesdropping" and that any change in the transmitted data.
-
-## Table of Contents
 
 # Introduction
 

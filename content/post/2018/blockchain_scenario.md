@@ -12,18 +12,14 @@ categories = [
 ]
 series = "2018"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Blockchain Scenario
++++
 
 **Published:** Feb 26, 2018
 **Tags:** blockchain, security
 **Category:** ComputerScience
 
 This blog explain the potential scenarios of blockchain usage. The content comes from good articles on web.
-
-## Table of Contents
 
 # 分布式数字货币系统
 

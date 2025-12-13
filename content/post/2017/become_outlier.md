@@ -12,10 +12,7 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
-
-# How to Become an Outlier
 
 **Published:** Aug 20, 2017
 **Tags:** career
@@ -25,7 +22,6 @@ Do you want to be an outlier?
 How do you measure success? Money? Friends and Family? Recognition? Fame? Making a difference?
 Does your definition of success drive the direction of your career? ... Or is it the other way around?
 
-## Table of Contents
 
 If you want to be an outlier, you may be out of place, have to compromise on some areas in your life and people may see you as weirdo.
 

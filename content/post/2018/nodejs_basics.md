@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2018"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Node.js Basics
++++
 
 **Published:** Aug 11, 2018
 **Tags:** web, backend
@@ -23,8 +21,6 @@ thumbnail = "images/building.png"
 
 Recently, I used Node.js quite a lot to handle personal projects. It is easy to start, and also easy to get wrong.
 This blog covers the basics part of Node.js development.
-
-## Table of Contents
 
 # Module
 

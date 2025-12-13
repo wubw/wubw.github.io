@@ -12,10 +12,7 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
-
-# Book notes: Bian Zhi Lin Anthology
 
 **Published:** May 02, 2017
 **Tags:** booknotes, chinese

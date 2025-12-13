@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# The Mythical Deadline of Peopleware Man-month
++++
 
 **Published:** May 14, 2017
 **Tags:** booknotes, chinese
@@ -23,8 +21,6 @@ thumbnail = "images/building.png"
 
 This blog post is the book note of three famous books in project/people management in IT industry: The Mythical Man-month, The Deadline, Peopleware. They are enlightenment books to me on the management topics when I read these books decade ago. There are a lot of shinning points in these books, and I try to list them with my own thoughts.
 The book notes will be in Chinese, since I read the Chinese version that time.
-
-## Table of Contents
 
 # 管理重要要素
 

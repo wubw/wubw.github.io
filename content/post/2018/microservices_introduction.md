@@ -12,18 +12,14 @@ categories = [
 ]
 series = "2018"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Microservices Introduction
++++
 
 **Published:** Mar 07, 2018
 **Tags:** architecture, cloud
 **Category:** ComputerScience
 
 Microservice is a software architecture style, in which complex applications are composed of small, autonomous process communicating with each other using language-agnostic API, which is a very common cloud pattern.
-
-## Table of Contents
 
 # Microservices Design Principles
 

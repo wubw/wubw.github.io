@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2018"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# AI for Smart Cities
++++
 
 **Published:** Dec 07, 2018
 **Tags:** ai, smartcity
@@ -35,8 +33,6 @@ I managed to convey the following messages in my talk:
 This is a picture of my presentation. And in this blog, I will briefly introduce the relevant content.
 
 ![image](images/pic_of_binwei.jpg)
-
-## Table of Contents
 
 # Why Cities need to be smart?
 
@@ -192,21 +188,14 @@ Edge computing can address the following issues:
 
 If we take a look of the amount of data generated from lift:
 
-+-----------------------+-----------------------------------+-----------------------------------+
 | Number of lifts       | Time period                       | Data size                         |
-+-----------------------+-----------------------------------+-----------------------------------+
+|-----------------------|-----------------------------------|-----------------------------------|
 | 1                     | 0.1 second                        | 360 bytes                         |
-+-----------------------+-----------------------------------+-----------------------------------+
 | 1                     | 1 day                             | 311 MB                            |
-+-----------------------+-----------------------------------+-----------------------------------+
 | 10                    | 1 day                             | 3 GB                              |
-+-----------------------+-----------------------------------+-----------------------------------+
 | 100                   | 1 day                             | 30 GB                             |
-+-----------------------+-----------------------------------+-----------------------------------+
 | 100                   | 1 month                           | 1 TB                              |
-+-----------------------+-----------------------------------+-----------------------------------+
 | 60, 000               | 1 month                           | 600 TB                            |
-+-----------------------+-----------------------------------+-----------------------------------+
 
 As you can see the big amount of data will cause pressure on the computational power and also increase the operational cost.
 And we also find out in order to detect anomaly in some scenario, we need 10 times higher sampling resolution than the normal ones.

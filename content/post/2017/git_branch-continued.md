@@ -12,18 +12,13 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
-
-# Git: Branch Continue
 
 **Published:** Jan 30, 2017
 **Tags:** git
 **Category:** ComputerScience
 
 This blog will cover the Git commands which to transfer the changes between branches. If you are not familiar with the basic Git branch commands, you can have a look of my previous blog: [git_branch-basic](#git_branch-basic)
-
-## Table of Contents
 
 ## Merge Branch
 

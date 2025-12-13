@@ -12,18 +12,14 @@ categories = [
 ]
 series = "2019"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# User Story Applied
++++
 
 **Published:** Apr 21, 2019
 **Tags:** booknotes, process
 **Category:** ComputerScience
 
 This blog is the book notes for user story applied.
-
-## Table of Contents
 
 # User stories principles
 

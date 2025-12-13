@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
+thumbnail = "images/security.png"
 +++
-
-# Security: Owasp Top 10
 
 **Published:** Jul 05, 2017
 **Tags:** security
@@ -24,8 +22,6 @@ thumbnail = "images/building.png"
 The [Open Web Application Security Project (OWASP) ](https://www.owasp.org) is an open community dedicated to enabling organizations to develop, purchase, and maintain applications and APIs that can be trusted.
 The goal of the Top 10 project is to raise awareness about application security by identifying some of the most critical risks facing organizations.
 This blog is based on 2013 version, while 2017 version will come very soon.
-
-## Table of Contents
 
 # 1. Injection
 

@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2018"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Docker Introduction
++++
 
 **Published:** Jan 4, 2018
 **Tags:** docker
@@ -24,8 +22,6 @@ thumbnail = "images/building.png"
 Docker is the world's leading software containerization platform.
 Docker/container technology becomes more and more popular these days.
 This blog introduces the basic concept of the above technology.
-
-## Table of Contents
 
 # What is docker
 

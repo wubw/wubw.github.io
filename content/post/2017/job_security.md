@@ -12,10 +12,7 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
-
-# Job Security
 
 **Published:** Apr 29, 2017
 **Tags:** career
@@ -24,8 +21,6 @@ thumbnail = "images/building.png"
 In your company, there is only one should care about your job security: that is yourself. Many people treat the company as their home, put all their energy and be 100% loyal to the company, but seldom to think about themselves. There is nothing wrong with the attitude only if you are aware of the job security.
 Marketing is up-and-down and most companies needs to be profitable to survive. They have to lay off people if necessary, these people can be you no matter you treat the company as home or not.
 It will put you into a very negative situation if you do not prepare well for your job security.
-
-## Table of Contents
 
 ## Income
 

@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2019"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Machine Learning Basic
++++
 
 **Published:** Jan 13, 2019
 **Tags:** ai
@@ -23,8 +21,6 @@ thumbnail = "images/building.png"
 
 This blog introduces the basic knowledge of machine learning. The details of algorithm and programming will come in later blogs.
 Machine learning is a technology which can resolve the computational problem without programming specifically.
-
-## Table of Contents
 
 # Process
 

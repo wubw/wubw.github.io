@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Technology to Learn Next
++++
 
 **Published:** Apr 18, 2017
 **Tags:** career
@@ -25,8 +23,6 @@ Nowadays, we are in a rapid changing world, and the velocity of the change is in
 And it is simply too many technologies for you to learn, this blog will discuss the topic: what to learn next.
 
 ![image](images/culture.jpg)
-
-## Table of Contents
 
 ## Dark side
 

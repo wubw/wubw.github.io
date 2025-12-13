@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2021"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Measure Anything
++++
 
 **Published:** Jan 01, 2021
 **Tags:** booknotes, process
@@ -26,8 +24,6 @@ If you don't measure it, you can't improve it;
 If you don't measure it, you probably don't care;
 If you can't influence it, then don't measure it.
 - Randy A. Steinberg
-
-## Table of Contents
 
 # Why Measure Anything
 

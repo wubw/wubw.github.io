@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2019"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Agile Selling
++++
 
 **Published:** Jan 27, 2019
 **Tags:** booknotes, sales
@@ -26,8 +24,6 @@ When they have an issue, they go online to research their problem.
 Buyers self-educate, leaving the seller totally out of the loop.
 Without deep buyer understanding, it's increasingly difficult to get business.
 You're dealing with educated people who want conversations and collaboration, not pitches of any sort.
-
-## Table of Contents
 
 # Reframing Failures
 
@@ -138,11 +134,9 @@ Consider recording your interview too, so that you can listen to it again for in
 
 ## Define the buyer's journey
 
-+---------------------------+---------------------------+---------------------------+---------------------------+
 | 1st decision:	            | 2nd decision              | 3rd decision:	            | 4th decision              |
-+---------------------------+---------------------------+---------------------------+---------------------------+
+|---------------------------|---------------------------|---------------------------|---------------------------|
 | Allow Access	            | Initiate change	        | Select resources          | Expand relationship       |
-+---------------------------+---------------------------+---------------------------+---------------------------+
 | Buyers are reasonably     | Buyers are interested in 	| Buyers educate themselves | Buyers evaluate           |
 | happy with the status quo | learning more. They       | on options, get proposals,| satisfaction with the     |
 | until something either    | research, they meet, they | validate ROI. Their key   | initial decision and      |
@@ -150,7 +144,6 @@ Consider recording your interview too, so that you can listen to it again for in
 | changes their priorities  | they ask is: Does it make | best decision for us?     | question is: Should we do |
 |                           | sense to change from the  |                           | more work with them?      |
 |                           | status quo?               |                           |                           |
-+---------------------------+---------------------------+---------------------------+---------------------------+
 
 ## Gain insights
 

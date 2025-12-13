@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2019"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
+thumbnail = "images/security.png"
 +++
-
-# Azure Security
 
 **Published:** April 19, 2019
 **Tags:** security, cloud
@@ -25,8 +23,6 @@ Cyber Security is important aspect to digital transformation.
 To use Azure well, the understanding of the security building blocks is crucial.
 
 https://docs.microsoft.com/en-us/azure/security/azure-security-getting-started
-
-## Table of Contents
 
 # Security Basics
 
@@ -43,34 +39,24 @@ Make security a core step of any new project, of change control, of anything you
 
 ## Key Security Areas
 
-+---------------------------+-----------------------------------------------+
 | Identity and access       | Being sure you are who you say you are        |
-+---------------------------+-----------------------------------------------+
+|---------------------------|-----------------------------------------------|
 | Network security          | Secure access, isolation, and publishing      |
-+---------------------------+-----------------------------------------------+
 | Data protection           | Encryption of data at rest and in transit     |
-+---------------------------+-----------------------------------------------+
 | Protecting secrets        | Keys, certificates, credentials               |
-+---------------------------+-----------------------------------------------+
 | System integrity          | Patched, protected, etc                       |
-+---------------------------+-----------------------------------------------+
 | Insight                   | Auditing, system state, health                |
-+---------------------------+-----------------------------------------------+
 
 ## Security terminology
 
-+----------------+-------------------------------------------------------------------------------+
 | Asset          | People, property, or information (database, software code, company records)   |
-+----------------+-------------------------------------------------------------------------------+
+|----------------|-------------------------------------------------------------------------------|
 | Threat         | Person or process that can exploit a vulnerability (intentionally or          |
 |                | accidentally) to obtain, damager, or destroy an asset                         |
-+----------------+-------------------------------------------------------------------------------+
 | Vulnerability  | Weakness or gap in a security program that can be exploited by threats to     |
 |                | gain unauthorized access to an asset                                          |
-+----------------+-------------------------------------------------------------------------------+
 | Risk           | The potential for loss, damage, or destruction of an asset as a result of a   |
 |                | threat exploiting a vulnerability                                             |
-+----------------+-------------------------------------------------------------------------------+
 
 # Azure security services overview
 

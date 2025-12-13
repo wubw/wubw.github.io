@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2020"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Arduino Introduction
++++
 
 **Published:** May 16, 2020
 **Tags:** iot, hardware
@@ -25,8 +23,6 @@ Recently, my recent project use Arduino and relevant devices to help to emulate 
 It helps our development quite a lot especially the 'up-stream' part like data acquisition.
 The setup looks like following, which just shows very small part of the whole setup and this setup is evolving no matter the hardware and the software.
 Due to confidential consideration, this article will only stay on high level.
-
-## Table of Contents
 
 # Project Introduction
 

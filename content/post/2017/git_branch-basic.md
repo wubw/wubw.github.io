@@ -12,19 +12,14 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
 
-
-# Git: Branch Basic
 
 **Published:** Jan 18, 2017
 **Tags:** git
 **Category:** ComputerScience
 
 One of the biggest advantage of Git is branching. Git is very strong at handling branches, no matter on functionality or on efficiency. Let's try out the Git branch commands.
-
-## Table of Contents
 
 ## Create Branch
 

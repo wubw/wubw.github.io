@@ -12,10 +12,7 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
-
-# Lean: Principles
 
 **Published:** Apr 27, 2017
 **Tags:** lean, process
@@ -26,8 +23,6 @@ The core idea of Lean is to maximize customer value while minimizing waste. A le
 To accomplish this, lean thinking changes the focus of management from optimizing separate technologies, assets, and vertical departments to optimizing the flow of products and services through entire value streams that flow horizontally across technologies, assets, and departments to customers.
 
 There are 5 principles in Lean.
-
-## Table of Contents
 
 ## Identify value
 

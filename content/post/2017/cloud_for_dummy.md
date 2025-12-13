@@ -12,18 +12,13 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
-
-# Cloud for Dummy
 
 **Published:** Sep 04, 2017
 **Tags:** cloud
 **Category:** ComputerScience
 
 This is a blog to explain what cloud is to dummies.
-
-## Table of Contents
 
 # Introduction
 
@@ -275,30 +270,18 @@ Basic database sharding partitions the database based on who will access that pa
 
 Critical application attributes in tightly vs loosely coupled architectures:
 
-+-----------------------+-----------------------+-----------------------+
 |                       | Tightly coupled       | Loosely coupled       |
-+-----------------------+-----------------------+-----------------------+
+|-----------------------|-----------------------|-----------------------|
 | Technology mix        | Homogeneous           | Heterogeneous         |
-+-----------------------+-----------------------+-----------------------+
 | Data typing           | Dependent             | Independent           |
-+-----------------------+-----------------------+-----------------------+
 | Interface model       | API                   | Service               |
-+-----------------------+-----------------------+-----------------------+
 | Interaction style     | PRC                   | Document              |
-+-----------------------+-----------------------+-----------------------+
 | Synchronization       | Synchronous           | Asynchronous          |
-+-----------------------+-----------------------+-----------------------+
 | Granularity           | Object                | Message               |
-+-----------------------+-----------------------+-----------------------+
 | Syntactic definition  | By convention         | Self-describing       |
-+-----------------------+-----------------------+-----------------------+
 | Semantic adaptation   | By recoding           | Via transformation    |
-+-----------------------+-----------------------+-----------------------+
 | Bindings              | Fixed and early       | Delayed               |
-+-----------------------+-----------------------+-----------------------+
 | Software objective    | Reusability           | Broad applicability   |
-+-----------------------+-----------------------+-----------------------+
 | Consequences          | Anticipated           | Unintended            |
-+-----------------------+-----------------------+-----------------------+
 
 *Written by Binwei@Oslo*

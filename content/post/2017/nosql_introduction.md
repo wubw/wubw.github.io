@@ -12,10 +12,7 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
-
-# NoSQL: Introduction
 
 **Published:** May 1, 2017
 **Tags:** database, nosql
@@ -23,8 +20,6 @@ thumbnail = "images/building.png"
 
 NoSQL originally refers to "non SQL", "non relational", or "not only SQL". NoSQL databases are increasingly used in big data and real-time web applications.
 NoSQL databases are not replacing relational database, there are scenarios only fit for NoSQL database. This blog give a brief introduction of NoSQL databases.
-
-## Table of Contents
 
 ## Motivation
 

@@ -12,11 +12,8 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
 
-
-# Git: Areas
 
 **Published:** Jan 14, 2017
 **Tags:** git
@@ -30,8 +27,6 @@ Git has four areas:
 * Stash
 
 To understand these four areas is essential to learn the git workflow. The following paragraphs will go through these four areas and explain the git workflow. If you are new to git and not familiar with the basic git commands, it is recommended to read my blog post [git_getting-started](#git_getting-started) first.
-
-## Table of Contents
 
 ## Working area
 

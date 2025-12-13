@@ -12,18 +12,14 @@ categories = [
 ]
 series = "2018"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# The Personal MBA
++++
 
 **Published:** Jan 22, 2018
 **Tags:** booknotes
 **Category:** Management
 
 This blog contains the booknotes of the book "The Personal MBA".
-
-## Table of Contents
 
 # How to Learn
 
@@ -44,28 +40,22 @@ Roughly defined, a business is a repeatable process that:
 * In a way that satisfies the customer's needs and expectations
 * So that the business brings in enough profit to make it worthwhile for the owners to continue operation
 
-+----------------+---------------------------------------+--------------------------------------------+
 | Processes      | Definition                            | KPI                                        |
-+----------------+---------------------------------------+--------------------------------------------+
+|----------------|---------------------------------------|--------------------------------------------|
 | Value creation | Discovering what people need or want, | How quickly is the system creating value?  |
 |                | then creating it                      | What is the current level of inflows?      |
-+----------------+---------------------------------------+--------------------------------------------+
 | Marketing      | Attracting attention and building     | How many people are paying attention to    |
 |                | demand for what you've created        | your offer? How many prospects are giving  |
 |                |                                       | you permission to provide more information?|
-+----------------+---------------------------------------+--------------------------------------------+
 | Sales          | Tuning prospective customers into     | How many prospects are becoming paying     |
 |                | paying customers                      | customers? What is the average customer's  |
 |                |                                       | lifetime value?                            |
-+----------------+---------------------------------------+--------------------------------------------+
 | Value delivery | Giving your customers what you've     | How quickly can you serve each customer?   |
 |                | promised and ensuring that they're    | What is your current returns or complaints |
 |                | satisfied                             | rate?                                      |
-+----------------+---------------------------------------+--------------------------------------------+
 | Finance        | Bringing in enough money to keep going| What is your profit margin?                |
 |                | and make your effort worthwhile       | How much purchasing power do you have      |
 |                |                                       | financially sufficient?                    |
-+----------------+---------------------------------------+--------------------------------------------+
 
 Process improvements are easy to skip if you want the business's short-term profit number to look good, even though they're essential to long term viability.
 

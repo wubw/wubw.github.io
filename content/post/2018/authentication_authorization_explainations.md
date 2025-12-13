@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2018"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
+thumbnail = "images/security.png"
 +++
-
-# Authentication & Authorization Basic
 
 **Published:** Mar 14, 2018
 **Tags:** security
@@ -24,8 +22,6 @@ thumbnail = "images/building.png"
 Authentication and Authorization are two relevant but different concepts, which causes confusion sometimes.
 Both of them are important for SaaS solution.
 This blog explains the basic of these two concepts.
-
-## Table of Contents
 
 # Single sign on
 

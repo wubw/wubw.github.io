@@ -12,18 +12,13 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
-
-# DevOps and Continuous Delivery
 
 **Published:** Sep 01, 2017
 **Tags:** booknotes, process, devops, continuousdelivery
 **Category:** ComputerScience
 
 DevOps and continuous delivery are two hot topics these days, which play more and more important role in software development especially for the SaaS (Software as a Service) solution.
-
-## Table of Contents
 
 # DevOps
 

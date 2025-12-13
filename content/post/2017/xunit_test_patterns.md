@@ -12,18 +12,14 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Xunit Test Patterns
++++
 
 **Published:** Aug 27, 2017
 **Tags:** booknotes, architecture
 **Category:** ComputerScience
 
 Xunit Test Pattern is a fantastic book which shares the experience and good practice to write tests.
-
-## Table of Contents
 
 ![image](images/xunittestgoalsprinciplesandsmells.jpg)
 

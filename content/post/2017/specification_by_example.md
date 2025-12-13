@@ -12,10 +12,7 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
-
-# Specification by Example
 
 **Published:** Aug 25, 2017
 **Tags:** booknotes, process
@@ -23,8 +20,6 @@ thumbnail = "images/building.png"
 
 Specification by Example is a set of process patterns that helps teams build the right software product.
 With Specification by Example, teams write just enough documentation to facilitate change effectively in short iterations (Scrum or XP) or in flow-based development (Kanban).
-
-## Table of Contents
 
 # Introduction
 

@@ -12,10 +12,7 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
-
-# How to Read Books
 
 **Published:** Apr 16, 2017
 **Tags:** reading

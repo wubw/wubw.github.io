@@ -12,11 +12,8 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
 
-
-# Introduction to Javascript
 
 **Published:** Sep 9, 2017
 **Tags:** web, frontend
@@ -25,27 +22,18 @@ thumbnail = "images/building.png"
 Javascript is the fundumantal programming language for frontend development.
 This blog introduces the basic concept of Javascript language.
 
-## Table of Contents
-
 # Javascript Basic
 
 First, let's compare Javascript with a OOP programming language C#.
 
-+-----------------------+-----------------------+
 | C#	                | Javascript            |
-+-----------------------+-----------------------+
+|-----------------------|-----------------------|
 | Strongly-Typed        | Loosely-typed         |
-+-----------------------+-----------------------+
 | Static                | Dynamic               |
-+-----------------------+-----------------------+
 | Classical Inheritance	| Prototypal            |
-+-----------------------+-----------------------+
 | Classes               | Functions             |
-+-----------------------+-----------------------+
 | Constructors	        | Functions             |
-+-----------------------+-----------------------+
 | Methods               | Functions             |
-+-----------------------+-----------------------+
 
 ## Strongly typed or weakly typed (loosely typed)
 

@@ -12,18 +12,14 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Telemetry: Overview
++++
 
 **Published:** Apr 20, 2017
 **Tags:** telemetry
 **Category:** ComputerScience
 
 Telemetry technology plays more and more important role in the 'cloud era'. This blog will explain what is telemetry technology, how we can benefit from telemetry technology, and briefly discuss some technical choices.
-
-## Table of Contents
 
 # What is Telemetry
 

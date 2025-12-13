@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2020"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# China 70 Anniversary Big Data
++++
 
 **Published:** Mar 15, 2020
 **Tags:** chinese

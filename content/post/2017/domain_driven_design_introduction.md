@@ -12,10 +12,7 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
-
-# Domain Driven Design: Introduction
 
 **Published:** Jun 19, 2017
 **Tags:** architecture, process
@@ -26,8 +23,6 @@ The philosophy of DDD is about placing our attention at the heart of the applica
 In using DDD, you are meant to work closely with a domain expert who can explain how the real-world system works.
 It also acts as the conceptual foundation for the design of the software itself - how it's broken down into objects or functions.
 In this blog post, I will cover the key elements of DDD.
-
-## Table of Contents
 
 # Concepts
 

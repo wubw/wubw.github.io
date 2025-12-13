@@ -12,18 +12,13 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
-
-# Git: Resolve Conflicts
 
 **Published:** Apr 9, 2017
 **Tags:** git
 **Category:** ComputerScience
 
 Git provides various tools to resolve conflicts during the merge process, and in this blog we only discuss one of them gvimdiff in Windows Operating System.
-
-## Table of Contents
 
 ## Software installation
 

@@ -12,18 +12,14 @@ categories = [
 ]
 series = "2020"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Data Science Basic
++++
 
 **Published:** Aug 02, 2020
 **Tags:** data
 **Category:** ComputerScience
 
 Data science involves principles, processes, and techniques for understanding phenomena via the (automated) analysis of data. This article talks about the basic part of data science.
-
-## Table of Contents
 
 # Data Driven Decision (DDD)
 

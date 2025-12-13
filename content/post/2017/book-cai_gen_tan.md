@@ -12,10 +12,7 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
 +++
-
-# Book Notes: Cai Gen Tan
 
 **Published:** Apr 14, 2017
 **Tags:** booknotes, chinese

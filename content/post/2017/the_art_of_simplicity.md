@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# The Art of Simplicity
++++
 
 **Published:** Aug 31, 2017
 **Tags:** booknotes
@@ -23,8 +21,6 @@ thumbnail = "images/building.png"
 
 The original version was written in French named <L'art de la simplicite> by Dominique Loreau.
 This book show the tips regarding to have a simplified but high quality life.
-
-## Table of Contents
 
 # 简单
 

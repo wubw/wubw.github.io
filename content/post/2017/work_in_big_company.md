@@ -12,10 +12,8 @@ categories = [
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# Work in Big Company
++++
 
 **Published:** May 17, 2017
 **Tags:** chinese, booknotes

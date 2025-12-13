@@ -12,18 +12,14 @@ categories = [
 ]
 series = "2018"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/building.png"
-+++
 
-# 职场菜根谭
++++
 
 **Published:** Dec 09, 2018
 **Tags:** career
 **Category:** Management
 
 之前在网络上搜集到了多种关于职场建议的养分，也结合个人的经验教训，提取出些所谓的精华，大言不惭，称之为职场菜根谭。
-
-## Table of Contents
 
 # 职场潜规则
 
