@@ -12,7 +12,6 @@ categories = [
 ]
 series = "2019"
 aliases = ["migrate-from-jekyl"]
-thumbnail = "images/security.png"
 +++
 
 **Published:** Jun 09, 2019
