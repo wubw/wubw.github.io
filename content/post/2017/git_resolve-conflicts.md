@@ -8,7 +8,7 @@ tags = [
     "git"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -16,7 +16,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Apr 9, 2017
 **Tags:** git
-**Category:** ComputerScience
+**Category:** Engineering
 
 Git provides various tools to resolve conflicts during the merge process, and in this blog we only discuss one of them gvimdiff in Windows Operating System.
 

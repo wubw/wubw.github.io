@@ -8,7 +8,7 @@ tags = [
     "security"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -16,7 +16,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Jul 05, 2017
 **Tags:** security
-**Category:** ComputerScience
+**Category:** Engineering
 
 The [Open Web Application Security Project (OWASP) ](https://www.owasp.org) is an open community dedicated to enabling organizations to develop, purchase, and maintain applications and APIs that can be trusted.
 The goal of the Top 10 project is to raise awareness about application security by identifying some of the most critical risks facing organizations.

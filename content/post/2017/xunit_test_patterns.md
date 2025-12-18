@@ -8,7 +8,7 @@ tags = [
     "booknotes", "architecture"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Aug 27, 2017
 **Tags:** booknotes, architecture
-**Category:** ComputerScience
+**Category:** Engineering
 
 Xunit Test Pattern is a fantastic book which shares the experience and good practice to write tests.
 

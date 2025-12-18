@@ -5,10 +5,10 @@ date = "2020-07-09"
 description = "Book note: Xiao Gou Qian Qian"
 featured = true
 tags = [
-    "investment"
+    "booknote"
 ]
 categories = [
-    "Life",
+    "Invest",
 ]
 series = "2020"
 aliases = ["migrate-from-jekyl"]
@@ -16,8 +16,8 @@ aliases = ["migrate-from-jekyl"]
 +++
 
 **Published:** Jul 09, 2020
-**Tags:** investment
-**Category:** Life
+**Tags:** booknote
+**Category:** Invest
 
 Xiao Gou Qian Qian is the Chinese name of the book: Ein Hund Namens Money
 

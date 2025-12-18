@@ -8,7 +8,7 @@ tags = [
     "cloud"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2019"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Apr 30, 2019
 **Tags:** cloud
-**Category:** ComputerScience
+**Category:** Engineering
 
 Data Lack and Data Warehouse are two concepts causing confusion.
 This blog introduces these two concepts and provides comparision for other relevant concepts.

@@ -8,7 +8,7 @@ tags = [
     "booknotes"
 ]
 categories = [
-    "Life",
+    "Wisdom",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]

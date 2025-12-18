@@ -8,7 +8,7 @@ tags = [
     "data"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2020"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Aug 02, 2020
 **Tags:** data
-**Category:** ComputerScience
+**Category:** Engineering
 
 Data science involves principles, processes, and techniques for understanding phenomena via the (automated) analysis of data. This article talks about the basic part of data science.
 

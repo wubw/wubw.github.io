@@ -8,7 +8,7 @@ tags = [
     "booknotes", "process"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -16,7 +16,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Aug 25, 2017
 **Tags:** booknotes, process
-**Category:** ComputerScience
+**Category:** Engineering
 
 Specification by Example is a set of process patterns that helps teams build the right software product.
 With Specification by Example, teams write just enough documentation to facilitate change effectively in short iterations (Scrum or XP) or in flow-based development (Kanban).

@@ -8,7 +8,7 @@ tags = [
     "architecture", "cloud"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2018"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Mar 07, 2018
 **Tags:** architecture, cloud
-**Category:** ComputerScience
+**Category:** Engineering
 
 Microservice is a software architecture style, in which complex applications are composed of small, autonomous process communicating with each other using language-agnostic API, which is a very common cloud pattern.
 

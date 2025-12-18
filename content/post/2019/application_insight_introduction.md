@@ -8,7 +8,7 @@ tags = [
     "cloud", "telemetry"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2019"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Apr 20, 2019
 **Tags:** cloud, telemetry
-**Category:** ComputerScience
+**Category:** Engineering
 
 This blog introduces what Application Insight can do.
 

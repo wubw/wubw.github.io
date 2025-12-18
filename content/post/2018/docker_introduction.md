@@ -8,7 +8,7 @@ tags = [
     "docker"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2018"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Jan 4, 2018
 **Tags:** docker
-**Category:** ComputerScience
+**Category:** Engineering
 
 Docker is the world's leading software containerization platform.
 Docker/container technology becomes more and more popular these days.

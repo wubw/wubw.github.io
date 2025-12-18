@@ -8,7 +8,7 @@ tags = [
     "shell"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -16,7 +16,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Aug 19, 2017  
 **Tags:** shell  
-**Category:** ComputerScience
+**Category:** Engineering
 
 Bash is a widely shell, which is the default shell in many operating systems, e.g. Unix, Linux, Mac OS. 
 Bash can help you achieve a lot. 

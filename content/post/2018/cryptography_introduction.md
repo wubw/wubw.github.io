@@ -8,7 +8,7 @@ tags = [
     "security"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2018"
 aliases = ["migrate-from-jekyl"]
@@ -18,7 +18,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Jan 07, 2018
 **Tags:** security
-**Category:** ComputerScience
+**Category:** Engineering
 
 Cryptography is the core part of security, this blog introduces the basic concepts in cryptography and uses .NET as code example.
 

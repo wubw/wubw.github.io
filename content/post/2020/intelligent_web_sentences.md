@@ -8,7 +8,7 @@ tags = [
     "career"
 ]
 categories = [
-    "Life",
+    "Wisdom",
 ]
 series = "2020"
 aliases = ["migrate-from-jekyl"]

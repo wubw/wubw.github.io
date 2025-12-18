@@ -8,7 +8,7 @@ tags = [
     "backend", "web"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2018"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Aug 11, 2018
 **Tags:** web, backend
-**Category:** ComputerScience
+**Category:** Engineering
 
 Recently, I used Node.js quite a lot to handle personal projects. It is easy to start, and also easy to get wrong.
 This blog covers the basics part of Node.js development.

@@ -5,18 +5,18 @@ date = "2017-04-16"
 description = "How to Read Books"
 featured = true
 tags = [
-    "reading"
+    "booknote"
 ]
 categories = [
-    "Literature",
+    "Productivity",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
 +++
 
 **Published:** Apr 16, 2017
-**Tags:** reading
-**Category:** Literature
+**Tags:** booknote
+**Category:** Productivity
 
 I like the following Quota post a lot:
 *When I was a child I ate a lot of food. Most of it is long gone and forgotten, but certainly some of it became my very bones and flesh.*

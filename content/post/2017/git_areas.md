@@ -8,7 +8,7 @@ tags = [
     "git"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Jan 14, 2017
 **Tags:** git
-**Category:** ComputerScience
+**Category:** Engineering
 
 Git has four areas:
 

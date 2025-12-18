@@ -8,7 +8,7 @@ tags = [
     "iot", "hardware"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2020"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** May 16, 2020
 **Tags:** iot, hardware
-**Category:** ComputerScience
+**Category:** Engineering
 
 Recently, my recent project use Arduino and relevant devices to help to emulate signals from sensors.
 It helps our development quite a lot especially the 'up-stream' part like data acquisition.

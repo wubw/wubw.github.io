@@ -8,7 +8,7 @@ tags = [
     "cloud"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -16,7 +16,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Sep 04, 2017
 **Tags:** cloud
-**Category:** ComputerScience
+**Category:** Engineering
 
 This is a blog to explain what cloud is to dummies.
 

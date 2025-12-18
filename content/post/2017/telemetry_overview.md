@@ -8,7 +8,7 @@ tags = [
     "telemetry"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Apr 20, 2017
 **Tags:** telemetry
-**Category:** ComputerScience
+**Category:** Engineering
 
 Telemetry technology plays more and more important role in the 'cloud era'. This blog will explain what is telemetry technology, how we can benefit from telemetry technology, and briefly discuss some technical choices.
 

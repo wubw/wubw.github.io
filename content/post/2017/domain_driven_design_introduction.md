@@ -8,7 +8,7 @@ tags = [
     "architecture", "process"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -16,7 +16,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Jun 19, 2017
 **Tags:** architecture, process
-**Category:** ComputerScience
+**Category:** Engineering
 
 Domain Driven Design (DDD) is about trying to make your software a model of a real-world system or process.
 The philosophy of DDD is about placing our attention at the heart of the application, focusing on the complexity that is intrinsic to the business domain itself.

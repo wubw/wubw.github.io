@@ -8,7 +8,7 @@ tags = [
     "git"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Jan 18, 2017
 **Tags:** git
-**Category:** ComputerScience
+**Category:** Engineering
 
 One of the biggest advantage of Git is branching. Git is very strong at handling branches, no matter on functionality or on efficiency. Let's try out the Git branch commands.
 

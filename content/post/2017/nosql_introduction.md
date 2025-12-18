@@ -8,7 +8,7 @@ tags = [
     "database", "nosql"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -16,7 +16,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** May 1, 2017
 **Tags:** database, nosql
-**Category:** ComputerScience
+**Category:** Engineering
 
 NoSQL originally refers to "non SQL", "non relational", or "not only SQL". NoSQL databases are increasingly used in big data and real-time web applications.
 NoSQL databases are not replacing relational database, there are scenarios only fit for NoSQL database. This blog give a brief introduction of NoSQL databases.

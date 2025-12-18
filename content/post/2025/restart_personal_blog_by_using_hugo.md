@@ -8,7 +8,7 @@ tags = [
     "blog", "opensource"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2025"
 aliases = ["migrate-from-jekyl"]

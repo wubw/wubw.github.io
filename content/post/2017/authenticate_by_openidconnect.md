@@ -8,7 +8,7 @@ tags = [
     "security"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -16,7 +16,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Jul 09, 2017  
 **Tags:** security  
-**Category:** ComputerScience
+**Category:** Engineering
 
 OpenID Connect (OIDC) is an authentication layer on top of OAuth 2.0; while OAuth 2.0 is an authorization framework. 
 The standard is controlled by the OpenID Foundation. 

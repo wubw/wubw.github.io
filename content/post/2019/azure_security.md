@@ -8,7 +8,7 @@ tags = [
     "cloud", "security"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2019"
 aliases = ["migrate-from-jekyl"]
@@ -16,7 +16,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** April 19, 2019
 **Tags:** security, cloud
-**Category:** ComputerScience
+**Category:** Engineering
 
 Cyber Security is important aspect to digital transformation.
 To use Azure well, the understanding of the security building blocks is crucial.

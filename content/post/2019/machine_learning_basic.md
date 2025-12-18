@@ -8,7 +8,7 @@ tags = [
     "ai"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2019"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Jan 13, 2019
 **Tags:** ai
-**Category:** ComputerScience
+**Category:** Engineering
 
 This blog introduces the basic knowledge of machine learning. The details of algorithm and programming will come in later blogs.
 Machine learning is a technology which can resolve the computational problem without programming specifically.

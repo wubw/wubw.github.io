@@ -8,7 +8,7 @@ tags = [
     "blockchain", "security"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -16,7 +16,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Sep 06, 2017
 **Tags:** blockchain, security
-**Category:** ComputerScience
+**Category:** Engineering
 
 Blockchain is the technology behind Bitcoin, this blog introduce what the Blockchain is.
 

@@ -8,7 +8,7 @@ tags = [
     "iot", "booknotes", "smartcity"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2019"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Feb 10, 2019
 **Tags:** iot, booknotes, smartcity
-**Category:** ComputerScience
+**Category:** Engineering
 
 Smart cities: Everyone's connected
 If everyone, every home, and every business is connected via the IoT, why not take the next step and connect your entire neighborhood, or even the whole city?

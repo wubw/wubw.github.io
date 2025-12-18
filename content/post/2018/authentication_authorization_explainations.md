@@ -8,7 +8,7 @@ tags = [
     "security"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2018"
 aliases = ["migrate-from-jekyl"]
@@ -16,7 +16,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Mar 14, 2018
 **Tags:** security
-**Category:** ComputerScience
+**Category:** Engineering
 
 Authentication and Authorization are two relevant but different concepts, which causes confusion sometimes.
 Both of them are important for SaaS solution.

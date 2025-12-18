@@ -8,7 +8,7 @@ tags = [
     "booknotes", "process"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2019"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Apr 21, 2019
 **Tags:** booknotes, process
-**Category:** ComputerScience
+**Category:** Engineering
 
 This blog is the book notes for user story applied.
 

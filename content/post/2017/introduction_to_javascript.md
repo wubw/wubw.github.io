@@ -2,13 +2,13 @@
 author = "Binwei Wu"
 title = "Introduction to Javascript"
 date = "2017-09-09"
-description = "How to Read Books"
+description = "Introduction to Javascript"
 featured = true
 tags = [
     "web", "frontend"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Sep 9, 2017
 **Tags:** web, frontend
-**Category:** ComputerScience
+**Category:** Engineering
 
 Javascript is the fundumantal programming language for frontend development.
 This blog introduces the basic concept of Javascript language.

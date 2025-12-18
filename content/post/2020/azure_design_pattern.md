@@ -8,7 +8,7 @@ tags = [
     "cloud", "architecture"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2020"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** May 01, 2020  
 **Tags:** cloud, architecture  
-**Category:** ComputerScience
+**Category:** Engineering
 
 Just like programming, for many technical challenges for using cloud and Azure there are best practices.
 We call these best practices as Design Pattern.

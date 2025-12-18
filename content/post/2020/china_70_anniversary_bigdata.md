@@ -8,7 +8,7 @@ tags = [
     "chinese"
 ]
 categories = [
-    "General",
+    "History",
 ]
 series = "2020"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Mar 15, 2020
 **Tags:** chinese
-**Category:** General
+**Category:** History
 
 The series of pictures show the progress of China development within 70 years.
 It is amazing!

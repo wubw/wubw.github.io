@@ -8,7 +8,7 @@ tags = [
     "vi"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Apr 8, 2017
 **Tags:** vi
-**Category:** ComputerScience
+**Category:** Engineering
 
 Among various text editors, I like Vi a lot. It help me a lot if I work on various operating systems and different environment since Vi is installed by default on most operating systems.
 There is GUI Vi tool available on Windows called Gvim, which can be downloaded from here: http://www.vim.org/download.php

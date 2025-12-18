@@ -8,7 +8,7 @@ tags = [
     "git"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -16,7 +16,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Jan 30, 2017
 **Tags:** git
-**Category:** ComputerScience
+**Category:** Engineering
 
 This blog will cover the Git commands which to transfer the changes between branches. If you are not familiar with the basic Git branch commands, you can have a look of my previous blog: [git_branch-basic](#git_branch-basic)
 

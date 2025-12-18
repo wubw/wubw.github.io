@@ -8,7 +8,7 @@ tags = [
     "security"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -16,7 +16,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** May 07, 2017
 **Tags:** security
-**Category:** ComputerScience
+**Category:** Engineering
 
 With more and more data and software go to internet, the security becomes crucial for software development.
 OWASP (Open Web Application Security Project) lists top 10 security risks:

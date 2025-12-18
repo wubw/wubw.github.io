@@ -8,7 +8,7 @@ tags = [
     "blockchain", "security"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2019"
 aliases = ["migrate-from-jekyl"]
@@ -16,7 +16,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Jun 09, 2019
 **Tags:** blockchain, security
-**Category:** ComputerScience
+**Category:** Engineering
 
 This year, I worked on a project and the topic for me is cyber security for blockchain in Oil and Gas industry.
 It was really good experience since I got the chance to think through this topic and deliver research report to client.

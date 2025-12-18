@@ -8,7 +8,7 @@ tags = [
     "booknotes", "process", "devops", "continuousdelivery"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -16,7 +16,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Sep 01, 2017
 **Tags:** booknotes, process, devops, continuousdelivery
-**Category:** ComputerScience
+**Category:** Engineering
 
 DevOps and continuous delivery are two hot topics these days, which play more and more important role in software development especially for the SaaS (Software as a Service) solution.
 

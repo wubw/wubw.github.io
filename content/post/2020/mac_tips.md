@@ -8,7 +8,7 @@ tags = [
     "efficiency"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2020"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Jul 31, 2020
 **Tags:** efficiency
-**Category:** ComputerScience
+**Category:** Engineering
 
 I got first Macbook 3 years ago, but only use Macbook as production environment 9 months ago.
 In order to use Macbook in an efficient way, some tips can be important to know.

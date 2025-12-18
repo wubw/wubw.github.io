@@ -8,7 +8,7 @@ tags = [
     "ai", "smartcity"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2018"
 aliases = ["migrate-from-jekyl"]
@@ -17,7 +17,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Dec 07, 2018
 **Tags:** ai, smartcity
-**Category:** ComputerScience
+**Category:** Engineering
 
 I had the honer to give an 'AI for Smart Cities' presentation in 'Big Data & AI Asia' conference Dec 5.
 The conference was hold in Suntec and it was a big event around hundreds people participated.

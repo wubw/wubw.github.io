@@ -8,7 +8,7 @@ tags = [
     "blog", "opensource"
 ]
 categories = [
-    "ComputerScience",
+    "Engineering",
 ]
 series = "2017"
 aliases = ["migrate-from-jekyl"]
@@ -16,7 +16,7 @@ aliases = ["migrate-from-jekyl"]
 
 **Published:** Apr 12, 2017
 **Tags:** blog, opensource
-**Category:** ComputerScience
+**Category:** Engineering
 
 Writing blogs is a good way to learn.
 The brain of human being has retention rate of what is learned. In order to learn efficiently, people need to be more active on discussing, practicing and teaching.
