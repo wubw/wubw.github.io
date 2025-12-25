@@ -1,7 +1,7 @@
 +++
 author = "Binwei Wu"
 title = "Bond"
-date = "2025-12-23"
+date = "2025-12-24"
 description = "Bond"
 featured = true
 tags = [
@@ -14,6 +14,8 @@ series = "2025"
 aliases = ["migrate-from-jekyl"]
 
 +++
+
+#invest
 
 债券核心概念一览
 
