@@ -15,6 +15,7 @@ aliases = ["migrate-from-jekyl"]
 
 +++
 
+#fitness
 
 # 一、核心定义：冥想是什么？
 
