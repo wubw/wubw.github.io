@@ -15,6 +15,8 @@ aliases = ["migrate-from-jekyl"]
 
 +++
 
+#business
+
 Alex Hormozi
 
 The core thesis of The 100M Offeris that the key to rapid business growth is not better marketing or sales tactics, but creating an offer that is so compelling it becomes "irresistible." Hormozi argues that most businesses fail because they have a weak offer, not because of a weak ability to sell it. The goal is to create an offer where the value so dramatically outweighs the price and risk that customers feel like they would be stupid to say no.

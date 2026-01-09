@@ -24,7 +24,11 @@ While there’s still room to cut back further if I wanted to be more selective,
 - I now have a much clearer understanding of my files.
 - I revisited some useful older tools, like OneCommander for reorganization and Beyond Compare for backups. These tools proved far more effective than the custom solutions I had previously developed.
 - I also spent time restoring older files that had become unreadable due to outdated formats, converting them into accessible versions.
-    
+
 Overall, it’s been a productive cleanup!
+
+2025-09-01: The script I developed remains useful for two reasons:
+- Company PCs have security features that trigger alerts and may notify line manager manager if too many files are copied to an external disk. The script addresses this by limiting the scope of copying.
+- Manually checking and synchronizing a large number of differences in Beyond Compare is inefficient.
 
 *Written by Binwei@Shanghai*
