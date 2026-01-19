@@ -21,6 +21,12 @@ I decided to give it a try. As an avid book lover, I occasionally come across po
 
 When my wife suggested using an agent to automate this process, I thought it was a great idea. So, I spent about half an hour with Agent Skills to set up a basic version.
 
+First, I need to enable agent skills in VS Code
+To use skills, you must be on VS Code Insiders and enable the feature:
+1. Open VS Code Insiders
+2. Go to Settings → Search: chat.useAgentSkills
+3. Turn it ON
+
 Using the VS Code agent, I asked GitHub Copilot to generate Python files, such as book_rating_fetcher.py, to fetch the rating data. I was amazed at how well it understood my requirements—within 10 minutes, the code was ready. Here’s what I achieved:
 
 ```
