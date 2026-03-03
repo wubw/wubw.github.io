@@ -46,7 +46,7 @@ Searching for: 黑猫警长
     ★☆☆☆☆ 0.1%
 
   Book URL: https://book.douban.com/subject/2253235/
-  ```
+```
 
 I then create a .skills folder, with a subfolder named fetch-doubanbook. The overall folder structure looks like this:
 ![image](images/agent_skills_folder.png)
