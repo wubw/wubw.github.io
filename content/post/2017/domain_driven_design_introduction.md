@@ -223,7 +223,7 @@ Drawbacks of DDD:
 * Not just technical complexity without business domain complexity
 * Team or Company Buy-in to DDD
 
-# Reference
+# Ref
 
 Web sites:
 
