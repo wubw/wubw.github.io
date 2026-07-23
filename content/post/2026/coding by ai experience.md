@@ -15,8 +15,6 @@ aliases = ["migrate-from-jekyl"]
 
 +++
 
-Copilot said:
-
 In my current company, we recently started an exciting new project called WorkBrain. Its goal is to use customer activity data to generate new insights and help people work more efficiently. The entire project has been built with AI assistance—in fact, I have not written a single line of code myself. Instead, I provide guidance to multiple AI coding agents (Copilot), review their output, and verify their work. Along the way, I have gained many valuable lessons. This blog is an attempt to capture and share what I have learned.
 
 1. Pre-AI Software Engineering Practices Still Matter
